@@ -1,0 +1,38 @@
+# Airco@Business
+
+> Airco@Business is a B2B air-conditioning specialist based in Voorschoten (Zuid-Holland, Netherlands). We advise on, install, and maintain commercial air-conditioning systems for offices, commercial buildings, retail stores, and showrooms. Strictly business clients; residential customers are served by our consumer brand Airco@home (https://airco-athome.nl/).
+
+Key facts:
+- Service area: Zuid-Holland (Voorschoten, Leiden, Den Haag, Rotterdam, Hoofddorp, and surrounding cities); larger projects nationwide
+- Installers: STEK-certified, working to the EU F-gas regulation
+- Brands installed: Daikin, Mitsubishi Electric, Mitsubishi Heavy Industries, LG, Toshiba
+- Systems: cassette (ceiling), ducted (concealed), and wall-mounted air conditioning — all heat-pump systems that cool and heat
+- Contact: +31 (0)71 240 05 97 · info@aircoatbusiness.nl · response within one business day
+
+## Services
+
+- [Business air conditioning](https://aircoatbusiness.nl/zakelijke-airconditioning/): overview of commercial solutions per property type
+- [Office air conditioning](https://aircoatbusiness.nl/airco-kantoor/): stable working climate for offices
+- [Commercial building air conditioning](https://aircoatbusiness.nl/airco-bedrijfspand/): multi-zone solutions for complete buildings
+- [Retail air conditioning](https://aircoatbusiness.nl/airco-winkel/): store climate without visible technology
+- [Showroom air conditioning](https://aircoatbusiness.nl/airco-showroom/): climate for large open presentation spaces
+- [Commercial installation](https://aircoatbusiness.nl/zakelijke-airco-installatie/): capacity calculation, system advice, and installation
+- [Cassette air conditioning](https://aircoatbusiness.nl/cassette-airco-bedrijf/): ceiling-integrated, four-way air distribution
+- [Ducted air conditioning](https://aircoatbusiness.nl/kanaal-airco-bedrijf/): fully concealed, multiple zones
+- [Wall-mounted air conditioning](https://aircoatbusiness.nl/wandmodel-airco-bedrijf/): compact solution for individual rooms
+- [Maintenance](https://aircoatbusiness.nl/airco-onderhoud-zakelijk/): preventive maintenance for commercial systems
+- [Repairs](https://aircoatbusiness.nl/airco-reparatie-zakelijk/): fault diagnosis and repair, all A-brands
+- [Maintenance contracts](https://aircoatbusiness.nl/airco-onderhoudscontract-zakelijk/): fixed planning, priority service, predictable costs
+
+## Company
+
+- [Projects](https://aircoatbusiness.nl/projecten/): recent commercial installations
+- [Our process](https://aircoatbusiness.nl/werkwijze/): consultation → site analysis → proposal → installation → aftercare
+- [About](https://aircoatbusiness.nl/over-ons/): the business label of Airco@home B.V. (KvK 50312006)
+- [FAQ](https://aircoatbusiness.nl/veelgestelde-vragen/): common questions on systems, installation, maintenance, and costs
+- [Service area](https://aircoatbusiness.nl/werkgebied/): cities served in Zuid-Holland
+- [Contact](https://aircoatbusiness.nl/contact/): quote requests and consultations
+
+## Languages
+
+Dutch (default, at the root) and English (under /en/, e.g. https://aircoatbusiness.nl/en/business-air-conditioning/).

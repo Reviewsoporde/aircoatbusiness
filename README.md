@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Airco@Business — Website
 
-## Getting Started
+Premium bilingual (NL/EN) B2B marketing site for **Airco@Business**, the commercial air-conditioning specialist in Voorschoten serving Zuid-Holland. Built as a pilot project by Sterk Systems NL.
 
-First, run the development server:
+**Stack:** Next.js 16 (App Router, SSG) · Tailwind CSS v4 · shadcn/ui · next-intl · react-hook-form + zod · Vercel
+
+## Development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build (all pages static)
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Copy `.env.example` to `.env.local`:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Variable | Purpose |
+|---|---|
+| `GHL_WEBHOOK_URL` | GoHighLevel inbound-webhook URL — quote-form leads are forwarded here as JSON (incl. `sourcePage`, `locale`, `submittedAt`) |
+| `NEXT_PUBLIC_GA_ID` | GA4 measurement ID; enables analytics + conversion events (`lead_form_submit`, `phone_click`) |
 
-## Learn More
+Without `GHL_WEBHOOK_URL`, form submissions still succeed but are only logged server-side.
 
-To learn more about Next.js, take a look at the following resources:
+## Project structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+docs/                  client brief, SEO strategy, site architecture, page templates
+src/app/[locale]/      one folder per route — Dutch slugs are canonical (see docs/site-architecture.md)
+src/app/api/lead/      lead intake → GoHighLevel webhook
+src/content/{nl,en}/   all page copy as typed objects
+src/i18n/              next-intl routing, localized pathnames, UI-chrome messages
+src/components/        layout / sections / templates / seo / ui
+src/lib/               site config (NAP), JSON-LD builders, metadata helpers
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Read `AGENTS.md` (agent/developer conventions, hard SEO rules) and the `docs/` folder before changing structure, copy, or SEO behaviour.
 
-## Deploy on Vercel
+## Deployment (Vercel)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Import the repo in Vercel — no special config needed (`trailingSlash` and i18n proxy are in the app).
+2. Set `GHL_WEBHOOK_URL` and `NEXT_PUBLIC_GA_ID` in the project environment.
+3. Point `aircoatbusiness.nl` at the project. `sitemap.xml`, `robots.txt`, and `llms.txt` are served by the app.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Before go-live checklist
+
+- [ ] Replace draft project entries (`src/content/{nl,en}/projects.ts`) with confirmed client projects + photography
+- [ ] Add real client reviews (proof sections auto-render them once present in content)
+- [ ] Have legal pages (`privacybeleid`, `cookiebeleid`) reviewed
+- [ ] Configure the GoHighLevel inbound-webhook workflow and set `GHL_WEBHOOK_URL`
+- [ ] Create GA4 property + Search Console, set `NEXT_PUBLIC_GA_ID`
+- [ ] Confirm the "first maintenance visit" offer wording with the client

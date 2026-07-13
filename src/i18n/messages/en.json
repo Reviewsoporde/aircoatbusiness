@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "businessAC": "Business air conditioning",
+    "office": "Office air conditioning",
+    "commercialBuilding": "Commercial building AC",
+    "retail": "Retail air conditioning",
+    "showroom": "Showroom air conditioning",
+    "installation": "Installation",
+    "commercialInstallation": "Commercial AC installation",
+    "cassette": "Cassette air conditioning",
+    "ducted": "Ducted air conditioning",
+    "wallMounted": "Wall-mounted air conditioning",
+    "maintenance": "Maintenance",
+    "maintenanceService": "Commercial AC maintenance",
+    "repairs": "AC repairs",
+    "maintenanceContracts": "Maintenance contracts",
+    "projects": "Projects",
+    "process": "Our process",
+    "contact": "Contact",
+    "requestQuote": "Request a quote",
+    "residential": "Residential? Visit Airco@home",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "footer": {
+    "coreServices": "Services",
+    "propertyTypes": "Business spaces",
+    "systems": "Systems & maintenance",
+    "support": "Information",
+    "locations": "Service area",
+    "about": "About Airco@Business",
+    "faq": "Frequently asked questions",
+    "serviceArea": "Service area",
+    "brandsSystems": "Brands and systems",
+    "residential": "Residential air conditioning? Visit Airco@home",
+    "allServiceAreas": "View all service areas",
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "kvk": "CoC",
+    "btw": "VAT",
+    "openingHours": "Mon – Fri 08:00 – 17:00",
+    "tagline": "Commercial air conditioning for offices, commercial buildings, retail spaces and showrooms across Zuid-Holland."
+  },
+  "form": {
+    "companyName": "Company name",
+    "contactPerson": "Contact person",
+    "phone": "Phone number",
+    "email": "Email address",
+    "location": "City / location",
+    "propertyType": "Property type",
+    "service": "Required service",
+    "message": "Message or project details (optional)",
+    "submit": "Request a quote",
+    "submitting": "Sending…",
+    "selectPlaceholder": "Select an option",
+    "success": "Thank you for your enquiry. We will contact you within one business day.",
+    "error": "Something went wrong. Please try again or call us at {phone}.",
+    "required": "This field is required",
+    "invalidEmail": "Enter a valid email address",
+    "invalidPhone": "Enter a valid phone number",
+    "propertyOptions": {
+      "office": "Office",
+      "commercialBuilding": "Commercial building",
+      "retail": "Retail store",
+      "showroom": "Showroom",
+      "other": "Other"
+    },
+    "serviceOptions": {
+      "businessAC": "Business air conditioning",
+      "installation": "Commercial AC installation",
+      "maintenance": "Maintenance",
+      "repairs": "Repairs",
+      "maintenanceContract": "Maintenance contract",
+      "systemAdvice": "System advice",
+      "projectConsultation": "Project consultation",
+      "notSure": "Not sure yet"
+    }
+  },
+  "common": {
+    "requestQuote": "Request a quote",
+    "planConsultation": "Book a consultation",
+    "requestSystemAdvice": "Request system advice",
+    "requestMaintenance": "Request maintenance",
+    "requestContractAdvice": "Request contract advice",
+    "requestRepair": "Request a repair",
+    "callDirectly": "Call us directly",
+    "readMore": "View this service",
+    "relatedPages": "Related services",
+    "faqTitle": "Frequently asked questions",
+    "ourProcess": "Our process",
+    "viewAllProjects": "View all projects",
+    "breadcrumbHome": "Home"
+  },
+  "contactAside": {
+    "title": "Direct contact",
+    "responsePromise": "We respond to every enquiry within one business day. Prefer to talk now? Call us during office hours.",
+    "hours": "Mon – Fri 08:00 – 17:00"
+  },
+  "localeSwitcher": {
+    "label": "Language",
+    "nl": "Nederlands",
+    "en": "English"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to home"
+  }
+}

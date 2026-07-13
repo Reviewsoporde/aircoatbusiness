@@ -1,0 +1,111 @@
+{
+  "nav": {
+    "home": "Home",
+    "businessAC": "Zakelijke airconditioning",
+    "office": "Airco voor kantoren",
+    "commercialBuilding": "Airco voor bedrijfspanden",
+    "retail": "Airco voor winkels",
+    "showroom": "Airco voor showrooms",
+    "installation": "Installatie",
+    "commercialInstallation": "Zakelijke airco installatie",
+    "cassette": "Cassette airco",
+    "ducted": "Kanaal airco",
+    "wallMounted": "Wandmodel airco",
+    "maintenance": "Onderhoud",
+    "maintenanceService": "Airco onderhoud zakelijk",
+    "repairs": "Airco reparatie",
+    "maintenanceContracts": "Onderhoudscontracten",
+    "projects": "Projecten",
+    "process": "Werkwijze",
+    "contact": "Contact",
+    "requestQuote": "Offerte aanvragen",
+    "residential": "Residentieel? Ga naar Airco@home",
+    "menu": "Menu",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten"
+  },
+  "footer": {
+    "coreServices": "Diensten",
+    "propertyTypes": "Bedrijfsruimtes",
+    "systems": "Systemen & onderhoud",
+    "support": "Informatie",
+    "locations": "Werkgebied",
+    "about": "Over Airco@Business",
+    "faq": "Veelgestelde vragen",
+    "serviceArea": "Werkgebied",
+    "brandsSystems": "Merken en systemen",
+    "residential": "Particuliere airco? Ga naar Airco@home",
+    "allServiceAreas": "Bekijk alle werkgebieden",
+    "privacy": "Privacybeleid",
+    "cookies": "Cookiebeleid",
+    "kvk": "KvK",
+    "btw": "BTW",
+    "openingHours": "Ma – vr 08:00 – 17:00",
+    "tagline": "Zakelijke airconditioning voor kantoren, bedrijfspanden, winkels en showrooms in Zuid-Holland."
+  },
+  "form": {
+    "companyName": "Bedrijfsnaam",
+    "contactPerson": "Contactpersoon",
+    "phone": "Telefoonnummer",
+    "email": "E-mailadres",
+    "location": "Plaats / locatie",
+    "propertyType": "Type bedrijfsruimte",
+    "service": "Gewenste dienst",
+    "message": "Bericht of projectomschrijving (optioneel)",
+    "submit": "Offerte aanvragen",
+    "submitting": "Versturen…",
+    "selectPlaceholder": "Maak een keuze",
+    "success": "Bedankt voor uw aanvraag. We nemen binnen één werkdag contact met u op.",
+    "error": "Er ging iets mis bij het versturen. Probeer het opnieuw of bel ons op {phone}.",
+    "required": "Dit veld is verplicht",
+    "invalidEmail": "Vul een geldig e-mailadres in",
+    "invalidPhone": "Vul een geldig telefoonnummer in",
+    "propertyOptions": {
+      "office": "Kantoor",
+      "commercialBuilding": "Bedrijfspand",
+      "retail": "Winkel",
+      "showroom": "Showroom",
+      "other": "Anders"
+    },
+    "serviceOptions": {
+      "businessAC": "Zakelijke airconditioning",
+      "installation": "Zakelijke airco installatie",
+      "maintenance": "Onderhoud",
+      "repairs": "Reparatie",
+      "maintenanceContract": "Onderhoudscontract",
+      "systemAdvice": "Systeemadvies",
+      "projectConsultation": "Projectadvies",
+      "notSure": "Nog niet zeker"
+    }
+  },
+  "common": {
+    "requestQuote": "Vraag een offerte aan",
+    "planConsultation": "Plan een adviesgesprek",
+    "requestSystemAdvice": "Vraag systeemadvies aan",
+    "requestMaintenance": "Onderhoud aanvragen",
+    "requestContractAdvice": "Vraag contractadvies aan",
+    "requestRepair": "Reparatie aanvragen",
+    "callDirectly": "Bel direct",
+    "readMore": "Bekijk deze dienst",
+    "relatedPages": "Gerelateerde diensten",
+    "faqTitle": "Veelgestelde vragen",
+    "ourProcess": "Onze werkwijze",
+    "viewAllProjects": "Bekijk alle projecten",
+    "breadcrumbHome": "Home"
+  },
+  "contactAside": {
+    "title": "Direct contact",
+    "responsePromise": "Wij reageren binnen één werkdag op uw aanvraag. Liever direct schakelen? Bel ons tijdens kantooruren.",
+    "hours": "Ma – vr 08:00 – 17:00"
+  },
+  "localeSwitcher": {
+    "label": "Taal",
+    "nl": "Nederlands",
+    "en": "English"
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "description": "De pagina die u zoekt bestaat niet of is verplaatst.",
+    "backHome": "Terug naar home"
+  }
+}

@@ -1,26 +1,141 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+/*
+  Airco@Business design system — "Precision climate, engineered calm"
+  Black-dominant premium B2B. Brand azure #0093CB (from logo) as the only accent.
+  Dark bands (ink/carbon) alternate with cool paper sections for readability.
+*/
 
 :root {
+  /* Brand palette */
+  --ink: #0b0d0f;
+  --carbon: #12161a;
+  --steel: #232b32;
+  --paper: #f5f7f8;
+  --mist: #93a6b0;
+  --slate-ink: #3d4a52;
+  --azure: #0093cb;
+  --azure-bright: #2fb1e3;
+  --azure-deep: #00719f;
+
+  /* shadcn semantic tokens (tuned for light/paper sections) */
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: var(--ink);
+  --card: #ffffff;
+  --card-foreground: var(--ink);
+  --popover: #ffffff;
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: #ffffff;
+  --secondary: var(--paper);
+  --secondary-foreground: var(--ink);
+  --muted: #e9eef0;
+  --muted-foreground: var(--slate-ink);
+  --accent: #e6f4fa;
+  --accent-foreground: var(--azure-deep);
+  --destructive: #b3261e;
+  --destructive-foreground: #ffffff;
+  --border: #dbe3e7;
+  --input: #c4d0d6;
+  --ring: var(--azure);
+  --radius: 0.25rem;
 }
 
 @theme inline {
+  --color-ink: var(--ink);
+  --color-carbon: var(--carbon);
+  --color-steel: var(--steel);
+  --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-slate-ink: var(--slate-ink);
+  --color-azure: var(--azure);
+  --color-azure-bright: var(--azure-bright);
+  --color-azure-deep: var(--azure-deep);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--azure);
+    color: var(--ink);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@utility font-display {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-stretch: 118%;
+  letter-spacing: -0.02em;
+}
+
+/* Mono uppercase eyebrow label — the system's structural voice */
+@utility eyebrow {
+  font-family: var(--font-plex-mono), ui-monospace, monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Subtle laminar-airflow linework for dark bands */
+@utility airflow-lines {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 5px,
+    rgb(255 255 255 / 0.025) 5px,
+    rgb(255 255 255 / 0.025) 6px
+  );
+}
+
+@layer utilities {
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
 }
