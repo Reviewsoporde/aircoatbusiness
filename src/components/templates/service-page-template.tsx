@@ -15,6 +15,7 @@ import { FaqSection } from "@/components/sections/faq-section";
 import { LeadForm } from "@/components/sections/lead-form";
 import { CtaLink } from "@/components/sections/cta-link";
 import { ContactAside } from "@/components/sections/contact-aside";
+import { Reveal } from "@/components/sections/reveal";
 
 type Props = {
   content: ServicePageContent;
@@ -53,8 +54,8 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
         ]}
       />
 
-      {/* 1 — Hero */}
-      <PageHero hero={content.hero} />
+      {/* 1 — Hero: primary CTA jumps to the on-page, pre-filled lead form */}
+      <PageHero hero={{ ctaAnchor: "#offerte", ...content.hero }} />
 
       {/* 2 — Service overview & audience */}
       <Section
@@ -82,15 +83,20 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
       )}
 
       {/* 5 — Process */}
-      <Section variant="dark" eyebrow={t("ourProcess")} h2={content.process.h2}>
+      <Section
+        variant="dark"
+        eyebrow={t("ourProcess")}
+        h2={content.process.h2}
+        className="glow-azure"
+      >
         <ProcessSteps steps={content.process.steps} />
-        <div className="mt-10">
-          <CtaLink ctaKey={content.hero.cta} variant="azure" arrow />
-        </div>
+        <Reveal delay={120} className="mt-14">
+          <CtaLink ctaKey={content.hero.cta} anchor="#offerte" variant="azure" arrow />
+        </Reveal>
       </Section>
 
       {/* 6 — Projects, reviews & trust */}
-      <Section variant="dark" h2={content.proof.h2} className="border-t border-steel">
+      <Section variant="dark" h2={content.proof.h2} className="border-t border-white/8">
         <ProofBand
           indicators={content.proof.indicators}
           reviews={content.proof.reviews}
@@ -100,29 +106,33 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
 
       {/* 7 — Conversion: lead form (dominant) + related + FAQ */}
       <Section variant="paper" h2={content.form.h2} id="offerte">
-        <div className="grid gap-10 lg:grid-cols-[1fr_minmax(0,320px)]">
-          <div className="border border-border bg-white p-6 sm:p-10">
+        <Reveal className="grid gap-10 lg:grid-cols-[1fr_minmax(0,340px)]">
+          <div className="border border-ink/5 bg-white p-6 shadow-panel sm:p-12">
             <LeadForm
               defaultService={content.form.service}
               defaultPropertyType={content.form.propertyType}
+              submitKey={content.hero.cta}
             />
           </div>
           <ContactAside />
-        </div>
+        </Reveal>
 
-        <div className="mt-16">
-          <h3 className="eyebrow mb-6 text-azure-deep">{t("relatedPages")}</h3>
+        <div className="mt-20">
+          <h3 className="eyebrow mb-8 flex items-center gap-3 text-azure-deep">
+            <span aria-hidden className="h-px w-8 bg-azure-deep" />
+            {t("relatedPages")}
+          </h3>
           <RelatedLinks links={content.related} />
         </div>
 
-        <div className="mt-16 max-w-3xl">
-          <h3 className="font-display text-2xl font-semibold text-ink">
+        <Reveal className="mt-20 max-w-3xl">
+          <h3 className="font-display text-2xl font-medium text-ink sm:text-3xl">
             {content.faq.h2}
           </h3>
-          <div className="mt-6">
+          <div className="mt-8">
             <FaqSection items={content.faq.items} />
           </div>
-        </div>
+        </Reveal>
       </Section>
     </>
   );

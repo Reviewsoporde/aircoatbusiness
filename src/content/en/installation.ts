@@ -91,10 +91,6 @@ export const installatie: ServicePageContent = {
   proof: {
     h2: "Installations we are proud of",
     indicators: trustIndicators,
-    image: {
-      src: "/images/commercial-installation.webp",
-      alt: "Completed commercial air conditioning installation",
-    },
   },
   related: [
     {
@@ -230,7 +226,7 @@ export const zakelijkeInstallatie: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Recent installation projects",
+    h2: "Installation work you can build on",
     indicators: trustIndicators,
   },
   related: [
@@ -504,7 +500,7 @@ export const kanaalAirco: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Ducted projects in practice",
+    h2: "Ducted systems in practice",
     indicators: trustIndicators,
   },
   related: [

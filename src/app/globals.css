@@ -4,16 +4,17 @@
 /*
   Airco@Business design system — "Precision climate, engineered calm"
   Black-dominant premium B2B. Brand azure #0093CB (from logo) as the only accent.
-  Dark bands (ink/carbon) alternate with cool paper sections for readability.
+  Three typographic voices: Fraunces (editorial serif display) for statements,
+  Archivo for body/UI, IBM Plex Mono for technical labels and numerals.
 */
 
 :root {
   /* Brand palette */
-  --ink: #0b0d0f;
+  --ink: #0a0c0e;
   --carbon: #12161a;
   --steel: #232b32;
-  --paper: #f5f7f8;
-  --mist: #93a6b0;
+  --paper: #f4f6f7;
+  --mist: #97a8b2;
   --slate-ink: #3d4a52;
   --azure: #0093cb;
   --azure-bright: #2fb1e3;
@@ -36,10 +37,10 @@
   --accent-foreground: var(--azure-deep);
   --destructive: #b3261e;
   --destructive-foreground: #ffffff;
-  --border: #dbe3e7;
-  --input: #c4d0d6;
+  --border: #dde4e8;
+  --input: #c9d3d8;
   --ring: var(--azure);
-  --radius: 0.25rem;
+  --radius: 0rem;
 }
 
 @theme inline {
@@ -73,13 +74,23 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  --radius-sm: calc(var(--radius) - 2px);
+  --radius-sm: var(--radius);
   --radius-md: var(--radius);
-  --radius-lg: calc(var(--radius) + 2px);
-  --radius-xl: calc(var(--radius) + 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: var(--radius);
 
   --font-sans: var(--font-archivo), system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+
+  /* Cool-tinted elevation — never generic black */
+  --shadow-card:
+    0 1px 2px rgb(10 20 26 / 0.04), 0 16px 40px -16px rgb(10 20 26 / 0.12);
+  --shadow-card-hover:
+    0 2px 4px rgb(10 20 26 / 0.05), 0 28px 56px -16px rgb(10 20 26 / 0.2);
+  --shadow-panel: 0 32px 80px -24px rgb(10 20 26 / 0.16);
+
+  --ease-out-quart: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @layer base {
@@ -99,30 +110,106 @@
   }
 }
 
+/* Editorial serif display voice — H1/H2/H3 statements */
 @utility font-display {
-  font-family: var(--font-archivo), system-ui, sans-serif;
-  font-stretch: 118%;
-  letter-spacing: -0.02em;
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+  letter-spacing: -0.01em;
 }
 
 /* Mono uppercase eyebrow label — the system's structural voice */
 @utility eyebrow {
   font-family: var(--font-plex-mono), ui-monospace, monospace;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
 }
 
-/* Subtle laminar-airflow linework for dark bands */
+/* Subtle laminar-airflow linework for dark surfaces */
 @utility airflow-lines {
   background-image: repeating-linear-gradient(
     to bottom,
     transparent 0,
-    transparent 5px,
-    rgb(255 255 255 / 0.025) 5px,
-    rgb(255 255 255 / 0.025) 6px
+    transparent 6px,
+    rgb(255 255 255 / 0.016) 6px,
+    rgb(255 255 255 / 0.016) 7px
   );
+}
+
+/* Fine photographic grain — breaks digital flatness on dark bands */
+@utility grain {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.28;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+}
+
+/* Ambient azure light — one quiet accent glow per dark band */
+@utility glow-azure {
+  background-image: radial-gradient(
+    56rem 26rem at 82% -4%,
+    rgb(0 147 203 / 0.13),
+    transparent 62%
+  );
+}
+
+@utility glow-azure-low {
+  background-image: radial-gradient(
+    52rem 24rem at 12% 108%,
+    rgb(0 147 203 / 0.1),
+    transparent 62%
+  );
+}
+
+@layer components {
+  /* Scroll-entry reveals (driven by the <Reveal> client component) */
+  .reveal,
+  .reveal-group > * {
+    opacity: 0;
+    transform: translateY(26px);
+    transition:
+      opacity 0.9s var(--ease-out-quart),
+      transform 0.9s var(--ease-out-quart);
+  }
+  .reveal.is-revealed,
+  .reveal-group.is-revealed > * {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-group.is-revealed > *:nth-child(2) {
+    transition-delay: 90ms;
+  }
+  .reveal-group.is-revealed > *:nth-child(3) {
+    transition-delay: 180ms;
+  }
+  .reveal-group.is-revealed > *:nth-child(4) {
+    transition-delay: 270ms;
+  }
+  .reveal-group.is-revealed > *:nth-child(5) {
+    transition-delay: 360ms;
+  }
+  .reveal-group.is-revealed > *:nth-child(n + 6) {
+    transition-delay: 450ms;
+  }
+
+  /* Content must stay visible without JavaScript */
+  @media (scripting: none) {
+    .reveal,
+    .reveal-group > * {
+      opacity: 1;
+      transform: none;
+    }
+  }
 }
 
 @layer utilities {

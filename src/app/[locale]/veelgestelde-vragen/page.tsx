@@ -61,7 +61,10 @@ export default async function FaqPage({ params }: Props) {
         <div className="max-w-3xl space-y-14">
           {faqPage.groups.map((group) => (
             <div key={group.title}>
-              <h2 className="eyebrow mb-4 text-azure-deep">{group.title}</h2>
+              <h2 className="eyebrow mb-5 flex items-center gap-3 text-azure-deep">
+                <span aria-hidden className="h-px w-8 bg-azure-deep" />
+                {group.title}
+              </h2>
               <FaqSection items={group.items} />
             </div>
           ))}

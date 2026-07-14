@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Archivo, IBM_Plex_Mono } from "next/font/google";
+import { Archivo, Fraunces, IBM_Plex_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
@@ -14,6 +14,13 @@ const archivo = Archivo({
   subsets: ["latin"],
   variable: "--font-archivo",
   axes: ["wdth"],
+  display: "swap",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  axes: ["opsz"],
   display: "swap",
 });
 
@@ -45,7 +52,10 @@ export default async function LocaleLayout({
   const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
   return (
-    <html lang={locale} className={`${archivo.variable} ${plexMono.variable}`}>
+    <html
+      lang={locale}
+      className={`${archivo.variable} ${fraunces.variable} ${plexMono.variable}`}
+    >
       <body className="flex min-h-screen flex-col">
         <NextIntlClientProvider>
           <Header />

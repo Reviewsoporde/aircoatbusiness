@@ -55,10 +55,13 @@ export default async function BrandsPage({ params }: Props) {
         }}
       />
       <Section variant="dark">
-        <ul className="grid gap-px border border-steel bg-steel sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {merkenPage.brands.map((brand) => (
-            <li key={brand.name} className="bg-carbon p-7">
-              <div className="relative mb-6 h-10 w-36">
+            <li
+              key={brand.name}
+              className="border border-white/10 bg-white/[0.04] p-8 transition-colors duration-300 hover:border-azure/50"
+            >
+              <div className="relative mb-7 h-10 w-36">
                 <Image
                   src={brand.logo}
                   alt={brand.name}
@@ -67,7 +70,7 @@ export default async function BrandsPage({ params }: Props) {
                   className="object-contain object-left"
                 />
               </div>
-              <h2 className="font-display text-lg font-semibold text-white">
+              <h2 className="font-display text-xl font-medium text-white">
                 {brand.name}
               </h2>
               <p className="mt-2.5 text-sm leading-relaxed text-mist">
@@ -79,7 +82,7 @@ export default async function BrandsPage({ params }: Props) {
       </Section>
       <Section variant="paper" h2={merkenPage.systems.h2} intro={merkenPage.systems.intro}>
         <RelatedLinks links={merkenPage.systems.links} />
-        <div className="mt-12">
+        <div className="mt-14">
           <CtaLink ctaKey="requestSystemAdvice" variant="ink" arrow />
         </div>
       </Section>

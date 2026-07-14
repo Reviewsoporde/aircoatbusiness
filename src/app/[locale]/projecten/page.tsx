@@ -55,7 +55,10 @@ export default async function ProjectsPage({ params }: Props) {
         />
       </Section>
       <Section variant="light">
-        <h2 className="eyebrow mb-6 text-azure-deep">{t("relatedPages")}</h2>
+        <h2 className="eyebrow mb-8 flex items-center gap-3 text-azure-deep">
+          <span aria-hidden className="h-px w-8 bg-azure-deep" />
+          {t("relatedPages")}
+        </h2>
         <RelatedLinks links={projectenPage.serviceLinks} />
         <div className="mt-12">
           <CtaLink ctaKey="requestQuote" variant="ink" arrow />

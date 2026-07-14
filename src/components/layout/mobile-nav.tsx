@@ -34,9 +34,9 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="w-full max-w-sm border-steel bg-ink text-white [&>button]:text-white"
+        className="w-full max-w-sm border-white/10 bg-ink text-white [&>button]:text-white"
       >
-        <SheetHeader className="border-b border-steel">
+        <SheetHeader className="border-b border-white/10">
           <SheetTitle className="text-left font-mono text-xs uppercase tracking-[0.18em] text-mist">
             {t("menu")}
           </SheetTitle>
@@ -48,13 +48,13 @@ export function MobileNav() {
                 <AccordionItem
                   key={item.labelKey}
                   value={item.labelKey}
-                  className="border-steel"
+                  className="border-white/10"
                 >
                   <AccordionTrigger className="py-4 text-base font-medium text-white hover:text-azure-bright hover:no-underline [&_svg]:text-mist">
                     {t(item.labelKey)}
                   </AccordionTrigger>
                   <AccordionContent className="pb-3">
-                    <ul className="space-y-1 border-l border-steel pl-4">
+                    <ul className="space-y-1 border-l border-white/10 pl-4">
                       <li>
                         <Link
                           href={item.href!}
@@ -79,7 +79,7 @@ export function MobileNav() {
                   </AccordionContent>
                 </AccordionItem>
               ) : (
-                <div key={item.labelKey} className="border-b border-steel">
+                <div key={item.labelKey} className="border-b border-white/10">
                   <Link
                     href={item.href!}
                     onClick={() => setOpen(false)}
@@ -94,7 +94,7 @@ export function MobileNav() {
           <Link
             href="/contact"
             onClick={() => setOpen(false)}
-            className="mt-6 block bg-azure px-5 py-3 text-center text-sm font-semibold text-ink"
+            className="mt-6 block bg-azure px-5 py-3.5 text-center font-mono text-xs font-semibold tracking-[0.14em] text-ink uppercase"
           >
             {t("requestQuote")}
           </Link>

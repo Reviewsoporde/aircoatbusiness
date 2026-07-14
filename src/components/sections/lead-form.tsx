@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, useWatch } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useLocale, useTranslations } from "next-intl";
@@ -9,7 +9,7 @@ import { sendGAEvent } from "@next/third-parties/google";
 import { usePathname } from "@/i18n/navigation";
 import { siteConfig } from "@/lib/site-config";
 import { propertyTypes, serviceOptions } from "@/lib/lead-schema";
-import type { PropertyOption, ServiceOption } from "@/content/types";
+import type { CtaKey, PropertyOption, ServiceOption } from "@/content/types";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -43,10 +43,13 @@ type FormValues = z.infer<typeof formSchema>;
 type Props = {
   defaultService?: ServiceOption;
   defaultPropertyType?: PropertyOption;
+  /** Submit label follows the page's CTA type (e.g. "Reparatie aanvragen" on the repair page) */
+  submitKey?: CtaKey;
 };
 
-export function LeadForm({ defaultService, defaultPropertyType }: Props) {
+export function LeadForm({ defaultService, defaultPropertyType, submitKey }: Props) {
   const t = useTranslations("form");
+  const tCommon = useTranslations("common");
   const locale = useLocale();
   const pathname = usePathname();
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">(
@@ -57,7 +60,7 @@ export function LeadForm({ defaultService, defaultPropertyType }: Props) {
     register,
     handleSubmit,
     setValue,
-    watch,
+    control,
     formState: { errors },
   } = useForm<FormValues>({
     resolver: zodResolver(formSchema),
@@ -68,8 +71,8 @@ export function LeadForm({ defaultService, defaultPropertyType }: Props) {
     },
   });
 
-  const service = watch("service");
-  const propertyType = watch("propertyType");
+  const service = useWatch({ control, name: "service" });
+  const propertyType = useWatch({ control, name: "propertyType" });
 
   async function onSubmit(values: FormValues) {
     setStatus("sending");
@@ -266,9 +269,13 @@ export function LeadForm({ defaultService, defaultPropertyType }: Props) {
       <Button
         type="submit"
         disabled={status === "sending"}
-        className="mt-6 h-12 w-full bg-azure px-8 text-sm font-semibold text-ink hover:bg-azure-bright sm:w-auto"
+        className="mt-8 h-13 w-full bg-azure px-8 font-mono text-xs font-semibold tracking-[0.14em] text-ink uppercase shadow-[0_12px_32px_-12px_rgb(0_147_203/0.55)] transition-all duration-300 hover:bg-azure-bright active:scale-[0.98] sm:w-auto"
       >
-        {status === "sending" ? t("submitting") : t("submit")}
+        {status === "sending"
+          ? t("submitting")
+          : submitKey
+            ? tCommon(submitKey)
+            : t("submit")}
       </Button>
     </form>
   );

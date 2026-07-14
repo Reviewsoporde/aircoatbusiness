@@ -8,16 +8,19 @@ import { cn } from "@/lib/utils";
 type Variant = "azure" | "ink" | "outline-dark" | "outline-light";
 
 const variantClasses: Record<Variant, string> = {
-  azure: "bg-azure text-ink hover:bg-azure-bright",
-  ink: "bg-ink text-white hover:bg-carbon",
+  azure:
+    "bg-azure text-ink shadow-[0_12px_32px_-12px_rgb(0_147_203/0.55)] hover:bg-azure-bright hover:shadow-[0_16px_40px_-12px_rgb(47_177_227/0.6)]",
+  ink: "bg-ink text-white hover:bg-steel",
   "outline-dark":
-    "border border-steel text-white hover:border-azure-bright hover:text-azure-bright",
+    "border border-white/25 text-white hover:border-white/70 hover:bg-white/5",
   "outline-light":
-    "border border-input text-ink hover:border-azure-deep hover:text-azure-deep",
+    "border border-ink/25 text-ink hover:border-ink hover:bg-ink/[0.03]",
 };
 
 type Props = {
   href?: AppPathname;
+  /** Same-page anchor (e.g. "#offerte") — takes precedence over href */
+  anchor?: `#${string}`;
   ctaKey?: CtaKey;
   label?: string;
   variant?: Variant;
@@ -28,6 +31,7 @@ type Props = {
 /** Button-styled internal link. Label comes from a fixed CTA key or plain text. */
 export function CtaLink({
   href = "/contact",
+  anchor,
   ctaKey,
   label,
   variant = "azure",
@@ -35,17 +39,33 @@ export function CtaLink({
   arrow = false,
 }: Props) {
   const t = useTranslations("common");
-  return (
-    <Link
-      href={href}
-      className={cn(
-        "inline-flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold transition-colors",
-        variantClasses[variant],
-        className,
-      )}
-    >
+  const classes = cn(
+    "group/cta inline-flex items-center justify-center gap-2.5 px-7 py-4 font-mono text-xs font-semibold tracking-[0.14em] uppercase transition-all duration-300 active:scale-[0.98]",
+    variantClasses[variant],
+    className,
+  );
+  const content = (
+    <>
       {ctaKey ? t(ctaKey) : label}
-      {arrow && <ArrowRight className="size-4" aria-hidden />}
+      {arrow && (
+        <ArrowRight
+          className="size-3.5 transition-transform duration-300 group-hover/cta:translate-x-1"
+          aria-hidden
+        />
+      )}
+    </>
+  );
+
+  if (anchor) {
+    return (
+      <a href={anchor} className={classes}>
+        {content}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={classes}>
+      {content}
     </Link>
   );
 }

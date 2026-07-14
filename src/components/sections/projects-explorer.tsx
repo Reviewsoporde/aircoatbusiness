@@ -24,6 +24,17 @@ export function ProjectsExplorer({ projects, filters, allLabel }: Props) {
     projects.some((p) => p.filters.includes(f.value)),
   );
 
+  // Filters only earn their place once the portfolio is big enough to need them.
+  if (projects.length < 8) {
+    return (
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => (
+          <ProjectCard key={project.slug} project={project} />
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div>
       <div role="group" aria-label={allLabel} className="mb-10 flex flex-wrap gap-2">
@@ -32,10 +43,10 @@ export function ProjectsExplorer({ projects, filters, allLabel }: Props) {
           onClick={() => setActive(null)}
           aria-pressed={active === null}
           className={cn(
-            "border px-4 py-2 font-mono text-xs tracking-wider transition-colors",
+            "border px-4 py-2.5 font-mono text-xs tracking-[0.14em] transition-colors duration-200",
             active === null
               ? "border-ink bg-ink text-white"
-              : "border-input text-slate-ink hover:border-ink hover:text-ink",
+              : "border-ink/15 text-slate-ink hover:border-ink hover:text-ink",
           )}
         >
           {allLabel.toUpperCase()}
@@ -47,10 +58,10 @@ export function ProjectsExplorer({ projects, filters, allLabel }: Props) {
             onClick={() => setActive(f.value)}
             aria-pressed={active === f.value}
             className={cn(
-              "border px-4 py-2 font-mono text-xs tracking-wider transition-colors",
+              "border px-4 py-2.5 font-mono text-xs tracking-[0.14em] transition-colors duration-200",
               active === f.value
                 ? "border-ink bg-ink text-white"
-                : "border-input text-slate-ink hover:border-ink hover:text-ink",
+                : "border-ink/15 text-slate-ink hover:border-ink hover:text-ink",
             )}
           >
             {f.label.toUpperCase()}

@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import type { Card } from "@/content/types";
 import { cn } from "@/lib/utils";
+import { Reveal } from "./reveal";
 
 type Props = {
   cards: Card[];
@@ -11,13 +12,15 @@ type Props = {
 };
 
 /**
- * Uniform card grid. Cards with an href are fully clickable and show an arrow;
- * plain cards are informational. Tags render in the system's mono voice.
+ * Numbered card grid. Cards with an href are fully clickable, lift on hover
+ * and show an arrow; plain cards are informational. Index numerals and tags
+ * render in the system's mono voice.
  */
 export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
   const dark = variant === "dark";
   return (
-    <div
+    <Reveal
+      group
       className={cn(
         "grid gap-5",
         columns === 2 && "sm:grid-cols-2",
@@ -25,33 +28,44 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
         columns === 4 && "sm:grid-cols-2 lg:grid-cols-4",
       )}
     >
-      {cards.map((card) => {
+      {cards.map((card, index) => {
         const inner = (
           <>
             {card.image && (
-              <div className="relative -mx-6 -mt-6 mb-6 aspect-[16/10] overflow-hidden">
+              <div className="relative -mx-7 -mt-7 mb-7 aspect-[16/10] overflow-hidden">
                 <Image
                   src={card.image.src}
                   alt={card.image.alt}
                   fill
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                 />
               </div>
             )}
-            {card.tag && (
-              <p
+            <div className="flex items-baseline justify-between gap-4">
+              <span
+                aria-hidden
                 className={cn(
-                  "eyebrow mb-3",
-                  dark ? "text-azure-bright" : "text-azure-deep",
+                  "font-mono text-[11px] tracking-[0.18em]",
+                  dark ? "text-white/35" : "text-ink/35",
                 )}
               >
-                {card.tag}
-              </p>
-            )}
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              {card.tag && (
+                <p
+                  className={cn(
+                    "eyebrow",
+                    dark ? "text-azure-bright" : "text-azure-deep",
+                  )}
+                >
+                  {card.tag}
+                </p>
+              )}
+            </div>
             <h3
               className={cn(
-                "font-display text-lg font-semibold leading-snug",
+                "font-display mt-6 text-xl leading-snug font-medium",
                 dark ? "text-white" : "text-ink",
               )}
             >
@@ -59,7 +73,7 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
             </h3>
             <p
               className={cn(
-                "mt-3 text-sm leading-relaxed",
+                "mt-3 flex-1 text-sm leading-relaxed",
                 dark ? "text-mist" : "text-slate-ink",
               )}
             >
@@ -68,13 +82,13 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
             {card.href && card.linkLabel && (
               <span
                 className={cn(
-                  "mt-5 inline-flex items-center gap-1.5 text-sm font-medium",
+                  "mt-6 inline-flex items-center gap-1.5 text-sm font-medium",
                   dark ? "text-azure-bright" : "text-azure-deep",
                 )}
               >
                 {card.linkLabel}
                 <ArrowRight
-                  className="size-4 transition-transform group-hover:translate-x-1"
+                  className="size-4 transition-transform duration-300 group-hover:translate-x-1"
                   aria-hidden
                 />
               </span>
@@ -83,10 +97,10 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
         );
 
         const cardClasses = cn(
-          "flex flex-col overflow-hidden border p-6 transition-colors",
+          "flex flex-col overflow-hidden p-7",
           dark
-            ? "border-steel bg-carbon"
-            : "border-border bg-white",
+            ? "border border-white/10 bg-white/[0.04]"
+            : "border border-ink/5 bg-white shadow-card",
         );
 
         return card.href ? (
@@ -95,10 +109,10 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
             href={card.href}
             className={cn(
               cardClasses,
-              "group",
+              "group transition-[transform,box-shadow,border-color,background-color] duration-300 hover:-translate-y-1",
               dark
-                ? "hover:border-azure-bright/60"
-                : "hover:border-azure-deep/60",
+                ? "hover:border-azure/50 hover:bg-white/[0.06]"
+                : "hover:border-ink/10 hover:shadow-card-hover",
             )}
           >
             {inner}
@@ -109,6 +123,6 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
           </div>
         );
       })}
-    </div>
+    </Reveal>
   );
 }

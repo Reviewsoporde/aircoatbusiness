@@ -91,10 +91,6 @@ export const businessAC: ServicePageContent = {
   proof: {
     h2: "Zakelijke installaties waar wij achter staan",
     indicators: trustIndicators,
-    image: {
-      src: "/images/commercial-installation.webp",
-      alt: "Buitendelen van een zakelijke airco-installatie",
-    },
   },
   related: [
     {
@@ -243,7 +239,7 @@ export const aircoKantoor: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Kantoorprojecten in Zuid-Holland",
+    h2: "Kantoorklimaat waar bedrijven op rekenen",
     indicators: trustIndicators,
   },
   related: [
@@ -392,7 +388,7 @@ export const aircoBedrijfspand: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Bedrijfspanden die wij hebben ingericht",
+    h2: "Ervaring met bedrijfspanden in de regio",
     indicators: trustIndicators,
   },
   related: [
@@ -530,7 +526,7 @@ export const aircoWinkel: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Retailprojecten in Zuid-Holland",
+    h2: "Winkelklimaat waar retailers op vertrouwen",
     indicators: trustIndicators,
   },
   related: [
@@ -668,7 +664,7 @@ export const aircoShowroom: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Showroom- en presentatieprojecten",
+    h2: "Ervaring met showrooms en presentatieruimtes",
     indicators: trustIndicators,
   },
   related: [

@@ -91,10 +91,6 @@ export const businessAC: ServicePageContent = {
   proof: {
     h2: "Commercial installations we stand behind",
     indicators: trustIndicators,
-    image: {
-      src: "/images/commercial-installation.webp",
-      alt: "Outdoor units of a commercial air conditioning installation",
-    },
   },
   related: [
     {
@@ -243,7 +239,7 @@ export const aircoKantoor: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Office projects in Zuid-Holland",
+    h2: "An office climate businesses count on",
     indicators: trustIndicators,
   },
   related: [
@@ -392,7 +388,7 @@ export const aircoBedrijfspand: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Commercial buildings we have fitted out",
+    h2: "Experience with commercial buildings across the region",
     indicators: trustIndicators,
   },
   related: [
@@ -530,7 +526,7 @@ export const aircoWinkel: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Retail projects in Zuid-Holland",
+    h2: "A store climate retailers rely on",
     indicators: trustIndicators,
   },
   related: [
@@ -668,7 +664,7 @@ export const aircoShowroom: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Showroom and presentation projects",
+    h2: "Experience with showrooms and presentation spaces",
     indicators: trustIndicators,
   },
   related: [

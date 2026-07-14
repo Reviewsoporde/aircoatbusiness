@@ -5,14 +5,16 @@ export default function NotFound() {
   const t = useTranslations("notFound");
 
   return (
-    <section className="airflow-lines bg-ink py-28 text-white">
+    <section className="grain glow-azure relative isolate overflow-hidden bg-ink py-32 text-white lg:py-40">
       <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
-        <p className="font-mono text-6xl font-medium text-azure-bright">404</p>
-        <h1 className="font-display mt-6 text-3xl font-semibold">{t("title")}</h1>
-        <p className="mt-4 text-mist">{t("description")}</p>
+        <p className="font-mono text-7xl tabular-nums text-azure-bright">404</p>
+        <h1 className="font-display mt-8 text-3xl font-medium text-balance sm:text-4xl">
+          {t("title")}
+        </h1>
+        <p className="mt-5 leading-relaxed text-mist">{t("description")}</p>
         <Link
           href="/"
-          className="mt-10 inline-block bg-azure px-6 py-3.5 text-sm font-semibold text-ink transition-colors hover:bg-azure-bright"
+          className="mt-12 inline-block bg-azure px-7 py-4 font-mono text-xs font-semibold tracking-[0.14em] text-ink uppercase transition-all duration-300 hover:bg-azure-bright active:scale-[0.98]"
         >
           {t("backHome")}
         </Link>

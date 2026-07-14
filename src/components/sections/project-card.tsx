@@ -10,43 +10,46 @@ import type { Project } from "@/content/types";
  */
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="flex flex-col overflow-hidden border border-border bg-white">
+    <article className="group flex flex-col overflow-hidden border border-ink/5 bg-white shadow-card transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-card-hover">
       {project.image ? (
-        <div className="relative aspect-[16/10]">
+        <div className="relative aspect-[16/10] overflow-hidden">
           <Image
             src={project.image.src}
             alt={project.image.alt}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover"
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
           />
         </div>
       ) : (
-        <div className="airflow-lines flex aspect-[16/10] items-end bg-ink p-5">
+        <div className="airflow-lines grain relative flex aspect-[16/10] items-end bg-ink p-6">
           <p className="font-mono text-xs uppercase tracking-[0.18em] text-mist">
             {project.system}
           </p>
         </div>
       )}
-      <div className="flex flex-1 flex-col p-6">
+      <div className="flex flex-1 flex-col p-7">
         <p className="eyebrow text-azure-deep">
           {project.type} · {project.location}
         </p>
-        <h3 className="mt-3 font-display text-lg font-semibold text-ink">
+        <h3 className="font-display mt-4 text-xl leading-snug font-medium text-ink">
           {project.title}
         </h3>
-        <p className="mt-2 font-mono text-xs tracking-wide text-slate-ink">
+        <p className="mt-2.5 font-mono text-xs tracking-wide text-slate-ink">
           {project.system}
         </p>
-        <p className="mt-3 flex-1 text-sm leading-relaxed text-slate-ink">
+        <p className="mt-3.5 flex-1 text-sm leading-relaxed text-slate-ink">
           {project.summary}
         </p>
         <Link
           href={project.serviceHref}
-          className="group mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-azure-deep hover:text-ink"
+          className="group/link mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-azure-deep transition-colors hover:text-ink"
         >
           {project.serviceLinkLabel}
-          <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden />
+          <ArrowRight
+            className="size-4 transition-transform duration-300 group-hover/link:translate-x-1"
+            aria-hidden
+          />
         </Link>
       </div>
     </article>

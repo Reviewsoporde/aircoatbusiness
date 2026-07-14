@@ -62,7 +62,7 @@ export default async function AboutPage({ params }: Props) {
       <Section variant="dark" h2={overOnsPage.team.h2} intro={overOnsPage.team.body}>
         <div className="grid gap-5 sm:grid-cols-2">
           {overOnsPage.team.images.map((image) => (
-            <div key={image.src} className="relative aspect-[4/3] overflow-hidden border border-steel">
+            <div key={image.src} className="relative aspect-[4/3] overflow-hidden border border-white/10">
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -73,7 +73,7 @@ export default async function AboutPage({ params }: Props) {
             </div>
           ))}
         </div>
-        <div className="mt-12">
+        <div className="mt-14">
           <CtaLink ctaKey="planConsultation" variant="azure" arrow />
         </div>
       </Section>

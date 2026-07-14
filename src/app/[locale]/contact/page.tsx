@@ -66,6 +66,7 @@ export default async function ContactPage({ params }: Props) {
           h1: contactPage.hero.h1,
           intro: contactPage.hero.intro,
           cta: "requestQuote",
+          ctaAnchor: "#offerte",
           trustPoints: [],
           urgent: true,
         }}
@@ -73,7 +74,7 @@ export default async function ContactPage({ params }: Props) {
 
       <Section variant="paper" h2={contactPage.form.h2} id="offerte">
         <div className="grid gap-10 lg:grid-cols-[1fr_minmax(0,340px)]">
-          <div className="border border-border bg-white p-6 sm:p-10">
+          <div className="border border-ink/5 bg-white p-6 shadow-panel sm:p-12">
             <LeadForm />
           </div>
           <div className="space-y-5">
@@ -82,7 +83,7 @@ export default async function ContactPage({ params }: Props) {
                 <PhoneLink
                   key={card.label}
                   phone={siteConfig.phone}
-                  className="flex items-center gap-4 border border-border bg-white p-5 font-mono text-sm text-ink transition-colors hover:border-azure-deep"
+                  className="flex items-center gap-4 border border-ink/5 bg-white p-5 font-mono text-sm text-ink shadow-card transition-colors duration-200 hover:border-azure-deep"
                 >
                   <card.icon className="size-5 text-azure-deep" aria-hidden />
                   {card.label}
@@ -91,14 +92,14 @@ export default async function ContactPage({ params }: Props) {
                 <a
                   key={card.label}
                   href={card.href}
-                  className="flex items-center gap-4 border border-border bg-white p-5 font-mono text-sm text-ink transition-colors hover:border-azure-deep"
+                  className="flex items-center gap-4 border border-ink/5 bg-white p-5 font-mono text-sm text-ink shadow-card transition-colors duration-200 hover:border-azure-deep"
                 >
                   <card.icon className="size-5 text-azure-deep" aria-hidden />
                   {card.label}
                 </a>
               ),
             )}
-            <div className="border border-steel bg-ink p-6 text-white">
+            <div className="grain glow-azure relative isolate overflow-hidden bg-ink p-7 text-white">
               <p className="eyebrow mb-5 text-azure-bright">{tAside("title")}</p>
               <ul className="space-y-4 text-sm text-mist">
                 <li className="flex items-start gap-3">
@@ -116,7 +117,7 @@ export default async function ContactPage({ params }: Props) {
                   {tAside("hours")}
                 </li>
               </ul>
-              <p className="mt-5 border-t border-steel pt-5 font-mono text-xs leading-relaxed text-mist">
+              <p className="mt-5 border-t border-white/10 pt-5 font-mono text-xs leading-relaxed text-mist">
                 {tFooter("kvk")} {siteConfig.kvk}
                 <br />
                 {tFooter("btw")} {siteConfig.btw}

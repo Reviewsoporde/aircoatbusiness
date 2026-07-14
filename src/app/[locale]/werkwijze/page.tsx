@@ -55,13 +55,13 @@ export default async function ProcessPage({ params }: Props) {
           {werkwijzePage.steps.map((step, i) => (
             <li
               key={step.title}
-              className="grid gap-6 border border-border bg-white p-7 sm:grid-cols-[80px_1fr] sm:p-9"
+              className="grid gap-6 border border-ink/5 bg-white p-7 shadow-card sm:grid-cols-[96px_1fr] sm:p-10"
             >
-              <p className="font-mono text-3xl font-medium text-azure-deep">
+              <p className="font-mono text-3xl text-azure-deep">
                 {String(i + 1).padStart(2, "0")}
               </p>
               <div>
-                <h2 className="font-display text-xl font-semibold text-ink">
+                <h2 className="font-display text-2xl font-medium text-ink">
                   {step.title}
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-slate-ink sm:text-base">

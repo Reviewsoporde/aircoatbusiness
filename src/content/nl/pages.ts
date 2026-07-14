@@ -213,7 +213,7 @@ export const overOnsPage: AboutPageContent = {
         tag: "Kwaliteit",
         title: "Premium A-merken",
         description:
-          "Wij installeren uitsluitend Daikin, Mitsubishi Electric, LG en Toshiba.",
+          "Wij installeren uitsluitend gevestigde A-merken, waaronder Daikin, Mitsubishi Electric, LG en Toshiba.",
       },
       {
         tag: "Service",
@@ -227,8 +227,8 @@ export const overOnsPage: AboutPageContent = {
     h2: "Het team",
     body: "Dezelfde monteurs die uw installatie plaatsen, komen ook voor het onderhoud. Zo kennen we uw pand — en u weet wie er over de vloer komt.",
     images: [
-      { src: "/images/team-1.webp", alt: "Monteur van Airco@Business aan het werk" },
-      { src: "/images/team-2.webp", alt: "Team van Airco@Business" },
+      { src: "/images/team-1.webp", alt: "Servicebus van het team op locatie bij een klant" },
+      { src: "/images/team-2.webp", alt: "Het voltallige team van monteurs en adviseurs" },
     ],
   },
 };
@@ -262,7 +262,7 @@ export const faqPage: FaqPageContent = {
         {
           question: "Welke merken installeren jullie?",
           answer:
-            "Uitsluitend premium A-merken: Daikin, Mitsubishi Electric, LG en Toshiba. Betrouwbaarheid en beschikbaarheid van onderdelen wegen voor zakelijk gebruik zwaar.",
+            "Uitsluitend premium A-merken: Daikin, Mitsubishi Electric, Mitsubishi Heavy Industries, LG en Toshiba. Betrouwbaarheid en beschikbaarheid van onderdelen wegen voor zakelijk gebruik zwaar.",
         },
       ],
     },

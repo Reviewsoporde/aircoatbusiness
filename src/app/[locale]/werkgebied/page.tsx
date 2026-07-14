@@ -51,11 +51,11 @@ export default async function ServiceAreaPage({ params }: Props) {
           {werkgebiedPage.cities.map((city) => (
             <li
               key={city.name}
-              className="flex items-start gap-3 border border-border bg-white p-5"
+              className="flex items-start gap-4 border border-ink/5 bg-white p-6 shadow-card"
             >
-              <MapPin className="mt-0.5 size-4 shrink-0 text-azure-deep" aria-hidden />
+              <MapPin className="mt-1 size-4 shrink-0 text-azure-deep" aria-hidden />
               <div>
-                <h3 className="font-display text-base font-semibold text-ink">
+                <h3 className="font-display text-lg font-medium text-ink">
                   {city.name}
                 </h3>
                 <p className="mt-1 text-sm leading-relaxed text-slate-ink">

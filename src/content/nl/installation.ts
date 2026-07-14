@@ -91,10 +91,6 @@ export const installatie: ServicePageContent = {
   proof: {
     h2: "Installaties waar wij trots op zijn",
     indicators: trustIndicators,
-    image: {
-      src: "/images/commercial-installation.webp",
-      alt: "Afgeronde zakelijke airco-installatie",
-    },
   },
   related: [
     {
@@ -230,7 +226,7 @@ export const zakelijkeInstallatie: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Recente installatieprojecten",
+    h2: "Installatiewerk waarop u kunt bouwen",
     indicators: trustIndicators,
   },
   related: [
@@ -504,7 +500,7 @@ export const kanaalAirco: ServicePageContent = {
     steps: standardProcess,
   },
   proof: {
-    h2: "Kanaalprojecten in de praktijk",
+    h2: "Kanaalsystemen in de praktijk",
     indicators: trustIndicators,
   },
   related: [

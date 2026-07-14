@@ -86,6 +86,8 @@ export type ServicePageContent = {
     h1: string;
     intro: string;
     cta: CtaKey;
+    /** Same-page anchor for the primary CTA (pages that host the lead form themselves) */
+    ctaAnchor?: `#${string}`;
     secondary?: { label: string; href: AppPathname };
     trustPoints: string[];
     image?: ImgRef;

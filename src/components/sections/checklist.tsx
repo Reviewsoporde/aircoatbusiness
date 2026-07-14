@@ -1,23 +1,21 @@
 import { Check } from "lucide-react";
+import { Reveal } from "./reveal";
 
 /** Scope / technical-fit checklist — 4–6 items per docs/page-templates.md §3.4 */
 export function Checklist({ items }: { items: string[] }) {
   return (
-    <ul className="grid gap-4 sm:grid-cols-2">
+    <Reveal group as="ul" className="grid gap-x-12 sm:grid-cols-2">
       {items.map((item) => (
         <li
           key={item}
-          className="flex items-start gap-3 border border-border bg-white p-5"
+          className="flex items-start gap-4 border-t border-ink/10 py-5"
         >
-          <span
-            aria-hidden
-            className="mt-0.5 flex size-5 shrink-0 items-center justify-center bg-azure/10"
-          >
-            <Check className="size-3.5 text-azure-deep" />
+          <Check className="mt-0.5 size-4 shrink-0 text-azure-deep" aria-hidden />
+          <span className="text-sm leading-relaxed text-ink sm:text-base">
+            {item}
           </span>
-          <span className="text-sm leading-relaxed text-ink">{item}</span>
         </li>
       ))}
-    </ul>
+    </Reveal>
   );
 }

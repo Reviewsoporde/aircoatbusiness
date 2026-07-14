@@ -213,7 +213,7 @@ export const overOnsPage: AboutPageContent = {
         tag: "Quality",
         title: "Premium A-brands",
         description:
-          "We exclusively install Daikin, Mitsubishi Electric, LG and Toshiba.",
+          "We exclusively install established A-brands, including Daikin, Mitsubishi Electric, LG and Toshiba.",
       },
       {
         tag: "Service",
@@ -227,8 +227,8 @@ export const overOnsPage: AboutPageContent = {
     h2: "The team",
     body: "The same engineers who install your system also come back for the maintenance. That way we know your building — and you know who is coming through the door.",
     images: [
-      { src: "/images/team-1.webp", alt: "Airco@Business engineer at work" },
-      { src: "/images/team-2.webp", alt: "The Airco@Business team" },
+      { src: "/images/team-1.webp", alt: "The team's service van on site at a client" },
+      { src: "/images/team-2.webp", alt: "The full team of engineers and advisors" },
     ],
   },
 };
@@ -262,7 +262,7 @@ export const faqPage: FaqPageContent = {
         {
           question: "Which brands do you install?",
           answer:
-            "Exclusively premium A-brands: Daikin, Mitsubishi Electric, LG and Toshiba. Reliability and the availability of parts weigh heavily for business use.",
+            "Exclusively premium A-brands: Daikin, Mitsubishi Electric, Mitsubishi Heavy Industries, LG and Toshiba. Reliability and the availability of parts weigh heavily for business use.",
         },
       ],
     },

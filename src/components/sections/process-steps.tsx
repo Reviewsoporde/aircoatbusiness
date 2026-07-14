@@ -1,24 +1,30 @@
 import type { Step } from "@/content/types";
 import { cn } from "@/lib/utils";
+import { Reveal } from "./reveal";
 
 type Props = { steps: Step[]; variant?: "light" | "dark" };
 
 /**
  * Numbered process — numbering is semantic here: the client journey is a real
  * sequence (consultation → assessment → proposal → installation → aftercare).
+ * Open columns over hairline rules; no boxes.
  */
 export function ProcessSteps({ steps, variant = "dark" }: Props) {
   const dark = variant === "dark";
   return (
-    <ol className="grid gap-px overflow-hidden border border-steel bg-steel sm:grid-cols-2 lg:grid-cols-4 [&:has(>:nth-child(5))]:lg:grid-cols-5">
+    <Reveal
+      group
+      as="ol"
+      className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4 [&:has(>:nth-child(5))]:lg:grid-cols-5"
+    >
       {steps.map((step, i) => (
         <li
           key={step.title}
-          className={cn("p-6 lg:p-7", dark ? "bg-carbon" : "bg-white")}
+          className={cn("border-t pt-6", dark ? "border-white/15" : "border-ink/15")}
         >
           <p
             className={cn(
-              "font-mono text-xs tracking-[0.18em]",
+              "font-mono text-sm tracking-[0.18em]",
               dark ? "text-azure-bright" : "text-azure-deep",
             )}
           >
@@ -26,7 +32,7 @@ export function ProcessSteps({ steps, variant = "dark" }: Props) {
           </p>
           <h3
             className={cn(
-              "mt-4 font-display text-base font-semibold",
+              "font-display mt-6 text-xl font-medium",
               dark ? "text-white" : "text-ink",
             )}
           >
@@ -34,7 +40,7 @@ export function ProcessSteps({ steps, variant = "dark" }: Props) {
           </h3>
           <p
             className={cn(
-              "mt-2.5 text-sm leading-relaxed",
+              "mt-3 text-sm leading-relaxed",
               dark ? "text-mist" : "text-slate-ink",
             )}
           >
@@ -42,6 +48,6 @@ export function ProcessSteps({ steps, variant = "dark" }: Props) {
           </p>
         </li>
       ))}
-    </ol>
+    </Reveal>
   );
 }

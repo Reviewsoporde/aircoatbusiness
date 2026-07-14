@@ -12,13 +12,17 @@ import type { FAQItem } from "@/content/types";
  */
 export function FaqSection({ items }: { items: FAQItem[] }) {
   return (
-    <Accordion type="single" collapsible className="border-t border-border">
+    <Accordion type="single" collapsible className="border-t border-ink/10">
       {items.map((item) => (
-        <AccordionItem key={item.question} value={item.question}>
-          <AccordionTrigger className="py-5 text-left font-display text-base font-semibold text-ink hover:text-azure-deep hover:no-underline">
+        <AccordionItem
+          key={item.question}
+          value={item.question}
+          className="border-ink/10"
+        >
+          <AccordionTrigger className="font-display py-6 text-left text-lg leading-snug font-medium text-ink transition-colors hover:text-azure-deep hover:no-underline sm:text-xl">
             {item.question}
           </AccordionTrigger>
-          <AccordionContent className="pb-5 text-sm leading-relaxed text-slate-ink sm:text-base">
+          <AccordionContent className="max-w-2xl pb-7 text-sm leading-relaxed text-slate-ink sm:text-base">
             {item.answer}
           </AccordionContent>
         </AccordionItem>

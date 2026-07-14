@@ -74,26 +74,28 @@ export function Footer() {
   const label = (l: FooterLink) => (l.ns === "nav" ? tNav(l.labelKey) : t(l.labelKey));
 
   return (
-    <footer className="airflow-lines bg-ink text-white">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <footer className="airflow-lines grain isolate overflow-hidden border-t border-white/8 bg-ink text-white">
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
         {/* Brand row */}
-        <div className="mb-12 flex flex-col justify-between gap-8 border-b border-steel pb-12 lg:flex-row lg:items-center">
-          <div className="max-w-md">
+        <div className="mb-14 flex flex-col justify-between gap-10 border-b border-white/8 pb-14 lg:flex-row lg:items-center">
+          <div className="max-w-lg">
             <Image
               src="/images/logo.png"
               alt="Airco@Business"
               width={200}
               height={63}
-              className="mb-4 h-10 w-auto"
+              className="mb-6 h-10 w-auto"
             />
-            <p className="text-sm leading-relaxed text-mist">{t("tagline")}</p>
+            <p className="font-display text-xl leading-relaxed font-medium text-white/90 sm:text-2xl">
+              {t("tagline")}
+            </p>
           </div>
           <div className="flex items-center gap-4">
             <a
               href={siteConfig.socials.instagram}
               rel="noopener"
               aria-label="Instagram"
-              className="border border-steel p-2.5 text-mist transition-colors hover:border-azure hover:text-azure-bright"
+              className="border border-white/15 p-3 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
             >
               <InstagramIcon className="size-4" />
             </a>
@@ -101,7 +103,7 @@ export function Footer() {
               href={siteConfig.socials.facebook}
               rel="noopener"
               aria-label="Facebook"
-              className="border border-steel p-2.5 text-mist transition-colors hover:border-azure hover:text-azure-bright"
+              className="border border-white/15 p-3 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
             >
               <FacebookIcon className="size-4" />
             </a>
@@ -109,7 +111,7 @@ export function Footer() {
               href={siteConfig.socials.linkedin}
               rel="noopener"
               aria-label="LinkedIn"
-              className="border border-steel p-2.5 text-mist transition-colors hover:border-azure hover:text-azure-bright"
+              className="border border-white/15 p-3 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
             >
               <LinkedinIcon className="size-4" />
             </a>
@@ -162,7 +164,7 @@ export function Footer() {
         </div>
 
         {/* Contact + legal */}
-        <div className="mt-14 border-t border-steel pt-8">
+        <div className="mt-16 border-t border-white/8 pt-10">
           <div className="flex flex-col justify-between gap-6 lg:flex-row">
             <address className="font-mono text-xs not-italic leading-loose text-mist">
               {siteConfig.name} · {siteConfig.address.street},{" "}
