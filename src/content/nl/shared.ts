@@ -1,6 +1,6 @@
 import type { Step } from "../types";
 
-/** Factual trust indicators — no fabricated reviews; client reviews follow later. */
+/** Factual trust indicators; verified Google reviews live in the homepage content. */
 export const trustIndicators = [
   "STEK-gecertificeerde monteurs met jarenlange ervaring in zakelijke installaties",
   "Premium A-merken: Daikin, Mitsubishi Electric, LG en Toshiba",

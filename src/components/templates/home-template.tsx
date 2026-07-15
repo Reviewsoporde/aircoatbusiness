@@ -143,7 +143,7 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         </Section>
       )}
 
-      {/* 12 — Google review widget preview. Replace mock copy with verified reviews before launch. */}
+      {/* 12 — Verified Google reviews from the Airco@home team. */}
       <Section
         variant="dark"
         h2={content.reviews.h2}

@@ -62,8 +62,10 @@ export function HomeHero({ hero, reviews }: Props) {
           <div className="rise mt-6 [animation-delay:480ms]">
             <GoogleReviewBadge
               platformLabel={reviews.platformLabel}
-              previewLabel={reviews.previewLabel}
+              reviewCountLabel={reviews.reviewCountLabel}
+              ratingValue={reviews.ratingValue}
               ratingLabel={reviews.ratingLabel}
+              reviewUrl={reviews.reviewUrl}
               compact
             />
           </div>

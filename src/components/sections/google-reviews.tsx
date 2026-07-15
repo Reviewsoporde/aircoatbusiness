@@ -8,7 +8,11 @@ const GOOGLE_MARK_URL =
 
 type BadgeProps = Pick<
   ReviewSection,
-  "platformLabel" | "previewLabel" | "ratingLabel"
+  | "platformLabel"
+  | "reviewCountLabel"
+  | "ratingValue"
+  | "ratingLabel"
+  | "reviewUrl"
 > & {
   className?: string;
   compact?: boolean;
@@ -24,16 +28,41 @@ function GoogleMark({ className }: { className?: string }) {
   );
 }
 
-function Stars({ className }: { className?: string }) {
+function Stars({
+  rating = 5,
+  className,
+}: {
+  rating?: number;
+  className?: string;
+}) {
+  const safeRating = Math.max(0, Math.min(5, rating));
+
   return (
-    <span className={cn("flex items-center gap-0.5", className)} aria-hidden>
-      {Array.from({ length: 5 }).map((_, index) => (
-        <Star
-          key={index}
-          className="size-3.5 fill-[#fbbc04] text-[#fbbc04]"
-          strokeWidth={1.75}
-        />
-      ))}
+    <span
+      className={cn("relative inline-flex shrink-0", className)}
+      role="img"
+      aria-label={`${safeRating} / 5`}
+    >
+      <span aria-hidden className="flex items-center gap-0.5 text-white/28">
+        {Array.from({ length: 5 }).map((_, index) => (
+          <Star key={index} className="size-3.5" strokeWidth={1.75} />
+        ))}
+      </span>
+      <span
+        aria-hidden
+        className="absolute inset-y-0 left-0 overflow-hidden"
+        style={{ width: `${(safeRating / 5) * 100}%` }}
+      >
+        <span className="flex w-max items-center gap-0.5">
+          {Array.from({ length: 5 }).map((_, index) => (
+            <Star
+              key={index}
+              className="size-3.5 fill-[#fbbc04] text-[#fbbc04]"
+              strokeWidth={1.75}
+            />
+          ))}
+        </span>
+      </span>
     </span>
   );
 }
@@ -50,22 +79,27 @@ function reviewerInitials(author: string) {
 
 export function GoogleReviewBadge({
   platformLabel,
-  previewLabel,
+  reviewCountLabel,
+  ratingValue,
   ratingLabel,
+  reviewUrl,
   className,
   compact = false,
 }: BadgeProps) {
   return (
-    <div
+    <a
+      href={reviewUrl}
+      target="_blank"
+      rel="noreferrer noopener nofollow"
       className={cn(
-        "inline-flex w-fit items-center rounded-full border border-white/14 bg-ink/72 text-white shadow-[inset_0_1px_0_rgb(255_255_255/0.08)] backdrop-blur-md",
+        "inline-flex w-fit items-center rounded-full border border-white/14 bg-ink/72 text-white shadow-[inset_0_1px_0_rgb(255_255_255/0.08)] backdrop-blur-md transition duration-200 hover:-translate-y-0.5 hover:border-azure/60 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure",
         compact ? "gap-2.5 px-4 py-2.5" : "gap-3 px-5 py-3",
         className,
       )}
-      aria-label={`${ratingLabel} ${platformLabel}. ${previewLabel}`}
+      aria-label={`${ratingLabel} ${platformLabel}. ${reviewCountLabel}`}
     >
       <GoogleMark className={compact ? "size-4" : "size-5"} />
-      <Stars />
+      <Stars rating={ratingValue} />
       <span className="font-display text-sm font-semibold tabular-nums">
         {ratingLabel}
       </span>
@@ -74,9 +108,9 @@ export function GoogleReviewBadge({
         {platformLabel}
       </span>
       <span className="rounded-full bg-white/9 px-2 py-1 text-[0.625rem] font-semibold text-white/62">
-        {previewLabel}
+        {reviewCountLabel}
       </span>
-    </div>
+    </a>
   );
 }
 
@@ -86,8 +120,10 @@ export function GoogleReviews({ reviews }: { reviews: ReviewSection }) {
       <Reveal>
         <GoogleReviewBadge
           platformLabel={reviews.platformLabel}
-          previewLabel={reviews.previewLabel}
+          reviewCountLabel={reviews.reviewCountLabel}
+          ratingValue={reviews.ratingValue}
           ratingLabel={reviews.ratingLabel}
+          reviewUrl={reviews.reviewUrl}
         />
       </Reveal>
 
@@ -141,10 +177,18 @@ export function GoogleReviews({ reviews }: { reviews: ReviewSection }) {
                       )}
                     </span>
                   </div>
-                  <GoogleMark className="size-5" />
+                  <a
+                    href={review.sourceUrl ?? reviews.reviewUrl}
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    className="rounded-full p-1 transition-transform duration-200 hover:scale-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azure"
+                    aria-label={`${review.author} — ${reviews.platformLabel}`}
+                  >
+                    <GoogleMark className="size-5" />
+                  </a>
                 </div>
                 <div className="mt-6 flex flex-wrap items-center gap-3">
-                  <Stars />
+                  <Stars rating={review.rating} />
                   {review.dateLabel && (
                     <span
                       className={cn(
@@ -182,7 +226,7 @@ export function GoogleReviews({ reviews }: { reviews: ReviewSection }) {
                     "lg:mt-0 lg:border-l lg:border-white/10 lg:py-2 lg:pl-14 lg:pr-8 lg:text-[1.35rem] lg:leading-[1.55]",
                 )}
               >
-                “{review.text}”
+                &ldquo;{review.text}&rdquo;
               </blockquote>
             </div>
           </article>

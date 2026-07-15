@@ -13,6 +13,7 @@ import { PageHero } from "@/components/sections/page-hero";
 import { Section } from "@/components/sections/section-shell";
 import { CardGrid } from "@/components/sections/card-grid";
 import { CtaLink } from "@/components/sections/cta-link";
+import { GoogleReviews } from "@/components/sections/google-reviews";
 import { aboutCardsWithVisuals } from "@/lib/page-visuals";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -29,7 +30,7 @@ export default async function AboutPage({ params }: Props) {
   setRequestLocale(locale);
 
   const t = await getTranslations("common");
-  const { overOnsPage } = getBundle(locale);
+  const { home, overOnsPage } = getBundle(locale);
   const teamImages = overOnsPage.team.images.slice(0, 2);
   const uspCards = aboutCardsWithVisuals(overOnsPage.usps.cards, locale);
 
@@ -61,6 +62,14 @@ export default async function AboutPage({ params }: Props) {
       </Section>
       <Section variant="light" h2={overOnsPage.usps.h2}>
         <CardGrid cards={uspCards} />
+      </Section>
+      <Section
+        variant="paper"
+        h2={home.reviews.h2}
+        intro={home.reviews.intro}
+        className="border-t border-ink/8"
+      >
+        <GoogleReviews reviews={home.reviews} />
       </Section>
       <Section variant="dark" h2={overOnsPage.team.h2} intro={overOnsPage.team.body}>
         <div className="grid overflow-hidden rounded-[32px] border border-white/12 bg-carbon lg:grid-cols-12">

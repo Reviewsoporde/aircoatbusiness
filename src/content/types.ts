@@ -68,14 +68,17 @@ export type Review = {
   dateLabel?: string;
   text: string;
   serviceLabel: string;
+  sourceUrl?: string;
 };
 
 export type ReviewSection = {
   h2: string;
   intro: string;
   platformLabel: string;
-  previewLabel: string;
+  reviewCountLabel: string;
+  ratingValue: number;
   ratingLabel: string;
+  reviewUrl: string;
   items: Review[];
 };
 
