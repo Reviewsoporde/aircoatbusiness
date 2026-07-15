@@ -18,7 +18,8 @@ export const businessAC: ServicePageContent = {
     secondary: { label: "Book a consultation", href: "/contact" },
     trustPoints: ["On-site advice", "STEK-certified", "Premium A-brands"],
     image: {
-      src: "/images/commercial-installation.webp",
+      src: "/images/generated/commercial-office-hero.webp",
+      position: "58% 50%",
       alt: "Commercial air conditioning installation in a business space",
     },
   },

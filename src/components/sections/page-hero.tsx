@@ -4,35 +4,70 @@ import type { ServicePageContent } from "@/content/types";
 import { siteConfig } from "@/lib/site-config";
 import { PhoneLink } from "@/components/layout/phone-link";
 import { CtaLink } from "./cta-link";
-import { Reveal } from "./reveal";
+import { cn } from "@/lib/utils";
 
 type Props = { hero: ServicePageContent["hero"] };
 
-/** Dark hero band for all service pages — compact, one H1, CTA per page intent. */
+/**
+ * Dark hero band for all service pages — compact, one H1, CTA per page intent.
+ * Content rises in sequence on page load (CSS-only, reduced-motion aware).
+ */
 export function PageHero({ hero }: Props) {
+  const variant = hero.variant ?? (hero.urgent ? "urgent" : hero.image ? "split" : "type-led");
+  const imageLed = variant === "image-led";
+  const splitImage = !imageLed && Boolean(hero.image);
+
   return (
     <section className="grain relative isolate overflow-hidden bg-ink text-white">
-      <div aria-hidden className="glow-azure absolute inset-0 -z-10" />
-      <div className="mx-auto grid max-w-7xl gap-14 px-4 pt-16 pb-20 sm:px-6 lg:grid-cols-[1fr_minmax(0,440px)] lg:items-center lg:px-8 lg:pt-24 lg:pb-28">
-        <Reveal>
-          <p className="eyebrow mb-6 flex items-center gap-3 text-azure-bright">
-            <span aria-hidden className="h-px w-8 bg-azure-bright" />
+      {imageLed && hero.image ? (
+        <>
+          <Image
+            src={hero.image.src}
+            alt={hero.image.alt}
+            fill
+            priority
+            sizes="100vw"
+            className="hero-zoom -z-20 object-cover"
+            style={{ objectPosition: hero.image.position }}
+          />
+          <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgb(7_9_11/0.95)_0%,rgb(7_9_11/0.72)_52%,rgb(7_9_11/0.2)_100%)]" />
+        </>
+      ) : (
+        <div aria-hidden className="glow-azure absolute inset-0 -z-10" />
+      )}
+      <div
+        className={cn(
+          "mx-auto grid gap-12 px-4 pt-16 pb-20 sm:px-6 lg:items-center lg:px-8 lg:pt-24 lg:pb-28",
+          imageLed
+            ? "min-h-[680px] max-w-7xl lg:grid-cols-12"
+            : splitImage
+              ? "max-w-[90rem] lg:grid-cols-[minmax(0,1fr)_minmax(26rem,0.85fr)] xl:grid-cols-[minmax(0,1fr)_minmax(34rem,0.95fr)]"
+              : "max-w-7xl",
+        )}
+      >
+        <div
+          className={cn(
+            imageLed &&
+              "hero-lead-glass rounded-[32px] p-7 sm:p-10 lg:col-span-7 lg:p-12",
+          )}
+        >
+          <p className="rise eyebrow mb-6 text-azure-bright">
             {hero.eyebrow}
           </p>
-          <h1 className="font-display text-4xl font-medium leading-[1.06] text-balance sm:text-5xl lg:text-6xl">
+          <h1 className="rise font-display max-w-4xl text-4xl font-semibold leading-[1.02] text-balance sm:text-5xl lg:text-6xl [animation-delay:100ms]">
             {hero.h1}
           </h1>
-          <p className="mt-7 max-w-2xl text-base leading-relaxed text-mist sm:text-lg">
+          <p className="rise mt-7 max-w-2xl text-base leading-relaxed text-mist sm:text-lg [animation-delay:200ms]">
             {hero.intro}
           </p>
-          <div className="mt-9 flex flex-wrap items-center gap-4">
+          <div className="rise mt-9 flex flex-wrap items-center gap-4 [animation-delay:300ms]">
             <CtaLink ctaKey={hero.cta} anchor={hero.ctaAnchor} variant="azure" arrow />
             {hero.urgent ? (
               <PhoneLink
                 phone={siteConfig.phone}
-                className="inline-flex items-center gap-2.5 border border-white/25 px-7 py-4 font-mono text-xs font-semibold tracking-[0.14em] text-white uppercase transition-all duration-300 hover:border-white/70 hover:bg-white/5 active:scale-[0.98]"
+                className="inline-flex items-center gap-2.5 rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/10 active:scale-[0.98]"
               >
-                <Phone className="size-3.5" aria-hidden />
+                <Phone className="size-4" aria-hidden />
                 {siteConfig.phoneDisplay}
               </PhoneLink>
             ) : (
@@ -46,7 +81,7 @@ export function PageHero({ hero }: Props) {
             )}
           </div>
           {hero.trustPoints.length > 0 && (
-            <ul className="mt-11 flex flex-wrap gap-x-8 gap-y-3">
+            <ul className="rise mt-11 flex flex-wrap gap-x-8 gap-y-3 [animation-delay:400ms]">
               {hero.trustPoints.map((point) => (
                 <li
                   key={point}
@@ -58,24 +93,21 @@ export function PageHero({ hero }: Props) {
               ))}
             </ul>
           )}
-        </Reveal>
-        {hero.image && (
-          <Reveal delay={200} className="relative hidden lg:block">
-            <div
-              aria-hidden
-              className="absolute -right-4 -bottom-4 h-full w-full border border-azure/25"
-            />
-            <div className="relative aspect-[4/3] overflow-hidden">
+        </div>
+        {splitImage && hero.image && (
+          <div className="rise relative [animation-delay:300ms]">
+            <div className="relative aspect-[16/10] overflow-hidden rounded-[32px] border border-white/12 shadow-panel">
               <Image
                 src={hero.image.src}
                 alt={hero.image.alt}
                 fill
                 priority
-                sizes="440px"
+                sizes="(max-width: 1024px) 100vw, (max-width: 1440px) 48vw, 680px"
                 className="object-cover"
+                style={{ objectPosition: hero.image.position }}
               />
             </div>
-          </Reveal>
+          </div>
         )}
       </div>
     </section>

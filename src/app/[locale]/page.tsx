@@ -25,7 +25,9 @@ export default async function HomePage({ params }: Props) {
   return (
     <HomeTemplate
       content={bundle.home}
-      featuredProjects={bundle.projects.slice(0, 3)}
+      featuredProjects={bundle.projects
+        .filter((project) => project.status === "published")
+        .slice(0, 3)}
       locale={locale}
     />
   );

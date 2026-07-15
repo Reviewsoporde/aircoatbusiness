@@ -58,16 +58,28 @@ export default async function FaqPage({ params }: Props) {
         }}
       />
       <Section variant="paper">
-        <div className="max-w-3xl space-y-14">
-          {faqPage.groups.map((group) => (
-            <div key={group.title}>
-              <h2 className="eyebrow mb-5 flex items-center gap-3 text-azure-deep">
-                <span aria-hidden className="h-px w-8 bg-azure-deep" />
-                {group.title}
-              </h2>
-              <FaqSection items={group.items} />
+        <div className="grid gap-12 lg:grid-cols-12">
+          <nav aria-label={faqPage.hero.h1} className="hidden lg:col-span-3 lg:block">
+            <div className="sticky top-28 rounded-[20px] border border-steel/12 bg-white p-3">
+              {faqPage.groups.map((group, index) => (
+                <a
+                  key={group.title}
+                  href={`#faq-group-${index + 1}`}
+                  className="flex min-h-11 items-center rounded-xl px-3 text-sm font-medium text-slate-ink transition-colors hover:bg-paper hover:text-ink"
+                >
+                  {group.title}
+                </a>
+              ))}
             </div>
-          ))}
+          </nav>
+          <div className="max-w-3xl space-y-14 lg:col-span-8 lg:col-start-5">
+            {faqPage.groups.map((group, index) => (
+              <div key={group.title} id={`faq-group-${index + 1}`} className="scroll-mt-28">
+                <h2 className="eyebrow mb-5 text-azure-deep">{group.title}</h2>
+                <FaqSection items={group.items} />
+              </div>
+            ))}
+          </div>
         </div>
         <div className="mt-14">
           <CtaLink ctaKey="planConsultation" variant="ink" arrow />

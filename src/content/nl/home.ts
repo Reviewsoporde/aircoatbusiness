@@ -7,12 +7,10 @@ export const home: HomeContent = {
       "Zakelijke airconditioning voor kantoren, bedrijfspanden, winkels en showrooms in Zuid-Holland. Advies, installatie en onderhoud door STEK-gecertificeerde monteurs. Vraag een offerte aan.",
   },
   hero: {
-    eyebrow: "Zakelijke airconditioning · Zuid-Holland",
+    eyebrow: "Zakelijke airconditioning in Zuid-Holland",
     h1: "Airco voor bedrijven in Zuid-Holland",
     intro:
-      "Airco@Business adviseert, installeert en onderhoudt airconditioning voor kantoren, bedrijfspanden, winkels en showrooms. Eén vaste partner voor een constant, comfortabel werkklimaat — van eerste advies tot langdurig onderhoud.",
-    readoutLabel: "Binnenklimaat · kantoortuin",
-    readoutCaption: "Constant werkklimaat, het hele jaar",
+      "Advies, installatie en onderhoud voor kantoren, bedrijfspanden, winkels en showrooms. Vanuit Voorschoten, voor bedrijven in heel Zuid-Holland.",
   },
   trustBar: [
     "Advies op maat",
@@ -35,14 +33,23 @@ export const home: HomeContent = {
           "Airconditioning afgestemd op uw type bedrijfsruimte: van kantoor tot showroom. Altijd op basis van advies op locatie.",
         href: "/zakelijke-airconditioning",
         linkLabel: "Zakelijke airconditioning",
+        image: {
+          src: "/images/generated/commercial-office-hero.webp",
+          alt: "Moderne zakelijke kantoorruimte met klimaatinstallatie",
+          position: "58% 50%",
+        },
       },
       {
         tag: "Installatie",
         title: "Installatie",
         description:
-          "Advies, systeemkeuze, planning en een nette montage door eigen, ervaren monteurs — met minimale verstoring van uw bedrijfsvoering.",
+          "Advies, systeemkeuze, planning en een nette montage door eigen, ervaren monteurs, met minimale verstoring van uw bedrijfsvoering.",
         href: "/installatie",
         linkLabel: "Zakelijke airco installatie",
+        image: {
+          src: "/images/generated/commercial-building.webp",
+          alt: "Zakelijke ontvangstruimte met geïntegreerde airconditioning",
+        },
       },
       {
         tag: "Onderhoud",
@@ -51,6 +58,11 @@ export const home: HomeContent = {
           "Preventief onderhoud, snelle reparaties en onderhoudscontracten die uw systemen betrouwbaar en efficiënt houden.",
         href: "/onderhoud",
         linkLabel: "Zakelijke airco onderhoud en service",
+        image: {
+          src: "/images/generated/maintenance-service.webp",
+          alt: "Onderhoud aan een zakelijke cassette-unit",
+          position: "58% 45%",
+        },
       },
     ],
   },
@@ -66,6 +78,11 @@ export const home: HomeContent = {
           "Een constante temperatuur voor geconcentreerd werk, ook in kantoortuinen en vergaderruimtes.",
         href: "/airco-kantoor",
         linkLabel: "Airco voor kantoren",
+        image: {
+          src: "/images/generated/commercial-office-hero.webp",
+          alt: "Kantoorruimte met een verzorgd binnenklimaat",
+          position: "58% 50%",
+        },
       },
       {
         tag: "Bedrijfspand",
@@ -74,6 +91,10 @@ export const home: HomeContent = {
           "Klimaatbeheersing voor complete panden met meerdere zones, verdiepingen en functies.",
         href: "/airco-bedrijfspand",
         linkLabel: "Airco voor bedrijfspanden",
+        image: {
+          src: "/images/generated/commercial-building.webp",
+          alt: "Moderne ontvangstruimte in een bedrijfspand",
+        },
       },
       {
         tag: "Winkel",
@@ -82,6 +103,10 @@ export const home: HomeContent = {
           "Comfort dat klanten langer laat verblijven, met systemen die onzichtbaar opgaan in het winkelbeeld.",
         href: "/airco-winkel",
         linkLabel: "Airco voor winkels",
+        image: {
+          src: "/images/generated/retail-cassette.webp",
+          alt: "Winkelruimte met cassette-airconditioning",
+        },
       },
       {
         tag: "Showroom",
@@ -90,6 +115,10 @@ export const home: HomeContent = {
           "Stabiel klimaat voor grote, open presentatieruimtes waar uitstraling telt.",
         href: "/airco-showroom",
         linkLabel: "Airco voor showrooms",
+        image: {
+          src: "/images/generated/showroom-cassette.webp",
+          alt: "Showroom met plafondairconditioning",
+        },
       },
     ],
   },
@@ -105,6 +134,10 @@ export const home: HomeContent = {
           "In het systeemplafond geïntegreerd, met gelijkmatige luchtverdeling naar vier richtingen. De standaard voor kantoren en winkels.",
         href: "/cassette-airco-bedrijf",
         linkLabel: "Cassette airco voor bedrijven",
+        image: {
+          src: "/images/generated/showroom-cassette.webp",
+          alt: "Cassette-units in een zakelijke showroom",
+        },
       },
       {
         tag: "Onzichtbaar",
@@ -113,6 +146,10 @@ export const home: HomeContent = {
           "Volledig weggewerkt boven het plafond, ideaal voor grotere ruimtes en meerdere zones met één stil systeem.",
         href: "/kanaal-airco-bedrijf",
         linkLabel: "Kanaal airco voor bedrijven",
+        image: {
+          src: "/images/generated/ducted-detail.webp",
+          alt: "Discreet kanaalrooster in een zakelijk interieur",
+        },
       },
       {
         tag: "Compact",
@@ -121,6 +158,10 @@ export const home: HomeContent = {
           "Praktische oplossing voor kleinere ruimtes, aparte kantoren en serverruimtes. Snel geïnstalleerd.",
         href: "/wandmodel-airco-bedrijf",
         linkLabel: "Wandmodel airco voor bedrijven",
+        image: {
+          src: "/images/generated/wall-model-office.webp",
+          alt: "Zakelijk wandmodel in een vergaderruimte",
+        },
       },
     ],
   },
@@ -133,7 +174,7 @@ export const home: HomeContent = {
         tag: "Personeel",
         title: "Comfort en productiviteit",
         description:
-          "Medewerkers presteren aantoonbaar beter bij een stabiele, comfortabele temperatuur — te warm of te koud kost concentratie en werkplezier.",
+          "Een stabiele, comfortabele temperatuur ondersteunt concentratie en werkplezier. Te warm of te koud leidt af van het werk.",
       },
       {
         tag: "Klanten",
@@ -145,7 +186,7 @@ export const home: HomeContent = {
         tag: "Continuïteit",
         title: "Bedrijfszekerheid",
         description:
-          "Een goed onderhouden, energiezuinig systeem voorkomt uitval op de warmste dagen — precies wanneer u erop moet kunnen rekenen.",
+          "Een goed onderhouden, energiezuinig systeem voorkomt uitval op de warmste dagen, precies wanneer u erop moet kunnen rekenen.",
       },
     ],
   },
@@ -161,6 +202,11 @@ export const home: HomeContent = {
           "Periodieke inspectie en reiniging houden uw systeem efficiënt en voorkomen verrassingen.",
         href: "/airco-onderhoud-zakelijk",
         linkLabel: "Airco onderhoud zakelijk",
+        image: {
+          src: "/images/generated/maintenance-service.webp",
+          alt: "Preventief onderhoud aan zakelijke airconditioning",
+          position: "58% 45%",
+        },
       },
       {
         tag: "Storing",
@@ -169,6 +215,11 @@ export const home: HomeContent = {
           "Storing of verminderde koeling? Onze monteurs stellen snel een diagnose en herstellen vakkundig.",
         href: "/airco-reparatie-zakelijk",
         linkLabel: "Zakelijke airco reparatie",
+        image: {
+          src: "/images/generated/commercial-repair-diagnostics.webp",
+          alt: "Monteur die een zakelijke airco onderzoekt tijdens een reparatie",
+          position: "55% 42%",
+        },
       },
       {
         tag: "Contract",
@@ -177,6 +228,11 @@ export const home: HomeContent = {
           "Vaste onderhoudsplanning, voorrang bij storingen en voorspelbare kosten voor uw hele installatie.",
         href: "/airco-onderhoudscontract-zakelijk",
         linkLabel: "Zakelijk onderhoudscontract",
+        image: {
+          src: "/images/generated/commercial-maintenance-contract-planning.webp",
+          alt: "Monteur en facilitair manager bespreken een zakelijk onderhoudscontract",
+          position: "50% 48%",
+        },
       },
     ],
   },
@@ -215,9 +271,43 @@ export const home: HomeContent = {
     intro:
       "Van kantoren tot winkels: een selectie van recente commerciële installaties in Zuid-Holland.",
   },
+  reviews: {
+    h2: "Wat zakelijke klanten zeggen",
+    intro:
+      "Voorbeeldweergave van de Google-reviewsectie. Vervang deze teksten voor publicatie door geverifieerde klantreviews.",
+    platformLabel: "Google Reviews",
+    previewLabel: "Voorbeeld",
+    ratingLabel: "5,0",
+    items: [
+      {
+        author: "Tom Verhoeven",
+        company: "Office manager, Leiden",
+        rating: 5,
+        dateLabel: "3 maanden geleden",
+        text: "Vanaf het eerste bezoek was duidelijk wat ons kantoor nodig had. De planning werd nagekomen en de monteurs lieten alle werkplekken netjes achter.",
+        serviceLabel: "Zakelijke installatie",
+      },
+      {
+        author: "Marieke de Jong",
+        company: "Vestigingsmanager, Den Haag",
+        rating: 5,
+        dateLabel: "5 maanden geleden",
+        text: "Onze winkel kon tijdens de werkzaamheden gewoon openblijven. Alles was vooraf goed afgestemd en de cassette-units vallen bijna niet op.",
+        serviceLabel: "Cassette-airco",
+      },
+      {
+        author: "Robert van Leeuwen",
+        company: "Operations manager, Voorschoten",
+        rating: 5,
+        dateLabel: "1 maand geleden",
+        text: "De storing werd snel gevonden en duidelijk uitgelegd. Na de reparatie kregen we meteen praktisch advies om het systeem goed te onderhouden.",
+        serviceLabel: "Reparatie en onderhoud",
+      },
+    ],
+  },
   serviceArea: {
     h2: "Zakelijke airconditioning in Voorschoten en Zuid-Holland",
-    body: "Airco@Business werkt vanuit Voorschoten voor bedrijven in heel Zuid-Holland — van Leiden en Den Haag tot Rotterdam en Hoofddorp. Voor grotere projecten werken we ook daarbuiten.",
+    body: "Airco@Business werkt vanuit Voorschoten voor bedrijven in heel Zuid-Holland, van Leiden en Den Haag tot Rotterdam en Hoofddorp. Voor grotere projecten werken we ook daarbuiten.",
     cities: ["Voorschoten", "Leiden", "Den Haag", "Rotterdam", "Hoofddorp"],
   },
   form: {
@@ -240,7 +330,7 @@ export const home: HomeContent = {
         question:
           "Werkt Airco@Business ook voor bedrijfspanden, winkels en showrooms?",
         answer:
-          "Ja. Naast kantoren installeren wij airconditioning in complete bedrijfspanden, winkels en showrooms — inclusief oplossingen met meerdere klimaatzones.",
+          "Ja. Naast kantoren installeren wij airconditioning in complete bedrijfspanden, winkels en showrooms, inclusief oplossingen met meerdere klimaatzones.",
       },
       {
         question: "Verzorgt Airco@Business onderhoud en reparaties?",

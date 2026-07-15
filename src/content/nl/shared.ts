@@ -5,7 +5,7 @@ export const trustIndicators = [
   "STEK-gecertificeerde monteurs met jarenlange ervaring in zakelijke installaties",
   "Premium A-merken: Daikin, Mitsubishi Electric, LG en Toshiba",
   "Nette, verzorgde afwerking — onze monteurs werken met respect voor uw pand en planning",
-  "Reactie op iedere aanvraag binnen één werkdag",
+  "Persoonlijk aanspreekpunt voor advies, installatie en onderhoud",
   "Actief in heel Zuid-Holland, van Leiden tot Rotterdam",
 ];
 

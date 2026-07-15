@@ -5,6 +5,7 @@ import type { AppPathname } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site-config";
 import { PhoneLink } from "./phone-link";
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "./social-icons";
+import { ConsentSettingsButton } from "./consent-settings-button";
 
 type FooterLink = { href: AppPathname; labelKey: string; ns?: string };
 
@@ -56,7 +57,7 @@ function FooterColumn({
           <li key={`${link.href}-${link.label}`}>
             <Link
               href={link.href}
-              className="text-sm text-white/75 transition-colors hover:text-azure-bright"
+              className="inline-flex min-h-11 items-center text-sm text-white/75 transition-colors hover:text-azure-bright"
             >
               {link.label}
             </Link>
@@ -67,14 +68,58 @@ function FooterColumn({
   );
 }
 
+function FooterMobileGroup({
+  title,
+  links,
+}: {
+  title: string;
+  links: { href: AppPathname; label: string }[];
+}) {
+  return (
+    <details className="group border-b border-white/10 py-2">
+      <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between text-sm font-semibold text-white [&::-webkit-details-marker]:hidden">
+        {title}
+        <span
+          aria-hidden
+          className="text-xl font-light text-azure-bright transition-transform group-open:rotate-45"
+        >
+          +
+        </span>
+      </summary>
+      <ul className="space-y-1 pb-4">
+        {links.map((link) => (
+          <li key={`${link.href}-${link.label}`}>
+            <Link
+              href={link.href}
+              className="flex min-h-11 items-center rounded-xl px-2 text-sm text-white/70 hover:bg-white/8 hover:text-white"
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </details>
+  );
+}
+
 export function Footer() {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
 
   const label = (l: FooterLink) => (l.ns === "nav" ? tNav(l.labelKey) : t(l.labelKey));
+  const locationLinks = ["Voorschoten", "Leiden", "Den Haag", "Rotterdam", "Hoofddorp"].map(
+    (city) => ({ href: "/werkgebied" as AppPathname, label: city }),
+  );
+  const mobileGroups = [
+    { title: t("coreServices"), links: coreServices.map((l) => ({ href: l.href, label: label(l) })) },
+    { title: t("propertyTypes"), links: propertyTypes.map((l) => ({ href: l.href, label: label(l) })) },
+    { title: t("systems"), links: systemsMaintenance.map((l) => ({ href: l.href, label: label(l) })) },
+    { title: t("support"), links: supportPages.map((l) => ({ href: l.href, label: label(l) })) },
+    { title: t("locations"), links: [...locationLinks, { href: "/werkgebied" as AppPathname, label: t("allServiceAreas") }] },
+  ];
 
   return (
-    <footer className="airflow-lines grain isolate overflow-hidden border-t border-white/8 bg-ink text-white">
+    <footer className="isolate overflow-hidden border-t border-white/8 bg-ink text-white">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
         {/* Brand row */}
         <div className="mb-14 flex flex-col justify-between gap-10 border-b border-white/8 pb-14 lg:flex-row lg:items-center">
@@ -82,11 +127,11 @@ export function Footer() {
             <Image
               src="/images/logo.png"
               alt="Airco@Business"
-              width={200}
-              height={63}
-              className="mb-6 h-10 w-auto"
+              width={224}
+              height={71}
+              className="mb-6 h-14 w-auto"
             />
-            <p className="font-display text-xl leading-relaxed font-medium text-white/90 sm:text-2xl">
+            <p className="font-editorial text-xl leading-relaxed font-medium text-white/90 sm:text-2xl">
               {t("tagline")}
             </p>
           </div>
@@ -95,7 +140,7 @@ export function Footer() {
               href={siteConfig.socials.instagram}
               rel="noopener"
               aria-label="Instagram"
-              className="border border-white/15 p-3 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
+                className="flex size-11 items-center justify-center rounded-full border border-white/15 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
             >
               <InstagramIcon className="size-4" />
             </a>
@@ -103,7 +148,7 @@ export function Footer() {
               href={siteConfig.socials.facebook}
               rel="noopener"
               aria-label="Facebook"
-              className="border border-white/15 p-3 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
+                className="flex size-11 items-center justify-center rounded-full border border-white/15 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
             >
               <FacebookIcon className="size-4" />
             </a>
@@ -111,7 +156,7 @@ export function Footer() {
               href={siteConfig.socials.linkedin}
               rel="noopener"
               aria-label="LinkedIn"
-              className="border border-white/15 p-3 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
+                className="flex size-11 items-center justify-center rounded-full border border-white/15 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
             >
               <LinkedinIcon className="size-4" />
             </a>
@@ -119,7 +164,13 @@ export function Footer() {
         </div>
 
         {/* Link columns */}
-        <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3 lg:grid-cols-5">
+        <div className="lg:hidden">
+          {mobileGroups.map((group) => (
+            <FooterMobileGroup key={group.title} {...group} />
+          ))}
+        </div>
+
+        <div className="hidden gap-x-6 gap-y-10 lg:grid lg:grid-cols-5">
           <FooterColumn
             title={t("coreServices")}
             links={coreServices.map((l) => ({ href: l.href, label: label(l) }))}
@@ -166,7 +217,7 @@ export function Footer() {
         {/* Contact + legal */}
         <div className="mt-16 border-t border-white/8 pt-10">
           <div className="flex flex-col justify-between gap-6 lg:flex-row">
-            <address className="font-mono text-xs not-italic leading-loose text-mist">
+            <address className="text-xs not-italic leading-loose text-mist">
               {siteConfig.name} · {siteConfig.address.street},{" "}
               {siteConfig.address.postalCode} {siteConfig.address.city}
               <br />
@@ -194,6 +245,7 @@ export function Footer() {
               <Link href="/cookiebeleid" className="transition-colors hover:text-white">
                 {t("cookies")}
               </Link>
+              <ConsentSettingsButton />
               <a
                 href={siteConfig.residentialSite}
                 rel="noopener"

@@ -12,6 +12,7 @@ import { JsonLd } from "@/components/seo/json-ld";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section } from "@/components/sections/section-shell";
 import { CtaLink } from "@/components/sections/cta-link";
+import { CoverageDiagram } from "@/components/sections/coverage-diagram";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -47,24 +48,22 @@ export default async function ServiceAreaPage({ params }: Props) {
         }}
       />
       <Section variant="paper" h2={werkgebiedPage.region.h2} intro={werkgebiedPage.region.body}>
-        <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {werkgebiedPage.cities.map((city) => (
-            <li
-              key={city.name}
-              className="flex items-start gap-4 border border-ink/5 bg-white p-6 shadow-card"
-            >
-              <MapPin className="mt-1 size-4 shrink-0 text-azure-deep" aria-hidden />
-              <div>
-                <h3 className="font-display text-lg font-medium text-ink">
+        <div className="grid gap-8 lg:grid-cols-12 lg:items-start">
+          <div className="lg:col-span-5">
+            <CoverageDiagram title={werkgebiedPage.region.h2} cities={werkgebiedPage.cities} />
+          </div>
+          <ul className="border-t border-ink/10 lg:col-span-7">
+            {werkgebiedPage.cities.map((city) => (
+              <li key={city.name} className="grid gap-3 border-b border-ink/10 py-6 sm:grid-cols-[1fr_1.5fr] sm:gap-8">
+                <h3 className="flex items-center gap-3 font-display text-xl font-semibold text-ink">
+                  <MapPin className="size-4 shrink-0 text-azure-deep" aria-hidden />
                   {city.name}
                 </h3>
-                <p className="mt-1 text-sm leading-relaxed text-slate-ink">
-                  {city.blurb}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ul>
+                <p className="text-sm leading-relaxed text-slate-ink">{city.blurb}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Section>
       <Section variant="dark">
         <div className="flex flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between">

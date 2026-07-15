@@ -8,6 +8,7 @@ import { getBundle } from "@/content";
 import { pageMetadata } from "@/lib/metadata";
 import { absoluteUrl } from "@/lib/urls";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { processPageVisual } from "@/lib/page-visuals";
 import { JsonLd } from "@/components/seo/json-ld";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section } from "@/components/sections/section-shell";
@@ -29,6 +30,7 @@ export default async function ProcessPage({ params }: Props) {
 
   const t = await getTranslations("common");
   const { werkwijzePage } = getBundle(locale);
+  const heroImage = processPageVisual(locale);
 
   return (
     <>
@@ -48,26 +50,44 @@ export default async function ProcessPage({ params }: Props) {
           intro: werkwijzePage.hero.intro,
           cta: "planConsultation",
           trustPoints: [],
+          image: heroImage,
+          variant: "split",
         }}
       />
       <Section variant="paper">
-        <ol className="space-y-6">
+        <ol className="border-y border-ink/10">
           {werkwijzePage.steps.map((step, i) => (
             <li
               key={step.title}
-              className="grid gap-6 border border-ink/5 bg-white p-7 shadow-card sm:grid-cols-[96px_1fr] sm:p-10"
+              className={`grid gap-6 border-b border-ink/10 py-10 last:border-b-0 sm:py-14 lg:grid-cols-12 ${
+                i % 2 === 0 ? "" : "lg:text-right"
+              }`}
             >
-              <p className="font-mono text-3xl text-azure-deep">
+              <p
+                className={`font-display text-5xl font-semibold text-azure/25 lg:col-span-2 ${
+                  i % 2 === 0
+                    ? "lg:col-start-1"
+                    : "lg:col-start-11 lg:row-start-1"
+                }`}
+              >
                 {String(i + 1).padStart(2, "0")}
               </p>
-              <div>
-                <h2 className="font-display text-2xl font-medium text-ink">
+              <div
+                className={`lg:col-span-8 ${
+                  i % 2 === 0
+                    ? "lg:col-start-3"
+                    : "lg:col-start-3 lg:row-start-1"
+                }`}
+              >
+                <h2 className="font-display text-2xl font-semibold text-ink sm:text-3xl">
                   {step.title}
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-slate-ink sm:text-base">
                   {step.description}
                 </p>
-                <ul className="mt-5 grid gap-2.5 sm:grid-cols-2">
+                <ul
+                  className={`mt-6 grid gap-2.5 sm:grid-cols-2 ${i % 2 === 0 ? "" : "lg:text-left"}`}
+                >
                   {step.details.map((detail) => (
                     <li
                       key={detail}

@@ -8,22 +8,24 @@ import type { Project } from "../types";
 export const projects: Project[] = [
   {
     slug: "avdt",
+    status: "draft",
+    gallery: [],
+    facts: [],
     title: "Kantoor AVDT",
     type: "Kantoor",
     location: "Zuid-Holland",
     system: "Cassette airco · multi-split",
     summary:
       "Kantooretage voorzien van cassette-units met per zone regelbare temperatuur, geïnstalleerd met minimale verstoring van de werkdag.",
-    image: {
-      src: "/images/commercial-installation.webp",
-      alt: "Airco-installatie bij kantoor AVDT",
-    },
     filters: ["office", "cassette"],
     serviceHref: "/airco-kantoor",
     serviceLinkLabel: "Airco voor kantoren",
   },
   {
     slug: "inventex",
+    status: "draft",
+    gallery: [],
+    facts: [],
     title: "Bedrijfspand Inventex",
     type: "Bedrijfspand",
     location: "Zuid-Holland",
@@ -36,6 +38,9 @@ export const projects: Project[] = [
   },
   {
     slug: "modewinkel",
+    status: "draft",
+    gallery: [],
+    facts: [],
     title: "Modewinkel",
     type: "Winkel",
     location: "Zuid-Holland",

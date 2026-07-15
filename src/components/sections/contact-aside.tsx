@@ -8,9 +8,9 @@ export function ContactAside() {
   const t = useTranslations("contactAside");
 
   return (
-    <aside className="grain glow-azure relative isolate h-fit overflow-hidden bg-ink p-7 text-white sm:p-9">
+    <aside className="grain glow-azure relative isolate h-fit overflow-hidden rounded-3xl bg-ink p-7 text-white sm:p-9">
       <p className="eyebrow mb-6 flex items-center gap-3 text-azure-bright">
-        <span aria-hidden className="h-px w-8 bg-azure-bright" />
+        <span aria-hidden className="size-1.5 rounded-full bg-azure-bright" />
         {t("title")}
       </p>
       <p className="text-sm leading-relaxed text-mist">{t("responsePromise")}</p>
@@ -18,7 +18,7 @@ export function ContactAside() {
         <li>
           <PhoneLink
             phone={siteConfig.phone}
-            className="flex items-center gap-3.5 font-mono text-white transition-colors hover:text-azure-bright"
+            className="flex items-center gap-3.5 font-semibold text-white transition-colors hover:text-azure-bright"
           >
             <Phone className="size-4 text-azure-bright" aria-hidden />
             {siteConfig.phoneDisplay}
@@ -27,7 +27,7 @@ export function ContactAside() {
         <li>
           <a
             href={`mailto:${siteConfig.email}`}
-            className="flex items-center gap-3.5 font-mono text-white transition-colors hover:text-azure-bright"
+            className="flex items-center gap-3.5 font-semibold text-white transition-colors hover:text-azure-bright"
           >
             <Mail className="size-4 text-azure-bright" aria-hidden />
             {siteConfig.email}

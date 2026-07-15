@@ -16,6 +16,11 @@ import { LeadForm } from "@/components/sections/lead-form";
 import { CtaLink } from "@/components/sections/cta-link";
 import { ContactAside } from "@/components/sections/contact-aside";
 import { Reveal } from "@/components/sections/reveal";
+import {
+  serviceCardsWithVisuals,
+  servicePageVisual,
+  serviceProofVisual,
+} from "@/lib/page-visuals";
 
 type Props = {
   content: ServicePageContent;
@@ -33,6 +38,21 @@ type Props = {
 export function ServicePageTemplate({ content, pathname, locale, parent }: Props) {
   const t = useTranslations("common");
   const url = absoluteUrl(locale, pathname);
+  const heroVisual = servicePageVisual(pathname, locale);
+  const proofVisual =
+    content.proof.image ?? serviceProofVisual(pathname, locale);
+  const overviewCards = serviceCardsWithVisuals(
+    content.overview.cards,
+    pathname,
+    locale,
+    "overview",
+  );
+  const benefitCards = serviceCardsWithVisuals(
+    content.benefits.cards,
+    pathname,
+    locale,
+    "benefits",
+  );
 
   const crumbs = [
     { name: t("breadcrumbHome"), url: absoluteUrl(locale, "/") },
@@ -55,7 +75,14 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
       />
 
       {/* 1 — Hero: primary CTA jumps to the on-page, pre-filled lead form */}
-      <PageHero hero={{ ctaAnchor: "#offerte", ...content.hero }} />
+      <PageHero
+        hero={{
+          ctaAnchor: "#offerte",
+          ...content.hero,
+          image: heroVisual.image,
+          variant: content.hero.urgent ? "urgent" : heroVisual.variant,
+        }}
+      />
 
       {/* 2 — Service overview & audience */}
       <Section
@@ -65,19 +92,29 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
         intro={content.overview.intro}
       >
         <CardGrid
-          cards={content.overview.cards}
-          columns={content.overview.cards.length === 4 ? 4 : 3}
+          cards={overviewCards}
+          columns={overviewCards.length === 4 ? 4 : 3}
         />
       </Section>
 
       {/* 3 — Business need & benefits */}
-      <Section variant="light" h2={content.benefits.h2} intro={content.benefits.intro}>
-        <CardGrid cards={content.benefits.cards} />
+      <Section
+        variant="paper"
+        h2={content.benefits.h2}
+        intro={content.benefits.intro}
+        className="border-t border-ink/8"
+      >
+        <CardGrid cards={benefitCards} />
       </Section>
 
       {/* 4 — Solution scope & technical fit (child pages only) */}
       {content.scope && (
-        <Section variant="paper" h2={content.scope.h2} intro={content.scope.intro}>
+        <Section
+          variant="paper"
+          h2={content.scope.h2}
+          intro={content.scope.intro}
+          className="border-t border-ink/8"
+        >
           <Checklist items={content.scope.items} />
         </Section>
       )}
@@ -96,18 +133,19 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
       </Section>
 
       {/* 6 — Projects, reviews & trust */}
-      <Section variant="dark" h2={content.proof.h2} className="border-t border-white/8">
+      <Section variant="light" h2={content.proof.h2}>
         <ProofBand
           indicators={content.proof.indicators}
           reviews={content.proof.reviews}
-          image={content.proof.image}
+          image={proofVisual}
+          variant="light"
         />
       </Section>
 
       {/* 7 — Conversion: lead form (dominant) + related + FAQ */}
       <Section variant="paper" h2={content.form.h2} id="offerte">
         <Reveal className="grid gap-10 lg:grid-cols-[1fr_minmax(0,340px)]">
-          <div className="border border-ink/5 bg-white p-6 shadow-panel sm:p-12">
+          <div className="rounded-[32px] border border-steel/12 bg-card p-6 shadow-panel sm:p-12">
             <LeadForm
               defaultService={content.form.service}
               defaultPropertyType={content.form.propertyType}
@@ -118,8 +156,7 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
         </Reveal>
 
         <div className="mt-20">
-          <h3 className="eyebrow mb-8 flex items-center gap-3 text-azure-deep">
-            <span aria-hidden className="h-px w-8 bg-azure-deep" />
+          <h3 className="eyebrow mb-8 text-azure-deep">
             {t("relatedPages")}
           </h3>
           <RelatedLinks links={content.related} />

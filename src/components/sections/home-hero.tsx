@@ -1,66 +1,73 @@
 import Image from "next/image";
 import type { HomeContent } from "@/content/types";
 import { CtaLink } from "./cta-link";
-import { Reveal } from "./reveal";
-import { TempReadout } from "./temp-readout";
+import { GoogleReviewBadge } from "./google-reviews";
 
-type Props = { hero: HomeContent["hero"]; residential: HomeContent["residential"] };
+type Props = {
+  hero: HomeContent["hero"];
+  reviews: HomeContent["reviews"];
+};
 
-export function HomeHero({ hero, residential }: Props) {
+/**
+ * Homepage hero. The real installation image carries the visual weight while
+ * the short content stack keeps both conversion actions inside the viewport.
+ */
+export function HomeHero({ hero, reviews }: Props) {
   return (
-    <section className="grain relative isolate overflow-hidden bg-ink text-white">
-      {/* Commercial installation photo, graded dark so type stays AAA-readable */}
+    <section className="relative isolate min-h-[100dvh] overflow-hidden bg-ink text-white">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/commercial-installation.webp"
-          alt=""
+          src="/images/generated/commercial-office-hero.webp"
+          alt="Moderne zakelijke kantoorruimte met geïntegreerde klimaatinstallatie"
           fill
           priority
           sizes="100vw"
-          className="object-cover opacity-40 saturate-[0.8]"
+          className="hero-zoom object-cover object-[58%_center] opacity-[0.86]"
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-gradient-to-r from-ink via-ink/85 to-ink/20"
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgb(7_9_11/0.98)_0%,rgb(7_9_11/0.9)_36%,rgb(7_9_11/0.5)_68%,rgb(7_9_11/0.12)_100%)]"
         />
         <div
           aria-hidden
-          className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-ink to-transparent"
+          className="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-ink/80 to-transparent"
         />
-        <div aria-hidden className="glow-azure absolute inset-0" />
       </div>
 
-      <div className="mx-auto grid max-w-7xl gap-16 px-4 pt-24 pb-24 sm:px-6 lg:grid-cols-[1fr_minmax(0,400px)] lg:items-center lg:px-8 lg:pt-36 lg:pb-36">
-        <Reveal>
-          <p className="eyebrow mb-7 flex items-center gap-3 text-azure-bright">
-            <span aria-hidden className="h-px w-8 bg-azure-bright" />
+      <div className="mx-auto flex min-h-[calc(100dvh-var(--site-header-height))] max-w-7xl items-center px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
+        <div className="max-w-4xl">
+          <p className="rise eyebrow mb-6 text-azure-bright">
             {hero.eyebrow}
           </p>
-          <h1 className="font-display max-w-3xl text-5xl font-medium leading-[1.04] text-balance sm:text-6xl lg:text-7xl">
+          <h1 className="rise font-display max-w-[18ch] text-[clamp(2.75rem,6vw,4.75rem)] font-semibold leading-[0.98] text-balance [animation-delay:120ms]">
             {hero.h1}
           </h1>
-          <p className="mt-8 max-w-xl text-base leading-relaxed text-mist sm:text-lg">
+          <p className="rise mt-7 max-w-xl text-base leading-relaxed text-white/72 sm:text-lg [animation-delay:240ms]">
             {hero.intro}
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-4">
-            <CtaLink ctaKey="requestQuote" variant="azure" arrow />
-            <CtaLink ctaKey="planConsultation" variant="outline-dark" />
+          <div className="rise mt-9 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4 [animation-delay:360ms]">
+            <CtaLink
+              anchor="#offerte"
+              ctaKey="requestQuote"
+              variant="azure"
+              arrow
+              className="w-full sm:w-auto"
+            />
+            <CtaLink
+              ctaKey="planConsultation"
+              variant="outline-dark"
+              className="w-full bg-ink/15 backdrop-blur-sm sm:w-auto"
+            />
           </div>
-          <p className="mt-10 text-xs text-mist/80">
-            {residential.text}{" "}
-            <a
-              href="https://airco-athome.nl/"
-              rel="noopener"
-              className="underline decoration-mist/40 underline-offset-4 transition-colors hover:text-white"
-            >
-              {residential.linkLabel}
-            </a>
-          </p>
-        </Reveal>
-
-        <Reveal delay={200} className="max-w-md lg:w-full lg:justify-self-end">
-          <TempReadout label={hero.readoutLabel} caption={hero.readoutCaption} />
-        </Reveal>
+          <div className="rise mt-6 [animation-delay:480ms]">
+            <GoogleReviewBadge
+              platformLabel={reviews.platformLabel}
+              previewLabel={reviews.previewLabel}
+              ratingLabel={reviews.ratingLabel}
+              compact
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

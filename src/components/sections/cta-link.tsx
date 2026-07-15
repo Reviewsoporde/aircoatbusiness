@@ -12,9 +12,9 @@ const variantClasses: Record<Variant, string> = {
     "bg-azure text-ink shadow-[0_12px_32px_-12px_rgb(0_147_203/0.55)] hover:bg-azure-bright hover:shadow-[0_16px_40px_-12px_rgb(47_177_227/0.6)]",
   ink: "bg-ink text-white hover:bg-steel",
   "outline-dark":
-    "border border-white/25 text-white hover:border-white/70 hover:bg-white/5",
+    "border border-white/30 text-white hover:border-white/70 hover:bg-white/10",
   "outline-light":
-    "border border-ink/25 text-ink hover:border-ink hover:bg-ink/[0.03]",
+    "border border-ink/25 text-ink hover:border-ink hover:bg-ink/5",
 };
 
 type Props = {
@@ -40,7 +40,7 @@ export function CtaLink({
 }: Props) {
   const t = useTranslations("common");
   const classes = cn(
-    "group/cta inline-flex items-center justify-center gap-2.5 px-7 py-4 font-mono text-xs font-semibold tracking-[0.14em] uppercase transition-all duration-300 active:scale-[0.98]",
+    "group/cta inline-flex items-center justify-center gap-2.5 rounded-full px-7 py-3.5 text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98]",
     variantClasses[variant],
     className,
   );
@@ -49,7 +49,7 @@ export function CtaLink({
       {ctaKey ? t(ctaKey) : label}
       {arrow && (
         <ArrowRight
-          className="size-3.5 transition-transform duration-300 group-hover/cta:translate-x-1"
+          className="size-4 transition-transform duration-300 group-hover/cta:translate-x-1"
           aria-hidden
         />
       )}

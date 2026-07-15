@@ -11,7 +11,7 @@ export function LegalTemplate({ content }: { content: LegalPageContent }) {
           <p className="eyebrow mt-5 text-mist">{content.updated}</p>
         </div>
       </section>
-      <section className="bg-white py-16 lg:py-20">
+      <section className="bg-background py-16 lg:py-20">
         <div className="mx-auto max-w-3xl space-y-12 px-4 sm:px-6 lg:px-8">
           {content.sections.map((section) => (
             <div key={section.h2}>

@@ -8,6 +8,7 @@ import { getBundle } from "@/content";
 import { pageMetadata } from "@/lib/metadata";
 import { absoluteUrl } from "@/lib/urls";
 import { breadcrumbSchema } from "@/lib/schema";
+import { brandsSystemsVisual } from "@/lib/page-visuals";
 import { JsonLd } from "@/components/seo/json-ld";
 import { PageHero } from "@/components/sections/page-hero";
 import { Section } from "@/components/sections/section-shell";
@@ -33,6 +34,7 @@ export default async function BrandsPage({ params }: Props) {
 
   const t = await getTranslations("common");
   const { merkenPage } = getBundle(locale);
+  const heroImage = brandsSystemsVisual(locale);
 
   return (
     <>
@@ -52,28 +54,32 @@ export default async function BrandsPage({ params }: Props) {
           intro: merkenPage.hero.intro,
           cta: "requestSystemAdvice",
           trustPoints: [],
+          image: heroImage,
+          variant: "split",
         }}
       />
-      <Section variant="dark">
-        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <Section variant="paper">
+        <ul className="grid gap-5 sm:grid-cols-2">
           {merkenPage.brands.map((brand) => (
             <li
               key={brand.name}
-              className="border border-white/10 bg-white/[0.04] p-8 transition-colors duration-300 hover:border-azure/50"
+              className="rounded-[24px] border border-steel/12 bg-white p-7 transition-[border-color,box-shadow] duration-300 hover:border-azure/35 hover:shadow-card-hover sm:p-8"
             >
-              <div className="relative mb-7 h-10 w-36">
-                <Image
-                  src={brand.logo}
-                  alt={brand.name}
-                  fill
-                  sizes="144px"
-                  className="object-contain object-left"
-                />
+              <div className="mb-7 flex h-24 items-center justify-center rounded-[18px] border border-steel/10 bg-paper px-8">
+                <div className="relative h-12 w-full max-w-44">
+                  <Image
+                    src={brand.logo}
+                    alt={brand.name}
+                    fill
+                    sizes="176px"
+                    className="object-contain"
+                  />
+                </div>
               </div>
-              <h2 className="font-display text-xl font-medium text-white">
+              <h2 className="font-display text-xl font-semibold text-ink">
                 {brand.name}
               </h2>
-              <p className="mt-2.5 text-sm leading-relaxed text-mist">
+              <p className="mt-2.5 text-sm leading-relaxed text-slate-ink">
                 {brand.description}
               </p>
             </li>

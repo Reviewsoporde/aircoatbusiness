@@ -15,7 +15,7 @@ export function LocaleSwitcher() {
     <div
       role="group"
       aria-label={t("label")}
-      className="flex items-center gap-0.5 font-mono text-xs"
+      className="flex items-center gap-0.5 text-xs font-medium"
     >
       {routing.locales.map((l) => (
         <button
@@ -29,9 +29,9 @@ export function LocaleSwitcher() {
             }
           }}
           className={cn(
-            "px-1.5 py-0.5 uppercase tracking-wider transition-colors",
+            "min-h-11 min-w-11 rounded-full px-2 py-2 uppercase tracking-wider transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-azure-bright",
             l === locale
-              ? "bg-steel text-white"
+              ? "bg-white/15 text-white"
               : "text-mist hover:text-white",
           )}
         >

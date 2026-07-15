@@ -52,10 +52,27 @@
     "propertyType": "Type bedrijfsruimte",
     "service": "Gewenste dienst",
     "message": "Bericht of projectomschrijving (optioneel)",
+    "heroTitle": "Vraag een zakelijke offerte aan",
+    "heroIntro": "Vertel ons kort wat er nodig is. Daarna vragen we uw contactgegevens.",
+    "progress": "{current} van {total}",
+    "stepOneTitle": "Uw locatie en vraag",
+    "stepOneIntro": "Kies de gewenste dienst, het type bedrijfsruimte en de plaats.",
+    "stepTwoTitle": "Uw contactgegevens",
+    "stepTwoIntro": "Zo kan een specialist uw aanvraag gericht beoordelen.",
+    "continue": "Verder naar contactgegevens",
+    "back": "Terug",
     "submit": "Offerte aanvragen",
     "submitting": "Versturen…",
     "selectPlaceholder": "Maak een keuze",
-    "success": "Bedankt voor uw aanvraag. We nemen binnen één werkdag contact met u op.",
+    "success": "Bedankt voor uw aanvraag.",
+    "successTitle": "Uw aanvraag is ontvangen",
+    "successBody": "Een specialist beoordeelt de informatie en neemt tijdens kantooruren contact met u op via de opgegeven gegevens.",
+    "successNextTitle": "Wat gebeurt er nu?",
+    "successNextOne": "We beoordelen uw locatie, bedrijfsruimte en gewenste dienst.",
+    "successNextTwo": "We nemen contact op om de situatie en een passend vervolg te bespreken.",
+    "callFallback": "Liever direct bellen: {phone}",
+    "privacyNote": "We gebruiken uw gegevens uitsluitend om op deze zakelijke aanvraag te reageren.",
+    "privacyLink": "Lees het privacybeleid",
     "error": "Er ging iets mis bij het versturen. Probeer het opnieuw of bel ons op {phone}.",
     "required": "Dit veld is verplicht",
     "invalidEmail": "Vul een geldig e-mailadres in",
@@ -91,11 +108,13 @@
     "faqTitle": "Veelgestelde vragen",
     "ourProcess": "Onze werkwijze",
     "viewAllProjects": "Bekijk alle projecten",
+    "projectsPendingTitle": "Projectdocumentatie in voorbereiding",
+    "projectsPendingBody": "We publiceren een project pas zodra beeldmateriaal en projectfeiten door de opdrachtgever zijn bevestigd. Bespreek intussen gerust een vergelijkbare zakelijke situatie met ons.",
     "breadcrumbHome": "Home"
   },
   "contactAside": {
     "title": "Direct contact",
-    "responsePromise": "Wij reageren binnen één werkdag op uw aanvraag. Liever direct schakelen? Bel ons tijdens kantooruren.",
+    "responsePromise": "Een specialist beoordeelt uw aanvraag en neemt tijdens kantooruren contact met u op. Liever direct schakelen? Bel ons.",
     "hours": "Ma – vr 08:00 – 17:00"
   },
   "localeSwitcher": {
@@ -103,9 +122,21 @@
     "nl": "Nederlands",
     "en": "English"
   },
+  "accessibility": {
+    "skipToContent": "Ga naar hoofdinhoud"
+  },
+  "consent": {
+    "title": "Uw privacy, uw keuze",
+    "body": "Met uw toestemming gebruiken we beperkte analytics om de website te verbeteren.",
+    "details": "Bekijk het cookiebeleid",
+    "reject": "Alleen noodzakelijk",
+    "accept": "Analytics toestaan",
+    "settings": "Cookievoorkeuren"
+  },
   "notFound": {
     "title": "Pagina niet gevonden",
     "description": "De pagina die u zoekt bestaat niet of is verplaatst.",
-    "backHome": "Terug naar home"
+    "backHome": "Terug naar home",
+    "serviceLinks": "Ga naar een dienst"
   }
 }

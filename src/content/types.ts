@@ -26,7 +26,14 @@ export type PropertyOption =
   | "showroom"
   | "other";
 
-export type ImgRef = { src: string; alt: string };
+export type ImgRef = {
+  src: string;
+  alt: string;
+  /** CSS object-position value, e.g. "62% 40%", for responsive art direction. */
+  position?: string;
+};
+
+export type HeroVariant = "image-led" | "split" | "type-led" | "urgent";
 
 export type Card = {
   /** short mono tag rendered above the title, e.g. "KANTOOR" or "STAP 2" */
@@ -58,8 +65,18 @@ export type Review = {
   author: string;
   company?: string;
   rating?: number;
+  dateLabel?: string;
   text: string;
   serviceLabel: string;
+};
+
+export type ReviewSection = {
+  h2: string;
+  intro: string;
+  platformLabel: string;
+  previewLabel: string;
+  ratingLabel: string;
+  items: Review[];
 };
 
 export type Project = {
@@ -74,6 +91,9 @@ export type Project = {
   serviceHref: AppPathname;
   /** Descriptive anchor for the service link (anchor-text rules §5) */
   serviceLinkLabel: string;
+  status: "draft" | "published";
+  gallery: ImgRef[];
+  facts: { label: string; value: string }[];
 };
 
 /** Universal 7-section service page (docs/page-templates.md §3) */
@@ -91,6 +111,7 @@ export type ServicePageContent = {
     secondary?: { label: string; href: AppPathname };
     trustPoints: string[];
     image?: ImgRef;
+    variant?: HeroVariant;
     /** Repair page: renders phone CTA prominently in the hero */
     urgent?: boolean;
   };
@@ -125,15 +146,32 @@ export type ProjectsPageContent = {
 export type ProcessPageContent = {
   meta: { title: string; description: string };
   hero: { eyebrow: string; h1: string; intro: string };
-  steps: (Step & { details: string[] })[];
+  steps: (Step & { details: [string, string, string, string] })[];
   faq: { h2: string; items: FAQItem[] };
 };
 
 export type ContactPageContent = {
   meta: { title: string; description: string };
-  hero: { eyebrow: string; h1: string; intro: string };
-  form: { h2: string };
-  serviceArea: { h2: string; body: string };
+  hero: { eyebrow: string; h1: string; intro: string; image: ImgRef };
+  contactOptions: {
+    h2: string;
+    intro: string;
+    phone: { title: string; body: string };
+    email: { title: string; body: string };
+    route: { title: string; body: string; label: string };
+  };
+  form: { eyebrow: string; h2: string; intro: string };
+  serviceArea: {
+    eyebrow: string;
+    h2: string;
+    body: string;
+    mapTitle: string;
+    detailsTitle: string;
+    addressLabel: string;
+    hoursLabel: string;
+    registrationLabel: string;
+    routeLabel: string;
+  };
   faq: { h2: string; items: FAQItem[] };
 };
 
@@ -179,8 +217,6 @@ export type HomeContent = {
     eyebrow: string;
     h1: string;
     intro: string;
-    readoutLabel: string;
-    readoutCaption: string;
   };
   trustBar: string[];
   categories: SectionCards;
@@ -191,6 +227,7 @@ export type HomeContent = {
   process: { h2: string; steps: Step[]; linkLabel: string };
   maintenanceOffer: { h2: string; body: string };
   projects: { h2: string; intro?: string };
+  reviews: ReviewSection;
   serviceArea: { h2: string; body: string; cities: string[] };
   form: { h2: string };
   faq: { h2: string; items: FAQItem[] };

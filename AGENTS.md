@@ -54,8 +54,11 @@ npm run lint
 
 ## Design Rules
 
-- **Primary color: black.** Premium, luxurious, high-end B2B — deliberately distinct from the warmer consumer brand. No consumer-style vibe. Brand blue `#0093CB` as accent.
-- Strong contrast; everything must stay clearly readable (WCAG AA minimum).
+- **Primary color: black.** The original color system stands (decision July 2026 after experiments with warm palettes were rejected): deep blue-black `--ink #0A0C0E` dark bands, cool paper gray `#F4F6F7` + white light sections, brand blue `#0093CB` as the only accent. **Never introduce warm/cream/brown tints anywhere** — no ivory backgrounds, no warm grays, no warm-tinted shadows. The comfort/friendliness the client asked for is delivered through shape, type and motion instead: rounding, pill CTAs, sentence-case labels, soft entrance choreography.
+- **Rounded geometry everywhere**: pill (`rounded-full`) buttons/CTAs/chips, `rounded-2xl`+ cards and panels (radius tokens in `globals.css`). No sharp corners, no mono/uppercase UI labels (IBM Plex Mono is reserved for true numerals like the temperature readout).
+- **Generous logo**: header `h-14`/`h-16`, footer `h-14` — brand presence matters to the client.
+- **Motion is CSS-first and calm**: hero content enters via the `rise` keyframes (staggered `[animation-delay:*]`, plays without JS), sections use the `Reveal` scroll component (blur-to-sharp for group children), the header condenses on scroll via `data-scrolled` (see `header-scroll-fx.tsx`), CTAs lift on hover. No animation libraries; everything respects `prefers-reduced-motion` via the global override in `globals.css`.
+- Strong contrast; everything must stay clearly readable (WCAG AA minimum). White text on azure fails AA — azure buttons use ink text.
 - Use the real logo (`public/images/logo.png` — blue+white, designed for dark backgrounds), commercial/business imagery only.
 - Fast + mobile-first: business visitors browse on the go. Use `next/image`, keep JS lean, target Lighthouse mobile ≥90 / SEO 100.
 - Never make technical guarantees before a site assessment in any copy.

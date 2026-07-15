@@ -18,7 +18,8 @@ export const businessAC: ServicePageContent = {
     secondary: { label: "Plan een adviesgesprek", href: "/contact" },
     trustPoints: ["Advies op locatie", "STEK-gecertificeerd", "Premium A-merken"],
     image: {
-      src: "/images/commercial-installation.webp",
+      src: "/images/generated/commercial-office-hero.webp",
+      position: "58% 50%",
       alt: "Zakelijke airco installatie in een bedrijfsruimte",
     },
   },

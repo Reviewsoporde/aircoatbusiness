@@ -18,7 +18,7 @@ export const installatie: ServicePageContent = {
     secondary: { label: "Request a business quote", href: "/contact" },
     trustPoints: ["Our own engineers", "STEK-certified", "Fixed schedule"],
     image: {
-      src: "/images/commercial-installation.webp",
+      src: "/images/generated/commercial-building.webp",
       alt: "Commercial air conditioning installation by Airco@Business engineers",
     },
   },

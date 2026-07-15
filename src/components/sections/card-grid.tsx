@@ -12,60 +12,73 @@ type Props = {
 };
 
 /**
- * Numbered card grid. Cards with an href are fully clickable, lift on hover
- * and show an arrow; plain cards are informational. Index numerals and tags
- * render in the system's mono voice.
+ * Rounded card grid. Cards with an href are fully clickable, lift on hover
+ * and show an arrow; plain cards are informational. Tags render as soft
+ * rounded chips.
  */
 export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
   const dark = variant === "dark";
+  const hasImageLedBento =
+    columns === 3 && cards.length === 3 && cards.every((card) => card.image);
+
   return (
     <Reveal
       group
       className={cn(
-        "grid gap-5",
-        columns === 2 && "sm:grid-cols-2",
-        columns === 3 && "sm:grid-cols-2 lg:grid-cols-3",
-        columns === 4 && "sm:grid-cols-2 lg:grid-cols-4",
+        "grid gap-5 sm:grid-cols-2 lg:grid-cols-12",
       )}
     >
       {cards.map((card, index) => {
+        const isFeaturedCard = hasImageLedBento && index === 0;
+        const layoutClass =
+          columns === 2
+            ? "lg:col-span-6"
+            : columns === 4
+              ? "lg:col-span-6"
+              : hasImageLedBento
+                ? index === 0
+                  ? "sm:col-span-2 lg:col-span-7 lg:row-span-2"
+                  : "lg:col-span-5"
+                : "lg:col-span-4";
         const inner = (
           <>
             {card.image && (
-              <div className="relative -mx-7 -mt-7 mb-7 aspect-[16/10] overflow-hidden">
+              <div
+                className={cn(
+                  "relative -mx-7 -mt-7 mb-7 aspect-[16/10] overflow-hidden sm:-mx-8 sm:-mt-8",
+                  isFeaturedCard &&
+                    "lg:mb-8 lg:min-h-[26rem] lg:flex-1 lg:aspect-auto",
+                )}
+              >
                 <Image
                   src={card.image.src}
                   alt={card.image.alt}
                   fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes={
+                    isFeaturedCard
+                      ? "(max-width: 640px) 100vw, (max-width: 1024px) 100vw, (max-width: 1440px) 58vw, 780px"
+                      : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 42vw, 560px"
+                  }
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                  style={{ objectPosition: card.image.position }}
                 />
               </div>
             )}
-            <div className="flex items-baseline justify-between gap-4">
-              <span
-                aria-hidden
+            {card.tag && (
+              <p
                 className={cn(
-                  "font-mono text-[11px] tracking-[0.18em]",
-                  dark ? "text-white/35" : "text-ink/35",
+                  "eyebrow mb-5 self-start rounded-full px-3.5 py-1.5",
+                  dark
+                    ? "bg-white/10 text-azure-bright"
+                    : "bg-accent text-azure-deep",
                 )}
               >
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              {card.tag && (
-                <p
-                  className={cn(
-                    "eyebrow",
-                    dark ? "text-azure-bright" : "text-azure-deep",
-                  )}
-                >
-                  {card.tag}
-                </p>
-              )}
-            </div>
+                {card.tag}
+              </p>
+            )}
             <h3
               className={cn(
-                "font-display mt-6 text-xl leading-snug font-medium",
+                "font-display text-2xl leading-tight font-semibold",
                 dark ? "text-white" : "text-ink",
               )}
             >
@@ -74,6 +87,7 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
             <p
               className={cn(
                 "mt-3 flex-1 text-sm leading-relaxed",
+                isFeaturedCard && "lg:flex-none",
                 dark ? "text-mist" : "text-slate-ink",
               )}
             >
@@ -97,10 +111,11 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
         );
 
         const cardClasses = cn(
-          "flex flex-col overflow-hidden p-7",
+          "flex min-h-[18rem] flex-col overflow-hidden rounded-[24px] p-7 sm:p-8",
+          layoutClass,
           dark
-            ? "border border-white/10 bg-white/[0.04]"
-            : "border border-ink/5 bg-white shadow-card",
+            ? "border border-white/10 bg-white/[0.06]"
+            : "border border-steel/12 bg-card",
         );
 
         return card.href ? (
@@ -112,7 +127,7 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
               "group transition-[transform,box-shadow,border-color,background-color] duration-300 hover:-translate-y-1",
               dark
                 ? "hover:border-azure/50 hover:bg-white/[0.06]"
-                : "hover:border-ink/10 hover:shadow-card-hover",
+                : "hover:border-azure/35 hover:shadow-card-hover",
             )}
           >
             {inner}

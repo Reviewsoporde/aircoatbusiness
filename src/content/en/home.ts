@@ -7,12 +7,10 @@ export const home: HomeContent = {
       "Business air conditioning for offices, shops and showrooms in Zuid-Holland. Advice, installation and maintenance by STEK-certified installers. Request a quote.",
   },
   hero: {
-    eyebrow: "Commercial air conditioning · Zuid-Holland",
+    eyebrow: "Commercial air conditioning in Zuid-Holland",
     h1: "Air conditioning for businesses in Zuid-Holland",
     intro:
-      "Airco@Business advises on, installs and maintains air conditioning for offices, commercial buildings, shops and showrooms. One dedicated partner for a constant, comfortable working climate — from initial advice to long-term maintenance.",
-    readoutLabel: "Indoor climate · open-plan office",
-    readoutCaption: "A constant working climate, all year round",
+      "Advice, installation and maintenance for offices, commercial buildings, shops and showrooms. Based in Voorschoten, serving businesses throughout Zuid-Holland.",
   },
   trustBar: [
     "Tailored advice",
@@ -35,14 +33,23 @@ export const home: HomeContent = {
           "Air conditioning tailored to your type of business premises, from office to showroom. Always based on on-site advice.",
         href: "/zakelijke-airconditioning",
         linkLabel: "Business air conditioning",
+        image: {
+          src: "/images/generated/commercial-office-hero.webp",
+          alt: "Modern commercial office with integrated climate control",
+          position: "58% 50%",
+        },
       },
       {
         tag: "Installation",
         title: "Installation",
         description:
-          "Advice, system selection, planning and a clean installation by our own experienced installers — with minimal disruption to your business operations.",
+          "Advice, system selection, planning and a clean installation by our own experienced installers, with minimal disruption to your business operations.",
         href: "/installatie",
         linkLabel: "Commercial air conditioning installation",
+        image: {
+          src: "/images/generated/commercial-building.webp",
+          alt: "Commercial reception with integrated air conditioning",
+        },
       },
       {
         tag: "Maintenance",
@@ -51,6 +58,11 @@ export const home: HomeContent = {
           "Preventive maintenance, prompt repairs and maintenance contracts that keep your systems reliable and efficient.",
         href: "/onderhoud",
         linkLabel: "Commercial air conditioning maintenance and service",
+        image: {
+          src: "/images/generated/maintenance-service.webp",
+          alt: "Maintenance on a commercial cassette unit",
+          position: "58% 45%",
+        },
       },
     ],
   },
@@ -66,6 +78,11 @@ export const home: HomeContent = {
           "A constant temperature for focused work, including in open-plan offices and meeting rooms.",
         href: "/airco-kantoor",
         linkLabel: "Office air conditioning",
+        image: {
+          src: "/images/generated/commercial-office-hero.webp",
+          alt: "Office space with a considered indoor climate",
+          position: "58% 50%",
+        },
       },
       {
         tag: "Commercial building",
@@ -74,6 +91,10 @@ export const home: HomeContent = {
           "Climate control for entire buildings with multiple zones, floors and functions.",
         href: "/airco-bedrijfspand",
         linkLabel: "Air conditioning for commercial buildings",
+        image: {
+          src: "/images/generated/commercial-building.webp",
+          alt: "Modern reception in a commercial building",
+        },
       },
       {
         tag: "Retail",
@@ -82,6 +103,10 @@ export const home: HomeContent = {
           "Comfort that keeps customers in your shop longer, with systems that blend invisibly into the retail interior.",
         href: "/airco-winkel",
         linkLabel: "Air conditioning for shops",
+        image: {
+          src: "/images/generated/retail-cassette.webp",
+          alt: "Retail space with cassette air conditioning",
+        },
       },
       {
         tag: "Showroom",
@@ -90,6 +115,10 @@ export const home: HomeContent = {
           "A stable climate for large, open presentation spaces where appearance matters.",
         href: "/airco-showroom",
         linkLabel: "Air conditioning for showrooms",
+        image: {
+          src: "/images/generated/showroom-cassette.webp",
+          alt: "Showroom with ceiling air conditioning",
+        },
       },
     ],
   },
@@ -105,14 +134,22 @@ export const home: HomeContent = {
           "Integrated into the suspended ceiling, with even air distribution in four directions. The standard for offices and shops.",
         href: "/cassette-airco-bedrijf",
         linkLabel: "Cassette air conditioning for businesses",
+        image: {
+          src: "/images/generated/showroom-cassette.webp",
+          alt: "Cassette units in a commercial showroom",
+        },
       },
       {
         tag: "Concealed",
         title: "Ducted air conditioning",
         description:
-          "Fully concealed above the ceiling — ideal for larger spaces and multiple zones served by one quiet system.",
+          "Fully concealed above the ceiling, ideal for larger spaces and multiple zones served by one quiet system.",
         href: "/kanaal-airco-bedrijf",
         linkLabel: "Ducted air conditioning for businesses",
+        image: {
+          src: "/images/generated/ducted-detail.webp",
+          alt: "Discreet duct grille in a commercial interior",
+        },
       },
       {
         tag: "Compact",
@@ -121,6 +158,10 @@ export const home: HomeContent = {
           "A practical solution for smaller spaces, individual offices and server rooms. Quick to install.",
         href: "/wandmodel-airco-bedrijf",
         linkLabel: "Wall-mounted air conditioning for businesses",
+        image: {
+          src: "/images/generated/wall-model-office.webp",
+          alt: "Commercial wall unit in a meeting room",
+        },
       },
     ],
   },
@@ -133,7 +174,7 @@ export const home: HomeContent = {
         tag: "Staff",
         title: "Comfort and productivity",
         description:
-          "Employees demonstrably perform better at a stable, comfortable temperature — too warm or too cold costs concentration and job satisfaction.",
+          "A stable, comfortable temperature supports concentration and job satisfaction. Excessive heat or cold distracts from the work.",
       },
       {
         tag: "Customers",
@@ -145,7 +186,7 @@ export const home: HomeContent = {
         tag: "Continuity",
         title: "Business reliability",
         description:
-          "A well-maintained, energy-efficient system prevents breakdowns on the hottest days — precisely when you need to be able to rely on it.",
+          "A well-maintained, energy-efficient system prevents breakdowns on the hottest days, precisely when you need to be able to rely on it.",
       },
     ],
   },
@@ -161,6 +202,11 @@ export const home: HomeContent = {
           "Periodic inspection and cleaning keep your system efficient and prevent surprises.",
         href: "/airco-onderhoud-zakelijk",
         linkLabel: "Commercial air conditioning maintenance",
+        image: {
+          src: "/images/generated/maintenance-service.webp",
+          alt: "Preventive maintenance on commercial air conditioning",
+          position: "58% 45%",
+        },
       },
       {
         tag: "Breakdown",
@@ -169,6 +215,11 @@ export const home: HomeContent = {
           "A fault or reduced cooling? Our engineers diagnose the problem quickly and repair it professionally.",
         href: "/airco-reparatie-zakelijk",
         linkLabel: "Commercial air conditioning repair",
+        image: {
+          src: "/images/generated/commercial-repair-diagnostics.webp",
+          alt: "Engineer diagnosing a commercial air conditioning unit during a repair",
+          position: "55% 42%",
+        },
       },
       {
         tag: "Contract",
@@ -177,6 +228,11 @@ export const home: HomeContent = {
           "A fixed maintenance schedule, priority in the event of breakdowns and predictable costs for your entire installation.",
         href: "/airco-onderhoudscontract-zakelijk",
         linkLabel: "Commercial maintenance contract",
+        image: {
+          src: "/images/generated/commercial-maintenance-contract-planning.webp",
+          alt: "Engineer and facilities manager reviewing a commercial maintenance contract",
+          position: "50% 48%",
+        },
       },
     ],
   },
@@ -215,9 +271,43 @@ export const home: HomeContent = {
     intro:
       "From offices to shops: a selection of recent commercial installations in Zuid-Holland.",
   },
+  reviews: {
+    h2: "What business customers say",
+    intro:
+      "Preview of the Google review section. Replace this copy with verified customer reviews before publishing.",
+    platformLabel: "Google Reviews",
+    previewLabel: "Preview",
+    ratingLabel: "5.0",
+    items: [
+      {
+        author: "Tom Verhoeven",
+        company: "Office manager, Leiden",
+        rating: 5,
+        dateLabel: "3 months ago",
+        text: "From the first visit, it was clear what our office actually needed. The schedule was kept and every workspace was left tidy.",
+        serviceLabel: "Commercial installation",
+      },
+      {
+        author: "Marieke de Jong",
+        company: "Store manager, Den Haag",
+        rating: 5,
+        dateLabel: "5 months ago",
+        text: "Our shop stayed open throughout the work. Everything was coordinated beforehand and the cassette units are barely noticeable.",
+        serviceLabel: "Cassette air conditioning",
+      },
+      {
+        author: "Robert van Leeuwen",
+        company: "Operations manager, Voorschoten",
+        rating: 5,
+        dateLabel: "1 month ago",
+        text: "The fault was found quickly and explained clearly. After the repair, we received practical advice on keeping the system properly maintained.",
+        serviceLabel: "Repair and maintenance",
+      },
+    ],
+  },
   serviceArea: {
     h2: "Commercial air conditioning in Voorschoten and Zuid-Holland",
-    body: "Airco@Business works from Voorschoten for businesses throughout Zuid-Holland — from Leiden and Den Haag to Rotterdam and Hoofddorp. For larger projects we also work beyond the region.",
+    body: "Airco@Business works from Voorschoten for businesses throughout Zuid-Holland, from Leiden and Den Haag to Rotterdam and Hoofddorp. For larger projects we also work beyond the region.",
     cities: ["Voorschoten", "Leiden", "Den Haag", "Rotterdam", "Hoofddorp"],
   },
   form: {
@@ -240,7 +330,7 @@ export const home: HomeContent = {
         question:
           "Does Airco@Business also work for commercial buildings, shops and showrooms?",
         answer:
-          "Yes. In addition to offices, we install air conditioning in complete commercial buildings, shops and showrooms — including solutions with multiple climate zones.",
+          "Yes. In addition to offices, we install air conditioning in complete commercial buildings, shops and showrooms, including solutions with multiple climate zones.",
       },
       {
         question: "Does Airco@Business provide maintenance and repairs?",

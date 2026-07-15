@@ -9,8 +9,10 @@ import type { Project } from "@/content/types";
  * never a stock photo posing as the real project.
  */
 export function ProjectCard({ project }: { project: Project }) {
+  if (project.status !== "published") return null;
+
   return (
-    <article className="group flex flex-col overflow-hidden border border-ink/5 bg-white shadow-card transition-[transform,box-shadow] duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+    <article className="group flex h-full flex-col overflow-hidden rounded-[24px] border border-steel/12 bg-card transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-azure/35 hover:shadow-card-hover">
       {project.image ? (
         <div className="relative aspect-[16/10] overflow-hidden">
           <Image
@@ -19,13 +21,12 @@ export function ProjectCard({ project }: { project: Project }) {
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+            style={{ objectPosition: project.image.position }}
           />
         </div>
       ) : (
-        <div className="airflow-lines grain relative flex aspect-[16/10] items-end bg-ink p-6">
-          <p className="font-mono text-xs uppercase tracking-[0.18em] text-mist">
-            {project.system}
-          </p>
+        <div className="grain glow-azure-low relative isolate flex aspect-[16/10] items-end bg-ink p-6">
+          <p className="eyebrow text-mist">{project.system}</p>
         </div>
       )}
       <div className="flex flex-1 flex-col p-7">
@@ -35,7 +36,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <h3 className="font-display mt-4 text-xl leading-snug font-medium text-ink">
           {project.title}
         </h3>
-        <p className="mt-2.5 font-mono text-xs tracking-wide text-slate-ink">
+        <p className="mt-2.5 text-xs font-medium text-slate-ink">
           {project.system}
         </p>
         <p className="mt-3.5 flex-1 text-sm leading-relaxed text-slate-ink">

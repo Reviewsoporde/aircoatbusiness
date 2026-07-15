@@ -30,7 +30,14 @@ export function pageMetadata(
       siteName: "Airco@Business",
       locale: locale === "nl" ? "nl_NL" : "en_US",
       type: "website",
-      images: [{ url: "/images/commercial-installation.webp" }],
+      images: [
+        {
+          url: "/images/generated/airco-business-social.webp",
+          width: 1200,
+          height: 630,
+          alt: "Airco@Business commercial climate solutions",
+        },
+      ],
     },
   };
 }

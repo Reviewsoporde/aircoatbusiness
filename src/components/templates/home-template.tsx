@@ -17,6 +17,9 @@ import { LeadForm } from "@/components/sections/lead-form";
 import { ContactAside } from "@/components/sections/contact-aside";
 import { CtaLink } from "@/components/sections/cta-link";
 import { Reveal } from "@/components/sections/reveal";
+import { GoogleReviews } from "@/components/sections/google-reviews";
+import { siteConfig } from "@/lib/site-config";
+import { homeClimateCardsWithVisuals } from "@/lib/page-visuals";
 
 type Props = {
   content: HomeContent;
@@ -27,6 +30,10 @@ type Props = {
 /** Homepage per docs/page-templates.md §2 — 17-section flow, lean nav, one H1. */
 export function HomeTemplate({ content, featuredProjects, locale }: Props) {
   const t = useTranslations("common");
+  const climateCards = homeClimateCardsWithVisuals(
+    content.whyClimate.cards,
+    locale,
+  );
 
   return (
     <>
@@ -39,8 +46,8 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         ]}
       />
 
-      {/* 2 — Hero (signature: settling temperature readout) */}
-      <HomeHero hero={content.hero} residential={content.residential} />
+      {/* 2 — Hero */}
+      <HomeHero hero={content.hero} reviews={content.reviews} />
 
       {/* 3 — Trust / value bar */}
       <TrustBar points={content.trustBar} />
@@ -77,7 +84,7 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         intro={content.whyClimate.intro}
         className="glow-azure"
       >
-        <CardGrid cards={content.whyClimate.cards} variant="dark" columns={3} />
+        <CardGrid cards={climateCards} variant="dark" columns={3} />
       </Section>
 
       {/* 8 — Maintenance & service */}
@@ -85,33 +92,31 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         variant="dark"
         h2={content.maintenance.h2}
         intro={content.maintenance.intro}
-        className="border-t border-white/8"
+        className="border-t border-white/10"
       >
         <CardGrid cards={content.maintenance.cards} variant="dark" columns={3} />
       </Section>
 
       {/* 9 — Process */}
       <Section
-        variant="dark"
+        variant="paper"
         eyebrow={t("ourProcess")}
         h2={content.process.h2}
-        className="border-t border-white/8"
       >
-        <ProcessSteps steps={content.process.steps} />
+        <ProcessSteps steps={content.process.steps} variant="light" />
         <Reveal delay={120} className="mt-14">
-          <CtaLink label={content.process.linkLabel} href="/werkwijze" variant="outline-dark" arrow />
+          <CtaLink label={content.process.linkLabel} href="/werkwijze" variant="outline-light" arrow />
         </Reveal>
       </Section>
 
       {/* 10 — Maintenance offer (aftercare framing, no discount language) */}
-      <Section variant="dark" className="border-t border-white/8">
-        <Reveal className="glow-azure-low relative flex flex-col items-start gap-8 border border-white/10 bg-white/[0.03] p-8 sm:p-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
+      <Section variant="dark" className="border-t border-white/10">
+        <Reveal className="relative isolate flex flex-col items-start gap-8 overflow-hidden rounded-[32px] border border-white/12 bg-carbon p-8 text-white sm:p-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
           <div className="max-w-2xl">
-            <p className="eyebrow mb-5 flex items-center gap-3 text-azure-bright">
-              <span aria-hidden className="h-px w-8 bg-azure-bright" />
+            <p className="eyebrow mb-5 text-azure-bright">
               {content.maintenanceOffer.h2}
             </p>
-            <p className="font-display text-xl leading-relaxed font-medium text-white sm:text-2xl">
+            <p className="font-editorial text-xl leading-relaxed font-medium text-white sm:text-2xl">
               {content.maintenanceOffer.body}
             </p>
           </div>
@@ -120,18 +125,33 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
       </Section>
 
       {/* 11 — Projects */}
-      <Section variant="light" h2={content.projects.h2} intro={content.projects.intro}>
-        <Reveal group className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {featuredProjects.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
-          ))}
-        </Reveal>
-        <Reveal delay={120} className="mt-14">
-          <CtaLink label={t("viewAllProjects")} href="/projecten" variant="outline-light" arrow />
-        </Reveal>
-      </Section>
+      {featuredProjects.length > 0 && (
+        <Section variant="light" h2={content.projects.h2} intro={content.projects.intro}>
+          <Reveal group className="grid gap-5 sm:grid-cols-2 lg:grid-cols-12">
+            {featuredProjects.map((project, index) => (
+              <div
+                key={project.slug}
+                className={index === 0 ? "sm:col-span-2 lg:col-span-7" : "lg:col-span-5"}
+              >
+                <ProjectCard project={project} />
+              </div>
+            ))}
+          </Reveal>
+          <Reveal delay={120} className="mt-14">
+            <CtaLink label={t("viewAllProjects")} href="/projecten" variant="outline-light" arrow />
+          </Reveal>
+        </Section>
+      )}
 
-      {/* 12 — Reviews: rendered only when real client reviews are supplied */}
+      {/* 12 — Google review widget preview. Replace mock copy with verified reviews before launch. */}
+      <Section
+        variant="dark"
+        h2={content.reviews.h2}
+        intro={content.reviews.intro}
+        className="glow-azure-low border-t border-white/10"
+      >
+        <GoogleReviews reviews={content.reviews} />
+      </Section>
 
       {/* 13 — Service area */}
       <Section variant="paper" h2={content.serviceArea.h2}>
@@ -144,9 +164,9 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
               <li key={city}>
                 <Link
                   href="/werkgebied"
-                  className="block border border-ink/15 px-4 py-2.5 font-mono text-xs tracking-[0.14em] text-slate-ink transition-colors duration-200 hover:border-azure-deep hover:text-azure-deep"
+                  className="block rounded-full border border-ink/15 px-4 py-2 text-sm font-medium text-slate-ink transition-colors duration-200 hover:border-azure-deep hover:text-azure-deep"
                 >
-                  {city.toUpperCase()}
+                  {city}
                 </Link>
               </li>
             ))}
@@ -162,7 +182,7 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         className="border-t border-ink/5"
       >
         <Reveal className="grid gap-10 lg:grid-cols-[1fr_minmax(0,340px)]">
-          <div className="border border-ink/5 bg-white p-6 shadow-panel sm:p-12">
+          <div className="rounded-[32px] border border-steel/12 bg-card p-6 shadow-panel sm:p-12">
             <LeadForm />
           </div>
           <ContactAside />
@@ -173,6 +193,16 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
       <Section variant="light" h2={content.faq.h2}>
         <Reveal className="max-w-3xl">
           <FaqSection items={content.faq.items} />
+        </Reveal>
+        <Reveal className="mt-16 border-t border-ink/10 pt-8 text-sm text-slate-ink">
+          {content.residential.text}{" "}
+          <a
+            href={siteConfig.residentialSite}
+            rel="noopener"
+            className="font-semibold text-azure-deep underline decoration-azure/30 underline-offset-4 hover:decoration-azure-deep"
+          >
+            {content.residential.linkLabel}
+          </a>
         </Reveal>
       </Section>
     </>

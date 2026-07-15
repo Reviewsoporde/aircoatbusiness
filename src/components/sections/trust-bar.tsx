@@ -1,15 +1,17 @@
+import { Check } from "lucide-react";
+
 /** Compact trust/value bar directly under the hero — short points only. */
 export function TrustBar({ points }: { points: string[] }) {
   return (
-    <div className="border-y border-white/8 bg-ink">
-      <ul className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-10 gap-y-2.5 px-4 py-5 sm:px-6 lg:justify-between lg:px-8">
+    <div className="border-b border-ink/5 bg-paper">
+      <ul className="mx-auto flex max-w-7xl flex-nowrap items-center justify-start gap-5 overflow-x-auto overscroll-x-contain px-4 py-5 [scrollbar-width:none] sm:px-6 lg:justify-between lg:px-8 [&::-webkit-scrollbar]:hidden">
         {points.map((point) => (
           <li
             key={point}
-            className="flex items-center gap-2.5 font-mono text-[11px] tracking-[0.18em] text-white/55"
+            className="flex shrink-0 items-center gap-2.5 whitespace-nowrap text-sm font-medium text-slate-ink"
           >
-            <span aria-hidden className="size-1 bg-azure-bright" />
-            {point.toUpperCase()}
+            <Check className="size-4 text-azure-deep" aria-hidden />
+            {point}
           </li>
         ))}
       </ul>

@@ -13,6 +13,7 @@ import { PageHero } from "@/components/sections/page-hero";
 import { Section } from "@/components/sections/section-shell";
 import { CardGrid } from "@/components/sections/card-grid";
 import { CtaLink } from "@/components/sections/cta-link";
+import { aboutCardsWithVisuals } from "@/lib/page-visuals";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -29,6 +30,8 @@ export default async function AboutPage({ params }: Props) {
 
   const t = await getTranslations("common");
   const { overOnsPage } = getBundle(locale);
+  const teamImages = overOnsPage.team.images.slice(0, 2);
+  const uspCards = aboutCardsWithVisuals(overOnsPage.usps.cards, locale);
 
   return (
     <>
@@ -57,21 +60,35 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </Section>
       <Section variant="light" h2={overOnsPage.usps.h2}>
-        <CardGrid cards={overOnsPage.usps.cards} />
+        <CardGrid cards={uspCards} />
       </Section>
       <Section variant="dark" h2={overOnsPage.team.h2} intro={overOnsPage.team.body}>
-        <div className="grid gap-5 sm:grid-cols-2">
-          {overOnsPage.team.images.map((image) => (
-            <div key={image.src} className="relative aspect-[4/3] overflow-hidden border border-white/10">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                sizes="(max-width: 640px) 100vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-          ))}
+        <div className="grid overflow-hidden rounded-[32px] border border-white/12 bg-carbon lg:grid-cols-12">
+          <div className="p-8 sm:p-10 lg:col-span-7 lg:p-12">
+            <p className="eyebrow text-azure-bright">Airco@Business</p>
+            <ul className="mt-8 divide-y divide-white/10 border-y border-white/10">
+              {overOnsPage.usps.cards.slice(0, 3).map((item) => (
+                <li key={item.title} className="grid gap-2 py-5 sm:grid-cols-[0.65fr_1fr] sm:gap-8">
+                  <span className="font-display text-xl font-semibold text-white">{item.title}</span>
+                  <span className="text-sm leading-relaxed text-mist">{item.description}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="grid min-h-72 gap-px overflow-hidden border-t border-white/10 bg-white/10 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-1 lg:border-t-0 lg:border-l">
+            {teamImages.map((image) => (
+              <div key={image.src} className="relative min-h-56 bg-ink">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 42vw"
+                  className="object-cover"
+                  style={{ objectPosition: image.position }}
+                />
+              </div>
+            ))}
+          </div>
         </div>
         <div className="mt-14">
           <CtaLink ctaKey="planConsultation" variant="azure" arrow />

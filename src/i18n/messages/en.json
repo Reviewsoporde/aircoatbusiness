@@ -52,10 +52,27 @@
     "propertyType": "Property type",
     "service": "Required service",
     "message": "Message or project details (optional)",
+    "heroTitle": "Request a business quote",
+    "heroIntro": "Tell us briefly what you need, then add your contact details.",
+    "progress": "{current} of {total}",
+    "stepOneTitle": "Your location and request",
+    "stepOneIntro": "Select the service, property type and location.",
+    "stepTwoTitle": "Your contact details",
+    "stepTwoIntro": "This allows a specialist to assess your enquiry properly.",
+    "continue": "Continue to contact details",
+    "back": "Back",
     "submit": "Request a quote",
     "submitting": "Sending…",
     "selectPlaceholder": "Select an option",
-    "success": "Thank you for your enquiry. We will contact you within one business day.",
+    "success": "Thank you for your enquiry.",
+    "successTitle": "Your enquiry has been received",
+    "successBody": "A specialist will review the information and contact you during office hours using the details provided.",
+    "successNextTitle": "What happens next?",
+    "successNextOne": "We review your location, business space and required service.",
+    "successNextTwo": "We get in touch to discuss the situation and a suitable next step.",
+    "callFallback": "Prefer to call: {phone}",
+    "privacyNote": "We use your details only to respond to this commercial enquiry.",
+    "privacyLink": "Read the privacy policy",
     "error": "Something went wrong. Please try again or call us at {phone}.",
     "required": "This field is required",
     "invalidEmail": "Enter a valid email address",
@@ -91,11 +108,13 @@
     "faqTitle": "Frequently asked questions",
     "ourProcess": "Our process",
     "viewAllProjects": "View all projects",
+    "projectsPendingTitle": "Project documentation in progress",
+    "projectsPendingBody": "We only publish a project once its photography and project facts have been confirmed by the client. In the meantime, we are happy to discuss a comparable commercial situation.",
     "breadcrumbHome": "Home"
   },
   "contactAside": {
     "title": "Direct contact",
-    "responsePromise": "We respond to every enquiry within one business day. Prefer to talk now? Call us during office hours.",
+    "responsePromise": "A specialist reviews your enquiry and contacts you during office hours. Prefer to talk now? Call us.",
     "hours": "Mon – Fri 08:00 – 17:00"
   },
   "localeSwitcher": {
@@ -103,9 +122,21 @@
     "nl": "Nederlands",
     "en": "English"
   },
+  "accessibility": {
+    "skipToContent": "Skip to main content"
+  },
+  "consent": {
+    "title": "Your privacy, your choice",
+    "body": "With your permission, we use limited analytics to improve the website.",
+    "details": "View the cookie policy",
+    "reject": "Necessary only",
+    "accept": "Allow analytics",
+    "settings": "Cookie preferences"
+  },
   "notFound": {
     "title": "Page not found",
     "description": "The page you are looking for does not exist or has been moved.",
-    "backHome": "Back to home"
+    "backHome": "Back to home",
+    "serviceLinks": "Go to a service"
   }
 }

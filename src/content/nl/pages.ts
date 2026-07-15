@@ -76,6 +76,7 @@ export const werkwijzePage: ProcessPageContent = {
         "Comfortklachten en knelpunten in kaart",
         "Gebruik, bezetting en planning besproken",
         "Eerste indicatie van mogelijke oplossingen",
+        "Gewenste uitstraling en bediening besproken",
       ],
     },
     {
@@ -86,6 +87,7 @@ export const werkwijzePage: ProcessPageContent = {
         "Opname van ruimtes, plafonds en gevels",
         "Capaciteitsberekening per zone",
         "Systeemadvies met heldere afwegingen",
+        "Plaatsing van binnen- en buitenunits beoordeeld",
       ],
     },
     {
@@ -96,6 +98,7 @@ export const werkwijzePage: ProcessPageContent = {
         "Transparante offerte zonder verrassingen",
         "Installatiedatum en fasering in overleg",
         "Afstemming met pandeigenaar of VvE indien nodig",
+        "Systeemkeuze en werkzaamheden duidelijk gespecificeerd",
       ],
     },
     {
@@ -106,6 +109,7 @@ export const werkwijzePage: ProcessPageContent = {
         "STEK-gecertificeerde montage",
         "Werkplekken afgeschermd, overlast beperkt",
         "Test, inregeling en gebruiksinstructie bij oplevering",
+        "Leidingwerk en afwerking netjes uitgevoerd",
       ],
     },
     {
@@ -116,6 +120,7 @@ export const werkwijzePage: ProcessPageContent = {
         "Eerste onderhoudsbeurt na installatie ingepland",
         "Onderhoudscontract met vaste planning mogelijk",
         "Snelle hulp bij storingen",
+        "Vast aanspreekpunt voor servicevragen",
       ],
     },
   ],
@@ -125,7 +130,7 @@ export const werkwijzePage: ProcessPageContent = {
       {
         question: "Hoe snel kan een project starten?",
         answer:
-          "Na akkoord op de offerte plannen we doorgaans binnen enkele weken in. In het voorjaar loopt de agenda snel vol — begin op tijd als u vóór de zomer koeling wilt.",
+          "Dat hangt af van de omvang van het project, beschikbaarheid van systemen en de actuele planning. Na de opname bespreken we een realistische uitvoeringsperiode.",
       },
       {
         question: "Wat heeft u van ons nodig?",
@@ -145,18 +150,53 @@ export const contactPage: ContactPageContent = {
   meta: {
     title: "Contact | Offerte of adviesgesprek | Airco@Business",
     description:
-      "Neem contact op met Airco@Business voor een zakelijke offerte, adviesgesprek, onderhoud of storing. Reactie binnen één werkdag. Bel 071 - 240 05 97.",
+      "Neem contact op met Airco@Business voor een zakelijke offerte, adviesgesprek, onderhoud of storing in Zuid-Holland.",
   },
   hero: {
     eyebrow: "Contact",
     h1: "Neem contact op: offerte, advies of service",
     intro:
-      "Of het nu gaat om een nieuwe installatie, onderhoud of een dringende storing: u krijgt binnen één werkdag reactie. Liever direct iemand spreken? Bel ons tijdens kantooruren.",
+      "Of het nu gaat om een nieuwe installatie, onderhoud of een dringende storing: een specialist beoordeelt uw aanvraag. Liever direct iemand spreken? Bel ons tijdens kantooruren.",
+    image: {
+      src: "/images/generated/commercial-installation-assessment.webp",
+      alt: "Aircoadviseur en facilitair verantwoordelijke bespreken een zakelijke installatie op locatie",
+      position: "center 46%",
+    },
   },
-  form: { h2: "Vraag een zakelijke offerte aan" },
+  contactOptions: {
+    h2: "Kies de contactmogelijkheid die bij uw vraag past",
+    intro:
+      "Een offerte bespreken, een onderhoudsvraag stellen of een storing melden? Neem rechtstreeks contact op of stuur de gegevens van uw locatie mee via het formulier.",
+    phone: {
+      title: "Liever direct overleggen?",
+      body: "Bel tijdens kantooruren voor een eerste beoordeling van uw zakelijke vraag.",
+    },
+    email: {
+      title: "Documenten of foto’s meesturen?",
+      body: "Mail uw vraag, plattegrond of foto’s van de bestaande installatie.",
+    },
+    route: {
+      title: "Bezoek onze locatie",
+      body: "U vindt Airco@Business aan de Dobbeweg in Voorschoten. Bezoek op afspraak.",
+      label: "Open route in Google Maps",
+    },
+  },
+  form: {
+    eyebrow: "Zakelijke aanvraag",
+    h2: "Vraag een zakelijke offerte aan",
+    intro:
+      "Deel uw locatie, type bedrijfsruimte en gewenste dienst. Zo kan een specialist uw aanvraag gericht beoordelen en het juiste vervolg met u afstemmen.",
+  },
   serviceArea: {
-    h2: "Werkgebied",
+    eyebrow: "Locatie & werkgebied",
+    h2: "Gevestigd in Voorschoten, actief in Zuid-Holland",
     body: "Airco@Business werkt vanuit Voorschoten voor bedrijven in heel Zuid-Holland, waaronder Leiden, Den Haag, Rotterdam en Hoofddorp. Grotere projecten buiten de regio zijn bespreekbaar.",
+    mapTitle: "Google Maps-kaart van Airco@Business in Voorschoten",
+    detailsTitle: "Bezoek- en bedrijfsgegevens",
+    addressLabel: "Adres",
+    hoursLabel: "Openingstijden",
+    registrationLabel: "Bedrijfsgegevens",
+    routeLabel: "Plan uw route",
   },
   faq: {
     h2: "Praktische vragen",
@@ -164,7 +204,7 @@ export const contactPage: ContactPageContent = {
       {
         question: "Hoe snel krijg ik reactie op mijn aanvraag?",
         answer:
-          "Binnen één werkdag. Aanvragen die voor 12:00 binnenkomen, pakken we vrijwel altijd dezelfde dag op.",
+          "Een specialist beoordeelt uw aanvraag tijdens kantooruren en neemt contact op via de gegevens die u achterlaat.",
       },
       {
         question: "Kan ik direct een adviesgesprek inplannen?",
@@ -174,7 +214,7 @@ export const contactPage: ContactPageContent = {
       {
         question: "Ik heb een storing — wat is de snelste route?",
         answer:
-          "Bel ons op 071 - 240 05 97. Telefonische storingsmeldingen kunnen we het snelst inplannen; contractklanten hebben voorrang.",
+          "Bel ons via het zakelijke nummer op deze pagina. Telefonische storingsmeldingen kunnen we het snelst beoordelen; contractklanten hebben voorrang.",
       },
     ],
   },

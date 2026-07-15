@@ -18,7 +18,7 @@ export const installatie: ServicePageContent = {
     secondary: { label: "Vraag een zakelijke offerte aan", href: "/contact" },
     trustPoints: ["Eigen monteurs", "STEK-gecertificeerd", "Vaste planning"],
     image: {
-      src: "/images/commercial-installation.webp",
+      src: "/images/generated/commercial-building.webp",
       alt: "Zakelijke airco installatie door monteurs van Airco@Business",
     },
   },

@@ -76,6 +76,7 @@ export const werkwijzePage: ProcessPageContent = {
         "Comfort issues and bottlenecks mapped out",
         "Use, occupancy and schedule discussed",
         "A first indication of possible solutions",
+        "Preferred appearance and controls discussed",
       ],
     },
     {
@@ -86,6 +87,7 @@ export const werkwijzePage: ProcessPageContent = {
         "Survey of rooms, ceilings and facades",
         "Capacity calculation per zone",
         "System advice with clear trade-offs",
+        "Placement of indoor and outdoor units assessed",
       ],
     },
     {
@@ -96,6 +98,7 @@ export const werkwijzePage: ProcessPageContent = {
         "A transparent quote with no surprises",
         "Installation date and phasing by mutual agreement",
         "Coordination with the building owner or owners' association where needed",
+        "System choice and work clearly specified",
       ],
     },
     {
@@ -106,6 +109,7 @@ export const werkwijzePage: ProcessPageContent = {
         "STEK-certified installation",
         "Workplaces screened off, disruption kept to a minimum",
         "Testing, commissioning and user instructions at handover",
+        "Pipework and finishing completed neatly",
       ],
     },
     {
@@ -116,6 +120,7 @@ export const werkwijzePage: ProcessPageContent = {
         "First maintenance visit scheduled after installation",
         "A maintenance contract with a fixed schedule is available",
         "Fast help in the event of breakdowns",
+        "A dedicated point of contact for service questions",
       ],
     },
   ],
@@ -125,7 +130,7 @@ export const werkwijzePage: ProcessPageContent = {
       {
         question: "How quickly can a project start?",
         answer:
-          "Once the quote is approved, we usually schedule within a few weeks. In spring the calendar fills up fast — start early if you want cooling in place before the summer.",
+          "That depends on project scope, system availability and the current schedule. After the survey, we discuss a realistic installation period.",
       },
       {
         question: "What do you need from us?",
@@ -145,18 +150,53 @@ export const contactPage: ContactPageContent = {
   meta: {
     title: "Contact | Quote or consultation | Airco@Business",
     description:
-      "Contact Airco@Business for a business quote, consultation, maintenance or a breakdown. A response within one working day. Call 071 - 240 05 97.",
+      "Contact Airco@Business for a commercial quote, consultation, maintenance or a breakdown in Zuid-Holland.",
   },
   hero: {
     eyebrow: "Contact",
     h1: "Get in touch: quote, advice or service",
     intro:
-      "Whether it concerns a new installation, maintenance or an urgent breakdown: you will receive a response within one working day. Prefer to speak to someone directly? Call us during office hours.",
+      "Whether it concerns a new installation, maintenance or an urgent breakdown, a specialist will assess your enquiry. Prefer to speak to someone directly? Call us during office hours.",
+    image: {
+      src: "/images/generated/commercial-installation-assessment.webp",
+      alt: "Air conditioning advisor and facilities manager discussing a commercial installation on site",
+      position: "center 46%",
+    },
   },
-  form: { h2: "Request a business quote" },
+  contactOptions: {
+    h2: "Choose the contact option that suits your enquiry",
+    intro:
+      "Discuss a quote, ask about maintenance or report a fault. Contact us directly or include the details of your location in the enquiry form.",
+    phone: {
+      title: "Prefer to discuss it directly?",
+      body: "Call during office hours for an initial assessment of your commercial enquiry.",
+    },
+    email: {
+      title: "Need to include documents or photos?",
+      body: "Email your question, floor plan or photos of the existing installation.",
+    },
+    route: {
+      title: "Visit our location",
+      body: "Airco@Business is located on Dobbeweg in Voorschoten. Visits by appointment.",
+      label: "Open route in Google Maps",
+    },
+  },
+  form: {
+    eyebrow: "Commercial enquiry",
+    h2: "Request a business quote",
+    intro:
+      "Share your location, property type and required service. This helps a specialist assess your enquiry and agree the right next step with you.",
+  },
   serviceArea: {
-    h2: "Service area",
+    eyebrow: "Location & service area",
+    h2: "Based in Voorschoten, working across Zuid-Holland",
     body: "Airco@Business works from Voorschoten for businesses across the whole of Zuid-Holland, including Leiden, Den Haag, Rotterdam and Hoofddorp. Larger projects outside the region can be discussed.",
+    mapTitle: "Google Maps location of Airco@Business in Voorschoten",
+    detailsTitle: "Visitor and business details",
+    addressLabel: "Address",
+    hoursLabel: "Opening hours",
+    registrationLabel: "Company details",
+    routeLabel: "Plan your route",
   },
   faq: {
     h2: "Practical questions",
@@ -164,7 +204,7 @@ export const contactPage: ContactPageContent = {
       {
         question: "How quickly will I receive a response to my enquiry?",
         answer:
-          "Within one working day. Enquiries received before 12:00 are almost always picked up the same day.",
+          "A specialist reviews your enquiry during office hours and contacts you using the details you provide.",
       },
       {
         question: "Can I schedule a consultation straight away?",
@@ -174,7 +214,7 @@ export const contactPage: ContactPageContent = {
       {
         question: "I have a breakdown — what is the fastest route?",
         answer:
-          "Call us on 071 - 240 05 97. Faults reported by phone can be scheduled the fastest; contract customers receive priority.",
+          "Call the business number shown on this page. Faults reported by phone can be assessed fastest; contract customers receive priority.",
       },
     ],
   },

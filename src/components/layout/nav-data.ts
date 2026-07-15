@@ -9,6 +9,7 @@ export type NavItem = {
 
 // Header navigation per docs/site-architecture.md §2 — exactly these items, nothing more.
 export const mainNav: NavItem[] = [
+  { labelKey: "home", href: "/" },
   {
     labelKey: "businessAC",
     href: "/zakelijke-airconditioning",
