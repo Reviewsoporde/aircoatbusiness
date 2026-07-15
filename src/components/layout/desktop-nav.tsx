@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import { mainNav, type NavItem } from "./nav-data";
 
 const navLinkClasses =
-  "relative block rounded-full px-3 py-2.5 text-[13px] font-medium tracking-wide text-white/76 transition-[background-color,color] duration-200 hover:bg-white/10 hover:text-white focus-visible:bg-white/10 focus-visible:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-azure-bright/70";
+  "relative block rounded-full px-3.5 py-2.5 text-[13px] font-medium tracking-wide text-white/76 transition-[background-color,color] duration-200 hover:bg-white/10 hover:text-white focus-visible:bg-white/10 focus-visible:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-azure-bright/70 2xl:px-4";
 
 function itemIsActive(pathname: string, item: NavItem) {
   return (
@@ -21,7 +21,7 @@ export function DesktopNav() {
 
   return (
     <nav aria-label={t("menu")} className="hidden xl:block">
-      <ul className="flex items-center gap-0.5">
+      <ul className="flex items-center gap-1 2xl:gap-2">
         {mainNav.map((item) => {
           const active = itemIsActive(pathname, item);
           return (
