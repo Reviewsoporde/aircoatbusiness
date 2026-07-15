@@ -21,15 +21,15 @@ export function Header() {
       <HeaderScrollFx targetId="site-header" />
       <HeaderNavFx targetId="site-header" />
 
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 transition-[height] duration-300 group-data-[scrolled]:h-18 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between gap-4 px-4 transition-[height] duration-300 group-data-[scrolled]:h-20 sm:px-6 lg:px-8">
         <Link href="/" className="shrink-0" aria-label="Airco@Business home">
           <Image
             src="/images/logo.png"
             alt="Airco@Business"
-            width={224}
-            height={71}
+            width={769}
+            height={260}
             priority
-            className="h-14 w-auto transition-[height] duration-300 group-data-[scrolled]:h-12 xl:h-16 xl:group-data-[scrolled]:h-14"
+            className="h-16 w-auto transition-[height] duration-300 group-data-[scrolled]:h-14 xl:h-20 xl:group-data-[scrolled]:h-16"
           />
         </Link>
 
