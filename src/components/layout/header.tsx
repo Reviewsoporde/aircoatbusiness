@@ -21,7 +21,7 @@ export function Header() {
       <HeaderScrollFx targetId="site-header" />
       <HeaderNavFx targetId="site-header" />
 
-      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between gap-4 px-4 transition-[height] duration-300 group-data-[scrolled]:h-20 sm:px-6 lg:px-8">
+      <div className="flex h-24 w-full items-center justify-between gap-4 px-4 transition-[height] duration-300 group-data-[scrolled]:h-20 sm:px-6 lg:px-8">
         <Link href="/" className="shrink-0" aria-label="Airco@Business home">
           <Image
             src="/images/logo.png"
