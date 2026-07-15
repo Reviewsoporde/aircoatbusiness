@@ -378,6 +378,12 @@ export const werkgebiedPage: AreaPageContent = {
   hero: {
     eyebrow: "Service area",
     h1: "Commercial air conditioning across Zuid-Holland",
+    image: {
+      src: "/images/generated/werkgebied-zuid-holland-hero.webp",
+      alt: "Business district in Zuid-Holland with commercial air-conditioning systems on the roof",
+      position: "center center",
+    },
+    variant: "image-led",
     intro:
       "From our base in Voorschoten, we serve businesses throughout the region — with short travel times for installation, maintenance and breakdowns.",
   },

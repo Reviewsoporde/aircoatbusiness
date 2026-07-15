@@ -378,6 +378,12 @@ export const werkgebiedPage: AreaPageContent = {
   hero: {
     eyebrow: "Werkgebied",
     h1: "Zakelijke airconditioning in heel Zuid-Holland",
+    image: {
+      src: "/images/generated/werkgebied-zuid-holland-hero.webp",
+      alt: "Bedrijventerrein in Zuid-Holland met zakelijke airco-installaties op het dak",
+      position: "center center",
+    },
+    variant: "image-led",
     intro:
       "Vanuit onze vestiging in Voorschoten bedienen wij bedrijven in de hele regio — met korte aanrijtijden voor installatie, onderhoud en storingen.",
   },

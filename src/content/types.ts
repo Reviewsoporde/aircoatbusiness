@@ -194,7 +194,13 @@ export type FaqPageContent = {
 
 export type AreaPageContent = {
   meta: { title: string; description: string };
-  hero: { eyebrow: string; h1: string; intro: string };
+  hero: {
+    eyebrow: string;
+    h1: string;
+    intro: string;
+    image?: ImgRef;
+    variant?: HeroVariant;
+  };
   region: { h2: string; body: string };
   cities: { name: string; blurb: string }[];
   beyond: string;

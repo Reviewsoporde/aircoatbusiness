@@ -45,6 +45,8 @@ export default async function ServiceAreaPage({ params }: Props) {
           intro: werkgebiedPage.hero.intro,
           cta: "requestQuote",
           trustPoints: [],
+          image: werkgebiedPage.hero.image,
+          variant: werkgebiedPage.hero.variant,
         }}
       />
       <Section variant="paper" h2={werkgebiedPage.region.h2} intro={werkgebiedPage.region.body}>
