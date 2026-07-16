@@ -14,9 +14,9 @@ export const projects: Project[] = [
     summary:
       "A ceiling cassette was neatly integrated into the suspended ceiling to support a comfortable office climate without taking up usable wall space.",
     image: {
-      src: "/images/projects/kantoor-zoetermeer.jpeg",
+      src: "/images/projects/kantoor-zoetermeer-enhanced.webp",
       alt: "Ceiling cassette in an office in Zoetermeer",
-      position: "50% 47%",
+      position: "50% 50%",
     },
     filters: ["office", "cassette"],
     serviceHref: "/airco-kantoor",
@@ -34,9 +34,9 @@ export const projects: Project[] = [
     summary:
       "A cassette unit was carefully integrated into the shop ceiling to complement the interior without taking up valuable wall display space.",
     image: {
-      src: "/images/projects/frommesshop-voorschoten.jpeg",
+      src: "/images/projects/frommesshop-voorschoten-enhanced.webp",
       alt: "Ceiling cassette in Frommesshop clothing shop in Voorschoten",
-      position: "50% 52%",
+      position: "50% 50%",
     },
     filters: ["retail", "cassette"],
     serviceHref: "/airco-winkel",
@@ -54,9 +54,9 @@ export const projects: Project[] = [
     summary:
       "A ceiling cassette was positioned centrally in the office for a comfortable working climate, with the equipment compactly housed in the suspended ceiling.",
     image: {
-      src: "/images/projects/boekhoudkantoor-adhoc-leiden.jpeg",
+      src: "/images/projects/boekhoudkantoor-adhoc-leiden-enhanced.webp",
       alt: "Ceiling cassette in the Adhoc accountancy office in Leiden",
-      position: "50% 30%",
+      position: "50% 50%",
     },
     filters: ["office", "cassette"],
     serviceHref: "/airco-kantoor",

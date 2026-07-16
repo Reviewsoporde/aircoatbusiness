@@ -14,7 +14,7 @@ export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-[24px] border border-steel/12 bg-card transition-[transform,box-shadow,border-color] duration-300 hover:-translate-y-1 hover:border-azure/35 hover:shadow-card-hover">
       {project.image ? (
-        <div className="relative aspect-[16/10] overflow-hidden bg-ink sm:aspect-[4/3]">
+        <div className="relative aspect-[4/3] overflow-hidden bg-ink">
           <Image
             src={project.image.src}
             alt={project.image.alt}
@@ -25,7 +25,7 @@ export function ProjectCard({ project }: { project: Project }) {
           />
         </div>
       ) : (
-        <div className="grain glow-azure-low relative isolate flex aspect-[16/10] items-end bg-ink p-6 sm:aspect-[4/3]">
+        <div className="grain glow-azure-low relative isolate flex aspect-[4/3] items-end bg-ink p-6">
           <p className="eyebrow text-mist">{project.system}</p>
         </div>
       )}

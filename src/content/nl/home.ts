@@ -311,8 +311,14 @@ export const home: HomeContent = {
   },
   serviceArea: {
     h2: "Zakelijke airconditioning in Voorschoten en Zuid-Holland",
-    body: "Airco@Business werkt vanuit Voorschoten voor bedrijven in heel Zuid-Holland, van Leiden en Den Haag tot Rotterdam en Hoofddorp. Voor grotere projecten werken we ook daarbuiten.",
+    body: "Vanuit Voorschoten helpen we bedrijven in heel Zuid-Holland, waaronder Leiden, Den Haag, Rotterdam en Hoofddorp. Ook grotere projecten buiten de regio zijn bespreekbaar.",
     cities: ["Voorschoten", "Leiden", "Den Haag", "Rotterdam", "Hoofddorp"],
+    coverageLabel: "Ons werkgebied",
+    linkLabel: "Bekijk ons volledige werkgebied",
+    mapTitle: "Google Maps-kaart van Airco@Business in Voorschoten",
+    profileLabel:
+      "Bekijk het Google-bedrijfsprofiel van Airco@Business in Voorschoten (opent in een nieuw tabblad)",
+    profileLinkLabel: "Openen in Google Maps",
   },
   form: {
     h2: "Vraag een zakelijke offerte aan",

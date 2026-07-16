@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
+import { MapPin } from "lucide-react";
 import type { HomeContent, Project } from "@/content/types";
 import type { Locale } from "@/i18n/routing";
-import { Link } from "@/i18n/navigation";
 import { absoluteUrl } from "@/lib/urls";
 import { breadcrumbSchema, faqSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/seo/json-ld";
@@ -18,6 +18,7 @@ import { ContactAside } from "@/components/sections/contact-aside";
 import { CtaLink } from "@/components/sections/cta-link";
 import { Reveal } from "@/components/sections/reveal";
 import { GoogleReviews } from "@/components/sections/google-reviews";
+import { GoogleBusinessMap } from "@/components/sections/google-business-map";
 import { siteConfig } from "@/lib/site-config";
 import { homeClimateCardsWithVisuals } from "@/lib/page-visuals";
 
@@ -152,22 +153,50 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
 
       {/* 13 - Service area */}
       <Section variant="paper" h2={content.serviceArea.h2}>
-        <Reveal className="max-w-3xl">
-          <p className="text-base leading-relaxed text-slate-ink sm:text-lg">
-            {content.serviceArea.body}
-          </p>
-          <ul className="mt-8 flex flex-wrap gap-3">
-            {content.serviceArea.cities.map((city) => (
-              <li key={city}>
-                <Link
+        <Reveal className="overflow-hidden rounded-[32px] border border-ink/10 bg-ink shadow-panel">
+          <div className="grid lg:grid-cols-[minmax(320px,0.72fr)_minmax(0,1.28fr)]">
+            <div className="flex flex-col justify-between p-7 text-white sm:p-10 lg:p-12">
+              <div>
+                <p className="max-w-lg text-base leading-relaxed text-mist sm:text-lg">
+                  {content.serviceArea.body}
+                </p>
+
+                <div className="mt-8 border-t border-white/12 pt-7">
+                  <div className="flex items-center gap-2.5">
+                    <MapPin className="size-4 text-azure-bright" aria-hidden />
+                    <h3 className="text-sm font-semibold text-white">
+                      {content.serviceArea.coverageLabel}
+                    </h3>
+                  </div>
+                  <ul className="mt-5 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-mist">
+                    {content.serviceArea.cities.map((city) => (
+                      <li key={city} className="border-l border-azure/55 pl-3">
+                        {city}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              <div className="mt-9 lg:mt-12">
+                <CtaLink
+                  label={content.serviceArea.linkLabel}
                   href="/werkgebied"
-                  className="block rounded-full border border-ink/15 px-4 py-2 text-sm font-medium text-slate-ink transition-colors duration-200 hover:border-azure-deep hover:text-azure-deep"
-                >
-                  {city}
-                </Link>
-              </li>
-            ))}
-          </ul>
+                  variant="azure"
+                  arrow
+                  className="w-full sm:w-auto"
+                />
+              </div>
+            </div>
+
+            <GoogleBusinessMap
+              title={content.serviceArea.mapTitle}
+              profileLabel={content.serviceArea.profileLabel}
+              profileLinkLabel={content.serviceArea.profileLinkLabel}
+              compactProfileLink
+              className="min-h-[360px] rounded-none border-0 shadow-none sm:min-h-[430px] lg:h-full lg:min-h-[520px]"
+            />
+          </div>
         </Reveal>
       </Section>
 

@@ -239,7 +239,16 @@ export type HomeContent = {
   maintenanceOffer: { h2: string; body: string };
   projects: { h2: string; intro?: string };
   reviews: ReviewSection;
-  serviceArea: { h2: string; body: string; cities: string[] };
+  serviceArea: {
+    h2: string;
+    body: string;
+    cities: string[];
+    coverageLabel: string;
+    linkLabel: string;
+    mapTitle: string;
+    profileLabel: string;
+    profileLinkLabel: string;
+  };
   form: { h2: string };
   faq: { h2: string; items: FAQItem[] };
   residential: { text: string; linkLabel: string };
