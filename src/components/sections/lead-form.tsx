@@ -129,6 +129,7 @@ export function LeadForm({
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           ...values,
+          formType: "full",
           sourcePage: pathname,
           locale,
         }),

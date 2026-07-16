@@ -92,8 +92,9 @@ export default async function ContactPage({ params }: Props) {
           ctaAnchor: "#offerte",
           trustPoints: [],
           image: contactPage.hero.image,
-          variant: "split",
+          variant: "image-led",
           urgent: true,
+          whatsappLabel: tFooter("whatsapp"),
         }}
       />
 

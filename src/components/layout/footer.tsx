@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { SiWhatsapp } from "@icons-pack/react-simple-icons";
+import { Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import type { AppPathname } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site-config";
@@ -134,11 +136,30 @@ export function Footer() {
             <p className="font-editorial text-lg leading-snug font-medium text-white/90 sm:text-xl">
               {t("tagline")}
             </p>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <a
+                href={`https://wa.me/${siteConfig.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-11 items-center gap-2.5 whitespace-nowrap rounded-full bg-azure px-5 py-3 text-sm font-semibold text-ink transition-all duration-300 hover:-translate-y-0.5 hover:bg-azure-bright active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-azure-bright/70 focus-visible:ring-offset-2 focus-visible:ring-offset-ink"
+              >
+                <SiWhatsapp size={16} aria-hidden focusable="false" />
+                {t("whatsapp")}
+              </a>
+              <PhoneLink
+                phone={siteConfig.phone}
+                className="inline-flex min-h-11 items-center gap-2.5 whitespace-nowrap rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/60 hover:bg-white/8 active:translate-y-0 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-azure-bright/70"
+              >
+                <Phone className="size-4 text-azure-bright" aria-hidden />
+                {t("call")}
+              </PhoneLink>
+            </div>
           </div>
           <div className="flex items-center gap-4">
             <a
               href={siteConfig.socials.instagram}
-              rel="noopener"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
                 className="flex size-11 items-center justify-center rounded-full border border-white/15 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
             >
@@ -146,7 +167,8 @@ export function Footer() {
             </a>
             <a
               href={siteConfig.socials.facebook}
-              rel="noopener"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
                 className="flex size-11 items-center justify-center rounded-full border border-white/15 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
             >
@@ -154,7 +176,8 @@ export function Footer() {
             </a>
             <a
               href={siteConfig.socials.linkedin}
-              rel="noopener"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="LinkedIn"
                 className="flex size-11 items-center justify-center rounded-full border border-white/15 text-mist transition-colors duration-200 hover:border-azure hover:text-azure-bright"
             >

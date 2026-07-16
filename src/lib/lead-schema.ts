@@ -19,8 +19,7 @@ export const serviceOptions = [
   "notSure",
 ] as const;
 
-export const leadSchema = z.object({
-  companyName: z.string().trim().min(1).max(200),
+const contactSchema = z.object({
   contactPerson: z.string().trim().min(1).max(200),
   phone: z
     .string()
@@ -29,14 +28,29 @@ export const leadSchema = z.object({
     .max(30)
     .regex(/^[+\d][\d\s\-()]+$/),
   email: z.string().trim().email().max(200),
-  location: z.string().trim().min(1).max(200),
-  propertyType: z.enum(propertyTypes),
-  service: z.enum(serviceOptions),
-  message: z.string().trim().max(5000).optional().or(z.literal("")),
   // Honeypot - checked (and dropped) in the API route before validation.
   website: z.string().optional(),
   sourcePage: z.string().max(500),
   locale: z.enum(["nl", "en"]),
 });
+
+const fullLeadSchema = contactSchema.extend({
+  formType: z.literal("full"),
+  companyName: z.string().trim().min(1).max(200),
+  location: z.string().trim().min(1).max(200),
+  propertyType: z.enum(propertyTypes),
+  service: z.enum(serviceOptions),
+  message: z.string().trim().max(5000).optional().or(z.literal("")),
+});
+
+const heroLeadSchema = contactSchema.extend({
+  formType: z.literal("hero"),
+  service: z.literal("businessAC"),
+});
+
+export const leadSchema = z.discriminatedUnion("formType", [
+  fullLeadSchema,
+  heroLeadSchema,
+]);
 
 export type LeadInput = z.infer<typeof leadSchema>;

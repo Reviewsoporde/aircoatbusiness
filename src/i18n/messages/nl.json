@@ -41,6 +41,8 @@
     "kvk": "KvK",
     "btw": "BTW",
     "openingHours": "Ma - vr 08:00 - 17:00",
+    "call": "Bel ons",
+    "whatsapp": "WhatsApp ons",
     "tagline": "Zakelijke airconditioning voor kantoren, bedrijfspanden, winkels en showrooms in Zuid-Holland."
   },
   "form": {
@@ -52,6 +54,9 @@
     "propertyType": "Type bedrijfsruimte",
     "service": "Gewenste dienst",
     "message": "Bericht of projectomschrijving (optioneel)",
+    "heroName": "Naam",
+    "heroShortTitle": "Snel een zakelijke offerte aanvragen",
+    "heroShortIntro": "Laat uw gegevens achter. Een specialist neemt tijdens kantooruren contact met u op.",
     "heroTitle": "Vraag een zakelijke offerte aan",
     "heroIntro": "Vertel ons kort wat er nodig is. Daarna vragen we uw contactgegevens.",
     "progress": "{current} van {total}",

@@ -1,54 +1,65 @@
 import type { Project } from "../types";
 
-/**
- * DRAFT project entries based on the client brief (AVDT, Inventex, offices,
- * clothing store). Summaries and systems are placeholders pending client
- * materials - confirm details and add project photography before go-live.
- */
+/** Gepubliceerde zakelijke aircoprojecten met door de klant aangeleverde fotografie. */
 export const projects: Project[] = [
   {
-    slug: "avdt",
-    status: "draft",
+    slug: "kantoor-zoetermeer",
+    status: "published",
     gallery: [],
     facts: [],
-    title: "Kantoor AVDT",
+    title: "Kantoor in Zoetermeer",
     type: "Kantoor",
-    location: "Zuid-Holland",
-    system: "Cassette airco · multi-split",
+    location: "Zoetermeer",
+    system: "Cassette airco",
     summary:
-      "Kantooretage voorzien van cassette-units met per zone regelbare temperatuur, geïnstalleerd met minimale verstoring van de werkdag.",
+      "Een plafondcassette is netjes in het systeemplafond geïntegreerd voor een comfortabel binnenklimaat, zonder bruikbare wandruimte in te nemen.",
+    image: {
+      src: "/images/projects/kantoor-zoetermeer.jpeg",
+      alt: "Plafondcassette in een kantoorruimte in Zoetermeer",
+      position: "50% 47%",
+    },
     filters: ["office", "cassette"],
     serviceHref: "/airco-kantoor",
     serviceLinkLabel: "Airco voor kantoren",
   },
   {
-    slug: "inventex",
-    status: "draft",
+    slug: "frommesshop-voorschoten",
+    status: "published",
     gallery: [],
     facts: [],
-    title: "Bedrijfspand Inventex",
-    type: "Bedrijfspand",
-    location: "Zuid-Holland",
-    system: "Kanaal airco · meerdere zones",
-    summary:
-      "Pandbrede klimaatoplossing met kanaalsysteem: kantoren, werkruimte en ontvangst bediend vanuit één installatie.",
-    filters: ["commercialBuilding", "ducted"],
-    serviceHref: "/airco-bedrijfspand",
-    serviceLinkLabel: "Airco voor bedrijfspanden",
-  },
-  {
-    slug: "modewinkel",
-    status: "draft",
-    gallery: [],
-    facts: [],
-    title: "Modewinkel",
+    title: "Frommesshop",
     type: "Winkel",
-    location: "Zuid-Holland",
+    location: "Voorschoten",
     system: "Cassette airco",
     summary:
-      "Winkelklimaat zonder zichtbare techniek: cassette-units in het systeemplafond, installatie volledig buiten openingstijden uitgevoerd.",
+      "Een cassette-unit is zorgvuldig in het winkelplafond opgenomen, passend bij het interieur en zonder presentatieruimte aan de wand in te nemen.",
+    image: {
+      src: "/images/projects/frommesshop-voorschoten.jpeg",
+      alt: "Plafondcassette in kledingwinkel Frommesshop in Voorschoten",
+      position: "50% 52%",
+    },
     filters: ["retail", "cassette"],
     serviceHref: "/airco-winkel",
     serviceLinkLabel: "Airco voor winkels",
+  },
+  {
+    slug: "boekhoudkantoor-adhoc-leiden",
+    status: "published",
+    gallery: [],
+    facts: [],
+    title: "Boekhoudkantoor Adhoc",
+    type: "Kantoor",
+    location: "Leiden",
+    system: "Cassette airco",
+    summary:
+      "Een plafondcassette is centraal in de kantoorruimte geplaatst voor een prettig werkklimaat, met de techniek compact in het systeemplafond.",
+    image: {
+      src: "/images/projects/boekhoudkantoor-adhoc-leiden.jpeg",
+      alt: "Plafondcassette in boekhoudkantoor Adhoc in Leiden",
+      position: "50% 30%",
+    },
+    filters: ["office", "cassette"],
+    serviceHref: "/airco-kantoor",
+    serviceLinkLabel: "Airco voor kantoren",
   },
 ];

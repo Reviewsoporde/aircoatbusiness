@@ -41,6 +41,8 @@
     "kvk": "CoC",
     "btw": "VAT",
     "openingHours": "Mon - Fri 08:00 - 17:00",
+    "call": "Call us",
+    "whatsapp": "WhatsApp us",
     "tagline": "Commercial air conditioning for offices, commercial buildings, retail spaces and showrooms across Zuid-Holland."
   },
   "form": {
@@ -52,6 +54,9 @@
     "propertyType": "Property type",
     "service": "Required service",
     "message": "Message or project details (optional)",
+    "heroName": "Name",
+    "heroShortTitle": "Request a quick business quote",
+    "heroShortIntro": "Leave your details and a specialist will contact you during office hours.",
     "heroTitle": "Request a business quote",
     "heroIntro": "Tell us briefly what you need, then add your contact details.",
     "progress": "{current} of {total}",

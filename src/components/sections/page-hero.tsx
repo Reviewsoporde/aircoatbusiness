@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SiWhatsapp } from "@icons-pack/react-simple-icons";
 import { Check, Phone } from "lucide-react";
 import type { ServicePageContent } from "@/content/types";
 import { siteConfig } from "@/lib/site-config";
@@ -6,7 +7,9 @@ import { PhoneLink } from "@/components/layout/phone-link";
 import { CtaLink } from "./cta-link";
 import { cn } from "@/lib/utils";
 
-type Props = { hero: ServicePageContent["hero"] };
+type Props = {
+  hero: ServicePageContent["hero"] & { whatsappLabel?: string };
+};
 
 /**
  * Dark hero band for all service pages - compact, one H1, CTA per page intent.
@@ -78,6 +81,22 @@ export function PageHero({ hero }: Props) {
                   variant="outline-dark"
                 />
               )
+            )}
+            {hero.whatsappLabel && (
+              <a
+                href={`https://wa.me/${siteConfig.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 whitespace-nowrap rounded-full border border-white/30 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/70 hover:bg-white/10 active:scale-[0.98]"
+              >
+                <SiWhatsapp
+                  size={16}
+                  className="text-azure-bright"
+                  aria-hidden
+                  focusable="false"
+                />
+                {hero.whatsappLabel}
+              </a>
             )}
           </div>
           {hero.trustPoints.length > 0 && (
