@@ -7,7 +7,7 @@ import {
 import type { FAQItem } from "@/content/types";
 
 /**
- * Visible FAQ accordion. Pages that render this may also emit FAQPage JSON-LD —
+ * Visible FAQ accordion. Pages that render this may also emit FAQPage JSON-LD -
  * schema is only allowed when the FAQ is visible (docs/seo-strategy.md §5).
  */
 export function FaqSection({ items }: { items: FAQItem[] }) {

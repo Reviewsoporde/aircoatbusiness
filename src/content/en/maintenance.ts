@@ -1,7 +1,7 @@
 import type { ServicePageContent } from "../types";
 import { repairProcess, standardProcess, trustIndicators } from "./shared";
 
-/** Parent: /onderhoud/ — maintenance, repair & contract overview */
+/** Parent: /onderhoud/ - maintenance, repair & contract overview */
 export const onderhoud: ServicePageContent = {
   meta: {
     title: "Air conditioning maintenance & service | Airco@Business",
@@ -56,7 +56,7 @@ export const onderhoud: ServicePageContent = {
         tag: "Continuity",
         title: "Fewer unexpected breakdowns",
         description:
-          "Most summer breakdowns can be traced back to overdue maintenance — and can therefore be prevented.",
+          "Most summer breakdowns can be traced back to overdue maintenance and can often be prevented with timely servicing.",
       },
       {
         tag: "Efficiency",
@@ -118,7 +118,7 @@ export const onderhoud: ServicePageContent = {
       {
         question: "What happens if a breakdown occurs anyway?",
         answer:
-          "Then our service team is ready to help. Contract customers receive priority in the schedule — particularly important during the summer peak.",
+          "Then our service team is ready to help. Contract customers receive priority in the schedule. This is particularly important during the summer peak.",
       },
       {
         question: "Is maintenance mandatory?",
@@ -133,7 +133,7 @@ export const onderhoud: ServicePageContent = {
   },
 };
 
-/** /airco-onderhoud-zakelijk/ — primary keyword: commercial air conditioning maintenance */
+/** /airco-onderhoud-zakelijk/ - primary keyword: commercial air conditioning maintenance */
 export const aircoOnderhoud: ServicePageContent = {
   meta: {
     title: "Commercial air conditioning maintenance | Airco@Business",
@@ -145,7 +145,7 @@ export const aircoOnderhoud: ServicePageContent = {
     eyebrow: "Commercial air conditioning maintenance",
     h1: "Air conditioning maintenance that stays ahead of breakdowns",
     intro:
-      "Cooling downtime on a tropical day costs more than a maintenance visit. Our engineers periodically inspect, clean and test your installation — so it keeps performing when it matters most.",
+      "Cooling downtime on a tropical day costs more than a maintenance visit. Our engineers periodically inspect, clean and test your installation. This helps it keep performing when it matters most.",
     cta: "requestMaintenance",
     secondary: { label: "Commercial maintenance contract", href: "/airco-onderhoudscontract-zakelijk" },
     trustPoints: ["All A-brands", "STEK-certified", "Report after every visit"],
@@ -153,7 +153,7 @@ export const aircoOnderhoud: ServicePageContent = {
   overview: {
     h2: "Who is periodic maintenance for?",
     intro:
-      "For every business that needs to be able to rely on its climate system — and for installations subject to statutory inspections.",
+      "For every business that needs to be able to rely on its climate system and for installations subject to statutory inspections.",
     cards: [
       {
         tag: "Office",
@@ -178,7 +178,7 @@ export const aircoOnderhoud: ServicePageContent = {
   benefits: {
     h2: "The risks of postponing maintenance",
     intro:
-      "You do not notice overdue maintenance straight away — until something goes wrong. What happens without maintenance:",
+      "You do not notice overdue maintenance straight away, at least not until something goes wrong. What happens without maintenance:",
     cards: [
       {
         tag: "Breakdown",
@@ -263,7 +263,7 @@ export const aircoOnderhoud: ServicePageContent = {
       {
         question: "How long does a maintenance visit take?",
         answer:
-          "Allow 45–60 minutes for a single unit; for larger installations we plan based on the number of units. You receive a clear time indication in advance.",
+          "Allow 45-60 minutes for a single unit; for larger installations we plan based on the number of units. You receive a clear time indication in advance.",
       },
       {
         question: "Does the system have to be switched off during maintenance?",
@@ -273,7 +273,7 @@ export const aircoOnderhoud: ServicePageContent = {
       {
         question: "Do I receive proof of the maintenance?",
         answer:
-          "Yes, you receive a report after every visit — which also matters for warranty purposes and the statutory F-gas records.",
+          "Yes, you receive a report after every visit. This also matters for warranty purposes and the statutory F-gas records.",
       },
       {
         question: "What does commercial air conditioning maintenance cost?",
@@ -288,7 +288,7 @@ export const aircoOnderhoud: ServicePageContent = {
   },
 };
 
-/** /airco-reparatie-zakelijk/ — urgent intent: contact CTA in hero */
+/** /airco-reparatie-zakelijk/ - urgent intent: contact CTA in hero */
 export const aircoReparatie: ServicePageContent = {
   meta: {
     title: "Commercial air conditioning repairs | Airco@Business",
@@ -300,7 +300,7 @@ export const aircoReparatie: ServicePageContent = {
     eyebrow: "Commercial air conditioning repairs",
     h1: "Air conditioning fault? We will be with you fast",
     intro:
-      "No cooling, a leaking unit or an error code on the display: with a commercial breakdown, every day counts. Report the fault straight away — we schedule an engineer quickly and repair it expertly.",
+      "No cooling, a leaking unit or an error code on the display: with a commercial breakdown, every day counts. Report the fault straight away. We schedule an engineer quickly and repair it expertly.",
     cta: "requestRepair",
     trustPoints: ["Fast response", "All A-brands", "Priority for contract customers"],
     urgent: true,
@@ -314,7 +314,7 @@ export const aircoReparatie: ServicePageContent = {
         tag: "Cooling",
         title: "Not cooling, or not enough",
         description:
-          "Often a refrigerant, filter or sensor problem — quick to diagnose.",
+          "The cause is often a refrigerant, filter or sensor problem that is quick to diagnose.",
       },
       {
         tag: "Leakage",
@@ -337,7 +337,7 @@ export const aircoReparatie: ServicePageContent = {
         tag: "Diagnosis",
         title: "Complete system check",
         description:
-          "We read out error codes, measure pressures and temperatures and inspect the entire installation — not just the symptom.",
+          "We read out error codes, measure pressures and temperatures and inspect the entire installation. We look beyond the symptom itself.",
       },
       {
         tag: "Repair",
@@ -384,12 +384,12 @@ export const aircoReparatie: ServicePageContent = {
       {
         question: "How quickly can an engineer come out?",
         answer:
-          "We schedule breakdowns with priority; contract customers come first. Call us for the current response time — we can often attend within a few working days.",
+          "We schedule breakdowns with priority; contract customers come first. Call us for the current response time. We can often attend within a few working days.",
       },
       {
         question: "Do you repair all brands?",
         answer:
-          "We repair all leading A-brands, including Daikin, Mitsubishi Electric, LG and Toshiba — even installations that were not fitted by us.",
+          "We repair all leading A-brands, including Daikin, Mitsubishi Electric, LG and Toshiba, even when the installation was not fitted by us.",
       },
       {
         question: "What does a repair cost?",
@@ -409,7 +409,7 @@ export const aircoReparatie: ServicePageContent = {
   },
 };
 
-/** /airco-onderhoudscontract-zakelijk/ — maintenance contracts */
+/** /airco-onderhoudscontract-zakelijk/ - maintenance contracts */
 export const onderhoudscontract: ServicePageContent = {
   meta: {
     title: "Air conditioning maintenance contracts | Airco@Business",
@@ -421,7 +421,7 @@ export const onderhoudscontract: ServicePageContent = {
     eyebrow: "Maintenance contract",
     h1: "A maintenance contract: your climate structurally taken care of",
     intro:
-      "Never having to think about maintenance again. With a maintenance contract, we schedule the visits, you receive priority in the event of breakdowns and you know exactly what it costs in advance — per unit, per year.",
+      "Never having to think about maintenance again. With a maintenance contract, we schedule the visits, you receive priority in the event of breakdowns and you know the annual cost per unit in advance.",
     cta: "requestContractAdvice",
     secondary: { label: "Commercial air conditioning maintenance", href: "/airco-onderhoud-zakelijk" },
     trustPoints: ["Fixed annual schedule", "Priority in the event of breakdowns", "Predictable costs"],
@@ -458,7 +458,7 @@ export const onderhoudscontract: ServicePageContent = {
         tag: "Continuity",
         title: "Maximum availability",
         description:
-          "Periodic maintenance plus priority in the event of breakdowns means a minimal risk of downtime — especially during the summer peak.",
+          "Periodic maintenance plus priority in the event of breakdowns means a minimal risk of downtime, especially during the summer peak.",
       },
       {
         tag: "Financial",
@@ -542,7 +542,7 @@ export const onderhoudscontract: ServicePageContent = {
       {
         question: "Is a contract possible for installations of another brand?",
         answer:
-          "Yes, we contract maintenance for all leading A-brands — including installations that were not originally fitted by us.",
+          "Yes, we contract maintenance for all leading A-brands, including installations that were not originally fitted by us.",
       },
       {
         question: "What is the term of the contract?",

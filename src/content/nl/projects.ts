@@ -3,7 +3,7 @@ import type { Project } from "../types";
 /**
  * DRAFT project entries based on the client brief (AVDT, Inventex, offices,
  * clothing store). Summaries and systems are placeholders pending client
- * materials — confirm details and add project photography before go-live.
+ * materials - confirm details and add project photography before go-live.
  */
 export const projects: Project[] = [
   {

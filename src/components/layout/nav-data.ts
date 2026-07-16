@@ -7,7 +7,7 @@ export type NavItem = {
   children?: NavChild[];
 };
 
-// Header navigation per docs/site-architecture.md §2 — exactly these items, nothing more.
+// Header navigation per docs/site-architecture.md §2 - exactly these items, nothing more.
 export const mainNav: NavItem[] = [
   { labelKey: "home", href: "/" },
   {

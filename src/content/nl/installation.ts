@@ -1,7 +1,7 @@
 import type { ServicePageContent } from "../types";
 import { standardProcess, trustIndicators } from "./shared";
 
-/** Parent: /installatie/ — installation & system-selection overview */
+/** Parent: /installatie/ - installation & system-selection overview */
 export const installatie: ServicePageContent = {
   meta: {
     title: "Airco installatie voor bedrijven | Systemen & aanpak | Airco@Business",
@@ -13,7 +13,7 @@ export const installatie: ServicePageContent = {
     eyebrow: "Installatie",
     h1: "Airco installatie voor bedrijven: van systeemkeuze tot oplevering",
     intro:
-      "Een goede installatie begint ruim vóór de montagedag. Wij nemen systeemkeuze, capaciteitsberekening, planning en afwerking uit handen — zodat uw nieuwe klimaatsysteem vanaf dag één doet wat het belooft.",
+      "Een goede installatie begint ruim vóór de montagedag. Wij nemen systeemkeuze, capaciteitsberekening, planning en afwerking uit handen. Zo doet uw nieuwe klimaatsysteem vanaf dag één wat het belooft.",
     cta: "planConsultation",
     secondary: { label: "Vraag een zakelijke offerte aan", href: "/contact" },
     trustPoints: ["Eigen monteurs", "STEK-gecertificeerd", "Vaste planning"],
@@ -39,7 +39,7 @@ export const installatie: ServicePageContent = {
         tag: "Systeem",
         title: "Cassette airco",
         description:
-          "Plafondinbouw met vierzijdige luchtverdeling — de standaard voor kantoren en winkels.",
+          "Plafondinbouw met vierzijdige luchtverdeling, een veelgekozen oplossing voor kantoren en winkels.",
         href: "/cassette-airco-bedrijf",
         linkLabel: "Cassette airco voor bedrijven",
       },
@@ -145,7 +145,7 @@ export const installatie: ServicePageContent = {
   },
 };
 
-/** /zakelijke-airco-installatie/ — primary keyword: zakelijke airco installatie */
+/** /zakelijke-airco-installatie/ - primary keyword: zakelijke airco installatie */
 export const zakelijkeInstallatie: ServicePageContent = {
   meta: {
     title: "Zakelijke airco installatie | Advies & montage | Airco@Business",
@@ -157,7 +157,7 @@ export const zakelijkeInstallatie: ServicePageContent = {
     eyebrow: "Zakelijke airco installatie",
     h1: "Zakelijke airco installatie zonder verrassingen",
     intro:
-      "Van eerste inspectie tot werkende installatie: één team dat adviseert, plant en monteert. Met een vaste planning, nette afwerking en een systeem dat is berekend op uw ruimte — niet op een gemiddelde.",
+      "Van eerste inspectie tot werkende installatie: één team dat adviseert, plant en monteert. Met een vaste planning, nette afwerking en een systeem dat is berekend op uw ruimte, niet op een gemiddelde.",
     cta: "planConsultation",
     secondary: { label: "Bekijk de systemen", href: "/installatie" },
     trustPoints: ["Capaciteit berekend per ruimte", "Vaste opleverdatum", "Werkplekken blijven bruikbaar"],
@@ -165,7 +165,7 @@ export const zakelijkeInstallatie: ServicePageContent = {
   overview: {
     h2: "Voor wie is deze installatiedienst?",
     intro:
-      "Voor ondernemers en facility managers die één verantwoordelijke partij willen voor het complete traject — in nieuwe én bestaande panden.",
+      "Voor ondernemers en facility managers die één verantwoordelijke partij willen voor het complete traject, zowel in nieuwe als bestaande panden.",
     cards: [
       {
         tag: "Nieuw",
@@ -267,7 +267,7 @@ export const zakelijkeInstallatie: ServicePageContent = {
       {
         question: "Waar komt het buitendeel te staan?",
         answer:
-          "Op het dak, aan de gevel of op maaiveld — we adviseren een plek die geluidstechnisch en esthetisch klopt en voldoet aan de regelgeving.",
+          "Op het dak, aan de gevel of op maaiveld. We adviseren een plek die geluidstechnisch en esthetisch klopt en voldoet aan de regelgeving.",
       },
       {
         question: "Hoe snel kan de installatie plaatsvinden?",
@@ -282,19 +282,19 @@ export const zakelijkeInstallatie: ServicePageContent = {
   },
 };
 
-/** /cassette-airco-bedrijf/ — primary keyword: cassette airco bedrijf */
+/** /cassette-airco-bedrijf/ - primary keyword: cassette airco bedrijf */
 export const cassetteAirco: ServicePageContent = {
   meta: {
-    title: "Cassette airco voor bedrijven | Plafondinbouw | Airco@Business",
+    title: "Cassette airco bedrijf | Plafondinbouw | Airco@Business",
     description:
       "Cassette airco voor kantoor, winkel of bedrijfsruimte: in het plafond geïntegreerd, vierzijdige luchtverdeling en stille werking. Advies en installatie in Zuid-Holland.",
   },
-  name: "Cassette airco",
+  name: "Cassette airco voor bedrijven",
   hero: {
-    eyebrow: "Cassette airco",
-    h1: "Cassette airco: onopvallend in het plafond, gelijkmatig in de ruimte",
+    eyebrow: "Cassette airco bedrijf",
+    h1: "Cassette airco voor bedrijven: onopvallend in het plafond",
     intro:
-      "De cassette-unit is niet voor niets de standaard in kantoren en winkels: hij verdwijnt in het systeemplafond en verdeelt lucht naar vier richtingen — zonder tocht op de werkplekken eronder.",
+      "Een cassette-unit kan vrijwel volledig in een systeemplafond worden opgenomen en lucht naar vier richtingen verdelen. Bij het advies letten we op capaciteit en positionering om tocht op werkplekken te beperken.",
     cta: "requestSystemAdvice",
     secondary: { label: "Alle systemen bekijken", href: "/installatie" },
     trustPoints: ["Vierzijdige luchtverdeling", "Past in systeemplafond", "Koelt én verwarmt"],
@@ -394,7 +394,7 @@ export const cassetteAirco: ServicePageContent = {
       {
         question: "Past een cassette in elk plafond?",
         answer:
-          "Cassettes vragen een systeemplafond of verlaagd plafond met voldoende vrije hoogte (indicatief 25–30 cm). Tijdens de inspectie meten we of uw plafond geschikt is.",
+          "Cassettes vragen een systeemplafond of verlaagd plafond met voldoende vrije hoogte (indicatief 25-30 cm). Tijdens de inspectie meten we of uw plafond geschikt is.",
       },
       {
         question: "Hoeveel ruimte koelt één cassette?",
@@ -409,7 +409,7 @@ export const cassetteAirco: ServicePageContent = {
       {
         question: "Kan een cassette ook verwarmen?",
         answer:
-          "Ja, cassettes zijn volwaardige warmtepompen en verwarmen in de winter energiezuinig — vaak als aanvulling op of vervanging van traditionele verwarming.",
+          "Ja, cassettes zijn volwaardige warmtepompen en verwarmen in de winter energiezuinig, vaak als aanvulling op of vervanging van traditionele verwarming.",
       },
     ],
   },
@@ -419,19 +419,19 @@ export const cassetteAirco: ServicePageContent = {
   },
 };
 
-/** /kanaal-airco-bedrijf/ — primary keyword: kanaal airco bedrijf */
+/** /kanaal-airco-bedrijf/ - primary keyword: kanaal airco bedrijf */
 export const kanaalAirco: ServicePageContent = {
   meta: {
-    title: "Kanaal airco voor bedrijven | Onzichtbaar systeem | Airco@Business",
+    title: "Kanaal airco bedrijf | Onzichtbaar systeem | Airco@Business",
     description:
       "Kanaal airco voor bedrijfsruimtes: volledig weggewerkt boven het plafond, ideaal voor grotere ruimtes en meerdere zones. Advies en installatie in Zuid-Holland.",
   },
-  name: "Kanaal airco",
+  name: "Kanaal airco voor bedrijven",
   hero: {
-    eyebrow: "Kanaal airco",
-    h1: "Kanaal airco: volledige klimaatbeheersing, volledig uit het zicht",
+    eyebrow: "Kanaal airco bedrijf",
+    h1: "Kanaal airco voor bedrijven: klimaatbeheersing uit het zicht",
     intro:
-      "Bij een kanaalsysteem is de techniek volledig weggewerkt boven het plafond; alleen strakke roosters blijven zichtbaar. Eén unit bedient via luchtkanalen meerdere ruimtes of één grote ruimte — stil en gelijkmatig.",
+      "Bij een kanaalsysteem kan de techniek boven het plafond worden weggewerkt, zodat vooral de roosters zichtbaar blijven. Via luchtkanalen kan één unit meerdere ruimtes of één grote ruimte bedienen, afhankelijk van de technische beoordeling.",
     cta: "requestSystemAdvice",
     secondary: { label: "Alle systemen bekijken", href: "/installatie" },
     trustPoints: ["Volledig onzichtbaar", "Meerdere ruimtes per unit", "Zeer stille werking"],
@@ -480,7 +480,7 @@ export const kanaalAirco: ServicePageContent = {
         tag: "Efficiënt",
         title: "Eén systeem, meerdere zones",
         description:
-          "Luchtkanalen verdelen de capaciteit slim over ruimtes — minder units, minder onderhoudspunten.",
+          "Luchtkanalen verdelen de capaciteit slim over ruimtes. Dat betekent minder units en minder onderhoudspunten.",
       },
     ],
   },
@@ -531,7 +531,7 @@ export const kanaalAirco: ServicePageContent = {
       {
         question: "Hoeveel plafondruimte vraagt een kanaalsysteem?",
         answer:
-          "Indicatief 30–40 cm vrije hoogte voor unit en kanalen, afhankelijk van de capaciteit. Tijdens de inspectie bepalen we of uw situatie geschikt is.",
+          "Indicatief 30-40 cm vrije hoogte voor unit en kanalen, afhankelijk van de capaciteit. Tijdens de inspectie bepalen we of uw situatie geschikt is.",
       },
       {
         question: "Kan elke ruimte een eigen temperatuur krijgen?",
@@ -546,7 +546,7 @@ export const kanaalAirco: ServicePageContent = {
       {
         question: "Hoe wordt zo'n systeem onderhouden?",
         answer:
-          "Via inspectieluiken bereiken we unit en filters. Met periodiek onderhoud blijven luchtkwaliteit en rendement op peil — daarvoor bieden we contracten aan.",
+          "Via inspectieluiken bereiken we unit en filters. Met periodiek onderhoud blijven luchtkwaliteit en rendement op peil. Daarvoor bieden we contracten aan.",
       },
     ],
   },
@@ -556,22 +556,22 @@ export const kanaalAirco: ServicePageContent = {
   },
 };
 
-/** /wandmodel-airco-bedrijf/ — wandmodel airco bedrijf */
+/** /wandmodel-airco-bedrijf/ - wandmodel airco bedrijf */
 export const wandmodelAirco: ServicePageContent = {
   meta: {
-    title: "Wandmodel airco voor bedrijven | Compact & snel | Airco@Business",
+    title: "Wandmodel airco bedrijf | Compact systeem | Airco@Business",
     description:
       "Wandmodel airco voor kantoren en bedrijfsruimtes: compact, snel geïnstalleerd en per ruimte regelbaar. Premium A-merken, installatie in Zuid-Holland.",
   },
-  name: "Wandmodel airco",
+  name: "Wandmodel airco voor bedrijven",
   hero: {
-    eyebrow: "Wandmodel airco",
-    h1: "Wandmodel airco: gericht comfort voor aparte ruimtes",
+    eyebrow: "Wandmodel airco bedrijf",
+    h1: "Wandmodel airco voor bedrijven: gericht comfort per ruimte",
     intro:
       "Niet elke ruimte vraagt een plafondsysteem. Voor aparte kantoren, spreekkamers, kantines en serverruimtes is een hoogwaardig wandmodel vaak de snelste en meest doelmatige oplossing.",
     cta: "requestSystemAdvice",
     secondary: { label: "Alle systemen bekijken", href: "/installatie" },
-    trustPoints: ["Snel geïnstalleerd", "Per ruimte regelbaar", "Premium A-merken"],
+    trustPoints: ["Compact systeem", "Per ruimte regelbaar", "Premium A-merken"],
   },
   overview: {
     h2: "Waar een wandmodel het best tot zijn recht komt",
@@ -605,7 +605,7 @@ export const wandmodelAirco: ServicePageContent = {
         tag: "Snelheid",
         title: "Binnen een dag geïnstalleerd",
         description:
-          "Geen plafondwerk nodig: een wandmodel hangt, is aangesloten en werkt — vaak binnen één werkdag.",
+          "Geen plafondwerk nodig: een wandmodel hangt, is aangesloten en werkt vaak binnen één werkdag.",
       },
       {
         tag: "Budget",
@@ -683,7 +683,7 @@ export const wandmodelAirco: ServicePageContent = {
       {
         question: "Kan een wandmodel ook verwarmen?",
         answer:
-          "Ja, ook wandmodellen zijn volwaardige warmtepompen — handig als hoofd- of bijverwarming in tussenseizoenen.",
+          "Ja, ook wandmodellen zijn volwaardige warmtepompen en kunnen handig zijn als hoofd- of bijverwarming in tussenseizoenen.",
       },
     ],
   },

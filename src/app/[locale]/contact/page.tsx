@@ -35,8 +35,12 @@ export default async function ContactPage({ params }: Props) {
   const { contactPage } = getBundle(locale);
   const fullAddress = `${siteConfig.address.street}, ${siteConfig.address.postalCode} ${siteConfig.address.city}`;
   const mapsQuery = encodeURIComponent(fullAddress);
-  const mapsEmbedUrl = `https://www.google.com/maps?q=${mapsQuery}&output=embed`;
-  const mapsRouteUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+  const { cid } = siteConfig.googleBusiness;
+  // `cid` resolves the actual Google Business Profile listing in the keyless
+  // embed; a plain address query only drops an unnamed pin.
+  const mapsEmbedUrl = `https://www.google.com/maps?cid=${cid}&output=embed`;
+  const mapsProfileUrl = `https://www.google.com/maps?cid=${cid}`;
+  const mapsRouteUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}&query_place_id=${siteConfig.googleBusiness.placeId}`;
 
   const contactCards = [
     {
@@ -164,7 +168,7 @@ export default async function ContactPage({ params }: Props) {
         className="glow-azure"
       >
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1.45fr)_minmax(320px,0.55fr)]">
-          <div className="relative min-h-[440px] overflow-hidden rounded-[32px] border border-white/12 bg-carbon shadow-panel lg:min-h-[560px]">
+          <div className="relative min-h-[440px] overflow-hidden rounded-[32px] border border-white/12 bg-carbon shadow-panel transition-colors duration-300 focus-within:border-azure/60 lg:min-h-[560px]">
             <iframe
               src={mapsEmbedUrl}
               title={contactPage.serviceArea.mapTitle}
@@ -173,11 +177,32 @@ export default async function ContactPage({ params }: Props) {
               referrerPolicy="no-referrer-when-downgrade"
               className="absolute inset-0 size-full border-0 grayscale-[15%]"
             />
-            <div className="pointer-events-none absolute right-4 bottom-4 left-4 flex items-center gap-3 rounded-[18px] border border-white/12 bg-ink/92 p-4 text-sm text-white shadow-panel backdrop-blur-md sm:right-auto sm:max-w-md">
-              <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-azure text-ink">
-                <MapPin className="size-4" aria-hidden />
-              </span>
-              <span>{fullAddress}</span>
+            {/*
+              The overlay stays pointer-events-none so it never swallows a map
+              drag; only the profile link itself takes pointer events back.
+            */}
+            <div className="pointer-events-none absolute right-4 bottom-4 left-4 z-10 flex sm:right-auto">
+              <a
+                href={mapsProfileUrl}
+                target="_blank"
+                rel="noreferrer noopener"
+                aria-label={contactPage.serviceArea.profileLabel}
+                className="group/profile pointer-events-auto flex w-full items-center gap-3 rounded-[18px] border border-white/12 bg-ink/92 p-4 text-sm text-white shadow-panel backdrop-blur-md transition-all duration-300 hover:-translate-y-0.5 hover:border-azure/45 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-azure sm:w-auto sm:max-w-md"
+              >
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-azure text-ink">
+                  <MapPin className="size-4" aria-hidden />
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="block">{fullAddress}</span>
+                  <span className="mt-1 flex items-center gap-1.5 font-semibold text-azure-bright">
+                    {contactPage.serviceArea.profileLinkLabel}
+                    <ArrowUpRight
+                      className="size-3.5 transition-transform duration-300 group-hover/profile:-translate-y-0.5 group-hover/profile:translate-x-0.5"
+                      aria-hidden
+                    />
+                  </span>
+                </span>
+              </a>
             </div>
           </div>
 

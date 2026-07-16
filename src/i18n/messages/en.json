@@ -40,7 +40,7 @@
     "cookies": "Cookie policy",
     "kvk": "CoC",
     "btw": "VAT",
-    "openingHours": "Mon – Fri 08:00 – 17:00",
+    "openingHours": "Mon - Fri 08:00 - 17:00",
     "tagline": "Commercial air conditioning for offices, commercial buildings, retail spaces and showrooms across Zuid-Holland."
   },
   "form": {
@@ -115,7 +115,7 @@
   "contactAside": {
     "title": "Direct contact",
     "responsePromise": "A specialist reviews your enquiry and contacts you during office hours. Prefer to talk now? Call us.",
-    "hours": "Mon – Fri 08:00 – 17:00"
+    "hours": "Mon - Fri 08:00 - 17:00"
   },
   "localeSwitcher": {
     "label": "Language",

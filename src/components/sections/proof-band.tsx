@@ -20,7 +20,7 @@ export function ProofBand({ indicators, reviews, image, variant = "dark" }: Prop
   const dark = variant === "dark";
   const hasReviews = reviews && reviews.length > 0;
   return (
-    <div className={cn("grid gap-14", image && "lg:grid-cols-2 lg:items-center")}>
+    <div className={cn("grid gap-10", image && "lg:grid-cols-2 lg:items-center")}>
       <Reveal className={image ? undefined : "max-w-2xl"}>
         <ul className="space-y-5">
           {indicators.map((item) => (
@@ -89,7 +89,7 @@ export function ProofBand({ indicators, reviews, image, variant = "dark" }: Prop
                   )}
                 >
                   {review.author}
-                  {review.company ? ` — ${review.company}` : ""} ·{" "}
+                  {review.company ? `, ${review.company}` : ""} ·{" "}
                   {review.serviceLabel}
                 </figcaption>
               </figure>

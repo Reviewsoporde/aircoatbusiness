@@ -9,7 +9,7 @@ export default function NotFound() {
   const tNav = useTranslations("nav");
 
   return (
-    <section className="grain glow-azure relative isolate overflow-hidden bg-ink py-32 text-white lg:py-40">
+    <section className="grain glow-azure relative isolate overflow-hidden bg-ink py-20 text-white lg:py-24">
       <div className="mx-auto max-w-2xl px-4 text-center sm:px-6">
         <p className="font-display text-7xl font-medium text-azure-bright">404</p>
         <h1 className="font-display mt-8 text-3xl font-medium text-balance sm:text-4xl">

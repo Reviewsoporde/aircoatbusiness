@@ -36,14 +36,14 @@ export function Section({
         className,
       )}
     >
-      <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8 lg:py-36">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         {(eyebrow || h2) && (
-          <Reveal className="mb-14 max-w-4xl lg:mb-20">
+          <Reveal className="mb-10 max-w-4xl lg:mb-12">
             <div>
               {eyebrow && (
                 <p
                   className={cn(
-                    "eyebrow mb-5",
+                    "eyebrow mb-4",
                     dark ? "text-azure-bright" : "text-azure-deep",
                   )}
                 >
@@ -64,7 +64,7 @@ export function Section({
             {intro && (
               <p
                 className={cn(
-                  "mt-6 max-w-2xl text-base leading-relaxed sm:text-lg",
+                  "mt-4 max-w-2xl text-base leading-relaxed sm:text-lg",
                   dark ? "text-mist" : "text-slate-ink",
                 )}
               >

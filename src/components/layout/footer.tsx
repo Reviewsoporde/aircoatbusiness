@@ -51,13 +51,13 @@ function FooterColumn({
 }) {
   return (
     <div>
-      <h2 className="eyebrow mb-4 text-mist">{title}</h2>
-      <ul className="space-y-2.5">
+      <h2 className="eyebrow mb-3 text-mist">{title}</h2>
+      <ul className="space-y-1">
         {links.map((link) => (
           <li key={`${link.href}-${link.label}`}>
             <Link
               href={link.href}
-              className="inline-flex min-h-11 items-center text-sm text-white/75 transition-colors hover:text-azure-bright"
+              className="inline-flex items-center py-1 text-sm text-white/75 transition-colors hover:text-azure-bright"
             >
               {link.label}
             </Link>
@@ -120,18 +120,18 @@ export function Footer() {
 
   return (
     <footer className="isolate overflow-hidden border-t border-white/8 bg-ink text-white">
-      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-12">
         {/* Brand row */}
-        <div className="mb-14 flex flex-col justify-between gap-10 border-b border-white/8 pb-14 lg:flex-row lg:items-center">
+        <div className="mb-8 flex flex-col justify-between gap-6 border-b border-white/8 pb-8 lg:flex-row lg:items-center">
           <div className="max-w-lg">
             <Image
               src="/images/logo.png"
               alt="Airco@Business"
               width={224}
               height={71}
-              className="mb-6 h-14 w-auto"
+              className="mb-4 h-14 w-auto"
             />
-            <p className="font-editorial text-xl leading-relaxed font-medium text-white/90 sm:text-2xl">
+            <p className="font-editorial text-lg leading-snug font-medium text-white/90 sm:text-xl">
               {t("tagline")}
             </p>
           </div>
@@ -170,7 +170,7 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="hidden gap-x-6 gap-y-10 lg:grid lg:grid-cols-5">
+        <div className="hidden gap-x-6 gap-y-8 lg:grid lg:grid-cols-5">
           <FooterColumn
             title={t("coreServices")}
             links={coreServices.map((l) => ({ href: l.href, label: label(l) }))}
@@ -188,14 +188,14 @@ export function Footer() {
             links={supportPages.map((l) => ({ href: l.href, label: label(l) }))}
           />
           <div>
-            <h2 className="eyebrow mb-4 text-mist">{t("locations")}</h2>
-            <ul className="space-y-2.5 text-sm text-white/75">
+            <h2 className="eyebrow mb-3 text-mist">{t("locations")}</h2>
+            <ul className="space-y-1 text-sm text-white/75">
               {["Voorschoten", "Leiden", "Den Haag", "Rotterdam", "Hoofddorp"].map(
                 (city) => (
                   <li key={city}>
                     <Link
                       href="/werkgebied"
-                      className="transition-colors hover:text-azure-bright"
+                      className="inline-flex items-center py-1 transition-colors hover:text-azure-bright"
                     >
                       {city}
                     </Link>
@@ -205,7 +205,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/werkgebied"
-                  className="font-medium text-azure-bright transition-colors hover:text-white"
+                  className="inline-flex items-center py-1 font-medium text-azure-bright transition-colors hover:text-white"
                 >
                   {t("allServiceAreas")}
                 </Link>
@@ -215,9 +215,9 @@ export function Footer() {
         </div>
 
         {/* Contact + legal */}
-        <div className="mt-16 border-t border-white/8 pt-10">
-          <div className="flex flex-col justify-between gap-6 lg:flex-row">
-            <address className="text-xs not-italic leading-loose text-mist">
+        <div className="mt-8 border-t border-white/8 pt-6">
+          <div className="flex flex-col justify-between gap-4 lg:flex-row">
+            <address className="text-xs not-italic leading-relaxed text-mist">
               {siteConfig.name} · {siteConfig.address.street},{" "}
               {siteConfig.address.postalCode} {siteConfig.address.city}
               <br />

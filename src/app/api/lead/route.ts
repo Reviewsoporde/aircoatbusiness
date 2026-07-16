@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "invalid_json" }, { status: 400 });
   }
 
-  // Honeypot: a filled "website" field means a bot — pretend success, drop lead.
+  // Honeypot: a filled "website" field means a bot - pretend success, drop lead.
   if (
     typeof body === "object" &&
     body !== null &&
@@ -43,7 +43,7 @@ export async function POST(request: Request) {
   const webhookUrl = process.env.GHL_WEBHOOK_URL;
   if (!webhookUrl) {
     // Not configured yet (e.g. preview deploys): log so the lead is not lost silently.
-    console.warn("[lead] GHL_WEBHOOK_URL not set — lead not forwarded:", payload);
+    console.warn("[lead] GHL_WEBHOOK_URL not set - lead not forwarded:", payload);
     return NextResponse.json({ ok: true, forwarded: false });
   }
 

@@ -1,7 +1,7 @@
 import type { ServicePageContent } from "../types";
 import { standardProcess, trustIndicators } from "./shared";
 
-/** Parent: /zakelijke-airconditioning/ — primary keyword: zakelijke airconditioning */
+/** Parent: /zakelijke-airconditioning/ - primary keyword: zakelijke airconditioning */
 export const businessAC: ServicePageContent = {
   meta: {
     title: "Zakelijke airconditioning | Advies & installatie | Airco@Business",
@@ -13,7 +13,7 @@ export const businessAC: ServicePageContent = {
     eyebrow: "Zakelijke airconditioning",
     h1: "Zakelijke airconditioning die past bij uw bedrijfsruimte",
     intro:
-      "Geen twee bedrijfsruimtes zijn hetzelfde. Airco@Business adviseert en installeert airconditioning op basis van uw pand, uw bezetting en uw bedrijfsvoering — voor een werkklimaat waar u niet meer over hoeft na te denken.",
+      "Geen twee bedrijfsruimtes zijn hetzelfde. Airco@Business adviseert en installeert airconditioning op basis van uw pand, uw bezetting en uw bedrijfsvoering. Zo ontstaat een werkklimaat waar u niet meer over hoeft na te denken.",
     cta: "requestQuote",
     secondary: { label: "Plan een adviesgesprek", href: "/contact" },
     trustPoints: ["Advies op locatie", "STEK-gecertificeerd", "Premium A-merken"],
@@ -75,7 +75,7 @@ export const businessAC: ServicePageContent = {
         tag: "Comfort",
         title: "Personeel dat prettig werkt",
         description:
-          "Een stabiel binnenklimaat voorkomt de bekende zomerklachten en houdt de concentratie op peil — juist op de warmste dagen.",
+          "Een stabiel binnenklimaat voorkomt de bekende zomerklachten en houdt de concentratie op peil, juist op de warmste dagen.",
       },
       {
         tag: "Continuïteit",
@@ -121,7 +121,7 @@ export const businessAC: ServicePageContent = {
       {
         question: "Wat kost zakelijke airconditioning?",
         answer:
-          "De investering hangt af van het aantal ruimtes, het gekozen systeem en de bouwkundige situatie. Na een inspectie op locatie ontvangt u een offerte met vaste prijzen — zo weet u vooraf precies waar u aan toe bent.",
+          "De investering hangt af van het aantal ruimtes, het gekozen systeem en de bouwkundige situatie. Na een inspectie op locatie ontvangt u een offerte met vaste prijzen. Zo weet u vooraf precies waar u aan toe bent.",
       },
       {
         question: "Kan een airco ook verwarmen?",
@@ -131,17 +131,17 @@ export const businessAC: ServicePageContent = {
       {
         question: "Hoeveel overlast geeft de installatie?",
         answer:
-          "Wij plannen de installatie in overleg, werken netjes en schermen werkplekken af. De meeste installaties zijn binnen één tot enkele dagen afgerond, vaak zonder dat uw bedrijfsvoering stilligt.",
+          "Dat hangt af van de omvang van de installatie en de bouwkundige situatie. Wij beoordelen dit vooraf, plannen de werkzaamheden in overleg en kunnen werkplekken of zones gefaseerd afschermen.",
       },
       {
-        question: "Voor welke bedrijfsruimtes is dit geschikt?",
+        question: "Waar moet ik op letten als ik een airco zakelijk laat installeren?",
         answer:
-          "Wij installeren in kantoren, complete bedrijfspanden, winkels en showrooms. Per type ruimte adviseren we het passende systeem, van cassette tot kanaalmodel.",
+          "Let op de capaciteit, luchtverdeling, geluidswens, beschikbare plafond- of wandruimte en het aantal klimaatzones. Wij beoordelen deze punten op locatie voordat we een systeem adviseren.",
       },
       {
         question: "Werken jullie ook buiten Zuid-Holland?",
         answer:
-          "Ons werkgebied is Zuid-Holland, inclusief Leiden, Den Haag, Rotterdam en Hoofddorp. Voor grotere projecten werken we ook daarbuiten — neem gerust contact op.",
+          "Ons werkgebied is Zuid-Holland, inclusief Leiden, Den Haag, Rotterdam en Hoofddorp. Voor grotere projecten werken we ook daarbuiten. Neem gerust contact op.",
       },
     ],
   },
@@ -151,7 +151,7 @@ export const businessAC: ServicePageContent = {
   },
 };
 
-/** /airco-kantoor/ — primary keyword: airco kantoor (transactional) */
+/** /airco-kantoor/ - primary keyword: airco kantoor (transactional) */
 export const aircoKantoor: ServicePageContent = {
   meta: {
     title: "Airco voor kantoor | Installatie & advies | Airco@Business",
@@ -171,7 +171,7 @@ export const aircoKantoor: ServicePageContent = {
   overview: {
     h2: "Klimaatbeheersing voor ieder type kantoor",
     intro:
-      "Van eenpersoonskantoor tot volledige kantoorverdieping: de aanpak verschilt, het doel is hetzelfde — een werkklimaat dat niemand opvalt omdat het altijd klopt.",
+      "Van eenpersoonskantoor tot volledige kantoorverdieping: de aanpak verschilt, maar het doel blijft hetzelfde. Een werkklimaat dat niemand opvalt omdat het altijd klopt.",
     cards: [
       {
         tag: "Kantoortuin",
@@ -206,7 +206,7 @@ export const aircoKantoor: ServicePageContent = {
         tag: "Productiviteit",
         title: "Betere concentratie",
         description:
-          "Bij temperaturen boven de 24–25 °C loopt de concentratie merkbaar terug. Een stabiel klimaat houdt uw team scherp.",
+          "Bij temperaturen boven de 24-25 °C loopt de concentratie merkbaar terug. Een stabiel klimaat houdt uw team scherp.",
       },
       {
         tag: "Comfort",
@@ -230,7 +230,7 @@ export const aircoKantoor: ServicePageContent = {
       "Oppervlakte, indeling en interne warmtelast (mensen, apparatuur, verlichting)",
       "Plafondtype en beschikbare ruimte voor cassette- of kanaalunits",
       "Benodigde capaciteit per zone, afgestemd op bezetting en zonligging",
-      "Geluidsniveau — systemen die vergaderingen en focuswerk niet storen",
+      "Geluidsniveau: systemen die vergaderingen en focuswerk niet storen",
       "Plaatsing van de buitenunit en leidingwerk, netjes weggewerkt",
       "Onderhoud en aftercare na de installatie",
     ],
@@ -281,7 +281,7 @@ export const aircoKantoor: ServicePageContent = {
       {
         question: "Veroorzaakt een airco tocht op werkplekken?",
         answer:
-          "Niet bij een juiste systeemkeuze en plaatsing. Cassettes verdelen lucht naar vier richtingen en kanaalsystemen blazen indirect in — precies daarom adviseren we op locatie.",
+          "Niet bij een juiste systeemkeuze en plaatsing. Cassettes verdelen lucht naar vier richtingen en kanaalsystemen blazen indirect in. Precies daarom adviseren we op locatie.",
       },
       {
         question: "Hoe lang duurt de installatie van een kantoor-airco?",
@@ -302,7 +302,7 @@ export const aircoKantoor: ServicePageContent = {
   },
 };
 
-/** /airco-bedrijfspand/ — primary keyword: airco bedrijfspand (transactional) */
+/** /airco-bedrijfspand/ - primary keyword: airco bedrijfspand (transactional) */
 export const aircoBedrijfspand: ServicePageContent = {
   meta: {
     title: "Airco voor bedrijfspand | Meerdere zones | Airco@Business",
@@ -314,7 +314,7 @@ export const aircoBedrijfspand: ServicePageContent = {
     eyebrow: "Airco bedrijfspand",
     h1: "Airco voor bedrijfspanden: één systeem, alle zones onder controle",
     intro:
-      "Een bedrijfspand combineert vaak kantoren, werkruimtes, opslag en ontvangstruimtes — elk met eigen klimaateisen. Wij ontwerpen en installeren systemen die al die zones betrouwbaar bedienen, zonder wildgroei aan losse units.",
+      "Een bedrijfspand combineert vaak kantoren, werkruimtes, opslag en ontvangstruimtes, elk met eigen klimaateisen. Wij ontwerpen en installeren systemen die al die zones betrouwbaar bedienen, zonder wildgroei aan losse units.",
     cta: "requestQuote",
     secondary: { label: "Zakelijke airconditioning", href: "/zakelijke-airconditioning" },
     trustPoints: ["Meerdere klimaatzones", "Advies op locatie", "Eén aanspreekpunt"],
@@ -420,7 +420,7 @@ export const aircoBedrijfspand: ServicePageContent = {
       {
         question: "Kan één systeem meerdere verdiepingen koelen?",
         answer:
-          "Ja. VRF- en multi-splitsystemen bedienen meerdere binnenunits — en dus verdiepingen en zones — vanuit één of enkele buitendelen, elk afzonderlijk regelbaar.",
+          "Ja. VRF- en multi-splitsystemen bedienen vanuit één of enkele buitendelen meerdere binnenunits, verdiepingen en zones. Elke zone is afzonderlijk regelbaar.",
       },
       {
         question: "Moet ons bedrijf dicht tijdens de installatie?",
@@ -446,7 +446,7 @@ export const aircoBedrijfspand: ServicePageContent = {
   },
 };
 
-/** /airco-winkel/ — primary keyword: airco winkel */
+/** /airco-winkel/ - primary keyword: airco winkel */
 export const aircoWinkel: ServicePageContent = {
   meta: {
     title: "Airco voor winkel | Comfort dat verkoopt | Airco@Business",
@@ -458,7 +458,7 @@ export const aircoWinkel: ServicePageContent = {
     eyebrow: "Airco winkel",
     h1: "Airco voor winkels: een klimaat waarin klanten blijven",
     intro:
-      "Een winkel die te warm is, loopt leeg — letterlijk. Goede klimaatbeheersing houdt klanten langer binnen, beschermt uw producten en geeft uw personeel een prettige werkdag. Wij installeren systemen die presteren zonder het winkelbeeld te verstoren.",
+      "Een te warme winkel loopt letterlijk leeg. Goede klimaatbeheersing houdt klanten langer binnen, beschermt uw producten en geeft uw personeel een prettige werkdag. Wij installeren systemen die presteren zonder het winkelbeeld te verstoren.",
     cta: "requestQuote",
     secondary: { label: "Zakelijke airconditioning", href: "/zakelijke-airconditioning" },
     trustPoints: ["Onzichtbaar in het interieur", "Stille werking", "Installatie buiten openingstijden"],
@@ -495,7 +495,7 @@ export const aircoWinkel: ServicePageContent = {
         tag: "Omzet",
         title: "Langere verblijfsduur",
         description:
-          "Klanten blijven langer en kopen prettiger in een koele winkel — zeker op warme dagen waarop de concurrentie het aflegt.",
+          "Klanten blijven langer en kopen prettiger in een koele winkel, zeker op warme dagen waarop de concurrentie het aflegt.",
       },
       {
         tag: "Merkbeleving",
@@ -563,7 +563,7 @@ export const aircoWinkel: ServicePageContent = {
       {
         question: "Zie je de airco in de winkel hangen?",
         answer:
-          "Dat hoeft niet. Cassette-units vallen weg in het systeemplafond en kanaalsystemen zijn volledig onzichtbaar — alleen de roosters blijven zichtbaar.",
+          "Dat hoeft niet. Cassette-units vallen weg in het systeemplafond en kanaalsystemen zijn volledig onzichtbaar. Alleen de roosters blijven zichtbaar.",
       },
       {
         question: "Wat betekent open winkeldeuren voor de capaciteit?",
@@ -584,7 +584,7 @@ export const aircoWinkel: ServicePageContent = {
   },
 };
 
-/** /airco-showroom/ — primary keyword: airco showroom */
+/** /airco-showroom/ - primary keyword: airco showroom */
 export const aircoShowroom: ServicePageContent = {
   meta: {
     title: "Airco voor showroom | Representatief klimaat | Airco@Business",
@@ -596,7 +596,7 @@ export const aircoShowroom: ServicePageContent = {
     eyebrow: "Airco showroom",
     h1: "Airco voor showrooms: uw presentatie verdient het juiste klimaat",
     intro:
-      "Showrooms combineren grote open ruimtes, veel glas en intensieve verlichting — een uitdagende warmtelast. Wij ontwerpen klimaatsystemen die bezoekers comfort bieden en uw presentatie onaangetast laten.",
+      "Showrooms combineren grote open ruimtes, veel glas en intensieve verlichting. Dat zorgt voor een uitdagende warmtelast. Wij ontwerpen klimaatsystemen die bezoekers comfort bieden en uw presentatie onaangetast laten.",
     cta: "requestQuote",
     secondary: { label: "Zakelijke airconditioning", href: "/zakelijke-airconditioning" },
     trustPoints: ["Grote open ruimtes", "Onzichtbare techniek", "Advies op locatie"],
@@ -633,7 +633,7 @@ export const aircoShowroom: ServicePageContent = {
         tag: "Verkoop",
         title: "Bezoekers nemen de tijd",
         description:
-          "Aankoopbeslissingen in showrooms vragen tijd — comfort houdt bezoekers langer bij uw producten.",
+          "Aankoopbeslissingen in showrooms vragen tijd. Comfort houdt bezoekers langer bij uw producten.",
       },
       {
         tag: "Warmtelast",
@@ -645,7 +645,7 @@ export const aircoShowroom: ServicePageContent = {
         tag: "Uitstraling",
         title: "Techniek uit het zicht",
         description:
-          "Kanaal- en cassettesystemen houden het beeld strak — uw presentatie blijft de hoofdrol spelen.",
+          "Kanaal- en cassettesystemen houden het beeld strak. Uw presentatie blijft de hoofdrol spelen.",
       },
     ],
   },
@@ -694,7 +694,7 @@ export const aircoShowroom: ServicePageContent = {
     h2: "Veelgestelde vragen over airco in showrooms",
     items: [
       {
-        question: "Onze showroom heeft veel glas — kan dat gekoeld worden?",
+        question: "Onze showroom heeft veel glas. Kan dat gekoeld worden?",
         answer:
           "Ja. Glasgevels zorgen voor een hoge maar voorspelbare warmtelast. Met de juiste capaciteitsberekening en luchtverdeling blijft ook een glazen showroom aangenaam koel.",
       },

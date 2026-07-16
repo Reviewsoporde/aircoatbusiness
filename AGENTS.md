@@ -1,26 +1,26 @@
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices. Notably: `middleware.ts` is now `proxy.ts`.
+This version has breaking changes - APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices. Notably: `middleware.ts` is now `proxy.ts`.
 <!-- END:nextjs-agent-rules -->
 
-# Airco@Business — Premium B2B Website
+# Airco@Business - Premium B2B Website
 
 Bilingual (NL/EN) marketing site for **Airco@Business**, a B2B air-conditioning specialist in Voorschoten serving Zuid-Holland. Pilot project by Sterk Systems NL. The site's single job: **generate commercial quote requests** from business decision-makers (offices, commercial buildings, retail, showrooms).
 
 ## Client Context
 
-- Strictly B2B. The consumer brand **Airco@home** (https://airco-athome.nl/) gets only a small, visually secondary "Residentieel?" redirect — never compete with the commercial CTA.
-- NAP (single source of truth in `src/lib/site-config.ts` — never hardcode elsewhere): Dobbeweg 11 G, 2254 AG Voorschoten · +31 (0)71 240 05 97 · info@aircoatbusiness.nl · KvK 50312006 · BTW NL001978666B18
+- Strictly B2B. The consumer brand **Airco@home** (https://airco-athome.nl/) gets only a small, visually secondary "Residentieel?" redirect - never compete with the commercial CTA.
+- NAP (single source of truth in `src/lib/site-config.ts` - never hardcode elsewhere): Dobbeweg 11 G, 2254 AG Voorschoten · +31 (0)71 240 05 97 · info@aircoatbusiness.nl · KvK 50312006 · BTW NL001978666B18
 - USPs: personal advice/maatwerk, STEK-certified installers, premium A-brands (Daikin, Mitsubishi Electric, LG, Toshiba), maintenance contracts, neat & considerate technicians.
 - Brand blue (from logo): `#0093CB` · Production domain: https://aircoatbusiness.nl
 
 ## Reference Docs (read before touching structure, copy, or SEO)
 
-- [docs/ProjectInformation.md](docs/ProjectInformation.md) — client design brief
-- [docs/seo-strategy.md](docs/seo-strategy.md) — keyword→page mapping, schema checklist, SEO phasing
-- [docs/site-architecture.md](docs/site-architecture.md) — **canonical URL list**, navigation, footer, internal-linking + anchor-text rules
-- [docs/page-templates.md](docs/page-templates.md) — homepage 17-section flow, universal 7-section service template, per-page-type flows, lead-form spec
+- [docs/ProjectInformation.md](docs/ProjectInformation.md) - client design brief
+- [docs/seo-strategy.md](docs/seo-strategy.md) - keyword→page mapping, schema checklist, SEO phasing
+- [docs/site-architecture.md](docs/site-architecture.md) - **canonical URL list**, navigation, footer, internal-linking + anchor-text rules
+- [docs/page-templates.md](docs/page-templates.md) - homepage 17-section flow, universal 7-section service template, per-page-type flows, lead-form spec
 
 ## Tech Stack
 
@@ -28,16 +28,16 @@ Next.js 16 (App Router, TypeScript, static generation) · Tailwind CSS v4 · sha
 
 ```bash
 npm run dev      # dev server
-npm run build    # production build — must pass with zero type errors
+npm run build    # production build - must pass with zero type errors
 npm run lint
 ```
 
 ## Architecture Conventions
 
-- `src/app/[locale]/…` — one folder per route; NL slugs are canonical (see below)
-- `src/content/{nl,en}/` — typed per-page copy objects (long-form marketing copy lives here, NOT in components or next-intl messages)
-- `src/i18n/` — next-intl routing + localized `pathnames` map + `messages/{nl,en}.json` (UI chrome only: nav labels, form labels, buttons)
-- `src/components/sections/` — reusable page sections · `src/components/ui/` — shadcn primitives · `src/lib/schema.ts` — JSON-LD builders · `src/lib/site-config.ts` — NAP, socials, URLs
+- `src/app/[locale]/…` - one folder per route; NL slugs are canonical (see below)
+- `src/content/{nl,en}/` - typed per-page copy objects (long-form marketing copy lives here, NOT in components or next-intl messages)
+- `src/i18n/` - next-intl routing + localized `pathnames` map + `messages/{nl,en}.json` (UI chrome only: nav labels, form labels, buttons)
+- `src/components/sections/` - reusable page sections · `src/components/ui/` - shadcn primitives · `src/lib/schema.ts` - JSON-LD builders · `src/lib/site-config.ts` - NAP, socials, URLs
 - Pages are thin: they pick a template, pass a typed content object, and declare metadata.
 
 ## Hard SEO Rules (non-negotiable)
@@ -47,22 +47,23 @@ npm run lint
 3. Every page has unique `generateMetadata` (title + description targeting its mapped keyword), canonical, and hreflang (nl / en / x-default).
 4. JSON-LD: Organization, LocalBusiness, WebSite, ContactPoint site-wide; Service + BreadcrumbList on service pages; **FAQPage only when the FAQ is visibly rendered on that page**.
 5. Anchor texts follow the preferred list in site-architecture.md §5. Never "Klik hier" / "Lees meer" / "Meer informatie".
-6. Internal links follow the cluster linking tables — 3–6 related links per page, never link every service page.
+6. Internal links follow the cluster linking tables - 3-6 related links per page, never link every service page.
 7. Location pages and supporting SEO pages never enter the main navigation.
 8. Service pages: max 7 content sections. Repair page places contact CTA in the hero.
 9. CTA labels per page type (see page-templates.md §1): Vraag een offerte aan / Plan een adviesgesprek / Vraag systeemadvies aan / Onderhoud aanvragen / Vraag contractadvies aan / Reparatie aanvragen.
 
 ## Design Rules
 
-- **Primary color: black.** The original color system stands (decision July 2026 after experiments with warm palettes were rejected): deep blue-black `--ink #0A0C0E` dark bands, cool paper gray `#F4F6F7` + white light sections, brand blue `#0093CB` as the only accent. **Never introduce warm/cream/brown tints anywhere** — no ivory backgrounds, no warm grays, no warm-tinted shadows. The comfort/friendliness the client asked for is delivered through shape, type and motion instead: rounding, pill CTAs, sentence-case labels, soft entrance choreography.
+- **Primary color: black.** The original color system stands (decision July 2026 after experiments with warm palettes were rejected): deep blue-black `--ink #0A0C0E` dark bands, cool paper gray `#F4F6F7` + white light sections, brand blue `#0093CB` as the only accent. **Never introduce warm/cream/brown tints anywhere** - no ivory backgrounds, no warm grays, no warm-tinted shadows. The comfort/friendliness the client asked for is delivered through shape, type and motion instead: rounding, pill CTAs, sentence-case labels, soft entrance choreography.
 - **Rounded geometry everywhere**: pill (`rounded-full`) buttons/CTAs/chips, `rounded-2xl`+ cards and panels (radius tokens in `globals.css`). No sharp corners, no mono/uppercase UI labels (IBM Plex Mono is reserved for true numerals like the temperature readout).
-- **Generous logo**: header `h-14`/`h-16`, footer `h-14` — brand presence matters to the client.
+- **Generous logo**: header `h-14`/`h-16`, footer `h-14` - brand presence matters to the client.
 - **Motion is CSS-first and calm**: hero content enters via the `rise` keyframes (staggered `[animation-delay:*]`, plays without JS), sections use the `Reveal` scroll component (blur-to-sharp for group children), the header condenses on scroll via `data-scrolled` (see `header-scroll-fx.tsx`), CTAs lift on hover. No animation libraries; everything respects `prefers-reduced-motion` via the global override in `globals.css`.
-- Strong contrast; everything must stay clearly readable (WCAG AA minimum). White text on azure fails AA — azure buttons use ink text.
-- Use the real logo (`public/images/logo.png` — blue+white, designed for dark backgrounds), commercial/business imagery only.
+- Strong contrast; everything must stay clearly readable (WCAG AA minimum). White text on azure fails AA - azure buttons use ink text.
+- Use the real logo (`public/images/logo.png` - blue+white, designed for dark backgrounds), commercial/business imagery only.
 - Fast + mobile-first: business visitors browse on the go. Use `next/image`, keep JS lean, target Lighthouse mobile ≥90 / SEO 100.
 - Never make technical guarantees before a site assessment in any copy.
 - Copywriting tone: professional, advice-driven, trust-building; Dutch uses **u** (formal), never "je/jij".
+- **Never use em dash or en dash characters in public copy.** Rewrite with a full stop, comma, colon, semicolon, or parentheses; use a regular hyphen only for compounds and ranges. `npm run check:copy` is part of the standard copy QA gate and must pass before delivery.
 
 ## Lead Form → GoHighLevel
 

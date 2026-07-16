@@ -18,8 +18,6 @@ type Props = {
  */
 export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
   const dark = variant === "dark";
-  const hasImageLedBento =
-    columns === 3 && cards.length === 3 && cards.every((card) => card.image);
 
   return (
     <Reveal
@@ -28,37 +26,18 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
         "grid gap-5 sm:grid-cols-2 lg:grid-cols-12",
       )}
     >
-      {cards.map((card, index) => {
-        const isFeaturedCard = hasImageLedBento && index === 0;
+      {cards.map((card) => {
         const layoutClass =
-          columns === 2
-            ? "lg:col-span-6"
-            : columns === 4
-              ? "lg:col-span-6"
-              : hasImageLedBento
-                ? index === 0
-                  ? "sm:col-span-2 lg:col-span-7 lg:row-span-2"
-                  : "lg:col-span-5"
-                : "lg:col-span-4";
+          columns === 2 || columns === 4 ? "lg:col-span-6" : "lg:col-span-4";
         const inner = (
           <>
             {card.image && (
-              <div
-                className={cn(
-                  "relative -mx-7 -mt-7 mb-7 aspect-[16/10] overflow-hidden sm:-mx-8 sm:-mt-8",
-                  isFeaturedCard &&
-                    "lg:mb-8 lg:min-h-[26rem] lg:flex-1 lg:aspect-auto",
-                )}
-              >
+              <div className="relative -mx-7 -mt-7 mb-7 aspect-[16/10] overflow-hidden sm:-mx-8 sm:-mt-8">
                 <Image
                   src={card.image.src}
                   alt={card.image.alt}
                   fill
-                  sizes={
-                    isFeaturedCard
-                      ? "(max-width: 640px) 100vw, (max-width: 1024px) 100vw, (max-width: 1440px) 58vw, 780px"
-                      : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 42vw, 560px"
-                  }
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1440px) 42vw, 560px"
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                   style={{ objectPosition: card.image.position }}
                 />
@@ -87,7 +66,6 @@ export function CardGrid({ cards, variant = "light", columns = 3 }: Props) {
             <p
               className={cn(
                 "mt-3 flex-1 text-sm leading-relaxed",
-                isFeaturedCard && "lg:flex-none",
                 dark ? "text-mist" : "text-slate-ink",
               )}
             >

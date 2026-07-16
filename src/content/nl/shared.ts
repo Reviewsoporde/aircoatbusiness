@@ -4,7 +4,7 @@ import type { Step } from "../types";
 export const trustIndicators = [
   "STEK-gecertificeerde monteurs met jarenlange ervaring in zakelijke installaties",
   "Premium A-merken: Daikin, Mitsubishi Electric, LG en Toshiba",
-  "Nette, verzorgde afwerking — onze monteurs werken met respect voor uw pand en planning",
+  "Nette, verzorgde afwerking. Onze monteurs werken met respect voor uw pand en planning",
   "Persoonlijk aanspreekpunt voor advies, installatie en onderhoud",
   "Actief in heel Zuid-Holland, van Leiden tot Rotterdam",
 ];

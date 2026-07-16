@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import type { AppPathname, Locale } from "@/i18n/routing";
 import { localePath } from "./urls";
 
+const SOCIAL_IMAGE = "/images/generated/airco-business-social.webp";
+
 /**
  * Uniform per-page metadata: unique title/description, canonical and
  * hreflang alternates (nl / en / x-default → nl). Resolves against
@@ -23,6 +25,17 @@ export function pageMetadata(
         "x-default": localePath("nl", href),
       },
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
     openGraph: {
       title: meta.title,
       description: meta.description,
@@ -32,12 +45,21 @@ export function pageMetadata(
       type: "website",
       images: [
         {
-          url: "/images/generated/airco-business-social.webp",
+          url: SOCIAL_IMAGE,
           width: 1200,
           height: 630,
-          alt: "Airco@Business commercial climate solutions",
+          alt:
+            locale === "nl"
+              ? "Airco@Business zakelijke klimaatoplossingen"
+              : "Airco@Business commercial climate solutions",
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+      images: [SOCIAL_IMAGE],
     },
   };
 }

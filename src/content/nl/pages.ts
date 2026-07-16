@@ -65,7 +65,7 @@ export const werkwijzePage: ProcessPageContent = {
     eyebrow: "Werkwijze",
     h1: "Onze werkwijze: helder van eerste gesprek tot nazorg",
     intro:
-      "U wilt weten waar u aan toe bent. Daarom werkt Airco@Business met een vast, transparant traject — met duidelijke afspraken over advies, planning, installatie en alles daarna.",
+      "U wilt weten waar u aan toe bent. Daarom werkt Airco@Business met een vast, transparant traject en duidelijke afspraken over advies, planning, installatie en alles daarna.",
   },
   steps: [
     {
@@ -135,7 +135,7 @@ export const werkwijzePage: ProcessPageContent = {
       {
         question: "Wat heeft u van ons nodig?",
         answer:
-          "Toegang tot de ruimtes voor de opname en één contactpersoon voor de afstemming. De rest — berekeningen, planning, uitvoering — nemen wij voor onze rekening.",
+          "Toegang tot de ruimtes voor de opname en één contactpersoon voor de afstemming. De rest, zoals berekeningen, planning en uitvoering, nemen wij voor onze rekening.",
       },
       {
         question: "Is het adviesgesprek vrijblijvend?",
@@ -192,6 +192,9 @@ export const contactPage: ContactPageContent = {
     h2: "Gevestigd in Voorschoten, actief in Zuid-Holland",
     body: "Airco@Business werkt vanuit Voorschoten voor bedrijven in heel Zuid-Holland, waaronder Leiden, Den Haag, Rotterdam en Hoofddorp. Grotere projecten buiten de regio zijn bespreekbaar.",
     mapTitle: "Google Maps-kaart van Airco@Business in Voorschoten",
+    profileLabel:
+      "Bekijk het Google-bedrijfsprofiel van Airco@Business in Voorschoten (opent in een nieuw tabblad)",
+    profileLinkLabel: "Bekijk ons Google-bedrijfsprofiel",
     detailsTitle: "Bezoek- en bedrijfsgegevens",
     addressLabel: "Adres",
     hoursLabel: "Openingstijden",
@@ -209,10 +212,10 @@ export const contactPage: ContactPageContent = {
       {
         question: "Kan ik direct een adviesgesprek inplannen?",
         answer:
-          "Ja. Geef in het formulier aan dat u een adviesgesprek wilt, dan stemmen we telefonisch een datum af — bij u op locatie.",
+          "Ja. Geef in het formulier aan dat u een adviesgesprek wilt, dan stemmen we telefonisch een datum af bij u op locatie.",
       },
       {
-        question: "Ik heb een storing — wat is de snelste route?",
+        question: "Ik heb een storing. Wat is de snelste route?",
         answer:
           "Bel ons via het zakelijke nummer op deze pagina. Telefonische storingsmeldingen kunnen we het snelst beoordelen; contractklanten hebben voorrang.",
       },
@@ -236,7 +239,7 @@ export const overOnsPage: AboutPageContent = {
     h2: "Waarom Airco@Business bestaat",
     paragraphs: [
       "Een bedrijfsruimte stelt andere eisen dan een woonkamer: grotere warmtelasten, meerdere zones, geluids- en regelgeving, en een installatiemoment dat de bedrijfsvoering niet mag raken. Daarom bundelden wij onze zakelijke expertise onder één naam: Airco@Business.",
-      "Ons team adviseert, installeert en onderhoudt klimaatinstallaties voor bedrijven in heel Zuid-Holland. Geen standaardpakketten, maar een systeem dat is berekend op uw ruimte en gebruik — geïnstalleerd door eigen, STEK-gecertificeerde monteurs die netjes werken en afspraken nakomen.",
+      "Ons team adviseert, installeert en onderhoudt klimaatinstallaties voor bedrijven in heel Zuid-Holland. Geen standaardpakketten, maar een systeem dat is berekend op uw ruimte en gebruik. Onze eigen, STEK-gecertificeerde monteurs installeren het systeem, werken netjes en komen afspraken na.",
       "Van het eerste adviesgesprek tot het onderhoudscontract: u heeft één aanspreekpunt dat uw pand en installatie kent.",
     ],
   },
@@ -265,7 +268,7 @@ export const overOnsPage: AboutPageContent = {
   },
   team: {
     h2: "Het team",
-    body: "Dezelfde monteurs die uw installatie plaatsen, komen ook voor het onderhoud. Zo kennen we uw pand — en u weet wie er over de vloer komt.",
+    body: "Dezelfde monteurs die uw installatie plaatsen, komen ook voor het onderhoud. Zo kennen we uw pand en weet u wie er over de vloer komt.",
     images: [
       { src: "/images/team-1.webp", alt: "Servicebus van het team op locatie bij een klant" },
       { src: "/images/team-2.webp", alt: "Het voltallige team van monteurs en adviseurs" },
@@ -297,7 +300,7 @@ export const faqPage: FaqPageContent = {
         {
           question: "Kan een airco ook verwarmen?",
           answer:
-            "Ja. Alle systemen die wij installeren zijn warmtepompen die energiezuinig koelen én verwarmen — vaak zuiniger dan traditionele verwarming.",
+            "Ja. Alle systemen die wij installeren zijn warmtepompen die energiezuinig koelen én verwarmen, vaak zuiniger dan traditionele verwarming.",
         },
         {
           question: "Welke merken installeren jullie?",
@@ -337,7 +340,7 @@ export const faqPage: FaqPageContent = {
         {
           question: "Wat doe ik bij een storing?",
           answer:
-            "Bel 071 - 240 05 97 of meld de storing via het contactformulier. We plannen storingen met prioriteit in; contractklanten hebben voorrang.",
+            "Bel 071 240 05 97 of meld de storing via het contactformulier. We plannen storingen met prioriteit in; contractklanten hebben voorrang.",
         },
         {
           question: "Onderhouden jullie ook bestaande installaties?",
@@ -357,10 +360,10 @@ export const faqPage: FaqPageContent = {
         {
           question: "Zijn jullie gecertificeerd?",
           answer:
-            "Ja, onze monteurs zijn STEK-gecertificeerd en werken volgens de f-gassenverordening — een wettelijke eis voor zakelijke installaties.",
+            "Ja, onze monteurs zijn STEK-gecertificeerd en werken volgens de f-gassenverordening, een wettelijke eis voor zakelijke installaties.",
         },
         {
-          question: "Ik zoek een airco voor thuis — kan dat ook?",
+          question: "Ik zoek een airco voor thuis. Kan dat ook?",
           answer:
             "Voor woningen verwijzen we u graag naar ons consumentenlabel Airco@home op airco-athome.nl.",
         },
@@ -385,14 +388,14 @@ export const werkgebiedPage: AreaPageContent = {
     },
     variant: "image-led",
     intro:
-      "Vanuit onze vestiging in Voorschoten bedienen wij bedrijven in de hele regio — met korte aanrijtijden voor installatie, onderhoud en storingen.",
+      "Vanuit onze vestiging in Voorschoten bedienen wij bedrijven in de hele regio. Daardoor houden we de aanrijtijden voor installatie, onderhoud en storingen kort.",
   },
   region: {
     h2: "Voorschoten en de regio",
-    body: "Ons team werkt dagelijks in de driehoek Leiden – Den Haag – Rotterdam en tot aan Hoofddorp en Utrecht. Die regionale focus betekent snelle service: korte aanrijtijden bij storingen en flexibele planning bij installaties.",
+    body: "Ons team werkt dagelijks in en rond Leiden, Den Haag en Rotterdam, en tot aan Hoofddorp en Utrecht. Die regionale focus betekent snelle service: korte aanrijtijden bij storingen en flexibele planning bij installaties.",
   },
   cities: [
-    { name: "Voorschoten", blurb: "Onze thuisbasis — vestiging en magazijn aan de Dobbeweg." },
+    { name: "Voorschoten", blurb: "Onze thuisbasis, met vestiging en magazijn aan de Dobbeweg." },
     { name: "Leiden", blurb: "Kantoren, praktijken en winkels in en rond de binnenstad." },
     { name: "Den Haag", blurb: "Van kantoorlocaties tot retail in het centrum." },
     { name: "Rotterdam", blurb: "Bedrijfspanden en kantoren in de hele stadsregio." },
@@ -407,7 +410,7 @@ export const werkgebiedPage: AreaPageContent = {
     { name: "Alphen aan den Rijn", blurb: "Mkb en bedrijfspanden." },
   ],
   beyond:
-    "Groter project buiten Zuid-Holland? Voor omvangrijkere installaties werken we ook landelijk — neem contact op om de mogelijkheden te bespreken.",
+    "Groter project buiten Zuid-Holland? Voor omvangrijkere installaties werken we ook landelijk. Neem contact op om de mogelijkheden te bespreken.",
 };
 
 export const merkenPage: BrandsPageContent = {
@@ -508,7 +511,7 @@ export const privacyPage: LegalPageContent = {
     {
       h2: "Waarvoor wij uw gegevens gebruiken",
       paragraphs: [
-        "Wij gebruiken uw gegevens uitsluitend om uw aanvraag te behandelen: contact opnemen, een offerte opstellen en — als u klant wordt — de overeenkomst uitvoeren. Aanvragen worden opgeslagen in ons CRM-systeem.",
+        "Wij gebruiken uw gegevens uitsluitend om uw aanvraag te behandelen: contact opnemen, een offerte opstellen en, als u klant wordt, de overeenkomst uitvoeren. Aanvragen worden opgeslagen in ons CRM-systeem.",
         "Wij verkopen uw gegevens nooit aan derden en gebruiken ze niet voor ongevraagde marketing.",
       ],
     },

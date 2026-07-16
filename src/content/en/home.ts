@@ -16,8 +16,6 @@ export const home: HomeContent = {
     "Tailored advice",
     "Professional installation",
     "STEK-certified",
-    "Clean finishing",
-    "Periodic maintenance",
     "Premium systems",
     "Active across Zuid-Holland",
   ],
@@ -276,9 +274,9 @@ export const home: HomeContent = {
     intro:
       "English translations of verified Google reviews for Airco@home, the team behind Airco@Business. View every review directly on Google.",
     platformLabel: "Google Reviews",
-    reviewCountLabel: "32 reviews",
-    ratingValue: 4.4,
-    ratingLabel: "4.4",
+    reviewCountLabel: "68 reviews",
+    ratingValue: 4.6,
+    ratingLabel: "4.6",
     reviewUrl:
       "https://search.google.com/local/reviews?placeid=ChIJud2sWF3HxUcRDhM1WilDE2I",
     items: [

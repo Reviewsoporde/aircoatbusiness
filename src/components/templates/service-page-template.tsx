@@ -68,13 +68,14 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
             name: content.name,
             description: content.meta.description,
             url,
+            locale,
           }),
           breadcrumbSchema(crumbs),
           faqSchema(content.faq.items),
         ]}
       />
 
-      {/* 1 — Hero: primary CTA jumps to the on-page, pre-filled lead form */}
+      {/* 1 - Hero: primary CTA jumps to the on-page, pre-filled lead form */}
       <PageHero
         hero={{
           ctaAnchor: "#offerte",
@@ -84,7 +85,7 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
         }}
       />
 
-      {/* 2 — Service overview & audience */}
+      {/* 2 - Service overview & audience */}
       <Section
         variant="paper"
         eyebrow={content.name}
@@ -97,7 +98,7 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
         />
       </Section>
 
-      {/* 3 — Business need & benefits */}
+      {/* 3 - Business need & benefits */}
       <Section
         variant="paper"
         h2={content.benefits.h2}
@@ -107,7 +108,7 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
         <CardGrid cards={benefitCards} />
       </Section>
 
-      {/* 4 — Solution scope & technical fit (child pages only) */}
+      {/* 4 - Solution scope & technical fit (child pages only) */}
       {content.scope && (
         <Section
           variant="paper"
@@ -119,7 +120,7 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
         </Section>
       )}
 
-      {/* 5 — Process */}
+      {/* 5 - Process */}
       <Section
         variant="dark"
         eyebrow={t("ourProcess")}
@@ -127,12 +128,12 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
         className="glow-azure"
       >
         <ProcessSteps steps={content.process.steps} />
-        <Reveal delay={120} className="mt-14">
+        <Reveal delay={120} className="mt-10">
           <CtaLink ctaKey={content.hero.cta} anchor="#offerte" variant="azure" arrow />
         </Reveal>
       </Section>
 
-      {/* 6 — Projects, reviews & trust */}
+      {/* 6 - Projects, reviews & trust */}
       <Section variant="light" h2={content.proof.h2}>
         <ProofBand
           indicators={content.proof.indicators}
@@ -142,9 +143,9 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
         />
       </Section>
 
-      {/* 7 — Conversion: lead form (dominant) + related + FAQ */}
+      {/* 7 - Conversion: lead form (dominant) + related + FAQ */}
       <Section variant="paper" h2={content.form.h2} id="offerte">
-        <Reveal className="grid gap-10 lg:grid-cols-[1fr_minmax(0,340px)]">
+        <Reveal className="grid gap-8 lg:grid-cols-[1fr_minmax(0,340px)]">
           <div className="rounded-[32px] border border-steel/12 bg-card p-6 shadow-panel sm:p-12">
             <LeadForm
               defaultService={content.form.service}
@@ -155,14 +156,14 @@ export function ServicePageTemplate({ content, pathname, locale, parent }: Props
           <ContactAside />
         </Reveal>
 
-        <div className="mt-20">
+        <div className="mt-12">
           <h3 className="eyebrow mb-8 text-azure-deep">
             {t("relatedPages")}
           </h3>
           <RelatedLinks links={content.related} />
         </div>
 
-        <Reveal className="mt-20 max-w-3xl">
+        <Reveal className="mt-12 max-w-3xl">
           <h3 className="font-display text-2xl font-medium text-ink sm:text-3xl">
             {content.faq.h2}
           </h3>

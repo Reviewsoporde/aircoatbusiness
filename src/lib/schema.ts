@@ -9,24 +9,48 @@ export function organizationSchema() {
     "@type": "Organization",
     "@id": `${BASE}/#organization`,
     name: siteConfig.name,
+    legalName: siteConfig.legalName,
+    alternateName: "Airco at Business",
     url: `${BASE}/`,
     logo: `${BASE}/images/logo.png`,
     email: siteConfig.email,
     telephone: siteConfig.phone,
     vatID: siteConfig.btw,
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "KvK",
+      value: siteConfig.kvk,
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: siteConfig.address.street,
+      postalCode: siteConfig.address.postalCode,
+      addressLocality: siteConfig.address.city,
+      addressRegion: siteConfig.address.region,
+      addressCountry: siteConfig.address.country,
+    },
     sameAs: [
       siteConfig.socials.instagram,
       siteConfig.socials.facebook,
       siteConfig.socials.linkedin,
     ],
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: siteConfig.phone,
-      email: siteConfig.email,
-      contactType: "sales",
-      areaServed: "NL",
-      availableLanguage: ["nl", "en"],
+    contactPoint: { "@id": `${BASE}/#contactpoint` },
+  };
+}
+
+export function contactPointSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ContactPoint",
+    "@id": `${BASE}/#contactpoint`,
+    telephone: siteConfig.phone,
+    email: siteConfig.email,
+    contactType: "sales and customer service",
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: siteConfig.serviceArea.region,
     },
+    availableLanguage: ["nl", "en"],
   };
 }
 
@@ -36,10 +60,18 @@ export function localBusinessSchema() {
     "@type": "HVACBusiness",
     "@id": `${BASE}/#localbusiness`,
     name: siteConfig.name,
+    legalName: siteConfig.legalName,
     url: `${BASE}/`,
-    image: `${BASE}/images/logo.png`,
+    logo: `${BASE}/images/logo.png`,
+    image: `${BASE}/images/generated/airco-business-social.webp`,
     telephone: siteConfig.phone,
     email: siteConfig.email,
+    vatID: siteConfig.btw,
+    identifier: {
+      "@type": "PropertyValue",
+      propertyID: "KvK",
+      value: siteConfig.kvk,
+    },
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -54,6 +86,13 @@ export function localBusinessSchema() {
       latitude: siteConfig.geo.latitude,
       longitude: siteConfig.geo.longitude,
     },
+    hasMap: `https://www.google.com/maps?cid=${siteConfig.googleBusiness.cid}`,
+    sameAs: [
+      `https://www.google.com/maps?cid=${siteConfig.googleBusiness.cid}`,
+      siteConfig.socials.instagram,
+      siteConfig.socials.facebook,
+      siteConfig.socials.linkedin,
+    ],
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -66,6 +105,7 @@ export function localBusinessSchema() {
         (city) => ({ "@type": "City", name: city }),
       ),
     ],
+    contactPoint: { "@id": `${BASE}/#contactpoint` },
     parentOrganization: { "@id": `${BASE}/#organization` },
   };
 }
@@ -86,13 +126,16 @@ export function serviceSchema(opts: {
   name: string;
   description: string;
   url: string;
+  locale: "nl" | "en";
 }) {
   return {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": `${opts.url}#service`,
     name: opts.name,
     description: opts.description,
     url: opts.url,
+    inLanguage: opts.locale,
     serviceType: opts.name,
     provider: { "@id": `${BASE}/#localbusiness` },
     areaServed: { "@type": "AdministrativeArea", name: siteConfig.serviceArea.region },

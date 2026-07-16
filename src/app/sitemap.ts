@@ -12,16 +12,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const lastModified = new Date();
 
-  return pathnames.map((href) => ({
-    url: absoluteUrl("nl", href),
-    lastModified,
-    changeFrequency: href === "/" ? "weekly" : "monthly",
-    priority: href === "/" ? 1 : href === "/contact" ? 0.9 : 0.8,
-    alternates: {
-      languages: {
-        nl: absoluteUrl("nl", href),
-        en: absoluteUrl("en", href),
-      },
-    },
-  }));
+  return pathnames.flatMap((href) => {
+    const languages = {
+      nl: absoluteUrl("nl", href),
+      en: absoluteUrl("en", href),
+      "x-default": absoluteUrl("nl", href),
+    };
+
+    return routing.locales.map((locale) => ({
+      url: absoluteUrl(locale, href),
+      lastModified,
+      changeFrequency: href === "/" ? ("weekly" as const) : ("monthly" as const),
+      priority: href === "/" ? 1 : href === "/contact" ? 0.9 : 0.8,
+      alternates: { languages },
+    }));
+  });
 }

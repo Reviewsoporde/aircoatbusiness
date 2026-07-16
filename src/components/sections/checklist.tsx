@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 import { Reveal } from "./reveal";
 
-/** Scope / technical-fit checklist — 4–6 items per docs/page-templates.md §3.4 */
+/** Scope / technical-fit checklist - 4-6 items per docs/page-templates.md §3.4 */
 export function Checklist({ items }: { items: string[] }) {
   return (
     <Reveal group as="ul" className="grid gap-x-12 sm:grid-cols-2">

@@ -1,6 +1,6 @@
 import { defineRouting } from "next-intl/routing";
 
-// NL slugs are canonical per docs/site-architecture.md — never rename them.
+// NL slugs are canonical per docs/site-architecture.md - never rename them.
 // Internal route keys (= app dir folders) use the NL slug; EN gets a translated slug.
 export const routing = defineRouting({
   locales: ["nl", "en"],

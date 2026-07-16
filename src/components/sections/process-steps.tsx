@@ -5,7 +5,7 @@ import { Reveal } from "./reveal";
 type Props = { steps: Step[]; variant?: "light" | "dark" };
 
 /**
- * Numbered process — numbering is semantic here: the client journey is a real
+ * Numbered process - numbering is semantic here: the client journey is a real
  * sequence (consultation → assessment → proposal → installation → aftercare).
  * Open columns over hairline rules; friendly circular step markers.
  */

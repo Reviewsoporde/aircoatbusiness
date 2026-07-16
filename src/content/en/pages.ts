@@ -65,7 +65,7 @@ export const werkwijzePage: ProcessPageContent = {
     eyebrow: "How we work",
     h1: "How we work: clear from the first conversation to aftercare",
     intro:
-      "You want to know where you stand. That is why Airco@Business works with a fixed, transparent process — with clear agreements on advice, planning, installation and everything that follows.",
+      "You want to know where you stand. That is why Airco@Business works with a fixed, transparent process and clear agreements on advice, planning, installation and everything that follows.",
   },
   steps: [
     {
@@ -135,7 +135,7 @@ export const werkwijzePage: ProcessPageContent = {
       {
         question: "What do you need from us?",
         answer:
-          "Access to the spaces for the survey and one contact person for coordination. The rest — calculations, planning, execution — we take care of.",
+          "Access to the spaces for the survey and one contact person for coordination. We take care of the rest, including calculations, planning and execution.",
       },
       {
         question: "Is the consultation free of obligation?",
@@ -192,6 +192,9 @@ export const contactPage: ContactPageContent = {
     h2: "Based in Voorschoten, working across Zuid-Holland",
     body: "Airco@Business works from Voorschoten for businesses across the whole of Zuid-Holland, including Leiden, Den Haag, Rotterdam and Hoofddorp. Larger projects outside the region can be discussed.",
     mapTitle: "Google Maps location of Airco@Business in Voorschoten",
+    profileLabel:
+      "View the Google Business Profile of Airco@Business in Voorschoten (opens in a new tab)",
+    profileLinkLabel: "View our Google Business Profile",
     detailsTitle: "Visitor and business details",
     addressLabel: "Address",
     hoursLabel: "Opening hours",
@@ -209,10 +212,10 @@ export const contactPage: ContactPageContent = {
       {
         question: "Can I schedule a consultation straight away?",
         answer:
-          "Yes. Indicate in the form that you would like a consultation and we will arrange a date by phone — at your location.",
+          "Yes. Indicate in the form that you would like a consultation and we will arrange a date by phone at your location.",
       },
       {
-        question: "I have a breakdown — what is the fastest route?",
+        question: "I have a breakdown. What is the fastest route?",
         answer:
           "Call the business number shown on this page. Faults reported by phone can be assessed fastest; contract customers receive priority.",
       },
@@ -236,7 +239,7 @@ export const overOnsPage: AboutPageContent = {
     h2: "Why Airco@Business exists",
     paragraphs: [
       "Business premises make different demands than a living room: higher heat loads, multiple zones, noise and regulatory requirements, and an installation moment that must not disrupt business operations. That is why we brought our commercial expertise together under one name: Airco@Business.",
-      "Our team advises on, installs and maintains climate systems for businesses across Zuid-Holland. No standard packages, but a system calculated for your space and use — installed by our own STEK-certified engineers who work neatly and keep their agreements.",
+      "Our team advises on, installs and maintains climate systems for businesses across Zuid-Holland. We do not use standard packages. Our own STEK-certified engineers install a system calculated for your space and use, work neatly and keep their agreements.",
       "From the first consultation to the maintenance contract: you have one point of contact who knows your building and your installation.",
     ],
   },
@@ -265,7 +268,7 @@ export const overOnsPage: AboutPageContent = {
   },
   team: {
     h2: "The team",
-    body: "The same engineers who install your system also come back for the maintenance. That way we know your building — and you know who is coming through the door.",
+    body: "The same engineers who install your system also come back for the maintenance. That way we know your building and you know who is coming through the door.",
     images: [
       { src: "/images/team-1.webp", alt: "The team's service van on site at a client" },
       { src: "/images/team-2.webp", alt: "The full team of engineers and advisors" },
@@ -297,7 +300,7 @@ export const faqPage: FaqPageContent = {
         {
           question: "Can an air conditioning system also heat?",
           answer:
-            "Yes. All systems we install are heat pumps that both cool and heat energy-efficiently — often more economical than traditional heating.",
+            "Yes. All systems we install are heat pumps that both cool and heat energy-efficiently, often more economically than traditional heating.",
         },
         {
           question: "Which brands do you install?",
@@ -337,7 +340,7 @@ export const faqPage: FaqPageContent = {
         {
           question: "What do I do in the event of a breakdown?",
           answer:
-            "Call 071 - 240 05 97 or report the fault via the contact form. We schedule breakdowns with priority; contract customers come first.",
+            "Call 071 240 05 97 or report the fault via the contact form. We schedule breakdowns with priority; contract customers come first.",
         },
         {
           question: "Do you also maintain existing installations?",
@@ -357,10 +360,10 @@ export const faqPage: FaqPageContent = {
         {
           question: "Are you certified?",
           answer:
-            "Yes, our engineers are STEK-certified and work in accordance with the F-gas regulation — a legal requirement for commercial installations.",
+            "Yes, our engineers are STEK-certified and work in accordance with the F-gas regulation, a legal requirement for commercial installations.",
         },
         {
-          question: "I am looking for air conditioning for my home — is that possible too?",
+          question: "I am looking for air conditioning for my home. Is that possible too?",
           answer:
             "For homes, we are happy to refer you to our consumer label Airco@home at airco-athome.nl.",
         },
@@ -385,14 +388,14 @@ export const werkgebiedPage: AreaPageContent = {
     },
     variant: "image-led",
     intro:
-      "From our base in Voorschoten, we serve businesses throughout the region — with short travel times for installation, maintenance and breakdowns.",
+      "From our base in Voorschoten, we serve businesses throughout the region. This keeps travel times short for installation, maintenance and breakdowns.",
   },
   region: {
     h2: "Voorschoten and the region",
-    body: "Our team works daily in the Leiden – Den Haag – Rotterdam triangle and as far as Hoofddorp and Utrecht. That regional focus means fast service: short travel times in the event of breakdowns and flexible scheduling for installations.",
+    body: "Our team works daily in and around Leiden, Den Haag and Rotterdam, and as far as Hoofddorp and Utrecht. That regional focus means fast service: short travel times in the event of breakdowns and flexible scheduling for installations.",
   },
   cities: [
-    { name: "Voorschoten", blurb: "Our home base — premises and warehouse on the Dobbeweg." },
+    { name: "Voorschoten", blurb: "Our home base, with premises and warehouse on the Dobbeweg." },
     { name: "Leiden", blurb: "Offices, practices and shops in and around the city centre." },
     { name: "Den Haag", blurb: "From office locations to retail in the centre." },
     { name: "Rotterdam", blurb: "Commercial buildings and offices across the metropolitan area." },
@@ -407,7 +410,7 @@ export const werkgebiedPage: AreaPageContent = {
     { name: "Alphen aan den Rijn", blurb: "SMEs and commercial buildings." },
   ],
   beyond:
-    "A larger project outside Zuid-Holland? For more substantial installations we also work nationwide — get in touch to discuss the possibilities.",
+    "A larger project outside Zuid-Holland? For more substantial installations we also work nationwide. Get in touch to discuss the possibilities.",
 };
 
 export const merkenPage: BrandsPageContent = {
@@ -508,7 +511,7 @@ export const privacyPage: LegalPageContent = {
     {
       h2: "What we use your data for",
       paragraphs: [
-        "We use your data solely to handle your request: to contact you, prepare a quote and — if you become a customer — perform the agreement. Requests are stored in our CRM system.",
+        "We use your data solely to handle your request: to contact you, prepare a quote and, if you become a customer, perform the agreement. Requests are stored in our CRM system.",
         "We never sell your data to third parties and do not use it for unsolicited marketing.",
       ],
     },

@@ -1,4 +1,4 @@
-# Airco@Business — Site & Link Architecture
+# Airco@Business - Site & Link Architecture
 
 > Distilled from the client SEO document (Link Architecture Guide + Homepage SEO Outline). This is the **client-approved final structure**. It replaces the earlier 4-cluster proposal (overlapping pages such as *Airco Voor Bedrijven*, *Airco Zakelijk*, *Klimaatbeheersing Kantoor*, *Airco Werkplek* are **not** built).
 
@@ -28,7 +28,7 @@ Homepage (/)
 └─ Contact                          /contact/
 ```
 
-Supporting pages (footer / contextual links only — **not** in main navigation):
+Supporting pages (footer / contextual links only - **not** in main navigation):
 
 | Page | URL | Purpose |
 |---|---|---|
@@ -97,17 +97,17 @@ The homepage links to all three parent clusters and selected high-priority child
 ## 4. Cluster Internal-Linking Rules
 
 **Business Air Conditioning (parent)** links to: its 4 child pages, Installation, Projects, Contact.
-Each property child page links to: parent, 1–2 relevant system pages, Maintenance, Projects, Contact.
-*Example — Office AC → Business AC, Cassette AC, Ducted AC, Maintenance, Contact.*
+Each property child page links to: parent, 1-2 relevant system pages, Maintenance, Projects, Contact.
+*Example - Office AC → Business AC, Cassette AC, Ducted AC, Maintenance, Contact.*
 
 **Installation (parent)** links to: Commercial AC Installation, the 3 system pages, Projects, Contact.
 Each system page links to: Installation parent, Commercial AC Installation, relevant property pages, Maintenance, Contact.
-*Example — Cassette AC → Installation, Commercial AC Installation, Office AC, Retail AC, Maintenance, Contact.*
+*Example - Cassette AC → Installation, Commercial AC Installation, Office AC, Retail AC, Maintenance, Contact.*
 
 **Maintenance (parent)** links to: Maintenance, Repairs, Maintenance Contracts, Contact.
 Each maintenance child links to: parent, the other maintenance services, Commercial AC Installation (where relevant), Contact.
 
-Recommended related-link counts: parent pages 4–6 · property pages 3–4 · system pages 3–4 · maintenance pages 3–4 · repair page 2–4. Each link should support the next logical user action. **Do not link to every service page.**
+Recommended related-link counts: parent pages 4-6 · property pages 3-4 · system pages 3-4 · maintenance pages 3-4 · repair page 2-4. Each link should support the next logical user action. **Do not link to every service page.**
 
 ## 5. Anchor-Text Rules
 
@@ -119,22 +119,22 @@ Recommended related-link counts: parent pages 4–6 · property pages 3–4 · s
 
 | Column | Links |
 |---|---|
-| 1 — Core Services | Business Air Conditioning, Installation, Maintenance, Projects, Our Process, Contact |
-| 2 — Property Types | Office AC, Commercial Building AC, Retail AC, Showroom AC |
-| 3 — Systems & Maintenance | Commercial AC Installation, Cassette AC, Ducted AC, Wall Mounted AC, Maintenance, Repairs, Maintenance Contracts |
-| 4 — Supporting Pages | About, FAQ, Service Area, Brands & Systems, Residential redirect |
-| 5 — Locations | Voorschoten, Leiden, Den Haag, Rotterdam, Hoofddorp, "View All Service Areas" (→ `/werkgebied/`) |
+| 1 - Core Services | Business Air Conditioning, Installation, Maintenance, Projects, Our Process, Contact |
+| 2 - Property Types | Office AC, Commercial Building AC, Retail AC, Showroom AC |
+| 3 - Systems & Maintenance | Commercial AC Installation, Cassette AC, Ducted AC, Wall Mounted AC, Maintenance, Repairs, Maintenance Contracts |
+| 4 - Supporting Pages | About, FAQ, Service Area, Brands & Systems, Residential redirect |
+| 5 - Locations | Voorschoten, Leiden, Den Haag, Rotterdam, Hoofddorp, "View All Service Areas" (→ `/werkgebied/`) |
 
 Plus legal/business block: company name, address, phone, email, opening hours, KvK, Privacy Policy, Cookie Policy, socials, residential redirect.
 
 Footer rules:
 - Clear, descriptive labels; don't repeat the same link across columns unnecessarily
 - Location links point to `/werkgebied/` until dedicated location pages exist
-- "View All Service Areas" keeps the footer manageable — never list all locations
+- "View All Service Areas" keeps the footer manageable - never list all locations
 
 ## 7. Location Pages Policy (deferred)
 
-Location pages stay **outside** main navigation. Starting set: `/zakelijke-airco-voorschoten/`, `/zakelijke-airco-leiden/`, `/zakelijke-airco-den-haag/`, `/zakelijke-airco-rotterdam/`, `/zakelijke-airco-hoofddorp/`. Linked from Service Area page, footer, relevant service pages, project pages, homepage local section. Each requires **unique local content** — never city-name-swapped duplicates.
+Location pages stay **outside** main navigation. Starting set: `/zakelijke-airco-voorschoten/`, `/zakelijke-airco-leiden/`, `/zakelijke-airco-den-haag/`, `/zakelijke-airco-rotterdam/`, `/zakelijke-airco-hoofddorp/`. Linked from Service Area page, footer, relevant service pages, project pages, homepage local section. Each requires **unique local content** - never city-name-swapped duplicates.
 
 ## 8. User-Journey Hierarchy
 

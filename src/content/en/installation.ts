@@ -1,7 +1,7 @@
 import type { ServicePageContent } from "../types";
 import { standardProcess, trustIndicators } from "./shared";
 
-/** Parent: /installatie/ — installation & system-selection overview */
+/** Parent: /installatie/ - installation & system-selection overview */
 export const installatie: ServicePageContent = {
   meta: {
     title: "Air conditioning installation | Systems | Airco@Business",
@@ -13,7 +13,7 @@ export const installatie: ServicePageContent = {
     eyebrow: "Installation",
     h1: "Air conditioning installation for businesses: from system selection to handover",
     intro:
-      "A good installation starts well before installation day. We take system selection, capacity calculation, planning and finishing off your hands — so your new climate system delivers what it promises from day one.",
+      "A good installation starts well before installation day. We take system selection, capacity calculation, planning and finishing off your hands. This helps your new climate system deliver what it promises from day one.",
     cta: "planConsultation",
     secondary: { label: "Request a business quote", href: "/contact" },
     trustPoints: ["Our own engineers", "STEK-certified", "Fixed schedule"],
@@ -39,7 +39,7 @@ export const installatie: ServicePageContent = {
         tag: "System",
         title: "Cassette air conditioning",
         description:
-          "Ceiling-recessed with four-way air distribution — the standard for offices and shops.",
+          "Ceiling-recessed with four-way air distribution, a popular solution for offices and shops.",
         href: "/cassette-airco-bedrijf",
         linkLabel: "Cassette air conditioning for business",
       },
@@ -145,7 +145,7 @@ export const installatie: ServicePageContent = {
   },
 };
 
-/** /zakelijke-airco-installatie/ — primary keyword: commercial air conditioning installation */
+/** /zakelijke-airco-installatie/ - primary keyword: commercial air conditioning installation */
 export const zakelijkeInstallatie: ServicePageContent = {
   meta: {
     title: "Commercial air conditioning installation | Airco@Business",
@@ -157,7 +157,7 @@ export const zakelijkeInstallatie: ServicePageContent = {
     eyebrow: "Commercial air conditioning installation",
     h1: "Commercial air conditioning installation without surprises",
     intro:
-      "From first inspection to a working installation: one team that advises, plans and fits. With a fixed schedule, neat finishing and a system sized for your space — not for an average.",
+      "From first inspection to a working installation: one team that advises, plans and fits. With a fixed schedule, neat finishing and a system sized for your space, not for an average.",
     cta: "planConsultation",
     secondary: { label: "View the systems", href: "/installatie" },
     trustPoints: ["Capacity calculated per room", "Fixed completion date", "Workstations remain usable"],
@@ -165,7 +165,7 @@ export const zakelijkeInstallatie: ServicePageContent = {
   overview: {
     h2: "Who is this installation service for?",
     intro:
-      "For business owners and facility managers who want one responsible party for the entire project — in new and existing buildings alike.",
+      "For business owners and facility managers who want one responsible party for the entire project in both new and existing buildings.",
     cards: [
       {
         tag: "New",
@@ -267,7 +267,7 @@ export const zakelijkeInstallatie: ServicePageContent = {
       {
         question: "Where will the outdoor unit be placed?",
         answer:
-          "On the roof, on the facade or at ground level — we recommend a position that works acoustically and aesthetically and complies with the regulations.",
+          "On the roof, on the facade or at ground level. We recommend a position that works acoustically and aesthetically and complies with the regulations.",
       },
       {
         question: "How soon can the installation take place?",
@@ -282,7 +282,7 @@ export const zakelijkeInstallatie: ServicePageContent = {
   },
 };
 
-/** /cassette-airco-bedrijf/ — primary keyword: cassette air conditioning for business */
+/** /cassette-airco-bedrijf/ - primary keyword: cassette air conditioning for business */
 export const cassetteAirco: ServicePageContent = {
   meta: {
     title: "Cassette air conditioning for business | Airco@Business",
@@ -294,7 +294,7 @@ export const cassetteAirco: ServicePageContent = {
     eyebrow: "Cassette air conditioning",
     h1: "Cassette air conditioning: discreet in the ceiling, even throughout the room",
     intro:
-      "The cassette unit is the standard in offices and shops for good reason: it disappears into the suspended ceiling and distributes air in four directions — without draughts at the workstations below.",
+      "The cassette unit is a popular choice in offices and shops for good reason. It disappears into the suspended ceiling and distributes air in four directions while limiting draughts at the workstations below.",
     cta: "requestSystemAdvice",
     secondary: { label: "View all systems", href: "/installatie" },
     trustPoints: ["Four-way air distribution", "Fits suspended ceilings", "Cools and heats"],
@@ -394,7 +394,7 @@ export const cassetteAirco: ServicePageContent = {
       {
         question: "Does a cassette fit in every ceiling?",
         answer:
-          "Cassettes require a suspended or lowered ceiling with sufficient free height (indicatively 25–30 cm). During the inspection we measure whether your ceiling is suitable.",
+          "Cassettes require a suspended or lowered ceiling with sufficient free height (indicatively 25-30 cm). During the inspection we measure whether your ceiling is suitable.",
       },
       {
         question: "How much space does one cassette cool?",
@@ -409,7 +409,7 @@ export const cassetteAirco: ServicePageContent = {
       {
         question: "Can a cassette also provide heating?",
         answer:
-          "Yes, cassettes are fully fledged heat pumps and heat energy-efficiently in winter — often as a supplement to or replacement for traditional heating.",
+          "Yes, cassettes are fully fledged heat pumps and heat energy-efficiently in winter, often as a supplement to or replacement for traditional heating.",
       },
     ],
   },
@@ -419,7 +419,7 @@ export const cassetteAirco: ServicePageContent = {
   },
 };
 
-/** /kanaal-airco-bedrijf/ — primary keyword: ducted air conditioning for business */
+/** /kanaal-airco-bedrijf/ - primary keyword: ducted air conditioning for business */
 export const kanaalAirco: ServicePageContent = {
   meta: {
     title: "Ducted air conditioning for business | Airco@Business",
@@ -431,7 +431,7 @@ export const kanaalAirco: ServicePageContent = {
     eyebrow: "Ducted air conditioning",
     h1: "Ducted air conditioning: complete climate control, completely out of sight",
     intro:
-      "With a ducted system, the equipment is fully concealed above the ceiling; only sleek grilles remain visible. One unit serves multiple rooms or one large space through air ducts — quietly and evenly.",
+      "With a ducted system, the equipment is fully concealed above the ceiling; only sleek grilles remain visible. One unit can serve multiple rooms or one large space through air ducts, quietly and evenly.",
     cta: "requestSystemAdvice",
     secondary: { label: "View all systems", href: "/installatie" },
     trustPoints: ["Completely invisible", "Multiple rooms per unit", "Very quiet operation"],
@@ -480,7 +480,7 @@ export const kanaalAirco: ServicePageContent = {
         tag: "Efficient",
         title: "One system, multiple zones",
         description:
-          "Air ducts distribute the capacity intelligently across rooms — fewer units, fewer maintenance points.",
+          "Air ducts distribute the capacity intelligently across rooms. This means fewer units and fewer maintenance points.",
       },
     ],
   },
@@ -531,7 +531,7 @@ export const kanaalAirco: ServicePageContent = {
       {
         question: "How much ceiling space does a ducted system require?",
         answer:
-          "Indicatively 30–40 cm of free height for the unit and ducts, depending on the capacity. During the inspection we determine whether your situation is suitable.",
+          "Indicatively 30-40 cm of free height for the unit and ducts, depending on the capacity. During the inspection we determine whether your situation is suitable.",
       },
       {
         question: "Can each room have its own temperature?",
@@ -546,7 +546,7 @@ export const kanaalAirco: ServicePageContent = {
       {
         question: "How is such a system maintained?",
         answer:
-          "We access the unit and filters through inspection hatches. Periodic maintenance keeps air quality and efficiency up to standard — we offer contracts for that.",
+          "We access the unit and filters through inspection hatches. Periodic maintenance keeps air quality and efficiency up to standard. We offer contracts for that.",
       },
     ],
   },
@@ -556,7 +556,7 @@ export const kanaalAirco: ServicePageContent = {
   },
 };
 
-/** /wandmodel-airco-bedrijf/ — wall-mounted air conditioning for business */
+/** /wandmodel-airco-bedrijf/ - wall-mounted air conditioning for business */
 export const wandmodelAirco: ServicePageContent = {
   meta: {
     title: "Wall-mounted air conditioning | Compact | Airco@Business",
@@ -605,7 +605,7 @@ export const wandmodelAirco: ServicePageContent = {
         tag: "Speed",
         title: "Installed within a day",
         description:
-          "No ceiling work required: a wall-mounted unit is hung, connected and running — often within a single working day.",
+          "No ceiling work required: a wall-mounted unit can often be hung, connected and running within a single working day.",
       },
       {
         tag: "Budget",
@@ -683,7 +683,7 @@ export const wandmodelAirco: ServicePageContent = {
       {
         question: "Can a wall-mounted unit also provide heating?",
         answer:
-          "Yes, wall-mounted units are also fully fledged heat pumps — useful as primary or supplementary heating in the shoulder seasons.",
+          "Yes, wall-mounted units are also fully fledged heat pumps and can be useful as primary or supplementary heating in the shoulder seasons.",
       },
     ],
   },

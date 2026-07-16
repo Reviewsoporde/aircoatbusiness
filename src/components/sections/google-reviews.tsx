@@ -182,7 +182,7 @@ export function GoogleReviews({ reviews }: { reviews: ReviewSection }) {
                     target="_blank"
                     rel="noreferrer noopener nofollow"
                     className="rounded-full p-1 transition-transform duration-200 hover:scale-110 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-azure"
-                    aria-label={`${review.author} — ${reviews.platformLabel}`}
+                    aria-label={`${review.author}, ${reviews.platformLabel}`}
                   >
                     <GoogleMark className="size-5" />
                   </a>

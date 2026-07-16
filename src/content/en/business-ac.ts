@@ -1,7 +1,7 @@
 import type { ServicePageContent } from "../types";
 import { standardProcess, trustIndicators } from "./shared";
 
-/** Parent: /zakelijke-airconditioning/ — primary keyword: commercial air conditioning */
+/** Parent: /zakelijke-airconditioning/ - primary keyword: commercial air conditioning */
 export const businessAC: ServicePageContent = {
   meta: {
     title: "Commercial air conditioning | Advice | Airco@Business",
@@ -13,7 +13,7 @@ export const businessAC: ServicePageContent = {
     eyebrow: "Commercial air conditioning",
     h1: "Commercial air conditioning that fits your business premises",
     intro:
-      "No two business premises are the same. Airco@Business advises on and installs air conditioning based on your building, your occupancy and your operations — for a working climate you no longer have to think about.",
+      "No two business premises are the same. Airco@Business advises on and installs air conditioning based on your building, occupancy and operations. The result is a working climate you no longer have to think about.",
     cta: "requestQuote",
     secondary: { label: "Book a consultation", href: "/contact" },
     trustPoints: ["On-site advice", "STEK-certified", "Premium A-brands"],
@@ -75,7 +75,7 @@ export const businessAC: ServicePageContent = {
         tag: "Comfort",
         title: "Staff who work comfortably",
         description:
-          "A stable indoor climate prevents the familiar summer complaints and keeps concentration levels up — precisely on the hottest days.",
+          "A stable indoor climate prevents the familiar summer complaints and keeps concentration levels up, especially on the hottest days.",
       },
       {
         tag: "Continuity",
@@ -121,7 +121,7 @@ export const businessAC: ServicePageContent = {
       {
         question: "What does commercial air conditioning cost?",
         answer:
-          "The investment depends on the number of rooms, the chosen system and the structural situation. After an on-site inspection you receive a quote with fixed prices — so you know exactly where you stand in advance.",
+          "The investment depends on the number of rooms, the chosen system and the structural situation. After an on-site inspection you receive a quote with fixed prices. That gives you clarity in advance.",
       },
       {
         question: "Can air conditioning also provide heating?",
@@ -141,7 +141,7 @@ export const businessAC: ServicePageContent = {
       {
         question: "Do you also work outside Zuid-Holland?",
         answer:
-          "Our service area is Zuid-Holland, including Leiden, Den Haag, Rotterdam and Hoofddorp. For larger projects we also work beyond it — feel free to get in touch.",
+          "Our service area is Zuid-Holland, including Leiden, Den Haag, Rotterdam and Hoofddorp. For larger projects we also work beyond it. Feel free to get in touch.",
       },
     ],
   },
@@ -151,7 +151,7 @@ export const businessAC: ServicePageContent = {
   },
 };
 
-/** /airco-kantoor/ — primary keyword: office air conditioning (transactional) */
+/** /airco-kantoor/ - primary keyword: office air conditioning (transactional) */
 export const aircoKantoor: ServicePageContent = {
   meta: {
     title: "Office air conditioning | Installation | Airco@Business",
@@ -171,7 +171,7 @@ export const aircoKantoor: ServicePageContent = {
   overview: {
     h2: "Climate control for every type of office",
     intro:
-      "From single-person office to a full office floor: the approach differs, the goal is the same — a working climate nobody notices because it is always right.",
+      "From a single-person office to a full office floor, the approach differs but the goal remains the same. A working climate nobody notices because it is always right.",
     cards: [
       {
         tag: "Open-plan",
@@ -206,7 +206,7 @@ export const aircoKantoor: ServicePageContent = {
         tag: "Productivity",
         title: "Better concentration",
         description:
-          "At temperatures above 24–25 °C, concentration drops noticeably. A stable climate keeps your team sharp.",
+          "At temperatures above 24-25 °C, concentration drops noticeably. A stable climate keeps your team sharp.",
       },
       {
         tag: "Comfort",
@@ -230,7 +230,7 @@ export const aircoKantoor: ServicePageContent = {
       "Floor area, layout and internal heat load (people, equipment, lighting)",
       "Ceiling type and available space for cassette or ducted units",
       "Required capacity per zone, matched to occupancy and sun exposure",
-      "Noise level — systems that do not disturb meetings or focused work",
+      "Noise level: systems that do not disturb meetings or focused work",
       "Positioning of the outdoor unit and pipework, neatly concealed",
       "Maintenance and aftercare following the installation",
     ],
@@ -281,7 +281,7 @@ export const aircoKantoor: ServicePageContent = {
       {
         question: "Does air conditioning cause draughts at workstations?",
         answer:
-          "Not with the right system choice and positioning. Cassettes distribute air in four directions and ducted systems supply air indirectly — which is exactly why we advise on site.",
+          "Not with the right system choice and positioning. Cassettes distribute air in four directions and ducted systems supply air indirectly. That is exactly why we advise on site.",
       },
       {
         question: "How long does installing office air conditioning take?",
@@ -302,7 +302,7 @@ export const aircoKantoor: ServicePageContent = {
   },
 };
 
-/** /airco-bedrijfspand/ — primary keyword: commercial building air conditioning (transactional) */
+/** /airco-bedrijfspand/ - primary keyword: commercial building air conditioning (transactional) */
 export const aircoBedrijfspand: ServicePageContent = {
   meta: {
     title: "Commercial building air conditioning | Airco@Business",
@@ -314,7 +314,7 @@ export const aircoBedrijfspand: ServicePageContent = {
     eyebrow: "Commercial building air conditioning",
     h1: "Air conditioning for commercial buildings: one system, every zone under control",
     intro:
-      "A commercial building often combines offices, work areas, storage and reception spaces — each with its own climate requirements. We design and install systems that serve all those zones reliably, without a sprawl of separate units.",
+      "A commercial building often combines offices, work areas, storage and reception spaces, each with its own climate requirements. We design and install systems that serve all those zones reliably, without a sprawl of separate units.",
     cta: "requestQuote",
     secondary: { label: "Commercial air conditioning", href: "/zakelijke-airconditioning" },
     trustPoints: ["Multiple climate zones", "On-site advice", "One point of contact"],
@@ -420,7 +420,7 @@ export const aircoBedrijfspand: ServicePageContent = {
       {
         question: "Can one system cool multiple floors?",
         answer:
-          "Yes. VRF and multi-split systems serve multiple indoor units — and therefore floors and zones — from one or a few outdoor units, each individually controllable.",
+          "Yes. VRF and multi-split systems can serve multiple indoor units, floors and zones from one or a few outdoor units. Each zone can be controlled individually.",
       },
       {
         question: "Does our business have to close during installation?",
@@ -446,7 +446,7 @@ export const aircoBedrijfspand: ServicePageContent = {
   },
 };
 
-/** /airco-winkel/ — primary keyword: retail air conditioning */
+/** /airco-winkel/ - primary keyword: retail air conditioning */
 export const aircoWinkel: ServicePageContent = {
   meta: {
     title: "Retail air conditioning | Installation | Airco@Business",
@@ -458,7 +458,7 @@ export const aircoWinkel: ServicePageContent = {
     eyebrow: "Retail air conditioning",
     h1: "Air conditioning for shops: a climate that keeps customers browsing",
     intro:
-      "A shop that is too warm empties out — literally. Good climate control keeps customers inside longer, protects your products and gives your staff a pleasant working day. We install systems that perform without disturbing your shop's appearance.",
+      "A shop that is too warm can literally empty out. Good climate control keeps customers inside longer, protects your products and gives your staff a pleasant working day. We install systems that perform without disturbing your shop's appearance.",
     cta: "requestQuote",
     secondary: { label: "Commercial air conditioning", href: "/zakelijke-airconditioning" },
     trustPoints: ["Invisible in the interior", "Quiet operation", "Installation outside opening hours"],
@@ -495,7 +495,7 @@ export const aircoWinkel: ServicePageContent = {
         tag: "Revenue",
         title: "Longer dwell time",
         description:
-          "Customers stay longer and shop more comfortably in a cool store — especially on warm days when the competition falls short.",
+          "Customers stay longer and shop more comfortably in a cool store, especially on warm days when the competition falls short.",
       },
       {
         tag: "Brand experience",
@@ -563,7 +563,7 @@ export const aircoWinkel: ServicePageContent = {
       {
         question: "Will the air conditioning be visible in the shop?",
         answer:
-          "It does not have to be. Cassette units disappear into the suspended ceiling and ducted systems are completely invisible — only the grilles remain in view.",
+          "It does not have to be. Cassette units disappear into the suspended ceiling and ducted systems are completely concealed. Only the grilles remain in view.",
       },
       {
         question: "What do open shop doors mean for the capacity?",
@@ -584,7 +584,7 @@ export const aircoWinkel: ServicePageContent = {
   },
 };
 
-/** /airco-showroom/ — primary keyword: showroom air conditioning */
+/** /airco-showroom/ - primary keyword: showroom air conditioning */
 export const aircoShowroom: ServicePageContent = {
   meta: {
     title: "Showroom air conditioning | Advice | Airco@Business",
@@ -596,7 +596,7 @@ export const aircoShowroom: ServicePageContent = {
     eyebrow: "Showroom air conditioning",
     h1: "Air conditioning for showrooms: your presentation deserves the right climate",
     intro:
-      "Showrooms combine large open spaces, extensive glazing and intensive lighting — a demanding heat load. We design climate systems that offer visitors comfort while leaving your presentation untouched.",
+      "Showrooms combine large open spaces, extensive glazing and intensive lighting. This creates a demanding heat load. We design climate systems that offer visitors comfort while leaving your presentation untouched.",
     cta: "requestQuote",
     secondary: { label: "Commercial air conditioning", href: "/zakelijke-airconditioning" },
     trustPoints: ["Large open spaces", "Invisible equipment", "On-site advice"],
@@ -633,7 +633,7 @@ export const aircoShowroom: ServicePageContent = {
         tag: "Sales",
         title: "Visitors take their time",
         description:
-          "Purchase decisions in showrooms take time — comfort keeps visitors with your products longer.",
+          "Purchase decisions in showrooms take time. Comfort keeps visitors with your products longer.",
       },
       {
         tag: "Heat load",
@@ -645,7 +645,7 @@ export const aircoShowroom: ServicePageContent = {
         tag: "Appearance",
         title: "Equipment out of sight",
         description:
-          "Ducted and cassette systems keep the look clean — your presentation remains the star of the show.",
+          "Ducted and cassette systems keep the look clean. Your presentation remains the star of the show.",
       },
     ],
   },
@@ -694,7 +694,7 @@ export const aircoShowroom: ServicePageContent = {
     h2: "Frequently asked questions about air conditioning in showrooms",
     items: [
       {
-        question: "Our showroom has a lot of glass — can it be cooled?",
+        question: "Our showroom has a lot of glass. Can it be cooled?",
         answer:
           "Yes. Glass facades create a high but predictable heat load. With the right capacity calculation and air distribution, even a glazed showroom stays comfortably cool.",
       },

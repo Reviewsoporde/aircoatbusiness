@@ -2,7 +2,7 @@
 @import "tw-animate-css";
 
 /*
-  Airco@Business design system — black-dominant premium B2B.
+  Airco@Business design system - black-dominant premium B2B.
   The original color system: deep blue-black ink, cool paper grays, brand
   azure #0093CB (from logo) as the only accent. The friendliness the client
   asked for lives in shape and motion, not color: generous rounding, pill
@@ -80,7 +80,7 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  /* Generous, strictly-increasing radius scale — everything is rounded */
+  /* Generous, strictly-increasing radius scale - everything is rounded */
   --radius-sm: 0.625rem;
   --radius-md: 0.875rem;
   --radius-lg: 1rem;
@@ -91,7 +91,7 @@
   --font-sans: var(--font-archivo), system-ui, sans-serif;
   --font-serif: var(--font-fraunces), Georgia, serif;
 
-  /* Cool-tinted elevation — never generic black */
+  /* Cool-tinted elevation - never generic black */
   --shadow-card: 0 18px 44px -34px rgb(7 18 24 / 0.28);
   --shadow-card-hover: 0 28px 64px -36px rgb(7 18 24 / 0.36);
   --shadow-panel: 0 36px 90px -38px rgb(7 18 24 / 0.42);
@@ -120,7 +120,7 @@
   }
 }
 
-/* Soft serif display voice — H1/H2/H3 statements (SOFT axis up = rounded warmth) */
+/* Soft serif display voice - H1/H2/H3 statements (SOFT axis up = rounded warmth) */
 @utility font-display {
   font-family: var(--font-archivo), system-ui, sans-serif;
   font-stretch: 92%;
@@ -134,7 +134,7 @@
   letter-spacing: -0.01em;
 }
 
-/* Friendly sentence-case eyebrow label — small, warm, confident */
+/* Friendly sentence-case eyebrow label - small, warm, confident */
 @utility eyebrow {
   font-family: var(--font-archivo), system-ui, sans-serif;
   font-size: 0.8125rem;
@@ -142,7 +142,7 @@
   letter-spacing: 0.04em;
 }
 
-/* Fine photographic grain — soft texture on dark bands, like wool or plaster */
+/* Fine photographic grain - soft texture on dark bands, like wool or plaster */
 @utility grain {
   position: relative;
 
@@ -158,7 +158,7 @@
   }
 }
 
-/* Ambient azure light — one quiet accent glow per dark band */
+/* Ambient azure light - one quiet accent glow per dark band */
 @utility glow-azure {
   background-image: radial-gradient(
     56rem 26rem at 82% -4%,
@@ -175,7 +175,7 @@
   );
 }
 
-/* Page-load entrance for hero content — blur settles like a lens finding focus.
+/* Page-load entrance for hero content - blur settles like a lens finding focus.
    Pure CSS so it also plays without JavaScript; stagger via [animation-delay:*]. */
 @keyframes rise {
   from {
@@ -191,13 +191,13 @@
 }
 
 /* fill-mode backwards: from-state holds during the stagger delay, then the
-   element returns to natural styles — no lingering filter that would break
+   element returns to natural styles - no lingering filter that would break
    backdrop-blur children (a filtered ancestor becomes their backdrop root) */
 @utility rise {
   animation: rise 1s var(--ease-out-quart) backwards;
 }
 
-/* Slow settling zoom for hero photography — calm, never a slideshow effect */
+/* Slow settling zoom for hero photography - calm, never a slideshow effect */
 @keyframes hero-zoom {
   from {
     transform: scale(1.07);

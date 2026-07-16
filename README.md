@@ -1,4 +1,4 @@
-# Airco@Business — Website
+# Airco@Business - Website
 
 Premium bilingual (NL/EN) B2B marketing site for **Airco@Business**, the commercial air-conditioning specialist in Voorschoten serving Zuid-Holland. Built as a pilot project by Sterk Systems NL.
 
@@ -19,8 +19,9 @@ Copy `.env.example` to `.env.local`:
 
 | Variable | Purpose |
 |---|---|
-| `GHL_WEBHOOK_URL` | GoHighLevel inbound-webhook URL — quote-form leads are forwarded here as JSON (incl. `sourcePage`, `locale`, `submittedAt`) |
+| `GHL_WEBHOOK_URL` | GoHighLevel inbound-webhook URL - quote-form leads are forwarded here as JSON (incl. `sourcePage`, `locale`, `submittedAt`) |
 | `NEXT_PUBLIC_GA_ID` | GA4 measurement ID; enables analytics + conversion events (`lead_form_submit`, `phone_click`) |
+| `GOOGLE_SITE_VERIFICATION` | Optional Google Search Console HTML-tag verification token |
 
 Without `GHL_WEBHOOK_URL`, form submissions still succeed but are only logged server-side.
 
@@ -28,7 +29,7 @@ Without `GHL_WEBHOOK_URL`, form submissions still succeed but are only logged se
 
 ```
 docs/                  client brief, SEO strategy, site architecture, page templates
-src/app/[locale]/      one folder per route — Dutch slugs are canonical (see docs/site-architecture.md)
+src/app/[locale]/      one folder per route - Dutch slugs are canonical (see docs/site-architecture.md)
 src/app/api/lead/      lead intake → GoHighLevel webhook
 src/content/{nl,en}/   all page copy as typed objects
 src/i18n/              next-intl routing, localized pathnames, UI-chrome messages
@@ -40,8 +41,8 @@ Read `AGENTS.md` (agent/developer conventions, hard SEO rules) and the `docs/` f
 
 ## Deployment (Vercel)
 
-1. Import the repo in Vercel — no special config needed (`trailingSlash` and i18n proxy are in the app).
-2. Set `GHL_WEBHOOK_URL` and `NEXT_PUBLIC_GA_ID` in the project environment.
+1. Import the repo in Vercel - no special config needed (`trailingSlash` and i18n proxy are in the app).
+2. Set `GHL_WEBHOOK_URL` and `NEXT_PUBLIC_GA_ID` in the project environment. Add `GOOGLE_SITE_VERIFICATION` when Search Console uses HTML-tag verification.
 3. Point `aircoatbusiness.nl` at the project. `sitemap.xml`, `robots.txt`, and `llms.txt` are served by the app.
 
 ## Before go-live checklist
@@ -50,5 +51,5 @@ Read `AGENTS.md` (agent/developer conventions, hard SEO rules) and the `docs/` f
 - [ ] Add real client reviews (proof sections auto-render them once present in content)
 - [ ] Have legal pages (`privacybeleid`, `cookiebeleid`) reviewed
 - [ ] Configure the GoHighLevel inbound-webhook workflow and set `GHL_WEBHOOK_URL`
-- [ ] Create GA4 property + Search Console, set `NEXT_PUBLIC_GA_ID`
+- [ ] Create GA4 + Search Console, set `NEXT_PUBLIC_GA_ID`, and verify Search Console via DNS or `GOOGLE_SITE_VERIFICATION`
 - [ ] Confirm the "first maintenance visit" offer wording with the client

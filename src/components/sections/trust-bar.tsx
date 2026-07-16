@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
 
-/** Compact trust/value bar directly under the hero — short points only. */
+/** Compact trust/value bar directly under the hero - short points only. */
 export function TrustBar({ points }: { points: string[] }) {
   return (
     <div className="border-b border-ink/5 bg-paper">

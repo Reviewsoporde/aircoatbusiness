@@ -33,7 +33,7 @@ export const leadSchema = z.object({
   propertyType: z.enum(propertyTypes),
   service: z.enum(serviceOptions),
   message: z.string().trim().max(5000).optional().or(z.literal("")),
-  // Honeypot — checked (and dropped) in the API route before validation.
+  // Honeypot - checked (and dropped) in the API route before validation.
   website: z.string().optional(),
   sourcePage: z.string().max(500),
   locale: z.enum(["nl", "en"]),

@@ -8,7 +8,7 @@ import { Reveal } from "./reveal";
 type Props = { cards: Card[]; variant?: "light" | "dark" };
 
 /**
- * Editorial index list — hairline rows with soft serif title and description.
+ * Editorial index list - hairline rows with soft serif title and description.
  * An alternative rhythm to CardGrid for enumerable content.
  */
 export function IndexList({ cards, variant = "light" }: Props) {

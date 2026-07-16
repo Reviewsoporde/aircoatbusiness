@@ -4,7 +4,7 @@ import type { RelatedLink } from "@/content/types";
 import { Reveal } from "./reveal";
 
 /**
- * Related services — 3–4 descriptive links per docs/site-architecture.md §4.
+ * Related services - 3-4 descriptive links per docs/site-architecture.md §4.
  * Anchor text mirrors the destination page (never "lees meer").
  */
 export function RelatedLinks({ links }: { links: RelatedLink[] }) {

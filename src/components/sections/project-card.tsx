@@ -5,7 +5,7 @@ import type { Project } from "@/content/types";
 
 /**
  * Project proof card: type, location, system, summary (docs/page-templates.md §6).
- * Projects without client photography yet get a typographic placeholder block —
+ * Projects without client photography yet get a typographic placeholder block -
  * never a stock photo posing as the real project.
  */
 export function ProjectCard({ project }: { project: Project }) {

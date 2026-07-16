@@ -20,7 +20,7 @@ export function ProjectsExplorer({ projects, filters, allLabel }: Props) {
     ? published.filter((p) => p.filters.includes(active))
     : published;
 
-  // Only offer filters that match at least one project — no dead-end chips.
+  // Only offer filters that match at least one project - no dead-end chips.
   const usable = filters.filter((f) =>
     published.some((p) => p.filters.includes(f.value)),
   );

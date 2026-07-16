@@ -1,7 +1,7 @@
 import type { ServicePageContent } from "../types";
 import { repairProcess, standardProcess, trustIndicators } from "./shared";
 
-/** Parent: /onderhoud/ — maintenance, repair & contract overview */
+/** Parent: /onderhoud/ - maintenance, repair & contract overview */
 export const onderhoud: ServicePageContent = {
   meta: {
     title: "Airco onderhoud & service voor bedrijven | Airco@Business",
@@ -56,7 +56,7 @@ export const onderhoud: ServicePageContent = {
         tag: "Continuïteit",
         title: "Minder onverwachte storingen",
         description:
-          "De meeste zomerstoringen zijn terug te voeren op achterstallig onderhoud — en dus te voorkomen.",
+          "De meeste zomerstoringen zijn terug te voeren op achterstallig onderhoud en zijn met tijdig onderhoud vaak te voorkomen.",
       },
       {
         tag: "Rendement",
@@ -118,7 +118,7 @@ export const onderhoud: ServicePageContent = {
       {
         question: "Wat gebeurt er als er tóch een storing optreedt?",
         answer:
-          "Dan staat ons serviceteam klaar. Contractklanten krijgen voorrang in de planning — juist belangrijk in de zomerpiek.",
+          "Dan staat ons serviceteam klaar. Contractklanten krijgen voorrang in de planning. Dat is juist belangrijk in de zomerpiek.",
       },
       {
         question: "Is onderhoud verplicht?",
@@ -133,7 +133,7 @@ export const onderhoud: ServicePageContent = {
   },
 };
 
-/** /airco-onderhoud-zakelijk/ — primary keyword: airco onderhoud zakelijk */
+/** /airco-onderhoud-zakelijk/ - primary keyword: airco onderhoud zakelijk */
 export const aircoOnderhoud: ServicePageContent = {
   meta: {
     title: "Airco onderhoud zakelijk | Preventief & gecertificeerd | Airco@Business",
@@ -143,9 +143,9 @@ export const aircoOnderhoud: ServicePageContent = {
   name: "Airco onderhoud zakelijk",
   hero: {
     eyebrow: "Airco onderhoud zakelijk",
-    h1: "Airco onderhoud dat storingen vóór is",
+    h1: "Airco onderhoud zakelijk: storingen helpen voorkomen",
     intro:
-      "Stilstand van de koeling op een tropische dag kost meer dan een onderhoudsbeurt. Onze monteurs inspecteren, reinigen en testen uw installatie periodiek — zodat die blijft presteren wanneer het erop aankomt.",
+      "Stilstand van de koeling op een tropische dag kost meer dan een onderhoudsbeurt. Onze monteurs inspecteren, reinigen en testen uw installatie periodiek. Zo blijft die presteren wanneer het erop aankomt.",
     cta: "requestMaintenance",
     secondary: { label: "Zakelijk onderhoudscontract", href: "/airco-onderhoudscontract-zakelijk" },
     trustPoints: ["Alle A-merken", "STEK-gecertificeerd", "Rapportage per beurt"],
@@ -153,7 +153,7 @@ export const aircoOnderhoud: ServicePageContent = {
   overview: {
     h2: "Voor wie is periodiek onderhoud?",
     intro:
-      "Voor ieder bedrijf dat op zijn klimaatinstallatie moet kunnen rekenen — en voor installaties waarvoor wettelijke controles gelden.",
+      "Voor ieder bedrijf dat op zijn klimaatinstallatie moet kunnen rekenen en voor installaties waarvoor wettelijke controles gelden.",
     cards: [
       {
         tag: "Kantoor",
@@ -178,7 +178,7 @@ export const aircoOnderhoud: ServicePageContent = {
   benefits: {
     h2: "De risico's van uitgesteld onderhoud",
     intro:
-      "Achterstallig onderhoud merkt u niet meteen — totdat het misgaat. Wat er zonder onderhoud gebeurt:",
+      "Achterstallig onderhoud merkt u niet meteen, totdat het misgaat. Wat er zonder onderhoud gebeurt:",
     cards: [
       {
         tag: "Storing",
@@ -263,7 +263,7 @@ export const aircoOnderhoud: ServicePageContent = {
       {
         question: "Hoe lang duurt een onderhoudsbeurt?",
         answer:
-          "Voor een enkele unit rekent u op 45–60 minuten; voor grotere installaties plannen we op basis van het aantal units. U ontvangt vooraf een duidelijke tijdsindicatie.",
+          "Voor een enkele unit rekent u op 45-60 minuten; voor grotere installaties plannen we op basis van het aantal units. U ontvangt vooraf een duidelijke tijdsindicatie.",
       },
       {
         question: "Moet het systeem tijdens onderhoud uit?",
@@ -273,7 +273,7 @@ export const aircoOnderhoud: ServicePageContent = {
       {
         question: "Krijg ik bewijs van het onderhoud?",
         answer:
-          "Ja, u ontvangt na iedere beurt een rapportage — ook van belang voor garantie en wettelijke f-gassenregistratie.",
+          "Ja, u ontvangt na iedere beurt een rapportage. Dat is ook van belang voor garantie en wettelijke f-gassenregistratie.",
       },
       {
         question: "Wat kost zakelijk airco onderhoud?",
@@ -288,7 +288,7 @@ export const aircoOnderhoud: ServicePageContent = {
   },
 };
 
-/** /airco-reparatie-zakelijk/ — urgent intent: contact CTA in hero */
+/** /airco-reparatie-zakelijk/ - urgent intent: contact CTA in hero */
 export const aircoReparatie: ServicePageContent = {
   meta: {
     title: "Airco reparatie zakelijk | Snelle storingsdienst | Airco@Business",
@@ -298,9 +298,9 @@ export const aircoReparatie: ServicePageContent = {
   name: "Airco reparatie zakelijk",
   hero: {
     eyebrow: "Airco reparatie zakelijk",
-    h1: "Airco storing? We staan snel bij u op de stoep",
+    h1: "Zakelijke airco reparatie bij storing of verminderde werking",
     intro:
-      "Geen koeling, een lekkende unit of een foutcode op het display: bij een zakelijke storing telt elke dag. Meld de storing direct — wij plannen snel een monteur in en herstellen vakkundig.",
+      "Geen koeling, een lekkende unit of een foutcode op het display: bij een zakelijke storing telt elke dag. Meld de storing direct. Wij plannen snel een monteur in en herstellen vakkundig.",
     cta: "requestRepair",
     trustPoints: ["Snelle respons", "Alle A-merken", "Contractklanten voorrang"],
     urgent: true,
@@ -314,7 +314,7 @@ export const aircoReparatie: ServicePageContent = {
         tag: "Koeling",
         title: "Koelt niet of onvoldoende",
         description:
-          "Vaak een koudemiddel-, filter- of sensorprobleem — snel te diagnosticeren.",
+          "Vaak gaat het om een koudemiddel-, filter- of sensorprobleem dat snel te diagnosticeren is.",
       },
       {
         tag: "Lekkage",
@@ -337,7 +337,7 @@ export const aircoReparatie: ServicePageContent = {
         tag: "Diagnose",
         title: "Volledige systeemcheck",
         description:
-          "We lezen foutcodes uit, meten druk en temperaturen en inspecteren de gehele installatie — niet alleen het symptoom.",
+          "We lezen foutcodes uit, meten druk en temperaturen en inspecteren de gehele installatie. We kijken dus verder dan alleen het symptoom.",
       },
       {
         tag: "Herstel",
@@ -384,12 +384,12 @@ export const aircoReparatie: ServicePageContent = {
       {
         question: "Hoe snel kan een monteur langskomen?",
         answer:
-          "We plannen storingen met prioriteit in; contractklanten krijgen voorrang. Bel ons voor de actuele responstijd — vaak kunnen we binnen enkele werkdagen terecht.",
+          "We plannen storingen met prioriteit in; contractklanten krijgen voorrang. Bel ons voor de actuele responstijd. Vaak kunnen we binnen enkele werkdagen terecht.",
       },
       {
         question: "Repareren jullie alle merken?",
         answer:
-          "We repareren alle gangbare A-merken, waaronder Daikin, Mitsubishi Electric, LG en Toshiba — ook installaties die niet door ons zijn geplaatst.",
+          "We repareren alle gangbare A-merken, waaronder Daikin, Mitsubishi Electric, LG en Toshiba, ook als de installatie niet door ons is geplaatst.",
       },
       {
         question: "Wat kost een reparatie?",
@@ -409,19 +409,19 @@ export const aircoReparatie: ServicePageContent = {
   },
 };
 
-/** /airco-onderhoudscontract-zakelijk/ — maintenance contracts */
+/** /airco-onderhoudscontract-zakelijk/ - maintenance contracts */
 export const onderhoudscontract: ServicePageContent = {
   meta: {
-    title: "Onderhoudscontract zakelijke airco | Vaste planning | Airco@Business",
+    title: "Airco onderhoudscontract zakelijk | Vaste planning | Airco@Business",
     description:
       "Een zakelijk airco onderhoudscontract: vaste onderhoudsplanning, voorrang bij storingen en voorspelbare kosten. Vraag contractadvies aan voor uw installatie.",
   },
-  name: "Onderhoudscontracten",
+  name: "Airco onderhoudscontract zakelijk",
   hero: {
-    eyebrow: "Onderhoudscontract",
-    h1: "Onderhoudscontract: uw klimaat structureel geregeld",
+    eyebrow: "Airco onderhoudscontract zakelijk",
+    h1: "Zakelijk airco-onderhoudscontract voor structurele planning",
     intro:
-      "Nooit meer zelf aan onderhoud hoeven denken. Met een onderhoudscontract plannen wij de beurten, krijgt u voorrang bij storingen en weet u vooraf precies wat het kost — per unit, per jaar.",
+      "Nooit meer zelf aan onderhoud hoeven denken. Met een onderhoudscontract plannen wij de beurten, krijgt u voorrang bij storingen en weet u vooraf precies wat het per unit en per jaar kost.",
     cta: "requestContractAdvice",
     secondary: { label: "Airco onderhoud zakelijk", href: "/airco-onderhoud-zakelijk" },
     trustPoints: ["Vaste jaarplanning", "Voorrang bij storingen", "Voorspelbare kosten"],
@@ -458,7 +458,7 @@ export const onderhoudscontract: ServicePageContent = {
         tag: "Continuïteit",
         title: "Maximale beschikbaarheid",
         description:
-          "Periodiek onderhoud plus voorrang bij storingen betekent minimale kans op uitval — juist in de zomerpiek.",
+          "Periodiek onderhoud plus voorrang bij storingen betekent een minimale kans op uitval, juist in de zomerpiek.",
       },
       {
         tag: "Financieel",
@@ -542,7 +542,7 @@ export const onderhoudscontract: ServicePageContent = {
       {
         question: "Kan een contract voor installaties van een ander merk?",
         answer:
-          "Ja, we contracteren onderhoud voor alle gangbare A-merken — ook voor installaties die destijds niet door ons zijn geplaatst.",
+          "Ja, we contracteren onderhoud voor alle gangbare A-merken, ook voor installaties die destijds niet door ons zijn geplaatst.",
       },
       {
         question: "Wat is de looptijd van het contract?",

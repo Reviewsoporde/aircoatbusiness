@@ -19,7 +19,7 @@ const variantClasses: Record<Variant, string> = {
 
 type Props = {
   href?: AppPathname;
-  /** Same-page anchor (e.g. "#offerte") — takes precedence over href */
+  /** Same-page anchor (e.g. "#offerte") - takes precedence over href */
   anchor?: `#${string}`;
   ctaKey?: CtaKey;
   label?: string;

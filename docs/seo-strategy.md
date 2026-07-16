@@ -1,4 +1,4 @@
-# Airco@Business — SEO Strategy
+# Airco@Business - SEO Strategy
 
 > Distilled from the client document *"Airco@business - SEO Strategy.pdf"* (SEO Full Strategy, Audit Optimization & Timeline Phasing Proposal).
 > Companion documents: [site-architecture.md](site-architecture.md) (URLs, navigation, internal linking) and [page-templates.md](page-templates.md) (section-by-section page guides).
@@ -61,7 +61,7 @@ Positioning: Airco@Business is a **dedicated B2B airconditioning specialist** fo
 | Maintenance Contracts | `/airco-onderhoudscontract-zakelijk/` | airco onderhoudscontract zakelijk | zakelijk onderhoudscontract airco | Transactional |
 
 Notes:
-- *Airco Voor Bedrijven*, *Airco Zakelijk*, *Klimaatbeheersing Kantoor*, and *Airco Werkplek* are **no longer separate pages** — their keywords are absorbed by the homepage, `/zakelijke-airconditioning/`, and `/airco-kantoor/`.
+- *Airco Voor Bedrijven*, *Airco Zakelijk*, *Klimaatbeheersing Kantoor*, and *Airco Werkplek* are **no longer separate pages** - their keywords are absorbed by the homepage, `/zakelijke-airconditioning/`, and `/airco-kantoor/`.
 - Wandmodel airco earned a standalone page in the final structure.
 
 ## 4. Content Direction
@@ -75,13 +75,13 @@ Notes:
 
 Implement across the site:
 
-- [ ] `Organization` — site-wide
-- [ ] `LocalBusiness` — site-wide; supports Voorschoten + Zuid-Holland relevance (NAP: Dobbeweg 11 G, 2254 AG Voorschoten)
-- [ ] `WebSite` — site-wide
-- [ ] `ContactPoint` — site-wide
-- [ ] `Service` — on **all** commercial service pages
-- [ ] `BreadcrumbList` — for cleaner crawl structure
-- [ ] `FAQPage` — **only** where FAQs are visibly rendered on the page
+- [ ] `Organization` - site-wide
+- [ ] `LocalBusiness` - site-wide; supports Voorschoten + Zuid-Holland relevance (NAP: Dobbeweg 11 G, 2254 AG Voorschoten)
+- [ ] `WebSite` - site-wide
+- [ ] `ContactPoint` - site-wide
+- [ ] `Service` - on **all** commercial service pages
+- [ ] `BreadcrumbList` - for cleaner crawl structure
+- [ ] `FAQPage` - **only** where FAQs are visibly rendered on the page
 
 ## 6. Technical SEO Checklist
 
@@ -97,24 +97,24 @@ Implement across the site:
 
 ## 7. Timeline & Phasing
 
-### Phase 1 — SEO Fundamentals: Technical + Strategy
+### Phase 1 - SEO Fundamentals: Technical + Strategy
 Technical SEO setup, keyword analysis, service-page cluster validation, homepage SEO strategy, keyword mapping, heading/metadata/schema planning, sitemap + robots review, llms.txt creation, GA4 + GSC confirmation, conversion-tracking review. *Target: Voorschoten + Zuid-Holland.*
 
-### Phase 2 — On-Page + Local SEO Implementation
+### Phase 2 - On-Page + Local SEO Implementation
 Optimize homepage metadata/headings; build and optimize the service clusters; commercial B2B copy on all core pages; internal linking between related service pages; visible FAQs (AEO/GEO); schema markup; GBP services optimization; local entity signals; NAP consistency; local citations/directories. *Target: Voorschoten, Zuid-Holland + surrounding commercial service areas.*
 
-### Phase 3 — Content Creation: AEO, GEO, Local SEO
+### Phase 3 - Content Creation: AEO, GEO, Local SEO
 Publish commercial support content per keyword clusters; answer-based FAQ content; content on office climate, workplace comfort, productivity, maintenance, system selection; strengthen Zuid-Holland local content; supporting content for: airco voor bedrijven, airco kantoor, zakelijke airco installatie, airco onderhoud zakelijk, cassette airco bedrijf, kanaal airco bedrijf; internal links from content → service pages.
 
-### Phase 4 — Scaling & Performance Tracking
+### Phase 4 - Scaling & Performance Tracking
 Track rankings, organic traffic, Maps visibility, form submissions, phone clicks, consultation requests; review GBP performance; improve metadata from GSC data (pages with impressions but low clicks); expand into **city-focused pages only after core pages are stable**. Tracking: GA4 + GSC connected, conversion events, keyword monitoring, monthly reports.
 
 ## 8. Expected Results
 
 | Horizon | Expectations |
 |---|---|
-| 0–3 months | Improved indexing; cleaner commercial structure; better keyword relevance; initial movement on low/mid-competition B2B terms; better branded + local visibility; stronger technical foundation |
-| 3–6 months | Consistent rankings for commercial service keywords; more impressions; Voorschoten/Zuid-Holland visibility; more quote-request opportunities; better Maps relevance; stronger authority |
+| 0-3 months | Improved indexing; cleaner commercial structure; better keyword relevance; initial movement on low/mid-competition B2B terms; better branded + local visibility; stronger technical foundation |
+| 3-6 months | Consistent rankings for commercial service keywords; more impressions; Voorschoten/Zuid-Holland visibility; more quote-request opportunities; better Maps relevance; stronger authority |
 | 6+ months | Expansion into secondary cities; local landing pages; stronger topical authority; more qualified inbound leads; less reliance on paid ads |
 
 ## 9. Reporting KPIs
@@ -123,7 +123,7 @@ Keyword rankings · organic traffic growth · GSC query data · indexed pages ·
 
 Reporting stays focused on business outcomes: **visibility, qualified traffic, quote requests, local commercial reach**.
 
-## 10. Location Pages (deferred — SEO Phase 4)
+## 10. Location Pages (deferred - SEO Phase 4)
 
 Starting set once core pages are stable:
 
@@ -135,7 +135,7 @@ Starting set once core pages are stable:
 | Commercial AC Rotterdam | `/zakelijke-airco-rotterdam/` |
 | Commercial AC Hoofddorp | `/zakelijke-airco-hoofddorp/` |
 
-Rules: linked from Service Area page, footer, relevant service pages, project pages, homepage local section — **never in the main navigation**. Each must contain unique local information (no city-name swaps).
+Rules: linked from Service Area page, footer, relevant service pages, project pages, homepage local section - **never in the main navigation**. Each must contain unique local information (no city-name swaps).
 
 ## 11. Final Recommendation
 

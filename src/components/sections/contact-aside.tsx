@@ -3,7 +3,7 @@ import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { PhoneLink } from "@/components/layout/phone-link";
 
-/** Compact NAP card beside the lead form — phone-first, response-speed promise. */
+/** Compact NAP card beside the lead form - phone-first, response-speed promise. */
 export function ContactAside() {
   const t = useTranslations("contactAside");
 

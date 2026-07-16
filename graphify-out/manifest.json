@@ -1,0 +1,857 @@
+{
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\components.json": {
+    "mtime": 1783954001.8262074,
+    "ast_hash": "20fafc48e5083e35e414097ff4983a63",
+    "semantic_hash": "20fafc48e5083e35e414097ff4983a63"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\eslint.config.mjs": {
+    "mtime": 1783964412.6804323,
+    "ast_hash": "588c02e420ab7cd86f9c55d9539dec47",
+    "semantic_hash": "588c02e420ab7cd86f9c55d9539dec47"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\next.config.ts": {
+    "mtime": 1783954403.5570297,
+    "ast_hash": "b45f9ed3a42a0d44e4f9e862aa8c3b72",
+    "semantic_hash": "b45f9ed3a42a0d44e4f9e862aa8c3b72"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\package.json": {
+    "mtime": 1784210734.2049978,
+    "ast_hash": "8e67b2dd68a3f1ff21e22efd90f722ac",
+    "semantic_hash": "8e67b2dd68a3f1ff21e22efd90f722ac"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\postcss.config.mjs": {
+    "mtime": 1783271312.1731632,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\scripts\\check-copy-style.mjs": {
+    "mtime": 1784210734.206085,
+    "ast_hash": "685f3d20c0a8732efc26926775aab228",
+    "semantic_hash": "685f3d20c0a8732efc26926775aab228"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\scripts\\check-overflow.mjs": {
+    "mtime": 1783964294.9265037,
+    "ast_hash": "42b36e78762797241937fa0c98116292",
+    "semantic_hash": "42b36e78762797241937fa0c98116292"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\[...rest]\\page.tsx": {
+    "mtime": 1783956025.539391,
+    "ast_hash": "1a75cc424675df39192a5dc7867fb299",
+    "semantic_hash": "1a75cc424675df39192a5dc7867fb299"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\airco-bedrijfspand\\page.tsx": {
+    "mtime": 1783955843.2189922,
+    "ast_hash": "5ead902933a99fd5fb6705ab585b4dd5",
+    "semantic_hash": "5ead902933a99fd5fb6705ab585b4dd5"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\airco-kantoor\\page.tsx": {
+    "mtime": 1783955843.1914868,
+    "ast_hash": "020281aee1b11e7f4cdac2b30598980e",
+    "semantic_hash": "020281aee1b11e7f4cdac2b30598980e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\airco-onderhoud-zakelijk\\page.tsx": {
+    "mtime": 1783955843.522604,
+    "ast_hash": "b89a93c0419ac88e341e90518e96c76f",
+    "semantic_hash": "b89a93c0419ac88e341e90518e96c76f"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\airco-onderhoudscontract-zakelijk\\page.tsx": {
+    "mtime": 1783955843.5892806,
+    "ast_hash": "51338d2f64b80737424f9da0bb1dc028",
+    "semantic_hash": "51338d2f64b80737424f9da0bb1dc028"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\airco-reparatie-zakelijk\\page.tsx": {
+    "mtime": 1783955843.5599148,
+    "ast_hash": "8d7af169edd10da5c0dad9ee0b7ba7d0",
+    "semantic_hash": "8d7af169edd10da5c0dad9ee0b7ba7d0"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\airco-showroom\\page.tsx": {
+    "mtime": 1783955843.2902882,
+    "ast_hash": "82a23ff05044be9cbd2d26a60fa32c01",
+    "semantic_hash": "82a23ff05044be9cbd2d26a60fa32c01"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\airco-winkel\\page.tsx": {
+    "mtime": 1783955843.261463,
+    "ast_hash": "92c23d96725f645b27e41daf8c27d7d9",
+    "semantic_hash": "92c23d96725f645b27e41daf8c27d7d9"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\cassette-airco-bedrijf\\page.tsx": {
+    "mtime": 1783955843.3891692,
+    "ast_hash": "e393c90be95039043e624360d5b20459",
+    "semantic_hash": "e393c90be95039043e624360d5b20459"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\contact\\page.tsx": {
+    "mtime": 1784214641.609486,
+    "ast_hash": "94dfbd455dd06143fe14fd661b04c512",
+    "semantic_hash": "94dfbd455dd06143fe14fd661b04c512"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\cookiebeleid\\page.tsx": {
+    "mtime": 1783956020.7151923,
+    "ast_hash": "acb5ebfa339ccbbb480372ff8b2b153b",
+    "semantic_hash": "acb5ebfa339ccbbb480372ff8b2b153b"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\installatie\\page.tsx": {
+    "mtime": 1783955843.3181922,
+    "ast_hash": "7b822a4440086f021cb107a44d245bce",
+    "semantic_hash": "7b822a4440086f021cb107a44d245bce"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\kanaal-airco-bedrijf\\page.tsx": {
+    "mtime": 1783955843.418468,
+    "ast_hash": "3a8ef8068fe3b8e3610939cbdb797960",
+    "semantic_hash": "3a8ef8068fe3b8e3610939cbdb797960"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\layout.tsx": {
+    "mtime": 1784208884.6419213,
+    "ast_hash": "613803f35d490a971895e4bcd2e16656",
+    "semantic_hash": "613803f35d490a971895e4bcd2e16656"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\merken-en-systemen\\page.tsx": {
+    "mtime": 1784138708.918899,
+    "ast_hash": "a023617641df5f48a11b3c50f6748413",
+    "semantic_hash": "a023617641df5f48a11b3c50f6748413"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\not-found.tsx": {
+    "mtime": 1784210734.2038505,
+    "ast_hash": "fca75f7aed282aa02f43414158536021",
+    "semantic_hash": "fca75f7aed282aa02f43414158536021"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\onderhoud\\page.tsx": {
+    "mtime": 1783955843.4890575,
+    "ast_hash": "4e8c395cd4a3a7a5c999fc57f8d0a7b4",
+    "semantic_hash": "4e8c395cd4a3a7a5c999fc57f8d0a7b4"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\over-ons\\page.tsx": {
+    "mtime": 1784149853.0781834,
+    "ast_hash": "cc37cfc3f96e089b1e3a133d1bc115cd",
+    "semantic_hash": "cc37cfc3f96e089b1e3a133d1bc115cd"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\page.tsx": {
+    "mtime": 1784134103.1390676,
+    "ast_hash": "bde79b51ff77b01c8043b58bc090836c",
+    "semantic_hash": "bde79b51ff77b01c8043b58bc090836c"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\privacybeleid\\page.tsx": {
+    "mtime": 1783956016.949106,
+    "ast_hash": "b3e68c622e67e8b18a46fb58290cf638",
+    "semantic_hash": "b3e68c622e67e8b18a46fb58290cf638"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\projecten\\page.tsx": {
+    "mtime": 1784141324.3440354,
+    "ast_hash": "4c5681ef89128d7b3f469b839f59b917",
+    "semantic_hash": "4c5681ef89128d7b3f469b839f59b917"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\veelgestelde-vragen\\page.tsx": {
+    "mtime": 1784134462.7725852,
+    "ast_hash": "03f1178ae8eb086b19cfadfadeeaafbf",
+    "semantic_hash": "03f1178ae8eb086b19cfadfadeeaafbf"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\wandmodel-airco-bedrijf\\page.tsx": {
+    "mtime": 1783955843.460871,
+    "ast_hash": "9b4174920d6df1c1c2a07b7b1f3e9c22",
+    "semantic_hash": "9b4174920d6df1c1c2a07b7b1f3e9c22"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\werkgebied\\page.tsx": {
+    "mtime": 1784151202.2972445,
+    "ast_hash": "0a81823b8de97f664a31caa4347bc296",
+    "semantic_hash": "0a81823b8de97f664a31caa4347bc296"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\werkwijze\\page.tsx": {
+    "mtime": 1784143059.9751136,
+    "ast_hash": "31e1ceb27d92d5c64705cfd74ca4d00c",
+    "semantic_hash": "31e1ceb27d92d5c64705cfd74ca4d00c"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\zakelijke-airco-installatie\\page.tsx": {
+    "mtime": 1783955843.3601289,
+    "ast_hash": "edb0ec66af40a32d677dfbfb51291f94",
+    "semantic_hash": "edb0ec66af40a32d677dfbfb51291f94"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\[locale]\\zakelijke-airconditioning\\page.tsx": {
+    "mtime": 1783955843.164398,
+    "ast_hash": "d38d1e6a7fa08d117073b9f023a7d205",
+    "semantic_hash": "d38d1e6a7fa08d117073b9f023a7d205"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\api\\lead\\route.ts": {
+    "mtime": 1784210759.1089952,
+    "ast_hash": "f50f38d92bcb3b3fbfd543cc59fe1c97",
+    "semantic_hash": "f50f38d92bcb3b3fbfd543cc59fe1c97"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\robots.ts": {
+    "mtime": 1783956052.2049122,
+    "ast_hash": "544845e4eba3e253be6bd86621fd769b",
+    "semantic_hash": "544845e4eba3e253be6bd86621fd769b"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\sitemap.ts": {
+    "mtime": 1784208884.6406798,
+    "ast_hash": "5a76c48617b1d27b715ac91238243c43",
+    "semantic_hash": "5a76c48617b1d27b715ac91238243c43"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\analytics-consent.tsx": {
+    "mtime": 1784134359.5811474,
+    "ast_hash": "387339ec6c5f98f311da9f0624285a41",
+    "semantic_hash": "387339ec6c5f98f311da9f0624285a41"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\consent-settings-button.tsx": {
+    "mtime": 1784134654.896243,
+    "ast_hash": "42e833369c9d647d8da548235ec18809",
+    "semantic_hash": "42e833369c9d647d8da548235ec18809"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\desktop-nav.tsx": {
+    "mtime": 1784150719.2580764,
+    "ast_hash": "0278b9e30b8131aac94df6e39b11342f",
+    "semantic_hash": "0278b9e30b8131aac94df6e39b11342f"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\footer.tsx": {
+    "mtime": 1784213203.4048908,
+    "ast_hash": "3939ca4f8c917afeffc0dc07c3f53f15",
+    "semantic_hash": "3939ca4f8c917afeffc0dc07c3f53f15"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\header-nav-fx.tsx": {
+    "mtime": 1784126581.4211268,
+    "ast_hash": "8b71c90f2546b0c9d9d67a50ca20a0ad",
+    "semantic_hash": "8b71c90f2546b0c9d9d67a50ca20a0ad"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\header-scroll-fx.tsx": {
+    "mtime": 1784134635.7890658,
+    "ast_hash": "3b10b86c6b2868a46192b72fa645c463",
+    "semantic_hash": "3b10b86c6b2868a46192b72fa645c463"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\header.tsx": {
+    "mtime": 1784150579.979031,
+    "ast_hash": "591c97767f09991f03be849ca370e568",
+    "semantic_hash": "591c97767f09991f03be849ca370e568"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\locale-switcher.tsx": {
+    "mtime": 1784133652.1685333,
+    "ast_hash": "8ecffa032f87fe03a1e475908202fc6a",
+    "semantic_hash": "8ecffa032f87fe03a1e475908202fc6a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\mobile-nav.tsx": {
+    "mtime": 1784133827.4548683,
+    "ast_hash": "bcd1fc61f17f5b593fc13496514c8187",
+    "semantic_hash": "bcd1fc61f17f5b593fc13496514c8187"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\nav-data.ts": {
+    "mtime": 1784210759.105778,
+    "ast_hash": "5a2728757389de9ec562a908a3b6a536",
+    "semantic_hash": "5a2728757389de9ec562a908a3b6a536"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\phone-link.tsx": {
+    "mtime": 1784133652.167353,
+    "ast_hash": "11c1c2a0585b57cf1ee69484d1e75acd",
+    "semantic_hash": "11c1c2a0585b57cf1ee69484d1e75acd"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\layout\\social-icons.tsx": {
+    "mtime": 1784210759.0976791,
+    "ast_hash": "c3cfbae446ade013eab30f18ad83faa5",
+    "semantic_hash": "c3cfbae446ade013eab30f18ad83faa5"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\card-grid.tsx": {
+    "mtime": 1784211417.2826447,
+    "ast_hash": "4f84b504e668addd5944edcff6e29439",
+    "semantic_hash": "4f84b504e668addd5944edcff6e29439"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\checklist.tsx": {
+    "mtime": 1784210759.1201973,
+    "ast_hash": "22b9e79042828f5e9c02a8c126cdad9e",
+    "semantic_hash": "22b9e79042828f5e9c02a8c126cdad9e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\contact-aside.tsx": {
+    "mtime": 1784210759.1161847,
+    "ast_hash": "a80be1cf14de0569d314763ec94e521d",
+    "semantic_hash": "a80be1cf14de0569d314763ec94e521d"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\coverage-diagram.tsx": {
+    "mtime": 1784134450.300156,
+    "ast_hash": "a0e71a3f52ce88dd995f08d92ed89137",
+    "semantic_hash": "a0e71a3f52ce88dd995f08d92ed89137"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\cta-link.tsx": {
+    "mtime": 1784210759.1242058,
+    "ast_hash": "83b18577444b6019e4fbe8f86ea9dbd2",
+    "semantic_hash": "83b18577444b6019e4fbe8f86ea9dbd2"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\faq-section.tsx": {
+    "mtime": 1784210759.1192067,
+    "ast_hash": "70acbbce3e19fbf2a7d7a7e3b0f2b35c",
+    "semantic_hash": "70acbbce3e19fbf2a7d7a7e3b0f2b35c"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\google-reviews.tsx": {
+    "mtime": 1784213328.5389812,
+    "ast_hash": "35a95a6763b19ad68dbe9ff723dc741e",
+    "semantic_hash": "35a95a6763b19ad68dbe9ff723dc741e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\home-hero.tsx": {
+    "mtime": 1784149853.0753746,
+    "ast_hash": "d7436a5c06a458550e0e91a234034bee",
+    "semantic_hash": "d7436a5c06a458550e0e91a234034bee"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\index-list.tsx": {
+    "mtime": 1784210759.112772,
+    "ast_hash": "c4facbeca28910cff3ce2b95b05fcc59",
+    "semantic_hash": "c4facbeca28910cff3ce2b95b05fcc59"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\lead-form.tsx": {
+    "mtime": 1784134901.2982397,
+    "ast_hash": "7126b26ac8636642f03475b0d4c21363",
+    "semantic_hash": "7126b26ac8636642f03475b0d4c21363"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\page-hero.tsx": {
+    "mtime": 1784210759.1266758,
+    "ast_hash": "74265bc5bd337a8550df47c0da4a4f41",
+    "semantic_hash": "74265bc5bd337a8550df47c0da4a4f41"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\process-steps.tsx": {
+    "mtime": 1784210759.127666,
+    "ast_hash": "5fd667cc4ffe07fdae519d879672709a",
+    "semantic_hash": "5fd667cc4ffe07fdae519d879672709a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\project-card.tsx": {
+    "mtime": 1784210759.1255536,
+    "ast_hash": "9f77f753811d6d384255a86ef5f80dcf",
+    "semantic_hash": "9f77f753811d6d384255a86ef5f80dcf"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\projects-explorer.tsx": {
+    "mtime": 1784210759.123205,
+    "ast_hash": "d49cf67bc5f59c5688a02bca4ebaed95",
+    "semantic_hash": "d49cf67bc5f59c5688a02bca4ebaed95"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\proof-band.tsx": {
+    "mtime": 1784210963.1874094,
+    "ast_hash": "f816f77fa77fa5fe8dbc3bca273a19f2",
+    "semantic_hash": "f816f77fa77fa5fe8dbc3bca273a19f2"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\related-links.tsx": {
+    "mtime": 1784210759.114169,
+    "ast_hash": "cf69bf1a874a74d2471205a3720ff1d1",
+    "semantic_hash": "cf69bf1a874a74d2471205a3720ff1d1"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\reveal.tsx": {
+    "mtime": 1783965933.2472312,
+    "ast_hash": "f583078fd0857020d7f25e45ad73aa12",
+    "semantic_hash": "f583078fd0857020d7f25e45ad73aa12"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\section-shell.tsx": {
+    "mtime": 1784210734.1964784,
+    "ast_hash": "2886fa15a5ec3bc8feb819d0bdbf1608",
+    "semantic_hash": "2886fa15a5ec3bc8feb819d0bdbf1608"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\sections\\trust-bar.tsx": {
+    "mtime": 1784210759.112772,
+    "ast_hash": "696c486ff5e029cf6fbd896b953c3fff",
+    "semantic_hash": "696c486ff5e029cf6fbd896b953c3fff"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\seo\\json-ld.tsx": {
+    "mtime": 1783954885.4188113,
+    "ast_hash": "323dc14add17239d616c712ed3f6705d",
+    "semantic_hash": "323dc14add17239d616c712ed3f6705d"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\seo\\site-schema.tsx": {
+    "mtime": 1784208884.6386683,
+    "ast_hash": "7a6a46ca29cdf6304ff9119710e525a0",
+    "semantic_hash": "7a6a46ca29cdf6304ff9119710e525a0"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\templates\\home-template.tsx": {
+    "mtime": 1784211428.293095,
+    "ast_hash": "f34956160f25e17c8c273cb6088e6b61",
+    "semantic_hash": "f34956160f25e17c8c273cb6088e6b61"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\templates\\legal-template.tsx": {
+    "mtime": 1784121414.2248425,
+    "ast_hash": "5221d79f63bedc9170e5e4e611fa251a",
+    "semantic_hash": "5221d79f63bedc9170e5e4e611fa251a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\templates\\service-page-template.tsx": {
+    "mtime": 1784210759.101413,
+    "ast_hash": "a85524626341fd42c4089dcb1b26b096",
+    "semantic_hash": "a85524626341fd42c4089dcb1b26b096"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\ui\\accordion.tsx": {
+    "mtime": 1783954028.6718934,
+    "ast_hash": "ca7c6d2563cb840754f6af0ac52a62b8",
+    "semantic_hash": "ca7c6d2563cb840754f6af0ac52a62b8"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\ui\\button.tsx": {
+    "mtime": 1784134581.2157583,
+    "ast_hash": "af6e636749c2b313bf3c9f6bf9c766c9",
+    "semantic_hash": "af6e636749c2b313bf3c9f6bf9c766c9"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\ui\\input.tsx": {
+    "mtime": 1784133682.972094,
+    "ast_hash": "8ca5fd740d4cf0bb813f1dc0f4413544",
+    "semantic_hash": "8ca5fd740d4cf0bb813f1dc0f4413544"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\ui\\label.tsx": {
+    "mtime": 1783954028.715111,
+    "ast_hash": "e7e0c4ad98f3485ecd3c0ca516d0a8bf",
+    "semantic_hash": "e7e0c4ad98f3485ecd3c0ca516d0a8bf"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\ui\\select.tsx": {
+    "mtime": 1784133682.9741406,
+    "ast_hash": "6535811d056cf2b98a917b9f93aec56e",
+    "semantic_hash": "6535811d056cf2b98a917b9f93aec56e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\ui\\sheet.tsx": {
+    "mtime": 1783954028.690555,
+    "ast_hash": "70f191fcbd262095ddd6afbcc8bbf99d",
+    "semantic_hash": "70f191fcbd262095ddd6afbcc8bbf99d"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\components\\ui\\textarea.tsx": {
+    "mtime": 1784133682.9730942,
+    "ast_hash": "b9340e949821cc323c6a16f13e3a6c93",
+    "semantic_hash": "b9340e949821cc323c6a16f13e3a6c93"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\bundle.ts": {
+    "mtime": 1783955804.2990801,
+    "ast_hash": "8d70aa47672bcb9080ed862478f5f81d",
+    "semantic_hash": "8d70aa47672bcb9080ed862478f5f81d"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\en\\business-ac.ts": {
+    "mtime": 1784210838.3087506,
+    "ast_hash": "0bd54743160a4680c0d0c0ccbad601ec",
+    "semantic_hash": "0bd54743160a4680c0d0c0ccbad601ec"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\en\\home.ts": {
+    "mtime": 1784213618.2496676,
+    "ast_hash": "f7dfa70582491560011d8b2318ec54b7",
+    "semantic_hash": "f7dfa70582491560011d8b2318ec54b7"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\en\\index.ts": {
+    "mtime": 1783955816.6783524,
+    "ast_hash": "c1faa9bc73e849b296b13b1834712021",
+    "semantic_hash": "c1faa9bc73e849b296b13b1834712021"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\en\\installation.ts": {
+    "mtime": 1784210872.7048872,
+    "ast_hash": "525bf6cd4e9e20713b069bb80f1738a4",
+    "semantic_hash": "525bf6cd4e9e20713b069bb80f1738a4"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\en\\maintenance.ts": {
+    "mtime": 1784210913.4640555,
+    "ast_hash": "8c92bdb5a167a2c143251f3b590fc2aa",
+    "semantic_hash": "8c92bdb5a167a2c143251f3b590fc2aa"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\en\\pages.ts": {
+    "mtime": 1784214276.0125566,
+    "ast_hash": "3c6ea76013fec8f6f7dbab7413dc1e32",
+    "semantic_hash": "3c6ea76013fec8f6f7dbab7413dc1e32"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\en\\projects.ts": {
+    "mtime": 1784210759.1340492,
+    "ast_hash": "3c5c5384b494cc756db46d658be1cf5a",
+    "semantic_hash": "3c5c5384b494cc756db46d658be1cf5a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\en\\shared.ts": {
+    "mtime": 1784210838.3074975,
+    "ast_hash": "24f14ea957df3fecdd6e4fd7ae8b6fe2",
+    "semantic_hash": "24f14ea957df3fecdd6e4fd7ae8b6fe2"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\index.ts": {
+    "mtime": 1783955818.1597543,
+    "ast_hash": "159ccfaf59a5a512bcb0a2e0e65aee64",
+    "semantic_hash": "159ccfaf59a5a512bcb0a2e0e65aee64"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\nl\\business-ac.ts": {
+    "mtime": 1784210838.3074975,
+    "ast_hash": "e577f3f8715ccd58bdd01f7801986b04",
+    "semantic_hash": "e577f3f8715ccd58bdd01f7801986b04"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\nl\\home.ts": {
+    "mtime": 1784213610.9095976,
+    "ast_hash": "d2c82774867dc8942c69b74d76fb8275",
+    "semantic_hash": "d2c82774867dc8942c69b74d76fb8275"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\nl\\index.ts": {
+    "mtime": 1783955813.9306366,
+    "ast_hash": "85b3950f292b121f05beea73e17380fe",
+    "semantic_hash": "85b3950f292b121f05beea73e17380fe"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\nl\\installation.ts": {
+    "mtime": 1784210872.7037296,
+    "ast_hash": "786cbad17d5a4ae7768504393b83f68a",
+    "semantic_hash": "786cbad17d5a4ae7768504393b83f68a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\nl\\maintenance.ts": {
+    "mtime": 1784210913.4628189,
+    "ast_hash": "63f6cc8e0918a4a076f6bab42b58528d",
+    "semantic_hash": "63f6cc8e0918a4a076f6bab42b58528d"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\nl\\pages.ts": {
+    "mtime": 1784214270.898099,
+    "ast_hash": "90436a9c3501c739e94b928b429ebe0a",
+    "semantic_hash": "90436a9c3501c739e94b928b429ebe0a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\nl\\projects.ts": {
+    "mtime": 1784210759.1034236,
+    "ast_hash": "73dfb36f7ca5d8a9eaa66eacc4bbb716",
+    "semantic_hash": "73dfb36f7ca5d8a9eaa66eacc4bbb716"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\nl\\shared.ts": {
+    "mtime": 1784210838.306239,
+    "ast_hash": "a78c3f6535a74d51bd4df0e55f5855cf",
+    "semantic_hash": "a78c3f6535a74d51bd4df0e55f5855cf"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\content\\types.ts": {
+    "mtime": 1784214264.7903068,
+    "ast_hash": "02217dc4829eb768bdc2b301f5ea3bd9",
+    "semantic_hash": "02217dc4829eb768bdc2b301f5ea3bd9"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\i18n\\messages\\en.json": {
+    "mtime": 1784210759.0966878,
+    "ast_hash": "787b9d534f004d91d8074d4b3e318fe3",
+    "semantic_hash": "787b9d534f004d91d8074d4b3e318fe3"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\i18n\\messages\\nl.json": {
+    "mtime": 1784210759.093667,
+    "ast_hash": "a6d640c5289d5e2b09f2750efcc9996a",
+    "semantic_hash": "a6d640c5289d5e2b09f2750efcc9996a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\i18n\\navigation.ts": {
+    "mtime": 1783954387.407778,
+    "ast_hash": "90da9884c16e0ed01bb0e0ca4c757362",
+    "semantic_hash": "90da9884c16e0ed01bb0e0ca4c757362"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\i18n\\request.ts": {
+    "mtime": 1783954389.4390507,
+    "ast_hash": "5524323fa4b014a1768012d541e3b1d0",
+    "semantic_hash": "5524323fa4b014a1768012d541e3b1d0"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\i18n\\routing.ts": {
+    "mtime": 1784210759.0920556,
+    "ast_hash": "7e5d031ef39a6c8ad01dfaeffb3e0ea6",
+    "semantic_hash": "7e5d031ef39a6c8ad01dfaeffb3e0ea6"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\lib\\analytics-consent.ts": {
+    "mtime": 1784134654.8946857,
+    "ast_hash": "9cc4b09e49f6affd8da90fc083fca836",
+    "semantic_hash": "9cc4b09e49f6affd8da90fc083fca836"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\lib\\lead-schema.ts": {
+    "mtime": 1784210759.0887306,
+    "ast_hash": "c01f13d474bd5c7310b7423c565c06d8",
+    "semantic_hash": "c01f13d474bd5c7310b7423c565c06d8"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\lib\\metadata.ts": {
+    "mtime": 1784208884.632918,
+    "ast_hash": "8bb87e0b543b125b71ea89a13b3f69f9",
+    "semantic_hash": "8bb87e0b543b125b71ea89a13b3f69f9"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\lib\\page-visuals.ts": {
+    "mtime": 1784144266.7200794,
+    "ast_hash": "7963a6e789d8b28d5383a15f5b47d90a",
+    "semantic_hash": "7963a6e789d8b28d5383a15f5b47d90a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\lib\\schema.ts": {
+    "mtime": 1784214282.4346235,
+    "ast_hash": "027eec690769667179107be218ac60e7",
+    "semantic_hash": "027eec690769667179107be218ac60e7"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\lib\\service-page.ts": {
+    "mtime": 1783955834.152357,
+    "ast_hash": "9f4e0f66cca9b72448e5f4bb6ea5f691",
+    "semantic_hash": "9f4e0f66cca9b72448e5f4bb6ea5f691"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\lib\\site-config.ts": {
+    "mtime": 1784215106.9691763,
+    "ast_hash": "f89b604787da9f84443f4a3967d86335",
+    "semantic_hash": "f89b604787da9f84443f4a3967d86335"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\lib\\urls.ts": {
+    "mtime": 1784210759.0904353,
+    "ast_hash": "096b3f5103bf350d36b80ed6f4cde164",
+    "semantic_hash": "096b3f5103bf350d36b80ed6f4cde164"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\lib\\utils.ts": {
+    "mtime": 1783954053.1428552,
+    "ast_hash": "d9837f38cc05303254571985e3164050",
+    "semantic_hash": "d9837f38cc05303254571985e3164050"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\proxy.ts": {
+    "mtime": 1783954390.854616,
+    "ast_hash": "73f4c5ffa3f4b475d848a7c3e4734e39",
+    "semantic_hash": "73f4c5ffa3f4b475d848a7c3e4734e39"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\tsconfig.json": {
+    "mtime": 1783953743.1860287,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\AGENTS.md": {
+    "mtime": 1784210759.0681188,
+    "ast_hash": "47f20e74ddfdcaa3135a02a50510336f",
+    "semantic_hash": "47f20e74ddfdcaa3135a02a50510336f"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\CLAUDE.md": {
+    "mtime": 1783953774.02404,
+    "ast_hash": "5c27369b226fcf2be8a6cfe52224e767",
+    "semantic_hash": "5c27369b226fcf2be8a6cfe52224e767"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\README.md": {
+    "mtime": 1784210759.069164,
+    "ast_hash": "df49b6b7dc50fb797897dd60f77f0231",
+    "semantic_hash": "df49b6b7dc50fb797897dd60f77f0231"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\docs\\ProjectInformation.md": {
+    "mtime": 1784211087.1439567,
+    "ast_hash": "fb125a55d2bfc3d22dd1c358abb7a6c6",
+    "semantic_hash": "fb125a55d2bfc3d22dd1c358abb7a6c6"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\docs\\page-templates.md": {
+    "mtime": 1784210759.0877175,
+    "ast_hash": "8343452bb64d2490a301d617b9c7811e",
+    "semantic_hash": "8343452bb64d2490a301d617b9c7811e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\docs\\seo-strategy.md": {
+    "mtime": 1784210759.0845432,
+    "ast_hash": "9589742e1a157268fa5823e4a05ab693",
+    "semantic_hash": "9589742e1a157268fa5823e4a05ab693"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\docs\\site-architecture.md": {
+    "mtime": 1784210759.0711575,
+    "ast_hash": "edd70471d235c8ce8e617126a65db709",
+    "semantic_hash": "edd70471d235c8ce8e617126a65db709"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\llms.txt": {
+    "mtime": 1784210963.1848226,
+    "ast_hash": "c6448176977fb6dbe3681f14b5e12dac",
+    "semantic_hash": "c6448176977fb6dbe3681f14b5e12dac"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\Airco@business - SEO Strategy.pdf": {
+    "mtime": 1783950960.0516765,
+    "ast_hash": "896950d727690e4c14e60aeae6287b62",
+    "semantic_hash": "896950d727690e4c14e60aeae6287b62"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\file.svg": {
+    "mtime": 1783271312.1791973,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\globe.svg": {
+    "mtime": 1783271312.189835,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\brands\\daikin.png": {
+    "mtime": 1783954144.9901693,
+    "ast_hash": "e6f89a9c922d16ef37b8c5b94b144b0d",
+    "semantic_hash": "e6f89a9c922d16ef37b8c5b94b144b0d"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\brands\\lg.png": {
+    "mtime": 1783954145.843287,
+    "ast_hash": "74d2a5c38a678d6378073cc6bacf846f",
+    "semantic_hash": "74d2a5c38a678d6378073cc6bacf846f"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\brands\\mitsubishi-electric.png": {
+    "mtime": 1783954146.5047178,
+    "ast_hash": "3779c9405a74d65638778ec0f84925fc",
+    "semantic_hash": "3779c9405a74d65638778ec0f84925fc"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\brands\\mitsubishi-heavy.png": {
+    "mtime": 1783954147.3421173,
+    "ast_hash": "5a4f12baf5dc3a2e3b3816847b11fc5d",
+    "semantic_hash": "5a4f12baf5dc3a2e3b3816847b11fc5d"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\brands\\toshiba.png": {
+    "mtime": 1783954147.9953089,
+    "ast_hash": "0b7c57eaecdeb6f54764705b8b2b0da9",
+    "semantic_hash": "0b7c57eaecdeb6f54764705b8b2b0da9"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\commercial-installation.webp": {
+    "mtime": 1783954140.099331,
+    "ast_hash": "3d053e6a408443e7e2c50308813df7e5",
+    "semantic_hash": "3d053e6a408443e7e2c50308813df7e5"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\favicon-src.png": {
+    "mtime": 1783954138.9614477,
+    "ast_hash": "a22d3f884da40091ac0fe19b3ed57f1c",
+    "semantic_hash": "a22d3f884da40091ac0fe19b3ed57f1c"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\founder.jpeg": {
+    "mtime": 1783954144.3396244,
+    "ast_hash": "7d38e092837da9da7f4c41bedfa907f5",
+    "semantic_hash": "7d38e092837da9da7f4c41bedfa907f5"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\airco-business-social.webp": {
+    "mtime": 1784134760.302531,
+    "ast_hash": "7afed408541602ba1b2ebca64c3c38cc",
+    "semantic_hash": "7afed408541602ba1b2ebca64c3c38cc"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\business-air-conditioning-hero.webp": {
+    "mtime": 1784142648.796,
+    "ast_hash": "6bf784ebf1671f4673299c95a127c08e",
+    "semantic_hash": "6bf784ebf1671f4673299c95a127c08e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\cassette-air-conditioning-hero.webp": {
+    "mtime": 1784142648.823,
+    "ast_hash": "22cb0035084dacc519bb76e2a7737b95",
+    "semantic_hash": "22cb0035084dacc519bb76e2a7737b95"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-building.webp": {
+    "mtime": 1784133504.5784557,
+    "ast_hash": "dde3abed6e890435d766fb73de981f8d",
+    "semantic_hash": "dde3abed6e890435d766fb73de981f8d"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-installation-assessment.webp": {
+    "mtime": 1784136948.463,
+    "ast_hash": "be67035d27ac2322208a56c74059b37b",
+    "semantic_hash": "be67035d27ac2322208a56c74059b37b"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-installation-delivery-hero.webp": {
+    "mtime": 1784142648.857,
+    "ast_hash": "cfbfb6bf98343828f15f993058e12467",
+    "semantic_hash": "cfbfb6bf98343828f15f993058e12467"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-installation-in-progress.webp": {
+    "mtime": 1784137626.233,
+    "ast_hash": "efa034a51a56c710a42900d684301c49",
+    "semantic_hash": "efa034a51a56c710a42900d684301c49"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-maintenance-contract-inspection.webp": {
+    "mtime": 1784140567.55,
+    "ast_hash": "6822534a94b93182aa8984a748bcf538",
+    "semantic_hash": "6822534a94b93182aa8984a748bcf538"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-maintenance-contract-planning.webp": {
+    "mtime": 1784140567.46,
+    "ast_hash": "d821060949d64912ef60c742ce7ae279",
+    "semantic_hash": "d821060949d64912ef60c742ce7ae279"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-maintenance-indoor-hero.webp": {
+    "mtime": 1784142649.101,
+    "ast_hash": "6d100e5fedef67adc57a7c148a514cf4",
+    "semantic_hash": "6d100e5fedef67adc57a7c148a514cf4"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-maintenance-rooftop.webp": {
+    "mtime": 1784137626.233,
+    "ast_hash": "ca5e01b406dbc0cd6cba909d4526715e",
+    "semantic_hash": "ca5e01b406dbc0cd6cba909d4526715e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-office-hero.webp": {
+    "mtime": 1784133504.247993,
+    "ast_hash": "f86d857e47d34ef9462b953aefb1fa36",
+    "semantic_hash": "f86d857e47d34ef9462b953aefb1fa36"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-repair-diagnostics.webp": {
+    "mtime": 1784140567.464,
+    "ast_hash": "879c5b771525c19e45b99bb41ef4ba9e",
+    "semantic_hash": "879c5b771525c19e45b99bb41ef4ba9e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-repair-outdoor-unit.webp": {
+    "mtime": 1784140567.5,
+    "ast_hash": "e33cf9f8f8a83990ba4e0403ebac23e8",
+    "semantic_hash": "e33cf9f8f8a83990ba4e0403ebac23e8"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-server-room-cooling.webp": {
+    "mtime": 1784144133.194,
+    "ast_hash": "19b2b678193cb293829e53f815de39bb",
+    "semantic_hash": "19b2b678193cb293829e53f815de39bb"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\commercial-system-advice.webp": {
+    "mtime": 1784138685.357,
+    "ast_hash": "bd548c9675ac421d63b62b5906c2c5dd",
+    "semantic_hash": "bd548c9675ac421d63b62b5906c2c5dd"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\ducted-detail.webp": {
+    "mtime": 1784133505.483999,
+    "ast_hash": "cfbb06f0b95910db1181ad0a2a06496f",
+    "semantic_hash": "cfbb06f0b95910db1181ad0a2a06496f"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\maintenance-service.webp": {
+    "mtime": 1784133505.7803342,
+    "ast_hash": "e056304778e34c2ae47e5eae9cbe8ca3",
+    "semantic_hash": "e056304778e34c2ae47e5eae9cbe8ca3"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\office-air-conditioning-hero.webp": {
+    "mtime": 1784142648.804,
+    "ast_hash": "79b8431e689f51f36e929edbd5543e0c",
+    "semantic_hash": "79b8431e689f51f36e929edbd5543e0c"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\process-site-survey-hero.webp": {
+    "mtime": 1784142649.066,
+    "ast_hash": "65a12259a2e9d761235c90359b667381",
+    "semantic_hash": "65a12259a2e9d761235c90359b667381"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\projects-hero-background.webp": {
+    "mtime": 1784141273.253,
+    "ast_hash": "f6d66fdf1046e02122e46dcb56a43604",
+    "semantic_hash": "f6d66fdf1046e02122e46dcb56a43604"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\retail-cassette.webp": {
+    "mtime": 1784133504.9123428,
+    "ast_hash": "87bf162c00f035a79ae1eabb6615ff66",
+    "semantic_hash": "87bf162c00f035a79ae1eabb6615ff66"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\showroom-cassette.webp": {
+    "mtime": 1784133505.2297933,
+    "ast_hash": "bc4215ce7ee4fef2758bfd3fd3a23705",
+    "semantic_hash": "bc4215ce7ee4fef2758bfd3fd3a23705"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\wall-model-office.webp": {
+    "mtime": 1784133506.0364864,
+    "ast_hash": "d8bec9a604e0ef00a3c3ed6d35b53fc8",
+    "semantic_hash": "d8bec9a604e0ef00a3c3ed6d35b53fc8"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\generated\\werkgebied-zuid-holland-hero.webp": {
+    "mtime": 1784151173.854,
+    "ast_hash": "8e09cd31dd0b0c7776f8ae51bf117a89",
+    "semantic_hash": "8e09cd31dd0b0c7776f8ae51bf117a89"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\hero-airco-wall.webp": {
+    "mtime": 1784127011.685,
+    "ast_hash": "90a9ee0a76912e47c4bc256bb1e7b3ee",
+    "semantic_hash": "90a9ee0a76912e47c4bc256bb1e7b3ee"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\logo.png": {
+    "mtime": 1783954138.3209207,
+    "ast_hash": "935c3b9c79d182e0993db4a86ec5fa3e",
+    "semantic_hash": "935c3b9c79d182e0993db4a86ec5fa3e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\products\\daikin-perfera.png": {
+    "mtime": 1783954150.1117759,
+    "ast_hash": "974c28e1ffc5cdedc7c70f0fb6d5ad38",
+    "semantic_hash": "974c28e1ffc5cdedc7c70f0fb6d5ad38"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\products\\daikin-stylish.png": {
+    "mtime": 1783954149.0491705,
+    "ast_hash": "f572805fdfbd939d58907e468ace8aa4",
+    "semantic_hash": "f572805fdfbd939d58907e468ace8aa4"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\products\\mitsubishi-design.png": {
+    "mtime": 1783954151.683661,
+    "ast_hash": "136a23b68dbf5ffbc2bc73e8a7841a10",
+    "semantic_hash": "136a23b68dbf5ffbc2bc73e8a7841a10"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\products\\toshiba-haori.png": {
+    "mtime": 1783954153.9158704,
+    "ast_hash": "5350a98fec2974517719d02444223f0f",
+    "semantic_hash": "5350a98fec2974517719d02444223f0f"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\team-1.webp": {
+    "mtime": 1783954141.337128,
+    "ast_hash": "8414c32ae38947e90cf51833cc96378a",
+    "semantic_hash": "8414c32ae38947e90cf51833cc96378a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\images\\team-2.webp": {
+    "mtime": 1783954142.5703228,
+    "ast_hash": "61b426e2ead31680b7854d0402b7538a",
+    "semantic_hash": "61b426e2ead31680b7854d0402b7538a"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\next.svg": {
+    "mtime": 1783271312.1968622,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\vercel.svg": {
+    "mtime": 1783271312.2033448,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\public\\window.svg": {
+    "mtime": 1783271312.2093003,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  },
+  "C:\\Dev-Projects\\[Sterk Systems NL] Airco@Business\\src\\app\\icon.png": {
+    "mtime": 1783954525.8194566,
+    "ast_hash": "a22d3f884da40091ac0fe19b3ed57f1c",
+    "semantic_hash": "a22d3f884da40091ac0fe19b3ed57f1c"
+  }
+}

@@ -9,7 +9,7 @@ export function absoluteUrl(locale: Locale, href: AppPathname): string {
   return `${siteConfig.domain}${withSlash}`;
 }
 
-/** Path (no domain) with trailing slash — for canonical/hreflang metadata. */
+/** Path (no domain) with trailing slash - for canonical/hreflang metadata. */
 export function localePath(locale: Locale, href: AppPathname): string {
   const path = getPathname({ locale, href });
   return path.endsWith("/") ? path : `${path}/`;

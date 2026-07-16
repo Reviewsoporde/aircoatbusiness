@@ -1,6 +1,6 @@
 import type { AppPathname } from "@/i18n/routing";
 
-/** Key into messages common.* — CTA labels are fixed per page type (docs/page-templates.md §1) */
+/** Key into messages common.* - CTA labels are fixed per page type (docs/page-templates.md §1) */
 export type CtaKey =
   | "requestQuote"
   | "planConsultation"
@@ -102,7 +102,7 @@ export type Project = {
 /** Universal 7-section service page (docs/page-templates.md §3) */
 export type ServicePageContent = {
   meta: { title: string; description: string };
-  /** Short page name — breadcrumbs + Service JSON-LD */
+  /** Short page name - breadcrumbs + Service JSON-LD */
   name: string;
   hero: {
     eyebrow: string;
@@ -120,7 +120,7 @@ export type ServicePageContent = {
   };
   overview: SectionCards;
   benefits: SectionCards;
-  /** Checklist section — parent pages omit this (child cards live in overview) */
+  /** Checklist section - parent pages omit this (child cards live in overview) */
   scope?: { h2: string; intro?: string; items: string[] };
   process: { h2: string; steps: Step[] };
   proof: {
@@ -169,6 +169,8 @@ export type ContactPageContent = {
     h2: string;
     body: string;
     mapTitle: string;
+    profileLabel: string;
+    profileLinkLabel: string;
     detailsTitle: string;
     addressLabel: string;
     hoursLabel: string;

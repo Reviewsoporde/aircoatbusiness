@@ -40,7 +40,7 @@
     "cookies": "Cookiebeleid",
     "kvk": "KvK",
     "btw": "BTW",
-    "openingHours": "Ma – vr 08:00 – 17:00",
+    "openingHours": "Ma - vr 08:00 - 17:00",
     "tagline": "Zakelijke airconditioning voor kantoren, bedrijfspanden, winkels en showrooms in Zuid-Holland."
   },
   "form": {
@@ -115,7 +115,7 @@
   "contactAside": {
     "title": "Direct contact",
     "responsePromise": "Een specialist beoordeelt uw aanvraag en neemt tijdens kantooruren contact met u op. Liever direct schakelen? Bel ons.",
-    "hours": "Ma – vr 08:00 – 17:00"
+    "hours": "Ma - vr 08:00 - 17:00"
   },
   "localeSwitcher": {
     "label": "Taal",

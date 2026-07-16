@@ -1,4 +1,4 @@
-// Brand icons — lucide-react no longer ships brand marks, so these are inline.
+// Brand icons - lucide-react no longer ships brand marks, so these are inline.
 type IconProps = { className?: string };
 
 export function InstagramIcon({ className }: IconProps) {

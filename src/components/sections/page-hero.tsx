@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 type Props = { hero: ServicePageContent["hero"] };
 
 /**
- * Dark hero band for all service pages — compact, one H1, CTA per page intent.
+ * Dark hero band for all service pages - compact, one H1, CTA per page intent.
  * Content rises in sequence on page load (CSS-only, reduced-motion aware).
  */
 export function PageHero({ hero }: Props) {
@@ -37,9 +37,9 @@ export function PageHero({ hero }: Props) {
       )}
       <div
         className={cn(
-          "mx-auto grid gap-12 px-4 pt-16 pb-20 sm:px-6 lg:items-center lg:px-8 lg:pt-24 lg:pb-28",
+          "mx-auto grid gap-8 px-4 pt-12 pb-16 sm:px-6 lg:items-center lg:px-8 lg:py-20",
           imageLed
-            ? "min-h-[680px] max-w-7xl lg:grid-cols-12"
+            ? "min-h-[620px] max-w-7xl lg:grid-cols-12"
             : splitImage
               ? "max-w-[90rem] lg:grid-cols-[minmax(0,1fr)_minmax(26rem,0.85fr)] xl:grid-cols-[minmax(0,1fr)_minmax(34rem,0.95fr)]"
               : "max-w-7xl",
@@ -51,16 +51,16 @@ export function PageHero({ hero }: Props) {
               "hero-lead-glass rounded-[32px] p-7 sm:p-10 lg:col-span-7 lg:p-12",
           )}
         >
-          <p className="rise eyebrow mb-6 text-azure-bright">
+          <p className="rise eyebrow mb-4 text-azure-bright">
             {hero.eyebrow}
           </p>
           <h1 className="rise font-display max-w-4xl text-4xl font-semibold leading-[1.02] text-balance sm:text-5xl lg:text-6xl [animation-delay:100ms]">
             {hero.h1}
           </h1>
-          <p className="rise mt-7 max-w-2xl text-base leading-relaxed text-mist sm:text-lg [animation-delay:200ms]">
+          <p className="rise mt-5 max-w-2xl text-base leading-relaxed text-mist sm:text-lg [animation-delay:200ms]">
             {hero.intro}
           </p>
-          <div className="rise mt-9 flex flex-wrap items-center gap-4 [animation-delay:300ms]">
+          <div className="rise mt-7 flex flex-wrap items-center gap-4 [animation-delay:300ms]">
             <CtaLink ctaKey={hero.cta} anchor={hero.ctaAnchor} variant="azure" arrow />
             {hero.urgent ? (
               <PhoneLink
@@ -81,7 +81,7 @@ export function PageHero({ hero }: Props) {
             )}
           </div>
           {hero.trustPoints.length > 0 && (
-            <ul className="rise mt-11 flex flex-wrap gap-x-8 gap-y-3 [animation-delay:400ms]">
+            <ul className="rise mt-8 flex flex-wrap gap-x-8 gap-y-3 [animation-delay:400ms]">
               {hero.trustPoints.map((point) => (
                 <li
                   key={point}

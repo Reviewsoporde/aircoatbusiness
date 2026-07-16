@@ -27,7 +27,7 @@ type Props = {
   locale: Locale;
 };
 
-/** Homepage per docs/page-templates.md §2 — 17-section flow, lean nav, one H1. */
+/** Homepage per docs/page-templates.md §2 - 17-section flow, lean nav, one H1. */
 export function HomeTemplate({ content, featuredProjects, locale }: Props) {
   const t = useTranslations("common");
   const climateCards = homeClimateCardsWithVisuals(
@@ -46,13 +46,13 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         ]}
       />
 
-      {/* 2 — Hero */}
+      {/* 2 - Hero */}
       <HomeHero hero={content.hero} reviews={content.reviews} />
 
-      {/* 3 — Trust / value bar */}
+      {/* 3 - Trust / value bar */}
       <TrustBar points={content.trustBar} />
 
-      {/* 4 — Main service categories */}
+      {/* 4 - Main service categories */}
       <Section
         variant="paper"
         eyebrow="Airco@Business"
@@ -62,7 +62,7 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         <CardGrid cards={content.categories.cards} columns={3} />
       </Section>
 
-      {/* 5 — Business property types (editorial index list) */}
+      {/* 5 - Business property types (editorial index list) */}
       <Section
         variant="paper"
         h2={content.propertyTypes.h2}
@@ -72,12 +72,12 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         <IndexList cards={content.propertyTypes.cards} />
       </Section>
 
-      {/* 6 — Systems */}
+      {/* 6 - Systems */}
       <Section variant="light" h2={content.systems.h2} intro={content.systems.intro}>
         <CardGrid cards={content.systems.cards} columns={3} />
       </Section>
 
-      {/* 7 — Why climate control matters — opening of the dark act */}
+      {/* 7 - Why climate control matters - opening of the dark act */}
       <Section
         variant="dark"
         h2={content.whyClimate.h2}
@@ -87,7 +87,7 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         <CardGrid cards={climateCards} variant="dark" columns={3} />
       </Section>
 
-      {/* 8 — Maintenance & service */}
+      {/* 8 - Maintenance & service */}
       <Section
         variant="dark"
         h2={content.maintenance.h2}
@@ -97,19 +97,19 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         <CardGrid cards={content.maintenance.cards} variant="dark" columns={3} />
       </Section>
 
-      {/* 9 — Process */}
+      {/* 9 - Process */}
       <Section
         variant="paper"
         eyebrow={t("ourProcess")}
         h2={content.process.h2}
       >
         <ProcessSteps steps={content.process.steps} variant="light" />
-        <Reveal delay={120} className="mt-14">
+        <Reveal delay={120} className="mt-10">
           <CtaLink label={content.process.linkLabel} href="/werkwijze" variant="outline-light" arrow />
         </Reveal>
       </Section>
 
-      {/* 10 — Maintenance offer (aftercare framing, no discount language) */}
+      {/* 10 - Maintenance offer (aftercare framing, no discount language) */}
       <Section variant="dark" className="border-t border-white/10">
         <Reveal className="relative isolate flex flex-col items-start gap-8 overflow-hidden rounded-[32px] border border-white/12 bg-carbon p-8 text-white sm:p-12 lg:flex-row lg:items-center lg:justify-between lg:gap-16">
           <div className="max-w-2xl">
@@ -124,26 +124,23 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         </Reveal>
       </Section>
 
-      {/* 11 — Projects */}
+      {/* 11 - Projects */}
       {featuredProjects.length > 0 && (
         <Section variant="light" h2={content.projects.h2} intro={content.projects.intro}>
-          <Reveal group className="grid gap-5 sm:grid-cols-2 lg:grid-cols-12">
-            {featuredProjects.map((project, index) => (
-              <div
-                key={project.slug}
-                className={index === 0 ? "sm:col-span-2 lg:col-span-7" : "lg:col-span-5"}
-              >
+          <Reveal group className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {featuredProjects.map((project) => (
+              <div key={project.slug}>
                 <ProjectCard project={project} />
               </div>
             ))}
           </Reveal>
-          <Reveal delay={120} className="mt-14">
+          <Reveal delay={120} className="mt-10">
             <CtaLink label={t("viewAllProjects")} href="/projecten" variant="outline-light" arrow />
           </Reveal>
         </Section>
       )}
 
-      {/* 12 — Verified Google reviews from the Airco@home team. */}
+      {/* 12 - Verified Google reviews from the Airco@home team. */}
       <Section
         variant="dark"
         h2={content.reviews.h2}
@@ -153,13 +150,13 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         <GoogleReviews reviews={content.reviews} />
       </Section>
 
-      {/* 13 — Service area */}
+      {/* 13 - Service area */}
       <Section variant="paper" h2={content.serviceArea.h2}>
         <Reveal className="max-w-3xl">
           <p className="text-base leading-relaxed text-slate-ink sm:text-lg">
             {content.serviceArea.body}
           </p>
-          <ul className="mt-10 flex flex-wrap gap-3">
+          <ul className="mt-8 flex flex-wrap gap-3">
             {content.serviceArea.cities.map((city) => (
               <li key={city}>
                 <Link
@@ -174,14 +171,14 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         </Reveal>
       </Section>
 
-      {/* 14 — Lead form */}
+      {/* 14 - Lead form */}
       <Section
         variant="paper"
         h2={content.form.h2}
         id="offerte"
         className="border-t border-ink/5"
       >
-        <Reveal className="grid gap-10 lg:grid-cols-[1fr_minmax(0,340px)]">
+        <Reveal className="grid gap-8 lg:grid-cols-[1fr_minmax(0,340px)]">
           <div className="rounded-[32px] border border-steel/12 bg-card p-6 shadow-panel sm:p-12">
             <LeadForm />
           </div>
@@ -189,12 +186,12 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
         </Reveal>
       </Section>
 
-      {/* 15 — FAQ */}
+      {/* 15 - FAQ */}
       <Section variant="light" h2={content.faq.h2}>
         <Reveal className="max-w-3xl">
           <FaqSection items={content.faq.items} />
         </Reveal>
-        <Reveal className="mt-16 border-t border-ink/10 pt-8 text-sm text-slate-ink">
+        <Reveal className="mt-12 border-t border-ink/10 pt-8 text-sm text-slate-ink">
           {content.residential.text}{" "}
           <a
             href={siteConfig.residentialSite}
