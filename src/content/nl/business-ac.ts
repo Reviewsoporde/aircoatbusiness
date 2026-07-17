@@ -611,12 +611,22 @@ export const aircoShowroom: ServicePageContent = {
         title: "Autoshowrooms",
         description:
           "Grote glasgevels en hoge ruimtes vragen om royale, gelijkmatig verdeelde capaciteit.",
+        image: {
+          src: "/images/generated/showroom-automotive-card.webp",
+          alt: "Autoshowroom met grote glasgevels, hoge ruimte en cassette-airconditioning",
+          position: "50% 48%",
+        },
       },
       {
         tag: "Interieur",
         title: "Keuken- en meubelshowrooms",
         description:
           "Comfort tijdens lange oriëntatiebezoeken, zonder zichtbare techniek in de presentatie.",
+        image: {
+          src: "/images/generated/showroom-interior-card.webp",
+          alt: "Keuken- en meubelshowroom met discreet geïntegreerde klimaatregeling",
+          position: "50% 48%",
+        },
       },
       {
         tag: "Techniek",
@@ -634,6 +644,11 @@ export const aircoShowroom: ServicePageContent = {
         title: "Bezoekers nemen de tijd",
         description:
           "Aankoopbeslissingen in showrooms vragen tijd. Comfort houdt bezoekers langer bij uw producten.",
+        image: {
+          src: "/images/generated/showroom-visitors-card.webp",
+          alt: "Bezoekers nemen rustig de tijd in een comfortabele showroom met klimaatregeling",
+          position: "50% 48%",
+        },
       },
       {
         tag: "Warmtelast",

@@ -90,7 +90,7 @@ export const home: HomeContent = {
         href: "/airco-bedrijfspand",
         linkLabel: "Airco voor bedrijfspanden",
         image: {
-          src: "/images/generated/commercial-building.webp",
+          src: "/images/generated/commercial-building-card-clean.webp",
           alt: "Moderne ontvangstruimte in een bedrijfspand",
         },
       },
@@ -133,8 +133,8 @@ export const home: HomeContent = {
         href: "/cassette-airco-bedrijf",
         linkLabel: "Cassette airco voor bedrijven",
         image: {
-          src: "/images/generated/showroom-cassette.webp",
-          alt: "Cassette-units in een zakelijke showroom",
+          src: "/images/generated/homepage-cassette-card.webp",
+          alt: "Witte cassette-airco in een zakelijke showroom",
         },
       },
       {
@@ -214,8 +214,8 @@ export const home: HomeContent = {
         href: "/airco-reparatie-zakelijk",
         linkLabel: "Zakelijke airco reparatie",
         image: {
-          src: "/images/generated/commercial-repair-diagnostics.webp",
-          alt: "Monteur die een zakelijke airco onderzoekt tijdens een reparatie",
+          src: "/images/generated/commercial-repair-office-leakage.webp",
+          alt: "Monteur die een lekkende zakelijke airco repareert in een kantoor",
           position: "55% 42%",
         },
       },
@@ -227,9 +227,9 @@ export const home: HomeContent = {
         href: "/airco-onderhoudscontract-zakelijk",
         linkLabel: "Zakelijk onderhoudscontract",
         image: {
-          src: "/images/generated/commercial-maintenance-contract-planning.webp",
-          alt: "Monteur en facilitair manager bespreken een zakelijk onderhoudscontract",
-          position: "50% 48%",
+          src: "/images/generated/homepage-maintenance-contract-signing.webp",
+          alt: "Adviseur en klant tekenen een zakelijk onderhoudscontract aan een kantoorbureau",
+          position: "50% 52%",
         },
       },
     ],

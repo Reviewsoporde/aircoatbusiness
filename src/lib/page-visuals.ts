@@ -8,6 +8,26 @@ const visuals = {
     alt: "Premium zakelijke kantoorruimte met geïntegreerde klimaatinstallatie",
     position: "58% 50%",
   },
+  ductedProofNoCassette: {
+    src: "/images/generated/ducted-proof-no-cassette.webp",
+    alt: "Moderne kantoorruimte met lineaire kanaalroosters in het plafond",
+    position: "58% 50%",
+  },
+  officePrivateRoom: {
+    src: "/images/generated/small-office-room-card.webp",
+    alt: "Compacte zakelijke kantoorruimte met een discreet wandmodel airco",
+    position: "50% 50%",
+  },
+  officeMeetingRoom: {
+    src: "/images/generated/commercial-office-boardroom-card.webp",
+    alt: "Moderne vergaderruimte met geïntegreerde cassette-airconditioning",
+    position: "54% 48%",
+  },
+  officeHappyComfort: {
+    src: "/images/generated/office-comfort-happy-people.webp",
+    alt: "Tevreden collega's werken comfortabel onder zakelijke airconditioning",
+    position: "50% 48%",
+  },
   businessOverview: {
     src: "/images/generated/business-air-conditioning-hero.webp",
     alt: "Facility manager en klimaatadviseur lopen door een modern zakelijk kantoor met geïntegreerde airconditioning",
@@ -23,25 +43,60 @@ const visuals = {
     alt: "Moderne zakelijke ontvangstruimte met plafondairconditioning",
     position: "55% 50%",
   },
+  entranceReception: {
+    src: "/images/generated/commercial-entrance-reception.webp",
+    alt: "Representatieve entree en ontvangstruimte met discreet geïntegreerde klimaatregeling",
+    position: "50% 48%",
+  },
   installation: {
     src: "/images/generated/commercial-installation-assessment.webp",
     alt: "Aircomonteur en facility manager beoordelen een zakelijke installatie",
     position: "50% 45%",
   },
   installationDelivery: {
-    src: "/images/generated/commercial-installation-delivery-hero.webp",
+    src: "/images/generated/commercial-installation-delivery-hero-small-aircon.webp",
     alt: "Monteurs installeren zakelijke buitenunits op het dak van een modern kantoorgebouw",
     position: "54% 50%",
+  },
+  installationSmallBuilding: {
+    src: "/images/generated/commercial-installation-small-building-card-v2.webp",
+    alt: "Monteurs installeren een compacte zakelijke buitenunit bij een ouder klein bedrijfspand",
+    position: "50% 50%",
   },
   installationWork: {
     src: "/images/generated/commercial-installation-in-progress.webp",
     alt: "Monteurs installeren een cassette-unit in een zakelijke kantoorruimte",
     position: "50% 45%",
   },
+  installationMinimalDisruption: {
+    src: "/images/generated/commercial-installation-minimal-disruption-card.webp",
+    alt: "Monteur werkt in een afgeschermde zone terwijl medewerkers in het kantoor doorwerken",
+    position: "48% 50%",
+  },
+  warehouseWorkStorage: {
+    src: "/images/generated/commercial-warehouse-work-storage.webp",
+    alt: "Werk- en opslagruimte in een bedrijfshal met zichtbare klimaatinstallatie",
+    position: "52% 45%",
+  },
   retail: {
     src: "/images/generated/retail-cassette.webp",
     alt: "Verzorgde winkelruimte met cassette-airconditioning in het plafond",
     position: "50% 48%",
+  },
+  retailPeople: {
+    src: "/images/generated/retail-cassette-people.webp",
+    alt: "Klanten krijgen advies in een modewinkel met cassette-airconditioning",
+    position: "50% 48%",
+  },
+  specialistRetail: {
+    src: "/images/generated/specialist-retail-climate.webp",
+    alt: "Speciaalzaak met koelvitrine, elektronica en zichtbare klimaatinstallatie",
+    position: "50% 48%",
+  },
+  customerSatisfaction: {
+    src: "/images/generated/homepage-customer-satisfaction.webp",
+    alt: "Tevreden winkeleigenaar spreekt met een aircomonteur onder een cassette-airco",
+    position: "50% 50%",
   },
   showroom: {
     src: "/images/generated/showroom-cassette.webp",
@@ -53,20 +108,55 @@ const visuals = {
     alt: "Cassette-airco geïntegreerd in het plafond van een moderne zakelijke ruimte",
     position: "58% 42%",
   },
+  cassetteAirflowComfort: {
+    src: "/images/generated/cassette-airflow-comfort-card.webp",
+    alt: "Cassette-airco verdeelt lucht langs het plafond in een moderne kantoorruimte",
+    position: "50% 38%",
+  },
   ducted: {
     src: "/images/generated/ducted-detail.webp",
     alt: "Architectuurdetail van een discreet kanaalrooster",
     position: "50% 50%",
+  },
+  multiZoneFloors: {
+    src: "/images/generated/commercial-multizone-floors.webp",
+    alt: "Meerdere verdiepingen in een bedrijfspand met klimaatregeling per zone",
+    position: "50% 48%",
   },
   wall: {
     src: "/images/generated/wall-model-office.webp",
     alt: "Zakelijk wandmodel in een moderne vergaderruimte",
     position: "50% 45%",
   },
+  wallCanteen: {
+    src: "/images/generated/wall-model-canteen-card.webp",
+    alt: "Zakelijke kantine met een wandmodel airco hoog aan de muur",
+    position: "54% 38%",
+  },
+  wallInstallation: {
+    src: "/images/generated/wall-model-installation-card.webp",
+    alt: "Monteurs installeren een wandmodel airco in een zakelijke kantoorruimte",
+    position: "55% 38%",
+  },
+  wallBudget: {
+    src: "/images/generated/wall-model-budget-card.webp",
+    alt: "Strak zwart wandmodel airco in een verzorgd directiekantoor met stenen bureau",
+    position: "50% 42%",
+  },
   systemAdvice: {
     src: "/images/generated/commercial-system-advice.webp",
     alt: "Aircomonteur controleert een zakelijk wandmodel terwijl een facility manager het plan bekijkt",
     position: "56% 45%",
+  },
+  centralClimateControl: {
+    src: "/images/generated/commercial-central-climate-control.webp",
+    alt: "Facility manager beheert klimaatzones centraal via een slim bedieningspaneel",
+    position: "45% 48%",
+  },
+  propertyValue: {
+    src: "/images/generated/commercial-property-value.webp",
+    alt: "Modern zakelijk pand met een hoogwaardige klimaatinstallatie",
+    position: "50% 50%",
   },
   service: {
     src: "/images/generated/maintenance-service.webp",
@@ -103,6 +193,11 @@ const visuals = {
     alt: "Servicemonteur registreert een geplande inspectie in een technische ruimte",
     position: "52% 50%",
   },
+  homepageReliability: {
+    src: "/images/generated/homepage-reliability-maintenance.webp",
+    alt: "Servicemonteur inspecteert de installatie in een zakelijke technische ruimte",
+    position: "53% 46%",
+  },
   projectsHero: {
     src: "/images/generated/projects-hero-background.webp",
     alt: "Monteurs ronden de inbedrijfstelling af van een zakelijke klimaatinstallatie in een modern kantoor",
@@ -130,15 +225,20 @@ const serviceCardVisualMap = {
     benefits: ["systemAdvice", "officeComfort", "maintenanceContractPlanning"],
   },
   "/airco-kantoor": {
-    overview: ["officeComfort", "office", "building", "serverRoom"],
-    benefits: ["officeComfort", "building", "systemAdvice"],
+    overview: [
+      "officeComfort",
+      "officePrivateRoom",
+      "officeMeetingRoom",
+      "serverRoom",
+    ],
+    benefits: ["officeComfort", "officeHappyComfort", "systemAdvice"],
   },
   "/airco-bedrijfspand": {
-    overview: ["office", "installationWork", "building", "ducted"],
-    benefits: ["commercialMaintenanceIndoor", "ducted", "building"],
+    overview: ["office", "warehouseWorkStorage", "entranceReception", "multiZoneFloors"],
+    benefits: ["commercialMaintenanceIndoor", "centralClimateControl", "propertyValue"],
   },
   "/airco-winkel": {
-    overview: ["retail", "showroom", "wall"],
+    overview: ["retailPeople", "showroom", "specialistRetail"],
     benefits: ["retail", "showroom", "officeComfort"],
   },
   "/airco-showroom": {
@@ -150,20 +250,20 @@ const serviceCardVisualMap = {
     benefits: ["installation", "installationWork", "installationDelivery"],
   },
   "/zakelijke-airco-installatie": {
-    overview: ["installationDelivery", "installation", "installationWork"],
-    benefits: ["systemAdvice", "maintenanceContractInspection", "installationDelivery"],
+    overview: ["installationSmallBuilding", "installation", "installationWork"],
+    benefits: ["systemAdvice", "maintenanceContractInspection", "installationMinimalDisruption"],
   },
   "/cassette-airco-bedrijf": {
     overview: ["officeComfort", "retail", "building"],
-    benefits: ["cassetteDetail", "installationWork", "office"],
+    benefits: ["cassetteAirflowComfort", "installationWork", "office"],
   },
   "/kanaal-airco-bedrijf": {
     overview: ["ducted", "office", "showroom"],
-    benefits: ["ducted", "officeComfort", "systemAdvice"],
+    benefits: ["ducted", "officeComfort", "multiZoneFloors"],
   },
   "/wandmodel-airco-bedrijf": {
-    overview: ["wall", "serverRoom", "office"],
-    benefits: ["installationWork", "wall", "systemAdvice"],
+    overview: ["wall", "serverRoom", "wallCanteen"],
+    benefits: ["wallInstallation", "wallBudget", "systemAdvice"],
   },
   "/onderhoud": {
     overview: ["service", "repairDiagnostics", "maintenanceContractPlanning"],
@@ -197,30 +297,68 @@ const serviceCardVisualMap = {
 const englishAlts: Record<string, string> = {
   "/images/generated/commercial-office-hero.webp":
     "Premium commercial office with integrated climate control",
+  "/images/generated/ducted-proof-no-cassette.webp":
+    "Modern office space with linear duct grilles in the ceiling",
+  "/images/generated/small-office-room-card.webp":
+    "Compact commercial office room with discreet wall-mounted air conditioning",
+  "/images/generated/commercial-office-boardroom-card.webp":
+    "Modern meeting room with integrated cassette air conditioning",
+  "/images/generated/office-comfort-happy-people.webp":
+    "Satisfied colleagues working comfortably beneath commercial air conditioning",
   "/images/generated/business-air-conditioning-hero.webp":
     "Facilities manager and climate advisor walking through a modern commercial office with integrated air conditioning",
   "/images/generated/office-air-conditioning-hero.webp":
     "People working in a modern office with discreetly integrated climate control",
   "/images/generated/commercial-building.webp":
     "Modern commercial reception with ceiling air conditioning",
+  "/images/generated/commercial-entrance-reception.webp":
+    "Representative commercial entrance and reception area with discreet climate control",
   "/images/generated/commercial-installation-assessment.webp":
     "Air conditioning engineer and facilities manager assessing a commercial installation",
   "/images/generated/commercial-installation-delivery-hero.webp":
     "Engineers installing commercial outdoor units on the roof of a modern office building",
+  "/images/generated/commercial-installation-delivery-hero-small-aircon.webp":
+    "Engineers installing smaller commercial outdoor units on the roof of a modern office building",
+  "/images/generated/commercial-installation-small-building-card-v2.webp":
+    "Engineers installing a compact commercial outdoor unit at an older small commercial building",
   "/images/generated/commercial-installation-in-progress.webp":
     "Engineers installing a ceiling cassette unit in a commercial office",
+  "/images/generated/commercial-installation-minimal-disruption-card.webp":
+    "Engineer working in a screened-off zone while employees continue working in the office",
+  "/images/generated/commercial-warehouse-work-storage.webp":
+    "Work and storage space in a commercial hall with visible climate control",
   "/images/generated/retail-cassette.webp":
     "Considered retail space with a ceiling cassette unit",
+  "/images/generated/retail-cassette-people.webp":
+    "Customers receiving advice in a fashion boutique with ceiling cassette air conditioning",
+  "/images/generated/specialist-retail-climate.webp":
+    "Specialist retail shop with refrigerated display, electronics and visible climate control",
+  "/images/generated/homepage-customer-satisfaction.webp":
+    "Satisfied shop owner speaking with an air conditioning engineer beneath a ceiling cassette unit",
   "/images/generated/showroom-cassette.webp":
     "Architectural showroom with multiple ceiling cassette units",
   "/images/generated/cassette-air-conditioning-hero.webp":
     "Ceiling cassette air conditioning integrated into a modern commercial interior",
+  "/images/generated/cassette-airflow-comfort-card.webp":
+    "Ceiling cassette air conditioning distributing air along the ceiling in a modern office",
   "/images/generated/ducted-detail.webp":
     "Architectural detail of a discreet ducted air conditioning grille",
+  "/images/generated/commercial-multizone-floors.webp":
+    "Multiple floors in a commercial building with zone-based climate control",
   "/images/generated/wall-model-office.webp":
     "Commercial wall-mounted unit in a modern meeting room",
+  "/images/generated/wall-model-canteen-card.webp":
+    "Commercial canteen with a wall-mounted air conditioning unit high on the wall",
+  "/images/generated/wall-model-installation-card.webp":
+    "Engineers installing a wall-mounted air conditioning unit in a commercial office",
+  "/images/generated/wall-model-budget-card.webp":
+    "Sleek black wall-mounted air conditioning unit in a refined executive office with a stone desk",
   "/images/generated/commercial-system-advice.webp":
     "Air conditioning engineer checking a commercial wall-mounted unit while a facilities manager reviews the plan",
+  "/images/generated/commercial-central-climate-control.webp":
+    "Facilities manager centrally controls climate zones from a smart control panel",
+  "/images/generated/commercial-property-value.webp":
+    "Modern commercial property with a high-quality climate installation",
   "/images/generated/maintenance-service.webp":
     "Technician servicing a commercial ceiling cassette unit",
   "/images/generated/commercial-maintenance-indoor-hero.webp":
@@ -235,6 +373,8 @@ const englishAlts: Record<string, string> = {
     "Facilities manager and service advisor planning commercial air conditioning maintenance",
   "/images/generated/commercial-maintenance-contract-inspection.webp":
     "Service engineer recording a scheduled inspection in a commercial plant room",
+  "/images/generated/homepage-reliability-maintenance.webp":
+    "Service engineer inspecting equipment in a commercial plant room",
   "/images/generated/projects-hero-background.webp":
     "Engineers completing the commissioning of a commercial climate installation in a modern office",
   "/images/generated/process-site-survey-hero.webp":
@@ -292,7 +432,7 @@ export function homeClimateCardsWithVisuals(
 ): Card[] {
   return applyCardVisuals(
     cards,
-    ["officeComfort", "retail", "maintenanceContractInspection"],
+    ["officeComfort", "customerSatisfaction", "homepageReliability"],
     locale,
     "homepage climate benefits",
   );
@@ -387,7 +527,8 @@ export function serviceProofVisual(
     if (pathname === "/airco-winkel") return visuals.showroom;
     if (pathname === "/airco-showroom") return visuals.building;
     if (pathname === "/cassette-airco-bedrijf") return visuals.retail;
-    if (pathname === "/kanaal-airco-bedrijf") return visuals.office;
+    if (pathname === "/kanaal-airco-bedrijf")
+      return visuals.ductedProofNoCassette;
     if (pathname === "/wandmodel-airco-bedrijf") return visuals.systemAdvice;
     return visuals.installationWork;
   })();

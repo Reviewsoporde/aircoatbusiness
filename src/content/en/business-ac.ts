@@ -611,12 +611,22 @@ export const aircoShowroom: ServicePageContent = {
         title: "Car showrooms",
         description:
           "Large glass facades and high spaces call for generous, evenly distributed capacity.",
+        image: {
+          src: "/images/generated/showroom-automotive-card.webp",
+          alt: "Car showroom with large glass facades, a high space and ceiling cassette air conditioning",
+          position: "50% 48%",
+        },
       },
       {
         tag: "Interior",
         title: "Kitchen and furniture showrooms",
         description:
           "Comfort during long browsing visits, without visible equipment in the presentation.",
+        image: {
+          src: "/images/generated/showroom-interior-card.webp",
+          alt: "Kitchen and furniture showroom with discreetly integrated climate control",
+          position: "50% 48%",
+        },
       },
       {
         tag: "Technology",
@@ -634,6 +644,11 @@ export const aircoShowroom: ServicePageContent = {
         title: "Visitors take their time",
         description:
           "Purchase decisions in showrooms take time. Comfort keeps visitors with your products longer.",
+        image: {
+          src: "/images/generated/showroom-visitors-card.webp",
+          alt: "Visitors take their time in a comfortable showroom with climate control",
+          position: "50% 48%",
+        },
       },
       {
         tag: "Heat load",

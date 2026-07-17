@@ -90,7 +90,7 @@ export const home: HomeContent = {
         href: "/airco-bedrijfspand",
         linkLabel: "Air conditioning for commercial buildings",
         image: {
-          src: "/images/generated/commercial-building.webp",
+          src: "/images/generated/commercial-building-card-clean.webp",
           alt: "Modern reception in a commercial building",
         },
       },
@@ -133,8 +133,8 @@ export const home: HomeContent = {
         href: "/cassette-airco-bedrijf",
         linkLabel: "Cassette air conditioning for businesses",
         image: {
-          src: "/images/generated/showroom-cassette.webp",
-          alt: "Cassette units in a commercial showroom",
+          src: "/images/generated/homepage-cassette-card.webp",
+          alt: "White cassette air conditioner in a commercial showroom",
         },
       },
       {
@@ -214,8 +214,8 @@ export const home: HomeContent = {
         href: "/airco-reparatie-zakelijk",
         linkLabel: "Commercial air conditioning repair",
         image: {
-          src: "/images/generated/commercial-repair-diagnostics.webp",
-          alt: "Engineer diagnosing a commercial air conditioning unit during a repair",
+          src: "/images/generated/commercial-repair-office-leakage.webp",
+          alt: "Engineer repairing a leaking commercial air conditioning unit in an office",
           position: "55% 42%",
         },
       },
@@ -227,9 +227,9 @@ export const home: HomeContent = {
         href: "/airco-onderhoudscontract-zakelijk",
         linkLabel: "Commercial maintenance contract",
         image: {
-          src: "/images/generated/commercial-maintenance-contract-planning.webp",
-          alt: "Engineer and facilities manager reviewing a commercial maintenance contract",
-          position: "50% 48%",
+          src: "/images/generated/homepage-maintenance-contract-signing.webp",
+          alt: "Advisor and client signing a commercial maintenance contract at an office desk",
+          position: "50% 52%",
         },
       },
     ],
