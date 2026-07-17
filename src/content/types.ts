@@ -182,7 +182,7 @@ export type ContactPageContent = {
 
 export type AboutPageContent = {
   meta: { title: string; description: string };
-  hero: { eyebrow: string; h1: string; intro: string };
+  hero: { eyebrow: string; h1: string; intro: string; image: ImgRef };
   story: { h2: string; paragraphs: string[] };
   usps: SectionCards;
   team: { h2: string; body: string; images: ImgRef[] };

@@ -77,9 +77,9 @@ export const home: HomeContent = {
         href: "/airco-kantoor",
         linkLabel: "Office air conditioning",
         image: {
-          src: "/images/generated/commercial-office-hero.webp",
-          alt: "Office space with a considered indoor climate",
-          position: "58% 50%",
+          src: "/images/generated/commercial-office-boardroom-card.webp",
+          alt: "Modern meeting room with cassette air conditioning",
+          position: "50% 50%",
         },
       },
       {
@@ -274,7 +274,7 @@ export const home: HomeContent = {
     intro:
       "English translations of verified Google reviews for Airco@home, the team behind Airco@Business. View every review directly on Google.",
     platformLabel: "Google Reviews",
-    reviewCountLabel: "68 reviews",
+    reviewCountLabel: "60+ reviews",
     ratingValue: 4.6,
     ratingLabel: "4.6",
     reviewUrl:

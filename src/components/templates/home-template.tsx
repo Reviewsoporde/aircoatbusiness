@@ -144,9 +144,7 @@ export function HomeTemplate({ content, featuredProjects, locale }: Props) {
       {/* 12 - Verified Google reviews from the Airco@home team. */}
       <Section
         variant="dark"
-        h2={content.reviews.h2}
-        intro={content.reviews.intro}
-        className="glow-azure-low border-t border-white/10"
+        className="glow-azure-low border-t border-white/10 [&>div]:py-12 lg:[&>div]:py-14"
       >
         <GoogleReviews reviews={content.reviews} />
       </Section>

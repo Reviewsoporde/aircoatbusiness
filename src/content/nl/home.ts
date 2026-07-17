@@ -77,9 +77,9 @@ export const home: HomeContent = {
         href: "/airco-kantoor",
         linkLabel: "Airco voor kantoren",
         image: {
-          src: "/images/generated/commercial-office-hero.webp",
-          alt: "Kantoorruimte met een verzorgd binnenklimaat",
-          position: "58% 50%",
+          src: "/images/generated/commercial-office-boardroom-card.webp",
+          alt: "Moderne vergaderruimte met cassette-airconditioning",
+          position: "50% 50%",
         },
       },
       {
@@ -274,7 +274,7 @@ export const home: HomeContent = {
     intro:
       "Geverifieerde Google-reviews van Airco@home, het team achter Airco@Business. Bekijk alle beoordelingen rechtstreeks op Google.",
     platformLabel: "Google Reviews",
-    reviewCountLabel: "68 beoordelingen",
+    reviewCountLabel: "60+ beoordelingen",
     ratingValue: 4.6,
     ratingLabel: "4,6",
     reviewUrl:

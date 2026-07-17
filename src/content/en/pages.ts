@@ -233,7 +233,12 @@ export const overOnsPage: AboutPageContent = {
     eyebrow: "About us",
     h1: "The commercial climate specialist of Zuid-Holland",
     intro:
-      "Airco@Business is the commercial label of Airco@home: one team fully dedicated to climate solutions for offices, commercial buildings, shops and showrooms.",
+      "Airco@home's commercial team, fully focused on climate solutions for offices, business premises, shops and showrooms.",
+    image: {
+      src: "/images/generated/about-commercial-cassette.webp",
+      alt: "Cassette air conditioning integrated into the ceiling of a modern commercial space",
+      position: "64% 50%",
+    },
   },
   story: {
     h2: "Why Airco@Business exists",
@@ -270,8 +275,9 @@ export const overOnsPage: AboutPageContent = {
     h2: "The team",
     body: "The same engineers who install your system also come back for the maintenance. That way we know your building and you know who is coming through the door.",
     images: [
-      { src: "/images/team-1.webp", alt: "The team's service van on site at a client" },
+      { src: "/images/founder.jpeg", alt: "Airco@Business advisor in the showroom" },
       { src: "/images/team-2.webp", alt: "The full team of engineers and advisors" },
+      { src: "/images/team-1.webp", alt: "The team's service van on site at a client" },
     ],
   },
 };

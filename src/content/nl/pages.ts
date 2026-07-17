@@ -233,7 +233,12 @@ export const overOnsPage: AboutPageContent = {
     eyebrow: "Over ons",
     h1: "De zakelijke klimaatspecialist van Zuid-Holland",
     intro:
-      "Airco@Business is het zakelijke label van Airco@home: één team dat zich volledig richt op klimaatoplossingen voor kantoren, bedrijfspanden, winkels en showrooms.",
+      "Het zakelijke team van Airco@home, volledig gericht op klimaatoplossingen voor kantoren, bedrijfspanden, winkels en showrooms.",
+    image: {
+      src: "/images/generated/about-commercial-cassette.webp",
+      alt: "Cassette-airconditioning geïntegreerd in het plafond van een moderne zakelijke ruimte",
+      position: "64% 50%",
+    },
   },
   story: {
     h2: "Waarom Airco@Business bestaat",
@@ -270,8 +275,9 @@ export const overOnsPage: AboutPageContent = {
     h2: "Het team",
     body: "Dezelfde monteurs die uw installatie plaatsen, komen ook voor het onderhoud. Zo kennen we uw pand en weet u wie er over de vloer komt.",
     images: [
-      { src: "/images/team-1.webp", alt: "Servicebus van het team op locatie bij een klant" },
+      { src: "/images/founder.jpeg", alt: "Airco@Business adviseur in de showroom" },
       { src: "/images/team-2.webp", alt: "Het voltallige team van monteurs en adviseurs" },
+      { src: "/images/team-1.webp", alt: "Servicebus van het team op locatie bij een klant" },
     ],
   },
 };

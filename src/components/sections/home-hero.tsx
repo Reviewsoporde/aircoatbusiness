@@ -80,11 +80,12 @@ export function HomeHero({ hero, reviews }: Props) {
               ratingLabel={reviews.ratingLabel}
               reviewUrl={reviews.reviewUrl}
               compact
+              linked={false}
             />
           </div>
         </div>
 
-        <div className="rise hero-lead-glass rounded-[32px] p-6 [animation-delay:420ms] sm:p-8 lg:relative lg:top-5 lg:p-7 xl:p-8">
+        <div className="rise hero-lead-glass hero-lead-glass--prominent rounded-[32px] p-6 [animation-delay:420ms] sm:p-8 lg:relative lg:top-5 lg:p-7 xl:p-8">
           <HeroLeadForm />
         </div>
       </div>
