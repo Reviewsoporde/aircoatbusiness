@@ -29,9 +29,9 @@ const visuals = {
     position: "50% 48%",
   },
   businessOverview: {
-    src: "/images/generated/business-air-conditioning-hero.webp",
-    alt: "Facility manager en klimaatadviseur lopen door een modern zakelijk kantoor met geïntegreerde airconditioning",
-    position: "57% 50%",
+    src: "/images/generated/business-air-conditioning-small-office-hero.png",
+    alt: "Compact zakelijk kantoor met cassette-airconditioning in het plafond",
+    position: "54% 50%",
   },
   officeComfort: {
     src: "/images/generated/office-air-conditioning-hero.webp",
@@ -67,6 +67,11 @@ const visuals = {
     src: "/images/generated/commercial-installation-in-progress.webp",
     alt: "Monteurs installeren een cassette-unit in een zakelijke kantoorruimte",
     position: "50% 45%",
+  },
+  installationCertifiedInsured: {
+    src: "/images/generated/commercial-installation-certified-insured-card.png",
+    alt: "Gecertificeerde aircomonteurs bespreken de oplevering van een zakelijke installatie",
+    position: "50% 48%",
   },
   installationMinimalDisruption: {
     src: "/images/generated/commercial-installation-minimal-disruption-card.webp",
@@ -168,10 +173,30 @@ const visuals = {
     alt: "Servicemonteur inspecteert een luchtfilter tijdens zakelijk preventief onderhoud",
     position: "52% 48%",
   },
+  commercialMaintenanceCleanAir: {
+    src: "/images/generated/commercial-maintenance-clean-air-card.webp",
+    alt: "Servicemonteur plaatst een schoon luchtfilter terug in een zakelijke cassette-unit",
+    position: "54% 42%",
+  },
+  commercialMaintenanceSmallWallUnit: {
+    src: "/images/generated/commercial-maintenance-small-wall-unit-hero.webp",
+    alt: "Servicemonteur onderhoudt een compact wandmodel airco in een zakelijk kantoor",
+    position: "53% 48%",
+  },
   maintenanceRooftop: {
     src: "/images/generated/commercial-maintenance-rooftop.webp",
     alt: "Servicemonteur controleert een zakelijke buitenunit op een bedrijfsdak",
     position: "50% 50%",
+  },
+  maintenanceContractServiceVan: {
+    src: "/images/generated/commercial-maintenance-contract-service-van.png",
+    alt: "Servicebus arriveert bij een zakelijk pand voor onderhoud aan airconditioning",
+    position: "50% 52%",
+  },
+  maintenanceContractOfficeMkb: {
+    src: "/images/generated/commercial-maintenance-contract-office-mkb-scheduled.png",
+    alt: "Servicemonteur markeert gepland airco-onderhoud in een MKB-kantoor",
+    position: "50% 48%",
   },
   repairDiagnostics: {
     src: "/images/generated/commercial-repair-diagnostics.webp",
@@ -183,15 +208,45 @@ const visuals = {
     alt: "Servicemonteur onderzoekt de elektronica van een zakelijke buitenunit",
     position: "48% 50%",
   },
+  repairOutdoorUnitSummerPolo: {
+    src: "/images/generated/commercial-repair-outdoor-unit-summer-polo.webp",
+    alt: "Servicemonteur in polo onderzoekt een zakelijke buitenunit op een zomers bedrijfsdak",
+    position: "48% 50%",
+  },
+  repairOfficeLeakage: {
+    src: "/images/generated/commercial-repair-office-leakage.webp",
+    alt: "Servicemonteur herstelt lekkage aan een zakelijke cassette-unit in een kantoor",
+    position: "52% 42%",
+  },
   maintenanceContractPlanning: {
     src: "/images/generated/commercial-maintenance-contract-planning.webp",
     alt: "Facility manager en serviceadviseur plannen zakelijk airco-onderhoud",
     position: "52% 48%",
   },
+  maintenanceContractFacilityManagement: {
+    src: "/images/generated/commercial-maintenance-contract-facility-management.png",
+    alt: "Facility manager en serviceadviseur bekijken rapportage voor meerdere zakelijke panden",
+    position: "50% 48%",
+  },
+  maintenanceContractSigning: {
+    src: "/images/generated/homepage-maintenance-contract-signing.webp",
+    alt: "Adviseur en klant tekenen een zakelijk onderhoudscontract aan een kantoorbureau",
+    position: "50% 52%",
+  },
   maintenanceContractInspection: {
     src: "/images/generated/commercial-maintenance-contract-inspection.webp",
     alt: "Servicemonteur registreert een geplande inspectie in een technische ruimte",
     position: "52% 50%",
+  },
+  maintenanceContractComplianceLogbook: {
+    src: "/images/generated/commercial-maintenance-contract-compliance-logbook.png",
+    alt: "Servicemonteur verwerkt F-gassencontrole in een digitaal logboek",
+    position: "50% 52%",
+  },
+  maintenanceContractCertaintyProof: {
+    src: "/images/generated/commercial-maintenance-contract-certainty-proof-logo-uniforms.png",
+    alt: "Gecertificeerde monteurs met Airco@Business-logo bespreken een nette zakelijke airco-oplevering",
+    position: "54% 50%",
   },
   homepageReliability: {
     src: "/images/generated/homepage-reliability-maintenance.webp",
@@ -222,7 +277,7 @@ type ServiceCardSection = "overview" | "benefits";
 const serviceCardVisualMap = {
   "/zakelijke-airconditioning": {
     overview: ["officeComfort", "building", "retail", "showroom"],
-    benefits: ["systemAdvice", "officeComfort", "maintenanceContractPlanning"],
+    benefits: ["systemAdvice", "officeComfort", "service"],
   },
   "/airco-kantoor": {
     overview: [
@@ -247,7 +302,7 @@ const serviceCardVisualMap = {
   },
   "/installatie": {
     overview: ["installationDelivery", "cassetteDetail", "ducted", "wall"],
-    benefits: ["installation", "installationWork", "installationDelivery"],
+    benefits: ["installation", "installationWork", "installationCertifiedInsured"],
   },
   "/zakelijke-airco-installatie": {
     overview: ["installationSmallBuilding", "installation", "installationWork"],
@@ -266,27 +321,35 @@ const serviceCardVisualMap = {
     benefits: ["wallInstallation", "wallBudget", "systemAdvice"],
   },
   "/onderhoud": {
-    overview: ["service", "repairDiagnostics", "maintenanceContractPlanning"],
-    benefits: ["maintenanceRooftop", "commercialMaintenanceIndoor", "service"],
+    overview: ["service", "repairDiagnostics", "maintenanceContractSigning"],
+    benefits: [
+      "maintenanceRooftop",
+      "commercialMaintenanceIndoor",
+      "commercialMaintenanceCleanAir",
+    ],
   },
   "/airco-onderhoud-zakelijk": {
-    overview: ["commercialMaintenanceIndoor", "retail", "serverRoom"],
-    benefits: ["repairOutdoorUnit", "service", "commercialMaintenanceIndoor"],
+    overview: ["commercialMaintenanceSmallWallUnit", "retail", "serverRoom"],
+    benefits: [
+      "repairOutdoorUnitSummerPolo",
+      "service",
+      "commercialMaintenanceIndoor",
+    ],
   },
   "/airco-reparatie-zakelijk": {
     overview: ["repairDiagnostics", "service", "repairOutdoorUnit"],
-    benefits: ["repairDiagnostics", "repairOutdoorUnit", "systemAdvice"],
+    benefits: ["repairDiagnostics", "repairOfficeLeakage", "systemAdvice"],
   },
   "/airco-onderhoudscontract-zakelijk": {
     overview: [
-      "maintenanceContractPlanning",
+      "maintenanceContractOfficeMkb",
       "retail",
-      "maintenanceContractInspection",
+      "maintenanceContractFacilityManagement",
     ],
     benefits: [
-      "maintenanceRooftop",
-      "maintenanceContractPlanning",
-      "maintenanceContractInspection",
+      "maintenanceContractServiceVan",
+      "maintenanceContractSigning",
+      "maintenanceContractComplianceLogbook",
     ],
   },
 } satisfies Record<
@@ -307,6 +370,8 @@ const englishAlts: Record<string, string> = {
     "Satisfied colleagues working comfortably beneath commercial air conditioning",
   "/images/generated/business-air-conditioning-hero.webp":
     "Facilities manager and climate advisor walking through a modern commercial office with integrated air conditioning",
+  "/images/generated/business-air-conditioning-small-office-hero.png":
+    "Compact commercial office with ceiling cassette air conditioning",
   "/images/generated/office-air-conditioning-hero.webp":
     "People working in a modern office with discreetly integrated climate control",
   "/images/generated/commercial-building.webp":
@@ -323,6 +388,8 @@ const englishAlts: Record<string, string> = {
     "Engineers installing a compact commercial outdoor unit at an older small commercial building",
   "/images/generated/commercial-installation-in-progress.webp":
     "Engineers installing a ceiling cassette unit in a commercial office",
+  "/images/generated/commercial-installation-certified-insured-card.png":
+    "Certified air conditioning engineers reviewing the handover of a commercial installation",
   "/images/generated/commercial-installation-minimal-disruption-card.webp":
     "Engineer working in a screened-off zone while employees continue working in the office",
   "/images/generated/commercial-warehouse-work-storage.webp":
@@ -363,16 +430,36 @@ const englishAlts: Record<string, string> = {
     "Technician servicing a commercial ceiling cassette unit",
   "/images/generated/commercial-maintenance-indoor-hero.webp":
     "Service engineer inspecting an air filter during scheduled commercial maintenance",
+  "/images/generated/commercial-maintenance-clean-air-card.webp":
+    "Service engineer reinstalling a clean air filter in a commercial ceiling cassette unit",
+  "/images/generated/commercial-maintenance-small-wall-unit-hero.webp":
+    "Service engineer maintaining a compact wall-mounted air conditioning unit in a commercial office",
   "/images/generated/commercial-maintenance-rooftop.webp":
     "Service engineer inspecting a commercial outdoor unit on an office rooftop",
+  "/images/generated/commercial-maintenance-contract-service-van.png":
+    "Service van arriving at a commercial property for air conditioning maintenance",
+  "/images/generated/commercial-maintenance-contract-office-mkb-scheduled.png":
+    "Service engineer marks scheduled air conditioning maintenance in an SME office",
   "/images/generated/commercial-repair-diagnostics.webp":
     "Service engineer diagnosing a ceiling cassette fault in a commercial office",
   "/images/generated/commercial-repair-outdoor-unit.webp":
     "Service engineer inspecting the electronics of a commercial outdoor unit",
+  "/images/generated/commercial-repair-outdoor-unit-summer-polo.webp":
+    "Service engineer in a polo shirt inspecting a commercial outdoor unit on a summer office rooftop",
+  "/images/generated/commercial-repair-office-leakage.webp":
+    "Service engineer repairing a leaking commercial ceiling cassette unit in an office",
   "/images/generated/commercial-maintenance-contract-planning.webp":
     "Facilities manager and service advisor planning commercial air conditioning maintenance",
+  "/images/generated/commercial-maintenance-contract-facility-management.png":
+    "Facilities manager and service advisor reviewing reporting for multiple commercial properties",
+  "/images/generated/homepage-maintenance-contract-signing.webp":
+    "Advisor and client signing a commercial maintenance contract at an office desk",
   "/images/generated/commercial-maintenance-contract-inspection.webp":
     "Service engineer recording a scheduled inspection in a commercial plant room",
+  "/images/generated/commercial-maintenance-contract-compliance-logbook.png":
+    "Service engineer processing an F-gas inspection in a digital logbook",
+  "/images/generated/commercial-maintenance-contract-certainty-proof-logo-uniforms.png":
+    "Certified installers wearing the Airco@Business logo discuss a neat commercial air conditioning handover",
   "/images/generated/homepage-reliability-maintenance.webp":
     "Service engineer inspecting equipment in a commercial plant room",
   "/images/generated/projects-hero-background.webp":
@@ -465,10 +552,13 @@ export function servicePageVisual(
       return { image: visuals.service, variant: "split" };
     }
     if (pathname === "/airco-onderhoud-zakelijk") {
-      return { image: visuals.commercialMaintenanceIndoor, variant: "split" };
+      return {
+        image: visuals.commercialMaintenanceSmallWallUnit,
+        variant: "split",
+      };
     }
     if (pathname === "/airco-onderhoudscontract-zakelijk") {
-      return { image: visuals.maintenanceContractPlanning, variant: "split" };
+      return { image: visuals.maintenanceContractSigning, variant: "split" };
     }
     if (pathname === "/installatie") {
       return { image: visuals.installation, variant: "split" };
@@ -513,7 +603,7 @@ export function serviceProofVisual(
       return visuals.repairOutdoorUnit;
     }
     if (pathname === "/airco-onderhoudscontract-zakelijk") {
-      return visuals.maintenanceContractInspection;
+      return visuals.maintenanceContractCertaintyProof;
     }
     if (
       pathname === "/installatie" ||
